@@ -39,143 +39,92 @@
           <span class="hulltypefilter" id="Monitor" >BM</span>
           <span class="hulltypefilter" id="Repairship" >AR</span>
           <span class="hulltypefilter" id="SubmarineCarrier" >SSV</span>
-          <!--<img class="hulltypefilter" id="destroyer" src="Assets/HullTypeIcons/Destroyer.png" /><br>
-          <img class="hulltypefilter" id="battleship" src="Assets/HullTypeIcons/Battleship.png" /><span class="legendspan_en show">Battleship</span><br>
-          <img class="hulltypefilter" id="carrier" src="Assets/HullTypeIcons/AircraftCarrier.png" /><span class="legendspan_en show">Aircraft Carrier</span><br>
-          <img class="hulltypefilter" id="heavycruiser" src="Assets/HullTypeIcons/HeavyCruiser.png" /><span class="legendspan_en show">Heavy Cruiser</span><br>
-          <img class="hulltypefilter" id="lightcruiser" src="Assets/HullTypeIcons/LightCruiser.png" /><span class="legendspan_en show">Light Cruiser</span><br>
-          <img class="hulltypefilter" id="submarine" src="Assets/HullTypeIcons/Submarine.png" /><span class="legendspan_en show">Submarine</span><br>
-          <img class="hulltypefilter" id="AviationBattleship" src="Assets/HullTypeIcons/AviationBattleship.png" /><span class="legendspan_en show">Aviation Battleship</span><br>
-          <img class="hulltypefilter" id="Monitor" src="Assets/HullTypeIcons/Monitor.png" /><span class="legendspan_en show">Monitor</span><br>
-          <img class="hulltypefilter" id="Repairship" src="Assets/HullTypeIcons/Repairship.png" /><span class="legendspan_en show">Repairship</span><br>
-          <img class="hulltypefilter" id="SubmarineCarrier" src="Assets/HullTypeIcons/SubmarineCarrier.png" /><span class="legendspan_en show">Submarine Carrier</span><br>-->
         </div>
       </div>
-
-      <div class="filter-dropdown">
-        <button onclick="myFunction(this.classList)" class="filter-dropbtn">
-          Filter
+      <div class="rarity-dropdown">
+        <button onclick="myFunction(this.classList)" class="rarity-dropbtn">
+          Rarity
         </button>
-        <div id="filter-dropdown" class="filter-dropdown-content">
-          <span class="rarityfilterspan">Rarity</span>
-          <div class="rarityfiltercont">
-          <img class="rarityfilter" id="Normal" src="Assets/RarityBGs/Normal.png" />
-          <img class="rarityfilter" id="Rare" src="Assets/RarityBGs/Rare.png" />
-          <img class="rarityfilter" id="Elite" src="Assets/RarityBGs/Elite.png" />
-          <img class="rarityfilter" id="SuperRare" src="Assets/RarityBGs/SuperRare.png" />
-          <img class="rarityfilter" id="Priority" src="Assets/RarityBGs/Priority.png" />
-          <img class="rarityfilter" id="Decisive" src="Assets/RarityBGs/Decisive.png" />
-          </div>
-          <span class="nationalityfilterspan">Nationality</span>
-          <div class="nationalityfiltercont">
-            <div class="natparent">
-            <img class="natparent n1back" />
-            <img class="natparent Bilibili nationality" id="n1" src="Assets/Nationalities/Bilibili.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n2back" />
-            <img class="natparent Eagle_Union nationality" id="n2" src="Assets/Nationalities/EagleUnion.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n3back" />
-            <img class="natparent Eastern_Radiance nationality" id="n3" src="Assets/Nationalities/EasternRadiance.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n4back" />
-            <img class="natparent Hololive nationality" id="n4" src="Assets/Nationalities/Hololive.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n5back" />
-            <img class="natparent Iris_Libre nationality" id="n5" src="Assets/Nationalities/IrisLibre.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n6back" />
-            <img class="natparent Ironblood nationality" id="n6" src="Assets/Nationalities/Ironblood.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n7back" />
-            <img class="natparent KizunaAI nationality" id="n7" src="Assets/Nationalities/KizunaAI.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n8back" />
-            <img class="natparent Neptunia nationality" id="n8" src="Assets/Nationalities/Neptunia.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n9back" />
-            <img class="natparent North_Union nationality" id="n9" src="Assets/Nationalities/NorthUnion.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n10back" />
-            <img class="natparent Royal_Navy nationality" id="n10" src="Assets/Nationalities/RoyalNavy.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n11back" />
-            <img class="natparent Sakura_Empire nationality" id="n11" src="Assets/Nationalities/SakuraEmpire.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n12back" />
-            <img class="natparent Sardegna_Empire nationality" id="n12" src="Assets/Nationalities/SardegnaEmpire.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n13back" />
-            <img class="natparent Universal nationality" id="n13" src="Assets/Nationalities/Universal.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n14back" />
-            <img class="natparent Utawarerumono nationality" id="n14" src="Assets/Nationalities/Utawarerumono.png" />
-          </div>
-          <div class="natparent">
-            <img class="natparent n15back" />
-            <img class="natparent Vichya_Dominion nationality" id="n15" src="Assets/Nationalities/VichyaDominion.png" />
-          </div>
-          </div>
-          <span class="tagfilterspan">Tag</span>
-          <div class="tagfiltercont">
-          <img class="tagfilter_en show" id="AA en" src="Assets/TagIcons/EN/AA.png" />
-          <img class="tagfilter_en show" id="AS en" src="Assets/TagIcons/EN/AS.png" />
-          <img class="tagfilter_en show" id="BA en" src="Assets/TagIcons/EN/BA.png" />
-          <img class="tagfilter_en show" id="BUFFAA en" src="Assets/TagIcons/EN/BUFFAA.png" />
-          <img class="tagfilter_en show" id="BUFFAIR en" src="Assets/TagIcons/EN/BUFFAIR.png" />
-          <img class="tagfilter_en show" id="BUFFDEF en" src="Assets/TagIcons/EN/BUFFDEF.png" />
-          <img class="tagfilter_en show" id="BUFFDMG en" src="Assets/TagIcons/EN/BUFFDMG.png" />
-          <img class="tagfilter_en show" id="BUFFEXP en" src="Assets/TagIcons/EN/BUFFEXP.png" />
-          <img class="tagfilter_en show" id="BUFFSHL en" src="Assets/TagIcons/EN/BUFFSHL.png" />
-          <img class="tagfilter_en show" id="BUFFTRP en" src="Assets/TagIcons/EN/BUFFTRP.png" />
-          <img class="tagfilter_en show" id="DEF en" src="Assets/TagIcons/EN/DEF.png" />
-          <img class="tagfilter_en show" id="HEAL en" src="Assets/TagIcons/EN/HEAL.png" />
-          <img class="tagfilter_en show" id="MG+1 en" src="Assets/TagIcons/EN/MG+1.png" />
-          <img class="tagfilter_en show" id="TRP en" src="Assets/TagIcons/EN/TRP.png" />
-          <img class="tagfilter_ico" id="AA ico" src="Assets/TagIcons/ICO/AA.png" />
-          <img class="tagfilter_ico" id="AS ico" src="Assets/TagIcons/ICO/AS.png" />
-          <img class="tagfilter_ico" id="BA ico" src="Assets/TagIcons/ICO/BA.png" />
-          <img class="tagfilter_ico" id="BUFFAA ico" src="Assets/TagIcons/ICO/BUFFAA.png" />
-          <img class="tagfilter_ico" id="BUFFAIR ico" src="Assets/TagIcons/ICO/BUFFAIR.png" />
-          <img class="tagfilter_ico" id="BUFFDEF ico" src="Assets/TagIcons/ICO/BUFFDEF.png" />
-          <img class="tagfilter_ico" id="BUFFDMG ico" src="Assets/TagIcons/ICO/BUFFDMG.png" />
-          <img class="tagfilter_ico" id="BUFFEXP ico" src="Assets/TagIcons/ICO/BUFFEXP.png" />
-          <img class="tagfilter_ico" id="BUFFSHL ico" src="Assets/TagIcons/ICO/BUFFSHL.png" />
-          <img class="tagfilter_ico" id="BUFFTRP ico" src="Assets/TagIcons/ICO/BUFFTRP.png" />
-          <img class="tagfilter_ico" id="DEF ico" src="Assets/TagIcons/ICO/DEF.png" />
-          <img class="tagfilter_ico" id="HEAL ico" src="Assets/TagIcons/ICO/HEAL.png" />
-          <img class="tagfilter_ico" id="MG+1 ico" src="Assets/TagIcons/ICO/MG+1.png" />
-          <img class="tagfilter_ico" id="TRP ico" src="Assets/TagIcons/ICO/TRP.png" />
-          <img class="tagfilter_cn" id="AA cn" src="Assets/TagIcons/CN/AA.png" />
-          <img class="tagfilter_cn" id="AS cn" src="Assets/TagIcons/CN/AS.png" />
-          <img class="tagfilter_cn" id="BA cn" src="Assets/TagIcons/CN/BA.png" />
-          <img class="tagfilter_cn" id="BUFFAA cn" src="Assets/TagIcons/CN/BUFFAA.png" />
-          <img class="tagfilter_cn" id="BUFFAIR cn" src="Assets/TagIcons/CN/BUFFAIR.png" />
-          <img class="tagfilter_cn" id="BUFFDEF cn" src="Assets/TagIcons/CN/BUFFDEF.png" />
-          <img class="tagfilter_cn" id="BUFFDMG cn" src="Assets/TagIcons/CN/BUFFDMG.png" />
-          <img class="tagfilter_cn" id="BUFFEXP cn" src="Assets/TagIcons/CN/BUFFEXP.png" />
-          <img class="tagfilter_cn" id="BUFFSHL cn" src="Assets/TagIcons/CN/BUFFSHL.png" />
-          <img class="tagfilter_cn" id="BUFFTRP cn" src="Assets/TagIcons/CN/BUFFTRP.png" />
-          <img class="tagfilter_cn" id="DEF cn" src="Assets/TagIcons/CN/DEF.png" />
-          <img class="tagfilter_cn" id="HEAL cn" src="Assets/TagIcons/CN/HEAL.png" />
-          <img class="tagfilter_cn" id="MG+1 cn" src="Assets/TagIcons/CN/MG+1.png" />
-          <img class="tagfilter_cn" id="TRP cn" src="Assets/TagIcons/CN/TRP.png" />
+        <div id="rarity-dropdown" class="rarity-dropdown-content">
+        <span class="rarityfilter" id="Normal">Normal</span>
+        <span class="rarityfilter" id="Rare">Rare</span>
+        <span class="rarityfilter" id="Elite">Elite</span>
+        <span class="rarityfilter" id="SuperRare">Super Rare</span>
+        <span class="rarityfilter" id="Priority">Priority</span>
+        <span class="rarityfilter" id="Decisive">Decisive</span>
         </div>
       </div>
+      <div class="nationality-dropdown">
+        <button onclick="myFunction(this.classList)" class="nationality-dropbtn">
+          Nationality
+        </button>
+        <div id="nationality-dropdown" class="nationality-dropdown-content">
+        <span class="nationalityfilter Bilibili nationality" id="n1">Bilibili</span>
+        <span class="nationalityfilter Eagle_Union nationality" id="n2">Eagle Union</span>
+        <span class="nationalityfilter Eastern_Radiance nationality" id="n3">Eastern Radiance</span>
+        <span class="nationalityfilter Hololive nationality" id="n4">Hololive</span>
+        <span class="nationalityfilter Iris_Libre nationality" id="n5">Iris Libre</span>
+        <span class="nationalityfilter Ironblood nationality" id="n6">Ironblood</span>
+        <span class="nationalityfilter KizunaAI nationality" id="n7">Kizuna AI</span>
+        <span class="nationalityfilter Neptunia nationality" id="n8">Neptunia</span>
+        <span class="nationalityfilter North_Union nationality" id="n9">North Union</span>
+        <span class="nationalityfilter Royal_Navy nationality" id="n10">Royal Navy</span>
+        <span class="nationalityfilter Sakura_Empire nationality" id="n11">Sakura Empire</span>
+        <span class="nationalityfilter Sardegna_Empire nationality" id="n12">Sardegna Empire</span>
+        <span class="nationalityfilter Universal nationality" id="n13">Universal</span>
+        <span class="nationalityfilter Utawarerumono nationality" id="n14">Utawarerumono</span>
+        <span class="nationalityfilter Vichya_Dominion nationality" id="n15">Vichya Dominion</span>
+        </div>
       </div>
+      <div class="tags-dropdown">
+        <button onclick="myFunction(this.classList)" class="tags-dropbtn">
+          Tag
+        </button>
+        <div id="tags-dropdown" class="tags-dropdown-content">
+        <img class="tagfilter_en show" id="AA en" src="Assets/TagIcons/EN/AA.png" />
+        <img class="tagfilter_en show" id="AS en" src="Assets/TagIcons/EN/AS.png" />
+        <img class="tagfilter_en show" id="BA en" src="Assets/TagIcons/EN/BA.png" />
+        <img class="tagfilter_en show" id="BUFFAA en" src="Assets/TagIcons/EN/BUFFAA.png" />
+        <img class="tagfilter_en show" id="BUFFAIR en" src="Assets/TagIcons/EN/BUFFAIR.png" />
+        <img class="tagfilter_en show" id="BUFFDEF en" src="Assets/TagIcons/EN/BUFFDEF.png" />
+        <img class="tagfilter_en show" id="BUFFDMG en" src="Assets/TagIcons/EN/BUFFDMG.png" />
+        <img class="tagfilter_en show" id="BUFFEXP en" src="Assets/TagIcons/EN/BUFFEXP.png" />
+        <img class="tagfilter_en show" id="BUFFSHL en" src="Assets/TagIcons/EN/BUFFSHL.png" />
+        <img class="tagfilter_en show" id="BUFFTRP en" src="Assets/TagIcons/EN/BUFFTRP.png" />
+        <img class="tagfilter_en show" id="DEF en" src="Assets/TagIcons/EN/DEF.png" />
+        <img class="tagfilter_en show" id="HEAL en" src="Assets/TagIcons/EN/HEAL.png" />
+        <img class="tagfilter_en show" id="MG+1 en" src="Assets/TagIcons/EN/MG+1.png" />
+        <img class="tagfilter_en show" id="TRP en" src="Assets/TagIcons/EN/TRP.png" />
+        <img class="tagfilter_ico" id="AA ico" src="Assets/TagIcons/ICO/AA.png" />
+        <img class="tagfilter_ico" id="AS ico" src="Assets/TagIcons/ICO/AS.png" />
+        <img class="tagfilter_ico" id="BA ico" src="Assets/TagIcons/ICO/BA.png" />
+        <img class="tagfilter_ico" id="BUFFAA ico" src="Assets/TagIcons/ICO/BUFFAA.png" />
+        <img class="tagfilter_ico" id="BUFFAIR ico" src="Assets/TagIcons/ICO/BUFFAIR.png" />
+        <img class="tagfilter_ico" id="BUFFDEF ico" src="Assets/TagIcons/ICO/BUFFDEF.png" />
+        <img class="tagfilter_ico" id="BUFFDMG ico" src="Assets/TagIcons/ICO/BUFFDMG.png" />
+        <img class="tagfilter_ico" id="BUFFEXP ico" src="Assets/TagIcons/ICO/BUFFEXP.png" />
+        <img class="tagfilter_ico" id="BUFFSHL ico" src="Assets/TagIcons/ICO/BUFFSHL.png" />
+        <img class="tagfilter_ico" id="BUFFTRP ico" src="Assets/TagIcons/ICO/BUFFTRP.png" />
+        <img class="tagfilter_ico" id="DEF ico" src="Assets/TagIcons/ICO/DEF.png" />
+        <img class="tagfilter_ico" id="HEAL ico" src="Assets/TagIcons/ICO/HEAL.png" />
+        <img class="tagfilter_ico" id="MG+1 ico" src="Assets/TagIcons/ICO/MG+1.png" />
+        <img class="tagfilter_ico" id="TRP ico" src="Assets/TagIcons/ICO/TRP.png" />
+        <img class="tagfilter_cn" id="AA cn" src="Assets/TagIcons/CN/AA.png" />
+        <img class="tagfilter_cn" id="AS cn" src="Assets/TagIcons/CN/AS.png" />
+        <img class="tagfilter_cn" id="BA cn" src="Assets/TagIcons/CN/BA.png" />
+        <img class="tagfilter_cn" id="BUFFAA cn" src="Assets/TagIcons/CN/BUFFAA.png" />
+        <img class="tagfilter_cn" id="BUFFAIR cn" src="Assets/TagIcons/CN/BUFFAIR.png" />
+        <img class="tagfilter_cn" id="BUFFDEF cn" src="Assets/TagIcons/CN/BUFFDEF.png" />
+        <img class="tagfilter_cn" id="BUFFDMG cn" src="Assets/TagIcons/CN/BUFFDMG.png" />
+        <img class="tagfilter_cn" id="BUFFEXP cn" src="Assets/TagIcons/CN/BUFFEXP.png" />
+        <img class="tagfilter_cn" id="BUFFSHL cn" src="Assets/TagIcons/CN/BUFFSHL.png" />
+        <img class="tagfilter_cn" id="BUFFTRP cn" src="Assets/TagIcons/CN/BUFFTRP.png" />
+        <img class="tagfilter_cn" id="DEF cn" src="Assets/TagIcons/CN/DEF.png" />
+        <img class="tagfilter_cn" id="HEAL cn" src="Assets/TagIcons/CN/HEAL.png" />
+        <img class="tagfilter_cn" id="MG+1 cn" src="Assets/TagIcons/CN/MG+1.png" />
+        <img class="tagfilter_cn" id="TRP cn" src="Assets/TagIcons/CN/TRP.png" />
+      </div>
+    </div>
     </div>
     <div class="language">
       <img class="lang en active" id="lang0" src="Assets/LanguageFlags/English.svg" />
@@ -185,6 +134,7 @@
     </div>
     <button class="changelogbtn" data-changelog-target="#changelog">Changelog</button>
   </div>
+</div>
   <div class="changelog" id="changelog">
     <div class="changelog-header">
       <div class="title">Changelog</div>

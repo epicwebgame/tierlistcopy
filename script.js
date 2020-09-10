@@ -791,15 +791,15 @@ async function mutifiltercheck(a1, a2, a3) {
     f2 = a1
   }
   if (a2 == "tagfilter") {
-    if (document.getElementsByClassName("tagfiltercont")[0].getElementsByClassName("show active").length == 0) {
-      document.getElementsByClassName("tagfiltercont")[0].getElementsByClassName("show")[a1].classList.add("active")
+    if (document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active").length == 0) {
+      document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show")[a1].classList.add("active")
     } else {
-      if (document.getElementsByClassName("tagfiltercont")[0].getElementsByClassName("show active")[0].id == a1) {
-        document.getElementsByClassName("tagfiltercont")[0].getElementsByClassName("show active")[0].classList.remove("active")
+      if (document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active")[0].id == a1) {
+        document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active")[0].classList.remove("active")
         a1 = undefined
       } else {
-        document.getElementsByClassName("tagfiltercont")[0].getElementsByClassName("show active")[0].classList.remove("active")
-        document.getElementsByClassName("tagfiltercont")[0].getElementsByClassName("show")[a1].classList.add("active")
+        document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active")[0].classList.remove("active")
+        document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show")[a1].classList.add("active")
       }
     }
     f3 = a1
@@ -968,7 +968,7 @@ window.onclick = function (event) {
     !event.target.matches(".tierfilter") &&
     !event.target.matches(".hulltypefilter") &&
     !event.target.matches(".rarityfilter") &&
-    !event.target.matches(".natparent") &&
+    !event.target.matches(".nationalityfilter") &&
     !event.target.matches(".tagfilter_en") &&
     !event.target.matches(".tagfilter_ico") &&
     !event.target.matches(".tagfilter_cn") &&

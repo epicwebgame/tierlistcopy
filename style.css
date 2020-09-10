@@ -217,7 +217,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 
 /* Dropdown Button */
 .filter-dropbtn {
-  background-image: linear-gradient(#009eff, #0056fe);
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   font-size: 22px;
   cursor: pointer;
@@ -228,8 +228,8 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   text-shadow: 2px 1px #00000070;
 }
 
-.hulltype-dropbtn {
-  background-image: linear-gradient(#009eff, #0056fe);
+.hulltype-dropbtn, .rarity-dropbtn, .nationality-dropbtn, .tags-dropbtn {
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   font-size: 22px;
   cursor: pointer;
@@ -238,6 +238,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-radius: 5px;
   text-align: center;
   text-shadow: 2px 1px #00000070;
+  margin-right: 25px;
 }
 
 .hulltypefilterspan, .rarityfilterspan, .tierfilterspan, .nationalityfilterspan, .tagfilterspan {
@@ -261,11 +262,12 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 
 /* Dropdown button on hover & focus */
 .filter-dropbtn:hover, .filter-dropbtn:focus {
-  background-color: #2980B9;
+  background-color: #1d61a6;
 }
 
-.hulltype-dropbtn:hover, .hulltype-dropbtn:focus {
-  background-color: #2980B9;
+.hulltype-dropbtn:hover, .hulltype-dropbtn:focus, .rarity-dropbtn:hover, .rarity-dropbtn:focus, .nationality-dropbtn:hover, .nationality-dropbtn:focus, .tags-dropbtn:hover, .tags-dropbtn:focus, .changelogbtn:hover, .changelogbtn:focus {
+  background: #1d61a6;
+  border: 1px solid white;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -294,12 +296,12 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   text-align: center;
 }
 
-.hulltype-dropdown-content {
+.hulltype-dropdown-content, .rarity-dropdown-content, .nationality-dropdown-content, .tags-dropdown-content {
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   margin-top: 15px;
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #3c9dfe;
   min-width: 80px;
   width: 105.7px;
   max-width: 160px;
@@ -313,11 +315,20 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   color:white;
 }
 
-.filter-dropdown-content.show, .hulltype-dropdown-content.show {
+.nationality-dropdown-content {
+  width: 116.72px;
+}
+
+.tags-dropdown-content {
+  width: 49.48px;
+  min-width: 0px;
+}
+
+.filter-dropdown-content.show, .hulltype-dropdown-content.show, .rarity-dropdown-content.show, .nationality-dropdown-content.show, .tags-dropdown-content.show {
   display: block;
 }
 
-.filter-dropdown-content::before, .hulltype-dropdown-content::before {
+.filter-dropdown-content::before, .hulltype-dropdown-content::before, .rarity-dropdown-content::before, .nationality-dropdown-content::before, .tags-dropdown-content::before {
   content: " ";
   position: absolute;
   bottom: 100%;
@@ -328,7 +339,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-color: transparent transparent white transparent;
 }
 
-.filter-dropdown-content::after, .hulltype-dropdown-content::after {
+.filter-dropdown-content::after, .hulltype-dropdown-content::after, .rarity-dropdown-content::after, .nationality-dropdown-content::after, .tags-dropdown-content::after {
   content: " ";
   position: absolute;
   bottom: 100%;
@@ -354,50 +365,54 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-color: #1e8dff transparent transparent transparent;
 }
 
-.rarityfilter, .natparent, .tagfilter_en.show, .tagfilter_cn.show {
+.natparent, .tagfilter_en.show, .tagfilter_cn.show {
   display: inline-flex;
   width: 25px;
   text-align: center;
   line-height: 25px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-.hulltypefilter {
+.hulltypefilter, .rarityfilter, .nationalityfilter, .tagsfilter {
   display: block;
   height: 35px;
   text-align: center;
   line-height: 35px;
 }
 
-.hulltypefilter:hover {
-  background-image: linear-gradient(#0064a1, #0056fe);
+.hulltypefilter:hover, .rarityfilter:hover, .nationalityfilter:hover, .tagsfilter:hover {
+  background: #1d61a6;
 }
 
-#battleship.hulltypefilter:hover {
+#battleship.hulltypefilter:hover, #Normal.rarityfilter:hover, #n1.nationalityfilter:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-#SubmarineCarrier.hulltypefilter:hover {
+#SubmarineCarrier.hulltypefilter:hover, #Decisive.rarityfilter:hover, #n15.nationalityfilter:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.hulltypefilter.active {
-  background-image: linear-gradient(#0064a1, #0056fe);
+.hulltypefilter.active, .rarityfilter.active, .nationalityfilter.active, .tagsfilter.active {
+  background: #0d2c4c;
 }
 
-#battleship.hulltypefilter.active {
+#battleship.hulltypefilter.active, #Normal.rarityfilter.active, #n1.nationalityfilter.active {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-#SubmarineCarrier.hulltypefilter:hover {
+#SubmarineCarrier.hulltypefilter.active, #Decisive.rarityfilter.active, #n15.nationalityfilter.active {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.rarityfilter.active, .natparent.active, .tagfilter_en.show.active, .tagfilter_cn.show.active {
+#n3.nationalityfilter, #n12.nationalityfilter, #n15.nationalityfilter {
+  line-height: 17px;
+}
+
+.natparent.active, .tagfilter_en.show.active, .tagfilter_cn.show.active {
   border-width: 1px;
   border-style: solid;
   border-color: white;
@@ -409,20 +424,6 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 
 .tagfilter_en, .tagfilter_cn, .tagfilter_ico {
   display: none;
-}
-
-#n1, #n2, #n3, #n4, #n5, #n6, #n7, #n8, #n9, #n10, #n11, #n12, #n13, #n14, #n15 {
-  height: 25px;
-  z-index: 100;
-  filter: invert(100%);
-  position: inherit;
-  object-fit: contain;
-  margin-bottom: 0px;
-  border-width: 0px;
-}
-
-#n12 {
-  filter: invert(0%);
 }
 
 .natparent.n1back, .natparent.n2back, .natparent.n3back, .natparent.n4back, .natparent.n5back, .natparent.n6back, .natparent.n7back, .natparent.n8back, .natparent.n9back, .natparent.n10back, .natparent.n11back, .natparent.n12back, .natparent.n13back, .natparent.n14back, .natparent.n15back{
@@ -487,7 +488,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 }
 
 #t0.tierfilter, #t1.tierfilter, #t2.tierfilter, #t3.tierfilter, #t4.tierfilter, #t5.tierfilter, #t6.tierfilter, #t7.tierfilter {
-  background-image: linear-gradient(#009eff, #0056fe);
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
   display: inline-block;
   text-align: center;
   text-shadow: 2px 1px #00000070;
@@ -620,11 +621,12 @@ button:focus {
   margin-left: 25px;
   order: 3;
   margin-right: 85px;
+  margin-top: 5px;
 }
 
 .lang {
-  width: 30px;
-  height: 20px;
+  width: 53px;
+  height: 35px;
 }
 
 .legendicon_en, .legendicon_cn {
@@ -646,7 +648,7 @@ button:focus {
   text-shadow: 2px 1px #00000070;
 }
 
-.hulltype-dropdown-content .legendspan_en {
+.hulltype-dropdown-content .legendspan_en, .rarity-dropdown-content .legendspan_en {
   min-width: 0%;
 }
 
@@ -681,7 +683,7 @@ button:focus {
 }
 
 .changelogbtn {
-  background-image: linear-gradient(#009eff, #0056fe);
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   font-size: 22px;
   cursor: pointer;
