@@ -324,6 +324,11 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   min-width: 0px;
 }
 
+.rarity-dropdown-content {
+  width: 71.45px;
+  min-width: 0px;
+}
+
 .filter-dropdown-content.show, .hulltype-dropdown-content.show, .rarity-dropdown-content.show, .nationality-dropdown-content.show, .tags-dropdown-content.show {
   display: block;
 }
@@ -408,7 +413,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-bottom-right-radius: 5px;
 }
 
-#n3.nationalityfilter, #n12.nationalityfilter, #n15.nationalityfilter {
+#n3.nationalityfilter, #n12.nationalityfilter, #n15.nationalityfilter, #SuperRare.rarityfilter {
   line-height: 17px;
 }
 
