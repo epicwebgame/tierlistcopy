@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(Assets/Fonts/Lato-Bold.ttf) format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #160f19;
@@ -21,12 +30,13 @@ body {
   white-space: nowrap;
 }
 
-.topbanner span {
+.topbanner h1 {
   font-size: 80px;
   line-height: 140px;
   z-index: 9999;
   display: inline-block;
   vertical-align: middle;
+  margin: auto;
 }
 
 .bannertwo {
@@ -50,6 +60,7 @@ body {
 .main {
   display: grid;
   margin-top: 30px;
+  position: absolute;
 }
 
 .dropdowns {
@@ -59,6 +70,7 @@ body {
 
 .destroyer, .battleship, .carrier, .heavycruiser, .lightcruiser, .submarine {
   display: inline-flex;
+  height: 428px;
 }
 
 .destroyerbanner, .battleshipbanner, .carrierbanner, .heavycruiserbanner, .lightcruiserbanner, .submarinebanner {
@@ -70,7 +82,7 @@ body {
 }
 
 .parent {
-  display: inline-block;
+  display: inline-flex;
   width: 100px;
   height: 118px;
   margin-top: 5px;
@@ -215,19 +227,6 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   background-image: linear-gradient(#009eff, #0056fe);
 }
 
-/* Dropdown Button */
-.filter-dropbtn {
-  background-image: linear-gradient(#3c9dfe, #1e8dff);
-  color: white;
-  font-size: 22px;
-  cursor: pointer;
-  height: 37px;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  text-shadow: 2px 1px #00000070;
-}
-
 .hulltype-dropbtn, .rarity-dropbtn, .nationality-dropbtn, .tags-dropbtn {
   background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
@@ -241,14 +240,6 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   margin-right: 25px;
 }
 
-.hulltypefilterspan, .rarityfilterspan, .tierfilterspan, .nationalityfilterspan, .tagfilterspan {
-  display: block;
-  color: white;
-  margin-bottom: 10px;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
 .tierfiltercontainer {
   width: 280px;
   height: 35px;
@@ -260,40 +251,10 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   margin-right: 25px;
 }
 
-/* Dropdown button on hover & focus */
-.filter-dropbtn:hover, .filter-dropbtn:focus {
-  background-color: #1d61a6;
-}
 
 .hulltype-dropbtn:hover, .hulltype-dropbtn:focus, .rarity-dropbtn:hover, .rarity-dropbtn:focus, .nationality-dropbtn:hover, .nationality-dropbtn:focus, .tags-dropbtn:hover, .tags-dropbtn:focus, .changelogbtn:hover, .changelogbtn:focus {
   background: #1d61a6;
   border: 1px solid white;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.filter-dropdown {
-  margin-left: 100px;
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.filter-dropdown-content {
-  background-image: linear-gradient(#1e8dff, #3c9dfe);
-  margin-top: 15px;
-  padding: 7px;
-  padding-bottom: 3px;
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 140px;
-  min-height: 65px;
-  z-index: 99;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  text-align: center;
 }
 
 .hulltype-dropdown-content, .rarity-dropdown-content, .nationality-dropdown-content, .tags-dropdown-content {
@@ -329,11 +290,11 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   min-width: 0px;
 }
 
-.filter-dropdown-content.show, .hulltype-dropdown-content.show, .rarity-dropdown-content.show, .nationality-dropdown-content.show, .tags-dropdown-content.show {
+.hulltype-dropdown-content.show, .rarity-dropdown-content.show, .nationality-dropdown-content.show, .tags-dropdown-content.show {
   display: block;
 }
 
-.filter-dropdown-content::before, .hulltype-dropdown-content::before, .rarity-dropdown-content::before, .nationality-dropdown-content::before, .tags-dropdown-content::before {
+.hulltype-dropdown-content::before, .rarity-dropdown-content::before, .nationality-dropdown-content::before, .tags-dropdown-content::before {
   content: " ";
   position: absolute;
   bottom: 100%;
@@ -344,7 +305,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-color: transparent transparent white transparent;
 }
 
-.filter-dropdown-content::after, .hulltype-dropdown-content::after, .rarity-dropdown-content::after, .nationality-dropdown-content::after, .tags-dropdown-content::after {
+.hulltype-dropdown-content::after, .rarity-dropdown-content::after, .nationality-dropdown-content::after, .tags-dropdown-content::after {
   content: " ";
   position: absolute;
   bottom: 100%;
@@ -429,67 +390,6 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 
 .tagfilter_en, .tagfilter_cn, .tagfilter_ico {
   display: none;
-}
-
-.natparent.n1back, .natparent.n2back, .natparent.n3back, .natparent.n4back, .natparent.n5back, .natparent.n6back, .natparent.n7back, .natparent.n8back, .natparent.n9back, .natparent.n10back, .natparent.n11back, .natparent.n12back, .natparent.n13back, .natparent.n14back, .natparent.n15back{
-  z-index: 99;
-  height: 25px;
-  background-color: DeepSkyBlue;
-  position: absolute;
-  margin-bottom: 0px;
-  border-width: 0px;
-}
-
-.natparent.n3back {
-  background-color: Crimson;
-}
-
-.natparent.n4back {
-  background-color: #8EE7F1;
-}
-
-.natparent.n5back {
-  background-color: Blue;
-}
-
-.natparent.n6back {
-  background-color: Red;
-}
-
-.natparent.n7back {
-  background-color: pink;
-}
-
-.natparent.n8back {
-  background-color: MediumOrchid;
-}
-
-.natparent.n9back {
-  background-color: Grey;
-}
-
-.natparent.n10back {
-  background-color: Navy;
-}
-
-.natparent.n11back {
-  background-color: Pink;
-}
-
-.natparent.n12back {
-  background-color: white;
-}
-
-.natparent.n13back {
-  background-color: none;
-}
-
-.natparent.n14back {
-  background-color: Crimson;
-}
-
-.natparent.n15back {
-  background-color: Crimson;
 }
 
 #t0.tierfilter, #t1.tierfilter, #t2.tierfilter, #t3.tierfilter, #t4.tierfilter, #t5.tierfilter, #t6.tierfilter, #t7.tierfilter {
@@ -583,7 +483,6 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   z-index: 100;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .legend-dropdown-content {
   margin-left: -49px;
   background-image: linear-gradient(#1e8dff, #3c9dfe);
@@ -626,12 +525,19 @@ button:focus {
   margin-left: 25px;
   order: 3;
   margin-right: 85px;
+  display: inline-flex;
   margin-top: 5px;
 }
 
 .lang {
   width: 53px;
   height: 35px;
+  border: 1px solid white;
+  margin-right: 1px;
+}
+
+.lang:hover {
+  opacity: 0.6;
 }
 
 .legendicon_en, .legendicon_cn {
@@ -651,10 +557,6 @@ button:focus {
   min-width: 60%;
   text-align: center;
   text-shadow: 2px 1px #00000070;
-}
-
-.hulltype-dropdown-content .legendspan_en, .rarity-dropdown-content .legendspan_en {
-  min-width: 0%;
 }
 
 .legendspan_en.show, .legendspan_cn.show {
@@ -681,10 +583,6 @@ button:focus {
 .rankicondown {
   filter: invert(31%) sepia(31%) saturate(5872%) hue-rotate(342deg) brightness(106%) contrast(104%);
   transform: rotate(180deg);
-}
-
-.changelog::after, .changelog::before {
-  box-sizing: border-box;
 }
 
 .changelogbtn {
