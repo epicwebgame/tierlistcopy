@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Ah yes Tier List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="This a tier list by Usagi Sensei, a CN player who is notable for his contributions to the AL community, made filterable by various things for ease of use.">
+  <title>AZUR LANE PvE SHIP LIST</title>
   <link rel="stylesheet" type="text/css" href="./style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
   <script src="./script.js"></script>
 </head>
 
 <body>
   <div class="topbanner">
-    <img class="bbmasc" src="Assets/Misc/Maskots.png" /><span class="topbannertext">AZUR LANE PvE SHIP LIST</span>
+    <img class="bbmasc" src="Assets/Misc/Maskots.png" alt=""/><h1 class="topbannertext">AZUR LANE PvE SHIP LIST</h1>
   </div>
   <div class="bannertwo">
     <div class="tierfiltercontainer">
@@ -127,10 +129,10 @@
     </div>
     </div>
     <div class="language">
-      <img class="lang en active" id="lang0" src="Assets/LanguageFlags/English.svg" />
-      <img class="lang jp" id="lang1" src="Assets/LanguageFlags/Japanese.svg" />
-      <img class="lang kr" id="lang2" src="Assets/LanguageFlags/Korean.svg" />
-      <img class="lang cn" id="lang3" src="Assets/LanguageFlags/Chinese.svg" />
+      <img class="lang en active" id="lang0" src="Assets/LanguageFlags/English.svg" alt=""/>
+      <img class="lang jp" id="lang1" src="Assets/LanguageFlags/Japanese.svg" alt=""/>
+      <img class="lang kr" id="lang2" src="Assets/LanguageFlags/Korean.svg" alt=""/>
+      <img class="lang cn" id="lang3" src="Assets/LanguageFlags/Chinese.svg" alt=""/>
     </div>
     <button class="changelogbtn" data-changelog-target="#changelog">Changelog</button>
   </div>
@@ -138,8 +140,7 @@
   <div class="changelog" id="changelog">
     <div class="changelog-header">
       <div class="title">Changelog</div>
-      <select class="changelog-dropdown" name="changelogsdrop" id="changelogsdrop"></select>
-      </select>
+      <label>Changelogs <select class="changelog-dropdown" name="changelogsdrop" id="changelogsdrop"></select></label>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <div class="changelog-body"></div>

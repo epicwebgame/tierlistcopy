@@ -24,14 +24,14 @@ window.onload = async function () {
       openChangelog(changelog)
     })
   })
-  
+
   overlay.addEventListener('click', () => {
     const changelogs = document.querySelectorAll('.changelog.active')
     changelogs.forEach(changelog => {
       closeChangelog(changelog)
     })
   })
-  
+
   closeChangelogButtons.forEach(button => {
     button.addEventListener('click', () => {
       const changelog = button.closest('.changelog')
@@ -40,14 +40,14 @@ window.onload = async function () {
   })
 
   let changelogdropdown = document.getElementById("changelogsdrop")
-  await getchangelog(Object.entries(changelog)[(Object.entries(changelog).length - 1)][0])
-  await fillchangelogselect(changelog, changelogdropdown)
+  getchangelog(Object.entries(changelog)[(Object.entries(changelog).length - 1)][0])
+  fillchangelogselect(changelog, changelogdropdown)
   changelogdropdown.addEventListener("change", getchangelog);
 
   maincont = document.getElementsByClassName("main")[0];
-  
+
   let gethulltype = document.querySelectorAll(".hulltypefilter");
-  await nodrag("hulltypefilter");
+  nodrag("hulltypefilter");
   gethulltype.forEach(function (hulltypeadd) {
     hulltypeadd.addEventListener(
       "click",
@@ -58,7 +58,7 @@ window.onload = async function () {
     );
   });
   let rarityfilter = document.querySelectorAll(".rarityfilter");
-  await nodrag("rarityfilter");
+  nodrag("rarityfilter");
   rarityfilter.forEach(function (rarityadd) {
     rarityadd.addEventListener(
       "click",
@@ -69,8 +69,8 @@ window.onload = async function () {
     );
   });
   let tagfilter = document.querySelectorAll(".tagfilter_en, .tagfilter_cn");
-  await nodrag("tagfilter_en");
-  await nodrag("tagfilter_cn");
+  nodrag("tagfilter_en");
+  nodrag("tagfilter_cn");
   tagfilter.forEach(function (tagadd) {
     tagadd.addEventListener(
       "click",
@@ -81,7 +81,7 @@ window.onload = async function () {
     );
   });
   let tierfilter = document.querySelectorAll(".tierfilter");
-  await nodrag("tierfilter");
+  nodrag("tierfilter");
   tierfilter.forEach(function (tieradd) {
     tieradd.addEventListener(
       "click",
@@ -92,7 +92,7 @@ window.onload = async function () {
     );
   });
   let nationalityfilter = document.querySelectorAll(".nationality");
-  await nodrag("nationality");
+  nodrag("nationality");
   nationalityfilter.forEach(function (nationalityadd) {
     nationalityadd.addEventListener(
       "click",
@@ -114,7 +114,8 @@ window.onload = async function () {
     );
   });
   buildhtmlall();
-  async function nodrag(a1) {
+
+  function nodrag(a1) {
     var images = document.getElementsByClassName(a1);
     var i;
     for (i = 0; i < images.length; i++) {
@@ -126,17 +127,119 @@ window.onload = async function () {
   }
 };
 
-async function fillchangelogselect(a1, a2) {
-var i = Object.entries(a1).length;
-while (i--) {
-  var opt = document.createElement('option');
-  opt.appendChild( document.createTextNode('#' + a1[Object.entries(a1)[i][0]].number) );
-  opt.value = a1[Object.entries(a1)[i][0]].number; 
-  a2.appendChild(opt); 
-}
+function fillchangelogselect(a1, a2) {
+  var i = Object.entries(a1).length;
+  while (i--) {
+    var opt = document.createElement('option');
+    opt.appendChild(document.createTextNode('#' + a1[Object.entries(a1)[i][0]].number));
+    opt.value = a1[Object.entries(a1)[i][0]].number;
+    a2.appendChild(opt);
+  }
 }
 
-async function getchangelog(a1) {
+function htmldombuilder(a1, a2, a3, a4) {
+  let a = document.createElement(a1);
+  a.className = a2;
+  a.draggable = false;
+  if (a1 == "img") {
+    a.alt = ""
+  }
+  if (a3 != undefined) {
+    if (a3.style != undefined) {
+      for (let i = 0; i < Object.entries(a3.style).length; i++) {
+        a.style[Object.entries(a3.style)[i][0]] = a3.style[Object.entries(a3.style)[i][0]];
+      }
+    }
+    if (a3.addon != undefined) {
+      for (let i = 0; i < Object.entries(a3.addon).length; i++) {
+        if (Object.entries(a3.addon)[i][0] == "text") {
+          let ttext = tiertext(a3.addon[Object.entries(a3.addon)[i][0]]);
+          a.innerHTML = ttext
+        }
+        if (Object.entries(a3.addon)[i][0] == "innerHTML") {
+          a.innerHTML = a3.addon[Object.entries(a3.addon)[i][0]]
+        }
+        if (Object.entries(a3.addon)[i][0] == "innerText") {
+          a.innerText = a3.addon[Object.entries(a3.addon)[i][0]]
+        }
+        if (Object.entries(a3.addon)[i][0] == "src") {
+          a.src = a3.addon[Object.entries(a3.addon)[i][0]]
+        }
+        if (Object.entries(a3.addon)[i][0] == "href") {
+          a.href = a3.addon[Object.entries(a3.addon)[i][0]]
+          a.target = "_blank"
+          a.rel = "noopener"
+          a.ariaLabel = a2
+        }
+      }
+    }
+  }
+  if (a4 != undefined) {
+    a4.appendChild(a)
+  } else {
+    maincont.appendChild(a)
+  }
+}
+
+function spantextbuild(a1, a2, a3) {
+  for (let ii = 0; ii < 4; ii++) {
+    let spanclassname
+    let spanfontsize
+    let spanlineheight
+    switch (ii) {
+      case 0:
+        language = "en";
+        lang = "en";
+        break;
+      case 1:
+        language = "jp";
+        lang = "jp";
+        break;
+      case 2:
+        language = "cn";
+        lang = "cn";
+        break;
+      case 3:
+        language = "kr";
+        lang = "kr";
+        break;
+    }
+    if (a1[language] == null) {
+      lang = "en";
+      textcheck = texthandler(
+        a2[lang].length,
+        a2[lang],
+        lang
+      );
+    } else {
+      textcheck = texthandler(
+        a1[lang].length,
+        a1[lang],
+        language
+      );
+    }
+    if (textcheck.className != undefined) {
+      spanclassname = textcheck.className;
+    }
+    if (textcheck.fontSize != undefined) {
+      spanfontsize = textcheck.fontSize;
+    }
+    if (textcheck.lineHeight != undefined) {
+      spanlineheight = textcheck.lineHeight;
+    }
+    htmldombuilder("span", spanclassname, {
+      style: {
+        fontSize: spanfontsize,
+        lineHeight: spanlineheight
+      },
+      addon: {
+        innerHTML: a1[lang]
+      }
+    }, a3.getElementsByClassName("text_" + language)[0])
+  }
+}
+
+function getchangelog(a1) {
   if (isNaN(a1) == false) {
     a1 = a1
   } else {
@@ -145,599 +248,335 @@ async function getchangelog(a1) {
 
   document.getElementsByClassName("changelog-body")[0].innerHTML = "";
 
-    let f = document.createElement("div");
-    f.className = "changelogheader";
-    document
-      .getElementsByClassName("changelog-body")[0]
-      .appendChild(f);
+  var date = new Date(changelog[a1].updatedate * 1000);
 
-      f = document.createElement("div");
-      f.className = "changelogtext";
-      f.draggable = false;
-      let changelogtext = await tiertext(changelog[a1].fullname);
-      f.innerHTML = changelogtext;
-      document
-        .getElementsByClassName("changelogheader")[0]
-        .appendChild(f);
+  htmldombuilder("div", "changelogheader", undefined, document.getElementsByClassName("changelog-body")[0])
+  htmldombuilder("div", "changelogtext", {
+    addon: {
+      text: changelog[a1].fullname
+    }
+  }, document.getElementsByClassName("changelogheader")[0])
+  htmldombuilder("div", "updated", {
+    addon: {
+      innerHTML: date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear()
+    }
+  }, document.getElementsByClassName("changelogheader")[0])
+  htmldombuilder("div", "changelogtextadded", {
+    addon: {
+      innerHTML: "Added"
+    }
+  }, document.getElementsByClassName("changelog-body")[0])
+  htmldombuilder("div", "changelogmainblock", undefined, document.getElementsByClassName("changelog-body")[0])
+  htmldombuilder("div", "changelogtextpromotions", {
+    addon: {
+      innerHTML: "Promotions"
+    }
+  }, document.getElementsByClassName("changelog-body")[0])
+  htmldombuilder("div", "changelogmainpromotions", undefined, document.getElementsByClassName("changelog-body")[0])
+  htmldombuilder("div", "changelogtextdemotions", {
+    addon: {
+      innerHTML: "Demotions"
+    }
+  }, document.getElementsByClassName("changelog-body")[0])
+  htmldombuilder("div", "changelogmaindemotions", undefined, document.getElementsByClassName("changelog-body")[0])
 
-      var date = new Date(changelog[a1].updatedate * 1000);
+  function getindexforship(b1, b2, b3, b4, b5, b6) {
+    for (let i = 0; i < ships[b2][b3].length; i++) {
+      if (ships[b2][b3][i].names.en == b1) {
+        buildchangelogships(b2, b3, i, b4, b5, b6)
+      }
+    }
+  }
 
-      f = document.createElement("div");
-      f.className = "updated";
-      f.draggable = false;
-      f.innerHTML = date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear();
-      document
-        .getElementsByClassName("changelogheader")[0]
-        .appendChild(f);
+  for (let i = 0; i < changelog[a1].changes.new.length; i++) {
+    getindexforship(changelog[a1].changes.new[i].shipname, changelog[a1].changes.new[i].shiptype, changelog[a1].changes.new[i].changedrank, i, "new")
+  }
 
-        f = document.createElement("div");
-        f.className = "changelogtextadded";
-        f.draggable = false;
-        f.innerHTML = "Added";
-        document
-        .getElementsByClassName("changelog-body")[0]
-        .appendChild(f);
+  for (let i = 0; i < changelog[a1].changes.promotions.length; i++) {
+    getindexforship(changelog[a1].changes.promotions[i].shipname, changelog[a1].changes.promotions[i].shiptype, changelog[a1].changes.promotions[i].changedrank, i, "promotions", changelog[a1].changes.promotions[i].oldrank)
+  }
 
-        f = document.createElement("div");
-        f.className = "changelogmainblock";
-        f.draggable = false;
-        document
-        .getElementsByClassName("changelog-body")[0]
-        .appendChild(f);
+  for (let i = 0; i < changelog[a1].changes.demotions.length; i++) {
+    getindexforship(changelog[a1].changes.demotions[i].shipname, changelog[a1].changes.demotions[i].shiptype, changelog[a1].changes.demotions[i].changedrank, i, "demotions", changelog[a1].changes.demotions[i].oldrank)
+  }
 
-        f = document.createElement("div");
-        f.className = "changelogtextpromotions";
-        f.draggable = false;
-        f.innerHTML = "Promotions";
-        document
-        .getElementsByClassName("changelog-body")[0]
-        .appendChild(f);
-
-        f = document.createElement("div");
-        f.className = "changelogmainpromotions";
-        f.draggable = false;
-        document
-        .getElementsByClassName("changelog-body")[0]
-        .appendChild(f);
-
-        f = document.createElement("div");
-        f.className = "changelogtextdemotions";
-        f.draggable = false;
-        f.innerHTML = "Demotions";
-        document
-        .getElementsByClassName("changelog-body")[0]
-        .appendChild(f);
-
-        f = document.createElement("div");
-        f.className = "changelogmaindemotions";
-        f.draggable = false;
-        document
-        .getElementsByClassName("changelog-body")[0]
-        .appendChild(f);
-
-        async function getindexforship(b1, b2, b3, b4, b5, b6) {
-          for (let i = 0; i < ships[b2][b3].length; i++) {
-          if(ships[b2][b3][i].names.en == b1) {
-            await buildchangelogships(b2, b3, i, b4, b5, b6)
+  function buildchangelogships(a1, a2, i, b4, b5, b6) {
+    if (b5 == "new") {
+      if (document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2).length == 0) {
+        htmldombuilder("div", a2, {
+          style: {
+            width: "110px",
+            display: "inline-block"
+          }
+        }, document.getElementsByClassName("changelogmainblock")[0])
+        htmldombuilder("div", "tierbanner", {
+          style: {
+            width: "100px",
+            display: "inline-block"
+          },
+          addon: {
+            text: a2
+          }
+        }, document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2)[0])
+      }
+      //Main
+      htmldombuilder("div", "changelogparentadded", undefined, document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2)[0])
+      // Rarity
+      htmldombuilder("img", "rarityimg", {
+        addon: {
+          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][i].rarity)) + ".png"
+        }
+      }, document.getElementsByClassName("changelogparentadded")[b4])
+      //WikiUrl
+      htmldombuilder("a", "link", {
+        addon: {
+          href: ships[`${a1}`][`${a2}`][i].wikiUrl
+        }
+      }, document.getElementsByClassName("changelogparentadded")[b4])
+      //Thumbnail
+      htmldombuilder("img", "thumbnail", {
+        addon: {
+          src: ships[`${a1}`][`${a2}`][i].thumbnail
+        }
+      }, document.getElementsByClassName("changelogparentadded")[b4])
+      //Bannerright
+      if (ships[`${a1}`][`${a2}`][i].banner != null) {
+        htmldombuilder("img", "bannerright", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][i].bannerlink
+          }
+        }, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      //Bannerleft
+      if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
+        htmldombuilder("img", "bannerleft", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][i].banneraltlink
+          }
+        }, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      //Tags en
+      if (languageid == "en" || languageid == "jp" || languageid == "kr") {
+        htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      } else {
+        htmldombuilder("div", "tags_en", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      //Tags cn
+      if (languageid == "cn") {
+        htmldombuilder("div", "tags_cn show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      } else {
+        htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      //Tags filler
+      if (ships[`${a1}`][`${a2}`][i].tags != null) {
+        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
+          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_en")[0])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_en")[0])
+          }
+          if (languageid == "cn") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_cn")[0])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_cn")[0])
           }
         }
       }
-
-        for (let i = 0; i < changelog[a1].changes.new.length; i++) {
-          await getindexforship(changelog[a1].changes.new[i].shipname, changelog[a1].changes.new[i].shiptype, changelog[a1].changes.new[i].changedrank, i, "new")
+      //Greyblock
+      htmldombuilder("img", "greyblock", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      //Hulltype
+      htmldombuilder("img", "hulltype", {
+        addon: {
+          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png"
         }
-
-        for (let i = 0; i < changelog[a1].changes.promotions.length; i++) {
-          await getindexforship(changelog[a1].changes.promotions[i].shipname, changelog[a1].changes.promotions[i].shiptype, changelog[a1].changes.promotions[i].changedrank, i, "promotions", changelog[a1].changes.promotions[i].oldrank)
-        }
-
-        for (let i = 0; i < changelog[a1].changes.demotions.length; i++) {
-          await getindexforship(changelog[a1].changes.demotions[i].shipname, changelog[a1].changes.demotions[i].shiptype, changelog[a1].changes.demotions[i].changedrank, i, "demotions", changelog[a1].changes.demotions[i].oldrank)
-        }
-
-    async function buildchangelogships(a1, a2, i, b4, b5, b6) {
-      if (b5 == "new") {
-      if (document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2).length == 0) {
-        let s = document.createElement("div");
-        s.className = a2;
-        s.style.width = "110px";
-        s.style.display = "inline-block";
-        document
-        .getElementsByClassName("changelogmainblock")[0]
-        .appendChild(s);
-  
-        let f = document.createElement("div");
-        f.className = "tierbanner";
-        f.draggable = false;
-        let ttext = await tiertext(a2);
-        f.innerHTML = ttext;
-        f.style.width = 110 - 10 + "px";
-        document
-        .getElementsByClassName("changelogmainblock")[0]
-          .getElementsByClassName(a2)[0]
-          .appendChild(f);
-      }
-
-    // Main div
-    let a = document.createElement("div");
-    a.className = "changelogparentadded";
-    document
-      .getElementsByClassName("changelogmainblock")[0]
-      .getElementsByClassName(a2)[0]
-      .appendChild(a);
-    // rarity
-    a = document.createElement("img");
-    a.className = "rarityimg";
-    a.src =
-      "Assets/RarityBGs/" +
-      (await removespaces(ships[`${a1}`][`${a2}`][i].rarity)) +
-      ".png";
-      document
-      .getElementsByClassName("changelogparentadded")[b4]
-      .appendChild(a);
-    a = document.createElement("a");
-    a.className = "link";
-    a.href = ships[`${a1}`][`${a2}`][i].wikiUrl;
-    a.draggable = false;
-    a.target = "_blank";
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // thumbnail
-    a = document.createElement("img");
-    a.className = "thumbnail";
-    a.src = ships[`${a1}`][`${a2}`][i].thumbnail;
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // Bannerright
-    if (ships[`${a1}`][`${a2}`][i].banner != null) {
-      a = document.createElement("img");
-      a.className = "bannerright";
-      a.src = ships[`${a1}`][`${a2}`][i].bannerlink;
-      document
-      .getElementsByClassName("changelogparentadded")[b4]
-      .appendChild(a);
-    }
-    // Bannerleft
-    if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
-      a = document.createElement("img");
-      a.className = "bannerleft";
-      a.src = ships[`${a1}`][`${a2}`][i].banneraltlink;
-      document
-      .getElementsByClassName("changelogparentadded")[b4]
-      .appendChild(a);
-    }
-    // Tags en
-    a = document.createElement("div");
-    if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-      a.className = "tags_en show";
-    } else {
-      a.className = "tags_en";
-    }
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "tags_cn show";
-    } else {
-      a.className = "tags_cn";
-    }
-      document
-      .getElementsByClassName("changelogparentadded")[b4]
-      .appendChild(a);
-    // tags filler
-    if (ships[`${a1}`][`${a2}`][i].tags != null) {
-      for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-        a = document.createElement("img");
-        if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png";
-        document
-        .getElementsByClassName("changelogparentadded")[b4]
-          .getElementsByClassName("tags_en")[0].appendChild(a);
-
-        a = document.createElement("img");
-        if (languageid == "cn") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png";
-        document
-        .getElementsByClassName("changelogparentadded")[b4]
-          .getElementsByClassName("tags_cn")[0].appendChild(a);
-      }
-    }
-    // Greyblock
-    a = document.createElement("img");
-    a.className = "greyblock";
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // Hulltype
-    a = document.createElement("img");
-    a.className = "hulltype";
-    a.src =
-      "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png";
-    a.draggable = false;
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-
-    // Namechange html builder
-    // Textblock jp
-    a = document.createElement("div");
-    if (languageid == "en") {
-      a.className = "text_en show";
-    } else {
-      a.className = "text_en";
-    }
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // Textblock jp
-    a = document.createElement("div");
-    if (languageid == "jp") {
-      a.className = "text_jp show";
-    } else {
-      a.className = "text_jp";
-    }
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // Textblock kr
-    a = document.createElement("div");
-    if (languageid == "kr") {
-      a.className = "text_kr show";
-    } else {
-      a.className = "text_kr";
-    }
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // Textblock cn
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "text_cn show";
-    } else {
-      a.className = "text_cn";
-    }
-    document
-    .getElementsByClassName("changelogparentadded")[b4]
-    .appendChild(a);
-    // Span text
-    for (let ii = 0; ii < 4; ii++) {
-      a = document.createElement("span");
-      switch (ii) {
-        case 0:
-          language = "en";
-          lang = "en";
-          break;
-        case 1:
-          language = "jp";
-          lang = "jp";
-          break;
-        case 2:
-          language = "cn";
-          lang = "cn";
-          break;
-        case 3:
-          language = "kr";
-          lang = "kr";
-          break;
-      }
-      if (ships[`${a1}`][`${a2}`][i].names[language] == null) {
-        lang = "en";
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          lang
-        );
+      }, document.getElementsByClassName("changelogparentadded")[b4])
+      //Namechange html
+      //Textblock en
+      if (languageid == "en") {
+        htmldombuilder("div", "text_en show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
       } else {
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          language
-        );
+        htmldombuilder("div", "text_en", undefined, document.getElementsByClassName("changelogparentadded")[b4])
       }
+      //Textblock jp
+      if (languageid == "jp") {
+        htmldombuilder("div", "text_jp show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      } else {
+        htmldombuilder("div", "text_jp", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      //Textblock kr
+      if (languageid == "kr") {
+        htmldombuilder("div", "text_kr show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      } else {
+        htmldombuilder("div", "text_kr", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      //Textblock cn
+      if (languageid == "cn") {
+        htmldombuilder("div", "text_cn show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      } else {
+        htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+      }
+      // Span text
+      spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName("changelogparentadded")[b4])
+    }
+    if (b5 == "promotions" || b5 == "demotions") {
+      //Main div
+      htmldombuilder("div", "changelogparent", undefined, document.getElementsByClassName("changelogmain" + b5)[0])
+      //Rarity
+      htmldombuilder("img", "rarityimg", {
+        addon: {
+          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][i].rarity)) + ".png"
+        }
+      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      //WikiUrl
+      htmldombuilder("a", "link", {
+        addon: {
+          href: ships[`${a1}`][`${a2}`][i].wikiUrl
+        }
+      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      //Thumbnail
+      htmldombuilder("img", "thumbnail", {
+        addon: {
+          src: ships[`${a1}`][`${a2}`][i].thumbnail
+        }
+      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      //Bannerright
+      if (ships[`${a1}`][`${a2}`][i].banner != null) {
+        htmldombuilder("img", "bannerright", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][i].bannerlink
+          }
+        }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Bannerleft
+      if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
+        htmldombuilder("img", "bannerleft", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][i].banneraltlink
+          }
+        }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Tags en
+      if (languageid == "en" || languageid == "jp" || languageid == "kr") {
+        htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      } else {
+        htmldombuilder("div", "tags_en", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Tags cn
+      if (languageid == "cn") {
+        htmldombuilder("div", "tags_cn show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      } else {
+        htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Tags filler
+      if (ships[`${a1}`][`${a2}`][i].tags != null) {
+        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
+          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
+          }
+          if (languageid == "cn") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
+          }
+        }
+      }
+      //Greyblock
+      htmldombuilder("img", "greyblock", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      // Hulltype
+      htmldombuilder("img", "hulltype", {
+        addon: {
+          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png"
+        }
+      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      //Namechange html
+      //Textblock en
+      if (languageid == "en") {
+        htmldombuilder("div", "text_en show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      } else {
+        htmldombuilder("div", "text_en", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Textblock jp
+      if (languageid == "jp") {
+        htmldombuilder("div", "text_jp show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      } else {
+        htmldombuilder("div", "text_jp", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Textblock kr
+      if (languageid == "kr") {
+        htmldombuilder("div", "text_kr show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      } else {
+        htmldombuilder("div", "text_kr", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      //Textblock cn
+      if (languageid == "cn") {
+        htmldombuilder("div", "text_cn show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      } else {
+        htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      }
+      // Span text
+      spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      //Tierchanges
+      htmldombuilder("div", "tierchanges", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      htmldombuilder("div", "oldranktext", {
+        addon: {
+          innerText: b6.toUpperCase()
+        }
+      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tierchanges")[0])
 
-      if (textcheck.className != undefined) {
-        a.className = textcheck.className;
+      if (b5 == "promotions") {
+        htmldombuilder("img", "rankiconup", {
+          addon: {
+            src: "Assets/Misc/Arrow.png"
+          }
+        }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tierchanges")[0])
+      } else if (b5 == "demotions") {
+        htmldombuilder("img", "rankicondown", {
+          addon: {
+            src: "Assets/Misc/Arrow.png"
+          }
+        }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tierchanges")[0])
       }
-
-      if (textcheck.fontSize != undefined) {
-        a.style.fontSize = textcheck.fontSize;
-      }
-
-      if (textcheck.lineHeight != undefined) {
-        a.style.lineHeight = textcheck.lineHeight;
-      }
-      a.innerHTML = ships[`${a1}`][`${a2}`][i].names[lang];
-      document
-      .getElementsByClassName("changelogparentadded")[b4]
-      .getElementsByClassName("text_" + language)[0]
-      .appendChild(a);
+      htmldombuilder("div", "newranktext", {
+        addon: {
+          innerText: a2.toUpperCase()
+        }
+      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tierchanges")[0])
     }
   }
-  if (b5 == "promotions" || b5 == "demotions") {
-    // Main div
-    let a = document.createElement("div");
-    a.className = "changelogparent";
-    document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .appendChild(a);
-    // rarity
-    a = document.createElement("img");
-    a.className = "rarityimg";
-    a.src =
-      "Assets/RarityBGs/" +
-      (await removespaces(ships[`${a1}`][`${a2}`][i].rarity)) +
-      ".png";
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .appendChild(a);
-    a = document.createElement("a");
-    a.className = "link";
-    a.href = ships[`${a1}`][`${a2}`][i].wikiUrl;
-    a.draggable = false;
-    a.target = "_blank";
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // thumbnail
-    a = document.createElement("img");
-    a.className = "thumbnail";
-    a.src = ships[`${a1}`][`${a2}`][i].thumbnail;
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // Bannerright
-    if (ships[`${a1}`][`${a2}`][i].banner != null) {
-      a = document.createElement("img");
-      a.className = "bannerright";
-      a.src = ships[`${a1}`][`${a2}`][i].bannerlink;
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .appendChild(a);
-    }
-    // Bannerleft
-    if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
-      a = document.createElement("img");
-      a.className = "bannerleft";
-      a.src = ships[`${a1}`][`${a2}`][i].banneraltlink;
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .appendChild(a);
-    }
-    // Tags en
-    a = document.createElement("div");
-    if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-      a.className = "tags_en show";
-    } else {
-      a.className = "tags_en";
-    }
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "tags_cn show";
-    } else {
-      a.className = "tags_cn";
-    }
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .appendChild(a);
-    // tags filler
-    if (ships[`${a1}`][`${a2}`][i].tags != null) {
-      for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-        a = document.createElement("img");
-        if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png";
-        document
-        .getElementsByClassName("changelogmain" + b5)[0]
-        .getElementsByClassName("changelogparent")[b4]
-          .getElementsByClassName("tags_en")[0].appendChild(a);
-
-        a = document.createElement("img");
-        if (languageid == "cn") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png";
-        document
-        .getElementsByClassName("changelogmain" + b5)[0]
-        .getElementsByClassName("changelogparent")[b4]
-          .getElementsByClassName("tags_cn")[0].appendChild(a);
-      }
-    }
-    // Greyblock
-    a = document.createElement("img");
-    a.className = "greyblock";
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // Hulltype
-    a = document.createElement("img");
-    a.className = "hulltype";
-    a.src =
-      "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png";
-    a.draggable = false;
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-
-    // Namechange html builder
-    // Textblock jp
-    a = document.createElement("div");
-    if (languageid == "en") {
-      a.className = "text_en show";
-    } else {
-      a.className = "text_en";
-    }
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // Textblock jp
-    a = document.createElement("div");
-    if (languageid == "jp") {
-      a.className = "text_jp show";
-    } else {
-      a.className = "text_jp";
-    }
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // Textblock kr
-    a = document.createElement("div");
-    if (languageid == "kr") {
-      a.className = "text_kr show";
-    } else {
-      a.className = "text_kr";
-    }
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // Textblock cn
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "text_cn show";
-    } else {
-      a.className = "text_cn";
-    }
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-    // Span text
-    for (let ii = 0; ii < 4; ii++) {
-      a = document.createElement("span");
-      switch (ii) {
-        case 0:
-          language = "en";
-          lang = "en";
-          break;
-        case 1:
-          language = "jp";
-          lang = "jp";
-          break;
-        case 2:
-          language = "cn";
-          lang = "cn";
-          break;
-        case 3:
-          language = "kr";
-          lang = "kr";
-          break;
-      }
-      if (ships[`${a1}`][`${a2}`][i].names[language] == null) {
-        lang = "en";
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          lang
-        );
-      } else {
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          language
-        );
-      }
-
-      if (textcheck.className != undefined) {
-        a.className = textcheck.className;
-      }
-
-      if (textcheck.fontSize != undefined) {
-        a.style.fontSize = textcheck.fontSize;
-      }
-
-      if (textcheck.lineHeight != undefined) {
-        a.style.lineHeight = textcheck.lineHeight;
-      }
-      a.innerHTML = ships[`${a1}`][`${a2}`][i].names[lang];
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .getElementsByClassName("text_" + language)[0]
-      .appendChild(a);
-    }
-
-    a = document.createElement("div");
-    a.className = "tierchanges";
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .appendChild(a);
-
-    a = document.createElement("div");
-    a.className = "oldranktext";
-    a.innerText = b6.toUpperCase();
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .getElementsByClassName("tierchanges")[0]
-    .appendChild(a);
-
-    if (b5 == "promotions") {
-      a = document.createElement("img");
-      a.className = "rankiconup";
-      a.src = "Assets/Misc/Arrow.png";
-      a.draggable = false;
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .getElementsByClassName("tierchanges")[0]
-      .appendChild(a);
-    } else if (b5 == "demotions") {
-      a = document.createElement("img");
-      a.className = "rankicondown";
-      a.src = "Assets/Misc/Arrow.png";
-      a.draggable = false;
-      document
-      .getElementsByClassName("changelogmain" + b5)[0]
-      .getElementsByClassName("changelogparent")[b4]
-      .getElementsByClassName("tierchanges")[0]
-      .appendChild(a);
-    }
-
-    a = document.createElement("div");
-    a.className = "newranktext";
-    a.innerText = a2.toUpperCase();
-    document
-    .getElementsByClassName("changelogmain" + b5)[0]
-    .getElementsByClassName("changelogparent")[b4]
-    .getElementsByClassName("tierchanges")[0]
-    .appendChild(a);
-  }
-}
 }
 
 function openChangelog(changelog) {
@@ -761,7 +600,7 @@ function closeChangelog(changelog) {
   document.getElementsByClassName("language")[0].style.marginRight = "85px";
 }
 
-async function mutifiltercheck(a1, a2, a3) {
+function mutifiltercheck(a1, a2, a3) {
   let checker = [];
   let filters = [];
   if (a2 == "hulltypefilter") {
@@ -872,19 +711,19 @@ async function mutifiltercheck(a1, a2, a3) {
   if (filters.length != 0) {
     if (filters.length == 1) {
       if (checker[0] == "f1") {
-        await buildhulltypehtml(filters[0])
+        buildhulltypehtml(filters[0])
       }
       if (checker[0] == "f2") {
-        await buildrarityhtml(filters[0])
+        buildrarityhtml(filters[0])
       }
       if (checker[0] == "f3") {
-        await buildtaghtml(filters[0])
+        buildtaghtml(filters[0])
       }
       if (checker[0] == "f4") {
-        await buildtierhtml(filters[0])
+        buildtierhtml(filters[0])
       }
       if (checker[0] == "f5") {
-        await buildnationalityhtml(filters[0])
+        buildnationalityhtml(filters[0])
       }
     } else {
       if (Object.entries(arraysobj).length == 0) {
@@ -951,10 +790,10 @@ async function mutifiltercheck(a1, a2, a3) {
           }
         }
       }
-      await buildmultihtml(filters, checker)
+      buildmultihtml(filters, checker)
     }
   } else {
-    await buildhtmlall();
+    buildhtmlall();
   }
 }
 
@@ -1010,7 +849,7 @@ window.onclick = function (event) {
   }
 };
 // Namechange function
-async function shipnamecheck(a1, a2) {
+function shipnamecheck(a1, a2) {
   switch (a1) {
     case "en":
       languageid = "en";
@@ -1540,7 +1379,7 @@ async function shipnamecheck(a1, a2) {
   }
 }
 
-async function myFunction(a1) {
+function myFunction(a1) {
   if (a1 != identmain && identmain != undefined) {
     document.getElementById(identid).classList.remove("show");
     identmain = undefined;
@@ -1555,7 +1394,7 @@ async function myFunction(a1) {
   document.getElementById(identid).classList.toggle("show");
 }
 
-async function legenddropdown() {
+function legenddropdown() {
   document.getElementById("legend-dropdown").classList.toggle("show");
 }
 
@@ -1569,7 +1408,7 @@ async function getjson(a1) {
   }
 }
 
-async function getAllIndexes(arr, val, search, useloop, index) {
+function getAllIndexes(arr, val, search, useloop, index) {
   var indexes = [],
     i;
   if (useloop == false) {
@@ -1594,7 +1433,7 @@ async function getAllIndexes(arr, val, search, useloop, index) {
   return indexes;
 }
 
-async function countspaces(a1) {
+function countspaces(a1) {
   let count = a1.split(" ").length - 1;
   let countafter = a1.match(/^\s*(\S+)\s*(.*?)\s*$/).slice(1);
   return {
@@ -1603,13 +1442,12 @@ async function countspaces(a1) {
   };
 }
 
-async function removespaces(a1) {
-  let str = a1;
+function removespaces(a1) {
   let result = a1.replace(" ", "");
   return result;
 }
 
-async function tiersize(a1) {
+function tiersize(a1) {
   let result;
   let rawresult;
   let b1 = (a1 * 100) / 3;
@@ -1625,47 +1463,47 @@ async function tiersize(a1) {
   };
 }
 
-async function texthandler(a1, a2, a3) {
+function texthandler(a1, a2, a3) {
   let className;
   let fontSize;
   let lineHeight;
-  let countcheck = await countspaces(a2);
+  let countcheck = countspaces(a2);
 
   if (a3 == "en") {
-        if (a1 >= 13) {
+    if (a1 >= 13) {
       className = "shipnamealt";
       // If the str has no empty spaces
-      if ((await countcheck.count) == 0) {
+      if ((countcheck.count) == 0) {
         fontSize = "10px";
         lineHeight = "2";
       }
       // Check if the str has at least one empty space
-      if ((await countcheck.count) == 1) {
+      if ((countcheck.count) == 1) {
         // If the second str is at least 9 => 10+ long
         if (
-          (await countcheck.countafter[1].length) == 10 &&
-          (await countcheck.countafter[1].length) > 8
+          (countcheck.countafter[1].length) == 10 &&
+          (countcheck.countafter[1].length) > 8
         ) {
           fontSize = "11px";
         }
         // If the second str is longer then 10
-        if ((await countcheck.countafter[1].length) > 10) {
+        if ((countcheck.countafter[1].length) > 10) {
           fontSize = "10px";
         }
         // If the second str is smaller or 8 long
         if (countcheck.countafter[1].length <= 8) {
           fontSize = "12px";
         }
-      } else if ((await countcheck.count) == 2) {
+      } else if ((countcheck.count) == 2) {
         // If the second str is at least 9 => 10+ long
         if (
-          (await countcheck.countafter[1].length) == 10 &&
-          (await countcheck.countafter[1].length) > 8
+          (countcheck.countafter[1].length) == 10 &&
+          (countcheck.countafter[1].length) > 8
         ) {
           fontSize = "11px";
         }
         // If the second str is longer then 10
-        if ((await countcheck.countafter[1].length) > 10) {
+        if ((countcheck.countafter[1].length) > 10) {
           fontSize = "10px";
         }
         // If the second str is smaller or 8 long
@@ -1683,10 +1521,10 @@ async function texthandler(a1, a2, a3) {
         fontSize = "10px";
       }
     } else {
-      if ((await countcheck.count) == 0 && a1 >= 12) {
+      if ((countcheck.count) == 0 && a1 >= 12) {
         fontSize = "10px";
       }
-      if ((await countcheck.count) >= 1) {
+      if ((countcheck.count) >= 1) {
         fontSize = "10px";
       }
       className = "shipname";
@@ -1723,49 +1561,49 @@ async function texthandler(a1, a2, a3) {
   }
 
   if (a3 == "kr") {
-      if (a1 < 9) {
+    if (a1 < 9) {
+      fontSize = "10px";
+      lineHeight = "20px";
+      className = "shipname";
+      if (a1 <= 8) {
+        fontSize = "9px";
+        lineHeight = "20px";
+        className = "shipnamealt";
+      }
+    } else {
+      fontSize = "10px";
+      lineHeight = "9px";
+      className = "shipnamealt";
+      if (countcheck.count == 1) {
         fontSize = "10px";
         lineHeight = "20px";
-        className = "shipname";
-        if (a1 <= 8) {
-          fontSize = "9px";
-          lineHeight = "20px";
-          className = "shipnamealt";
-        }
-      } else {
-        fontSize = "10px";
-        lineHeight = "9px";
         className = "shipnamealt";
-        if (countcheck.count == 1) {
-          fontSize = "10px";
-          lineHeight = "20px";
-          className = "shipnamealt";
-        }
       }
     }
+  }
 
-    if (a3 == "cn") {
-      if (a1 > 0 && a1 < 6) {
-        fontSize = "12px";
-        lineHeight = "20px";
-        className = "shipname";
-      } 
-      if (a1 > 5) {
-        fontSize = "11px";
-        lineHeight = "20px";
-        className = "shipnamealt";
-      }
-      if (a1 > 6) {
-        fontSize = "10px";
-        lineHeight = "20px";
-        className = "shipnamealt";
-      }
-      if (a1 > 7) {
-        fontSize = "8px";
-        lineHeight = "20px";
-        className = "shipnamealt";
-      }
+  if (a3 == "cn") {
+    if (a1 > 0 && a1 < 6) {
+      fontSize = "12px";
+      lineHeight = "20px";
+      className = "shipname";
     }
+    if (a1 > 5) {
+      fontSize = "11px";
+      lineHeight = "20px";
+      className = "shipnamealt";
+    }
+    if (a1 > 6) {
+      fontSize = "10px";
+      lineHeight = "20px";
+      className = "shipnamealt";
+    }
+    if (a1 > 7) {
+      fontSize = "8px";
+      lineHeight = "20px";
+      className = "shipnamealt";
+    }
+  }
   return {
     className,
     fontSize,
@@ -1773,21 +1611,22 @@ async function texthandler(a1, a2, a3) {
   };
 }
 
-async function tiertext(a1) {
+function tiertext(a1) {
   var result = a1.toUpperCase();
   return result;
 }
-async function buildnationalityhtml(a1) {
+
+function buildnationalityhtml(a1) {
   a1 = a1.replace("_", " ");
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
   if (a1 == undefined) {
-    await buildhtmlall();
+    buildhtmlall();
   }
 
   for (let i = 0; i < shipobj.length; i++) {
     for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      let index = await getAllIndexes(
+      let index = getAllIndexes(
         shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
         a1,
         "nationality",
@@ -1797,22 +1636,22 @@ async function buildnationalityhtml(a1) {
         let hullindex = i;
         let hullname = shipobj[i][0];
         let tier = Object.keys(shipobj[i][1])[ii];
-        await buildit(hullindex, hullname, tier, index, shipobj);
+        buildit(hullindex, hullname, tier, index, shipobj);
       }
     }
   }
 }
 
-async function buildtierhtml(a1) {
+function buildtierhtml(a1) {
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
   if (a1 == undefined) {
-    await buildhtmlall();
+    buildhtmlall();
   }
   let ii = a1.match(/\d+/)[0];
 
   for (let i = 0; i < shipobj.length; i++) {
-    let index = await getAllIndexes(
+    let index = getAllIndexes(
       shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
       ii,
       "usagitier",
@@ -1822,24 +1661,24 @@ async function buildtierhtml(a1) {
       let hullindex = i;
       let hullname = shipobj[i][0];
       let tier = a1;
-      await buildit(hullindex, hullname, tier, index, shipobj);
+      buildit(hullindex, hullname, tier, index, shipobj);
     }
   }
 }
 
-async function buildtaghtml(a1) {
+function buildtaghtml(a1) {
   a1 = a1.replace(" en", "");
   a1 = a1.replace(" jp", "");
   a1 = a1.replace(" cn", "");
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
   if (a1 == undefined) {
-    await buildhtmlall();
+    buildhtmlall();
   }
 
   for (let i = 0; i < shipobj.length; i++) {
     for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      let index = await getAllIndexes(
+      let index = getAllIndexes(
         shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
         a1,
         "tags",
@@ -1849,17 +1688,17 @@ async function buildtaghtml(a1) {
         let hullindex = i;
         let hullname = shipobj[i][0];
         let tier = Object.keys(shipobj[i][1])[ii];
-        await buildit(hullindex, hullname, tier, index, shipobj);
+        buildit(hullindex, hullname, tier, index, shipobj);
       }
     }
   }
 }
 
-async function buildrarityhtml(a1) {
+function buildrarityhtml(a1) {
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
   if (a1 == undefined) {
-    await buildhtmlall();
+    buildhtmlall();
   } else {
     if (a1 == "SuperRare") {
       a1 = "Super Rare";
@@ -1867,7 +1706,7 @@ async function buildrarityhtml(a1) {
   }
   for (let i = 0; i < shipobj.length; i++) {
     for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      let index = await getAllIndexes(
+      let index = getAllIndexes(
         shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
         a1,
         "rarity",
@@ -1877,253 +1716,55 @@ async function buildrarityhtml(a1) {
         let hullindex = i;
         let hullname = shipobj[i][0];
         let tier = Object.keys(shipobj[i][1])[ii];
-        await buildit(hullindex, hullname, tier, index, shipobj);
+        buildit(hullindex, hullname, tier, index, shipobj);
       }
     }
   }
 }
 
-async function buildit(b1, b2, b3, b4, shipobj) {
+function buildit(b1, b2, b3, b4, shipobj) {
   if (document.getElementsByClassName(b2).length == 0) {
     // Hulltype class
-    let t = document.createElement("div");
-    t.className = shipobj[b1][0] + " all";
-    let classname = shipobj[b1][0];
-    maincont.appendChild(t);
+    htmldombuilder("div", shipobj[b1][0] + " all", undefined, undefined)
     // Hulltype class banner
-    let b = document.createElement("img");
-    b.className = shipobj[b1][0] + "banner";
-    b.style.marginRight = "30px";
+    let bsrc
     if (shipobj[b1][0] == "heavycruiser") {
-      b.src = "Assets/TierClassBanner/HeavyCruiser.png";
+      bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
     } else if (shipobj[b1][0] == "lightcruiser") {
-      b.src = "Assets/TierClassBanner/LightCruiser.png";
+      bsrc = "Assets/TierClassBanner/LightCruiser.png";
     } else {
-      b.src =
-        "Assets/TierClassBanner/" +
-        shipobj[b1][0].charAt(0).toUpperCase() +
-        shipobj[b1][0].slice(1) +
-        ".png";
+      bsrc = "Assets/TierClassBanner/" + shipobj[b1][0].charAt(0).toUpperCase() + shipobj[b1][0].slice(1) + ".png";
     }
-    b.draggable = false;
-    document.getElementsByClassName(shipobj[b1][0])[0].appendChild(b);
+    htmldombuilder("img", shipobj[b1][0] + " banner", {
+      style: {
+        marginRight: "30px"
+      },
+      addon: {
+        src: bsrc
+      }
+    }, document.getElementsByClassName(shipobj[b1][0])[0])
   }
 
   // s == t0 t1 t2 usw
-  let s = document.createElement("div");
-  s.className = b3;
-  let sizecheck = await tiersize(b4.length);
-  s.style.width = sizecheck.result;
-  s.style.marginRight = "20px";
-  document.getElementsByClassName(b2)[0].appendChild(s);
-
-  let f = document.createElement("div");
-  f.className = "tierbanner";
-  f.draggable = false;
-  let ttext = await tiertext(b3);
-  f.innerHTML = ttext;
-  f.style.width = sizecheck.rawresult - 10 + "px";
-  document
-    .getElementsByClassName(b2)[0]
-    .getElementsByClassName(b3)[0]
-    .appendChild(f);
-
-  await filltierspecial(b2, s.className, b4);
+  let sizecheck = tiersize(b4.length);
+  htmldombuilder("div", b3, {
+    style: {
+      width: sizecheck.result,
+      marginRight: "20px"
+    }
+  }, document.getElementsByClassName(b2)[0])
+  htmldombuilder("div", "tierbanner", {
+    style: {
+      width: sizecheck.rawresult - 10 + "px"
+    },
+    addon: {
+      text: b3
+    }
+  }, document.getElementsByClassName(b2)[0].getElementsByClassName(b3)[0])
+  filltier(b2, b3, b4);
 }
 
-async function buildhulltypehtml(a1) {
-  let shipobj = Object.entries(ships);
-  document.getElementsByClassName("main")[0].innerHTML = "";
-
-  if (a1 == undefined) {
-    await buildhtmlall();
-  } else {
-    if (
-      a1 == "AviationBattleship" ||
-      a1 == "Monitor" ||
-      a1 == "Repairship" ||
-      a1 == "SubmarineCarrier"
-    ) {
-      await buildspecialtype(a1);
-    } else {
-      await buildhulltype(a1);
-    }
-  }
-
-  async function buildhulltype(a1) {
-    let i;
-    switch (a1) {
-      case "battleship":
-        i = 0;
-        break;
-      case "carrier":
-        i = 1;
-        break;
-      case "heavycruiser":
-        i = 2;
-        break;
-      case "lightcruiser":
-        i = 3;
-        break;
-      case "destroyer":
-        i = 4;
-        break;
-      case "submarine":
-        i = 5;
-        break;
-    }
-    // Hulltype class
-    let t = document.createElement("div");
-    t.className = shipobj[i][0] + " all";
-    let classname = shipobj[i][0];
-    maincont.appendChild(t);
-    // Hulltype class banner
-    let b = document.createElement("img");
-    b.className = shipobj[i][0] + "banner";
-    b.style.marginRight = "30px";
-    if (shipobj[i][0] == "heavycruiser") {
-      b.src = "Assets/TierClassBanner/HeavyCruiser.png";
-    } else if (shipobj[i][0] == "lightcruiser") {
-      b.src = "Assets/TierClassBanner/LightCruiser.png";
-    } else {
-      b.src =
-        "Assets/TierClassBanner/" +
-        shipobj[i][0].charAt(0).toUpperCase() +
-        shipobj[i][0].slice(1) +
-        ".png";
-    }
-    b.draggable = false;
-    document.getElementsByClassName(shipobj[i][0])[0].appendChild(b);
-    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      if (shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length != 0) {
-        // s == t0 t1 t2 usw
-        let s = document.createElement("div");
-        s.className = Object.keys(shipobj[i][1])[ii];
-        let sizecheck = await tiersize(
-          shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length
-        );
-        s.style.width = sizecheck.result;
-        s.style.marginRight = "20px";
-        document.getElementsByClassName(shipobj[i][0])[0].appendChild(s);
-
-        let f = document.createElement("div");
-        f.className = "tierbanner";
-        f.draggable = false;
-        let ttext = await tiertext(Object.keys(shipobj[i][1])[ii]);
-        f.innerHTML = ttext;
-        f.style.width = sizecheck.rawresult - 10 + "px";
-        document
-          .getElementsByClassName(shipobj[i][0])[0]
-          .getElementsByClassName(Object.keys(shipobj[i][1])[ii])[0]
-          .appendChild(f);
-
-        await filltier(classname, s.className);
-      }
-    }
-  }
-
-  async function buildspecialtype(a1) {
-    let tier;
-    let hulltypeidf;
-    let idf;
-    switch (a1) {
-      case "AviationBattleship":
-        hulltypeidf = "battleship";
-        idf = 0;
-        break;
-      case "Monitor":
-        hulltypeidf = "battleship";
-        idf = 0;
-        break;
-      case "Repairship":
-        hulltypeidf = "carrier";
-        idf = 1;
-        break;
-      case "SubmarineCarrier":
-        hulltypeidf = "submarine";
-        idf = 5;
-        break;
-    }
-    // Hulltype class
-    let t = document.createElement("div");
-    t.className = hulltypeidf + " all";
-    let classname = hulltypeidf;
-    maincont.appendChild(t);
-    // Hulltype class banner
-    let b = document.createElement("img");
-    b.className = hulltypeidf + "banner";
-    b.style.marginRight = "30px";
-    b.src =
-      "Assets/TierClassBanner/" +
-      hulltypeidf.charAt(0).toUpperCase() +
-      hulltypeidf.slice(1) +
-      ".png";
-    b.draggable = false;
-    document.getElementsByClassName(hulltypeidf)[0].appendChild(b);
-    for (let i = 0; i < 8; i++) {
-      switch (i) {
-        case 0:
-          tier = "t0";
-          break;
-        case 1:
-          tier = "t1";
-          break;
-        case 2:
-          tier = "t2";
-          break;
-        case 3:
-          tier = "t3";
-          break;
-        case 4:
-          tier = "t4";
-          break;
-        case 5:
-          tier = "t5";
-          break;
-        case 6:
-          tier = "t6";
-          break;
-        case 7:
-          tier = "t7";
-          break;
-      }
-
-      let index = await getAllIndexes(
-        shipobj[idf][1][tier],
-        a1,
-        "hullTypeId",
-        false
-      );
-      if (index.length != 0) {
-        await buildspecialtier(tier, index, hulltypeidf);
-      }
-    }
-  }
-  async function buildspecialtier(a1, a2, a3) {
-    // s == t0 t1 t2 usw
-    let s = document.createElement("div");
-    s.className = a1;
-    let sizecheck = await tiersize(a2.length);
-    s.style.width = sizecheck.result;
-    s.style.marginRight = "20px";
-    document.getElementsByClassName(a3)[0].appendChild(s);
-
-    let f = document.createElement("div");
-    f.className = "tierbanner";
-    f.draggable = false;
-    let ttext = await tiertext(a1);
-    f.innerHTML = ttext;
-    f.style.width = sizecheck.rawresult - 10 + "px";
-    document
-      .getElementsByClassName(a3)[0]
-      .getElementsByClassName(a1)[0]
-      .appendChild(f);
-
-    await filltierspecial(a3, s.className, a2);
-  }
-}
-
-async function buildmultihtml(a1, a2) {
+function buildmultihtml(a1, a2) {
   let hullfilterindex = {};
   let rarityfilterindex = {};
   let tagsfilterindex = {};
@@ -2196,56 +1837,56 @@ async function buildmultihtml(a1, a2) {
         switch (a) {
           case 0:
             tier = "t0";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 1:
             tier = "t1";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 2:
             tier = "t2";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 3:
             tier = "t3";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 4:
             tier = "t4";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 5:
             tier = "t5";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 6:
             tier = "t6";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
             break;
           case 7:
             tier = "t7";
-            index = await getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
+            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
             if (index.length != 0) {
               hullfilterindex[filtername][tier] = index
             }
@@ -2261,7 +1902,7 @@ async function buildmultihtml(a1, a2) {
       for (let i = 0; i < shipobj.length; i++) {
         rarityfilterindex[shipobj[i][0]] = {}
         for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-          index = await getAllIndexes(
+          index = getAllIndexes(
             shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
             a1[z],
             "rarity",
@@ -2274,7 +1915,7 @@ async function buildmultihtml(a1, a2) {
           }
         }
       }
-      let newrarityfilterindex = await removeemptyarr(rarityfilterindex)
+      let newrarityfilterindex = removeemptyarr(rarityfilterindex)
       result["rarityfilterindex"] = newrarityfilterindex
     }
     if (a2[z] == "f3") {
@@ -2284,7 +1925,7 @@ async function buildmultihtml(a1, a2) {
       for (let i = 0; i < shipobj.length; i++) {
         tagsfilterindex[shipobj[i][0]] = {}
         for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-          index = await getAllIndexes(
+          index = getAllIndexes(
             shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
             a1[z],
             "tags",
@@ -2297,7 +1938,7 @@ async function buildmultihtml(a1, a2) {
           }
         }
       }
-      let newtagsfilterindex = await removeemptyarr(tagsfilterindex)
+      let newtagsfilterindex = removeemptyarr(tagsfilterindex)
       result["tagsfilterindex"] = newtagsfilterindex
     }
     if (a2[z] == "f4") {
@@ -2305,7 +1946,7 @@ async function buildmultihtml(a1, a2) {
 
       for (let i = 0; i < shipobj.length; i++) {
         tierfilterindex[shipobj[i][0]] = {}
-        let index = await getAllIndexes(
+        let index = getAllIndexes(
           shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
           ii,
           "usagitier",
@@ -2325,7 +1966,7 @@ async function buildmultihtml(a1, a2) {
       for (let i = 0; i < shipobj.length; i++) {
         nationalityfilterindex[shipobj[i][0]] = {}
         for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-          let index = await getAllIndexes(
+          let index = getAllIndexes(
             shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
             a1[z],
             "nationality",
@@ -2338,15 +1979,15 @@ async function buildmultihtml(a1, a2) {
           }
         }
       }
-      let newnationalityfilterindex = await removeemptyarr(nationalityfilterindex)
+      let newnationalityfilterindex = removeemptyarr(nationalityfilterindex)
       result["nationalityfilterindex"] = newnationalityfilterindex
     }
   }
 
-  await pushintoarray(result)
+  pushintoarray(result)
 }
 
-async function removeemptyarr(arr) {
+function removeemptyarr(arr) {
   let newobj = {};
   let a1 = Object.entries(arr)
   var i = a1.length;
@@ -2364,56 +2005,44 @@ async function removeemptyarr(arr) {
   return newobj
 }
 
-async function pushintoarray(result) {
+function arraysobjpusher(a1, i) {
+  for (let a = 0; a < Object.entries(a1).length; a++) {
+    for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
+      arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
+    }
+  }
+}
+
+function pushintoarray(result) {
   let a1
   for (let i = 0; i < Object.entries(result).length; i++) {
     switch (Object.entries(result)[i][0]) {
       case "hullfilterindex":
         a1 = result[Object.entries(result)[i][0]]
-        for (let a = 0; a < Object.entries(a1).length; a++) {
-          for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
-            arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
-          }
-        }
+        arraysobjpusher(a1, i)
         break;
       case "tierfilterindex":
         a1 = result[Object.entries(result)[i][0]]
-        for (let a = 0; a < Object.entries(a1).length; a++) {
-          for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
-            arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
-          }
-        }
+        arraysobjpusher(a1, i)
         break;
       case "rarityfilterindex":
         a1 = result[Object.entries(result)[i][0]]
-        for (let a = 0; a < Object.entries(a1).length; a++) {
-          for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
-            arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
-          }
-        }
+        arraysobjpusher(a1, i)
         break;
       case "tagsfilterindex":
         a1 = result[Object.entries(result)[i][0]]
-        for (let a = 0; a < Object.entries(a1).length; a++) {
-          for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
-            arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
-          }
-        }
+        arraysobjpusher(a1, i)
         break;
       case "nationalityfilterindex":
         a1 = result[Object.entries(result)[i][0]]
-        for (let a = 0; a < Object.entries(a1).length; a++) {
-          for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
-            arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
-          }
-        }
+        arraysobjpusher(a1, i)
         break;
     }
   }
-  await getmatchesfilter(result)
+  getmatchesfilter(result)
 }
 
-async function getmatchesfilter(a4) {
+function getmatchesfilter(a4) {
   let a1 = arraysobj
   let a2
   let a3
@@ -2443,48 +2072,51 @@ async function getmatchesfilter(a4) {
     hullobj = a1[a2];
     if (a3 != undefined) {
       if (hullobj[a3].length > 1 && hullobj[a3].length == Object.entries(a4).length) {
-        returnfilterindex = await filter(hullobj[a3])
+        returnfilterindex = filter(hullobj[a3])
         let shipobj = ships;
         let newhullobj = shipobj[a2][a3]
         if (returnfilterindex.length != 0) {
-          await buildfiltermainhtml(newhullobj, a2, a3, returnfilterindex)
+          buildfiltermainhtml(newhullobj, a2, a3, returnfilterindex)
         } else {
           document.getElementsByClassName("main")[0].innerHTML = "";
-          let t = document.createElement("h1");
-          t.className = "nomatchestext";
-          t.innerText = "No matches found. Try again."
-          maincont.appendChild(t);
-          await deleteProperties(arraysobj)
+          htmldombuilder("h1", "nomatchestext", {
+            addon: {
+              innerText: "No matches found. Try again."
+            }
+          }, undefined)
+          deleteProperties(arraysobj)
         }
       } else {
         document.getElementsByClassName("main")[0].innerHTML = "";
-        let t = document.createElement("h1");
-        t.className = "nomatchestext";
-        t.innerText = "No matches found. Try again."
-        maincont.appendChild(t);
-        await deleteProperties(arraysobj)
+        htmldombuilder("h1", "nomatchestext", {
+          addon: {
+            innerText: "No matches found. Try again."
+          }
+        }, undefined)
+        deleteProperties(arraysobj)
       }
     } else {
       for (let i = 0; i < Object.keys(hullobj).length; i++) {
         if (hullobj[Object.keys(hullobj)[i]].length > 1 && hullobj[Object.keys(hullobj)[i]].length == Object.entries(a4).length) {
-          returnfilterindex = await filter(hullobj[Object.keys(hullobj)[i]])
+          returnfilterindex = filter(hullobj[Object.keys(hullobj)[i]])
           if (returnfilterindex.length != 0) {
             newshipobj[a2][Object.keys(hullobj)[i]] = returnfilterindex
           }
         }
       }
-      let filternewshipobj = await removeemptyarr(newshipobj)
+      let filternewshipobj = removeemptyarr(newshipobj)
       if (Object.keys(filternewshipobj).length != 0) {
         let shipobj = ships;
         let newhullobj = shipobj[a2]
-        await buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
+        buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
       } else {
         document.getElementsByClassName("main")[0].innerHTML = "";
-        let t = document.createElement("h1");
-        t.className = "nomatchestext";
-        t.innerText = "No matches found. Try again."
-        maincont.appendChild(t);
-        await deleteProperties(arraysobj)
+        htmldombuilder("h1", "nomatchestext", {
+          addon: {
+            innerText: "No matches found. Try again."
+          }
+        }, undefined)
+        deleteProperties(arraysobj)
       }
     }
   } else {
@@ -2492,55 +2124,57 @@ async function getmatchesfilter(a4) {
       for (let i = 0; i < Object.keys(a1).length; i++) {
         hullobj = a1[Object.keys(a1)[i]]
         if (hullobj[a3].length > 1 && hullobj[a3].length == Object.entries(a4).length) {
-          returnfilterindex = await filter(hullobj[a3])
+          returnfilterindex = filter(hullobj[a3])
           if (returnfilterindex.length != 0) {
             newshipobj[Object.keys(a1)[i]][a3] = returnfilterindex
           }
         }
       }
-      let filternewshipobj = await removeemptyarr(newshipobj)
+      let filternewshipobj = removeemptyarr(newshipobj)
       if (Object.keys(filternewshipobj).length != 0) {
         let shipobj = ships;
         let newhullobj = shipobj
-        await buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
+        buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
       } else {
         document.getElementsByClassName("main")[0].innerHTML = "";
-        let t = document.createElement("h1");
-        t.className = "nomatchestext";
-        t.innerText = "No matches found. Try again."
-        maincont.appendChild(t);
-        await deleteProperties(arraysobj)
+        htmldombuilder("h1", "nomatchestext", {
+          addon: {
+            innerText: "No matches found. Try again."
+          }
+        }, undefined)
+        deleteProperties(arraysobj)
       }
     } else {
       for (let i = 0; i < Object.keys(a1).length; i++) {
         hullobj = a1[Object.keys(a1)[i]]
         for (let ii = 0; ii < Object.entries(hullobj).length; ii++) {
           if (hullobj[Object.entries(hullobj)[ii][0]].length > 1 && hullobj[Object.entries(hullobj)[ii][0]].length == Object.entries(a4).length) {
-            returnfilterindex = await filter(hullobj[Object.entries(hullobj)[ii][0]])
+            returnfilterindex = filter(hullobj[Object.entries(hullobj)[ii][0]])
             if (returnfilterindex.length != 0) {
               newshipobj[Object.keys(a1)[i]][Object.entries(hullobj)[ii][0]] = returnfilterindex
             }
           }
         }
       }
-      let filternewshipobj = await removeemptyarr(newshipobj)
+      let filternewshipobj = removeemptyarr(newshipobj)
       if (Object.keys(filternewshipobj).length != 0) {
         let shipobj = ships;
         let newhullobj = shipobj
-        await buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
+        buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
       } else {
         document.getElementsByClassName("main")[0].innerHTML = "";
-        let t = document.createElement("h1");
-        t.className = "nomatchestext";
-        t.innerText = "No matches found. Try again."
-        maincont.appendChild(t);
-        await deleteProperties(arraysobj)
+        htmldombuilder("h1", "nomatchestext", {
+          addon: {
+            innerText: "No matches found. Try again."
+          }
+        }, undefined)
+        deleteProperties(arraysobj)
       }
     }
   }
 }
 
-async function filter(b1) {
+function filter(b1) {
   var result = b1.shift().filter(function (v) {
     return b1.every(function (a) {
       return a.indexOf(v) !== -1;
@@ -2549,188 +2183,185 @@ async function filter(b1) {
   return result
 }
 
-async function buildfiltermainhtml(a1, a2, a3, a4) {
+function buildfiltermainhtml(a1, a2, a3, a4) {
   document.getElementsByClassName("main")[0].innerHTML = "";
   if (a2 != undefined) {
     if (a3 == undefined) {
       // Hulltype class
-      let t = document.createElement("div");
-      t.className = a2 + " all";
-      let classname = a2;
-      maincont.appendChild(t);
+      htmldombuilder("div", a2 + " all", undefined, undefined)
       // Hulltype class banner
-      let b = document.createElement("img");
-      b.className = a2 + "banner";
-      b.style.marginRight = "30px";
+      let bsrc
       if (a2 == "heavycruiser") {
-        b.src = "Assets/TierClassBanner/HeavyCruiser.png";
+        bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
       } else if (a2 == "lightcruiser") {
-        b.src = "Assets/TierClassBanner/LightCruiser.png";
+        bsrc = "Assets/TierClassBanner/LightCruiser.png";
       } else {
-        b.src =
+        bsrc =
           "Assets/TierClassBanner/" +
           a2.charAt(0).toUpperCase() +
           a2.slice(1) +
           ".png";
       }
-      b.draggable = false;
-      document.getElementsByClassName(a2)[0].appendChild(b);
+      htmldombuilder("img", a2 + "banner", {
+        style: {
+          marginRight: "30px"
+        },
+        addon: {
+          src: bsrc
+        }
+      }, document.getElementsByClassName(a2)[0])
+
       for (let i = 0; i < Object.keys(a4[a2]).length; i++) {
         // s == t0 t1 t2 usw
-        let s = document.createElement("div");
-        s.className = Object.keys(a4[a2])[i];
-        let sizecheck = await tiersize(a4[a2][Object.keys(a4[a2])[i]].length);
-        s.style.width = sizecheck.result;
-        s.style.marginRight = "20px";
-        document.getElementsByClassName(a2)[0].appendChild(s);
-
-        let f = document.createElement("div");
-        f.className = "tierbanner";
-        f.draggable = false;
-        let ttext = await tiertext(Object.keys(a4[a2])[i]);
-        f.innerHTML = ttext;
-        f.style.width = sizecheck.rawresult - 10 + "px";
-        document
-          .getElementsByClassName(a2)[0]
-          .getElementsByClassName(Object.keys(a4[a2])[i])[0]
-          .appendChild(f);
-        await filltierspecial(a2, s.className, a4[a2][Object.keys(a4[a2])[i]]);
+        let sizecheck = tiersize(a4[a2][Object.keys(a4[a2])[i]].length);
+        htmldombuilder("div", Object.keys(a4[a2])[i], {
+          style: {
+            width: sizecheck.result,
+            marginRight: "20px"
+          }
+        }, document.getElementsByClassName(a2)[0])
+        htmldombuilder("div", "tierbanner", {
+          style: {
+            width: sizecheck.rawresult - 10 + "px"
+          },
+          addon: {
+            text: Object.keys(a4[a2])[i]
+          }
+        }, document.getElementsByClassName(a2)[0].getElementsByClassName(Object.keys(a4[a2])[i])[0])
+        filltier(a2, Object.keys(a4[a2])[i], a4[a2][Object.keys(a4[a2])[i]]);
       }
     } else {
       // Hulltype class
-      let t = document.createElement("div");
-      t.className = a2 + " all";
-      let classname = a2;
-      maincont.appendChild(t);
+      htmldombuilder("div", a2 + " all", undefined, undefined)
       // Hulltype class banner
-      let b = document.createElement("img");
-      b.className = a2 + "banner";
-      b.style.marginRight = "30px";
+      let bsrc
       if (a2 == "heavycruiser") {
-        b.src = "Assets/TierClassBanner/HeavyCruiser.png";
+        bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
       } else if (a2 == "lightcruiser") {
-        b.src = "Assets/TierClassBanner/LightCruiser.png";
+        bsrc = "Assets/TierClassBanner/LightCruiser.png";
       } else {
-        b.src =
+        bsrc =
           "Assets/TierClassBanner/" +
           a2.charAt(0).toUpperCase() +
           a2.slice(1) +
           ".png";
       }
-      b.draggable = false;
-      document.getElementsByClassName(a2)[0].appendChild(b);
+      htmldombuilder("img", a2 + "banner", {
+        style: {
+          marginRight: "30px"
+        },
+        addon: {
+          src: bsrc
+        }
+      }, document.getElementsByClassName(a2)[0])
 
       // s == t0 t1 t2 usw
-      let s = document.createElement("div");
-      s.className = a3;
-      let sizecheck = await tiersize(a4.length);
-      s.style.width = sizecheck.result;
-      s.style.marginRight = "20px";
-      document.getElementsByClassName(a2)[0].appendChild(s);
-
-      let f = document.createElement("div");
-      f.className = "tierbanner";
-      f.draggable = false;
-      let ttext = await tiertext(a3);
-      f.innerHTML = ttext;
-      f.style.width = sizecheck.rawresult - 10 + "px";
-      document
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName(a3)[0]
-        .appendChild(f);
-      await filltierspecial(a2, s.className, a4);
+      let sizecheck = tiersize(a4.length);
+      htmldombuilder("div", a3, {
+        style: {
+          width: sizecheck.result,
+          marginRight: "20px"
+        }
+      }, document.getElementsByClassName(a2)[0])
+      htmldombuilder("div", "tierbanner", {
+        style: {
+          width: sizecheck.rawresult - 10 + "px"
+        },
+        addon: {
+          text: a3
+        }
+      }, document.getElementsByClassName(a2)[0].getElementsByClassName(a3)[0])
+      filltier(a2, a3, a4);
     }
   } else {
     if (a3 != undefined) {
       for (let i = 0; i < Object.keys(a4).length; i++) {
         // Hulltype class
-        let t = document.createElement("div");
-        t.className = Object.keys(a4)[i] + " all";
-        let classname = Object.keys(a4)[i];
-        maincont.appendChild(t);
+        htmldombuilder("div", Object.keys(a4)[i] + " all", undefined, undefined)
         // Hulltype class banner
-        let b = document.createElement("img");
-        b.className = Object.keys(a4)[i] + "banner";
-        b.style.marginRight = "30px";
+        let bsrc
         if (Object.keys(a4)[i] == "heavycruiser") {
-          b.src = "Assets/TierClassBanner/HeavyCruiser.png";
+          bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
         } else if (Object.keys(a4)[i] == "lightcruiser") {
-          b.src = "Assets/TierClassBanner/LightCruiser.png";
+          bsrc = "Assets/TierClassBanner/LightCruiser.png";
         } else {
-          b.src =
+          bsrc =
             "Assets/TierClassBanner/" +
             Object.keys(a4)[i].charAt(0).toUpperCase() +
             Object.keys(a4)[i].slice(1) +
             ".png";
         }
-        b.draggable = false;
-        document.getElementsByClassName(Object.keys(a4)[i])[0].appendChild(b);
+        htmldombuilder("img", Object.keys(a4)[i] + "banner", {
+          style: {
+            marginRight: "30px"
+          },
+          addon: {
+            src: bsrc
+          }
+        }, document.getElementsByClassName(Object.keys(a4)[i])[0])
 
         // s == t0 t1 t2 usw
-        let s = document.createElement("div");
-        s.className = a3;
-        let sizecheck = await tiersize(Object.entries(a4)[0][1][a3].length);
-        s.style.width = sizecheck.result;
-        s.style.marginRight = "20px";
-        document.getElementsByClassName(Object.keys(a4)[i])[0].appendChild(s);
-
-        let f = document.createElement("div");
-        f.className = "tierbanner";
-        f.draggable = false;
-        let ttext = await tiertext(a3);
-        f.innerHTML = ttext;
-        f.style.width = sizecheck.rawresult - 10 + "px";
-        document
-          .getElementsByClassName(Object.keys(a4)[i])[0]
-          .getElementsByClassName(a3)[0]
-          .appendChild(f);
-        await filltierspecial(Object.keys(a4)[i], s.className, Object.entries(a4)[i][1][a3]);
+        let sizecheck = tiersize(Object.entries(a4)[0][1][a3].length);
+        htmldombuilder("div", a3, {
+          style: {
+            width: sizecheck.result,
+            marginRight: "20px"
+          }
+        }, document.getElementsByClassName(Object.keys(a4)[i])[0])
+        htmldombuilder("div", "tierbanner", {
+          style: {
+            width: sizecheck.rawresult - 10 + "px"
+          },
+          addon: {
+            text: a3
+          }
+        }, document.getElementsByClassName(Object.keys(a4)[i])[0].getElementsByClassName(a3)[0])
+        filltier(Object.keys(a4)[i], a3, Object.entries(a4)[i][1][a3]);
       }
     } else {
       for (let i = 0; i < Object.keys(a4).length; i++) {
         // Hulltype class
-        let t = document.createElement("div");
-        t.className = Object.keys(a4)[i] + " all";
-        let classname = Object.keys(a4)[i];
-        maincont.appendChild(t);
+        htmldombuilder("div", Object.keys(a4)[i] + " all", undefined, undefined)
         // Hulltype class banner
-        let b = document.createElement("img");
-        b.className = Object.keys(a4)[i] + "banner";
-        b.style.marginRight = "30px";
+        let bsrc
         if (Object.keys(a4)[i] == "heavycruiser") {
-          b.src = "Assets/TierClassBanner/HeavyCruiser.png";
+          bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
         } else if (Object.keys(a4)[i] == "lightcruiser") {
-          b.src = "Assets/TierClassBanner/LightCruiser.png";
+          bsrc = "Assets/TierClassBanner/LightCruiser.png";
         } else {
-          b.src =
+          bsrc =
             "Assets/TierClassBanner/" +
             Object.keys(a4)[i].charAt(0).toUpperCase() +
             Object.keys(a4)[i].slice(1) +
             ".png";
         }
-        b.draggable = false;
-        document.getElementsByClassName(Object.keys(a4)[i])[0].appendChild(b);
+        htmldombuilder("img", Object.keys(a4)[i] + "banner", {
+          style: {
+            marginRight: "30px"
+          },
+          addon: {
+            src: bsrc
+          }
+        }, document.getElementsByClassName(Object.keys(a4)[i])[0])
+
         for (let ii = 0; ii < Object.keys(Object.entries(a4)[i][1]).length; ii++) {
           // s == t0 t1 t2 usw
-          let s = document.createElement("div");
-          s.className = Object.keys(Object.entries(a4)[i][1])[ii];
-          let sizecheck = await tiersize(Object.entries(a4)[i][1][Object.keys(Object.entries(a4)[i][1])[ii]].length);
-          s.style.width = sizecheck.result;
-          s.style.marginRight = "20px";
-          document.getElementsByClassName(Object.keys(a4)[i])[0].appendChild(s);
-
-          let f = document.createElement("div");
-          f.className = "tierbanner";
-          f.draggable = false;
-          let ttext = await tiertext(Object.keys(Object.entries(a4)[i][1])[ii]);
-          f.innerHTML = ttext;
-          f.style.width = sizecheck.rawresult - 10 + "px";
-          document
-            .getElementsByClassName(Object.keys(a4)[i])[0]
-            .getElementsByClassName(Object.keys(Object.entries(a4)[i][1])[ii])[0]
-            .appendChild(f);
-          await filltierspecial(Object.keys(a4)[i], s.className, Object.entries(a4)[i][1][Object.keys(Object.entries(a4)[i][1])[ii]]);
-
+          let sizecheck = tiersize(Object.entries(a4)[i][1][Object.keys(Object.entries(a4)[i][1])[ii]].length);
+          htmldombuilder("div", Object.keys(Object.entries(a4)[i][1])[ii], {
+            style: {
+              width: sizecheck.result,
+              marginRight: "20px"
+            }
+          }, document.getElementsByClassName(Object.keys(a4)[i])[0])
+          htmldombuilder("div", "tierbanner", {
+            style: {
+              width: sizecheck.rawresult - 10 + "px"
+            },
+            addon: {
+              text: Object.keys(Object.entries(a4)[i][1])[ii]
+            }
+          }, document.getElementsByClassName(Object.keys(a4)[i])[0].getElementsByClassName(Object.keys(Object.entries(a4)[i][1])[ii])[0])
+          filltier(Object.keys(a4)[i], Object.keys(Object.entries(a4)[i][1])[ii], Object.entries(a4)[i][1][Object.keys(Object.entries(a4)[i][1])[ii]]);
         }
       }
     }
@@ -2738,533 +2369,436 @@ async function buildfiltermainhtml(a1, a2, a3, a4) {
   }
 }
 
-async function buildhtmlall() {
+function buildhtmlall() {
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
 
   for (let i = 0; i < shipobj.length; i++) {
     // Hulltype class
-    let t = document.createElement("div");
-    t.className = shipobj[i][0] + " all";
-    let classname = shipobj[i][0];
-    maincont.appendChild(t);
+    htmldombuilder("div", shipobj[i][0] + " all", undefined, undefined)
     // Hulltype class banner
-    let b = document.createElement("img");
-    b.className = shipobj[i][0] + "banner";
-    b.style.marginRight = "30px";
+    let bsrc
     if (shipobj[i][0] == "heavycruiser") {
-      b.src = "Assets/TierClassBanner/HeavyCruiser.png";
+      bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
     } else if (shipobj[i][0] == "lightcruiser") {
-      b.src = "Assets/TierClassBanner/LightCruiser.png";
+      bsrc = "Assets/TierClassBanner/LightCruiser.png";
     } else {
-      b.src =
+      bsrc =
         "Assets/TierClassBanner/" +
         shipobj[i][0].charAt(0).toUpperCase() +
         shipobj[i][0].slice(1) +
         ".png";
     }
-    b.draggable = false;
-    document.getElementsByClassName(shipobj[i][0])[0].appendChild(b);
+    htmldombuilder("img", shipobj[i][0] + "banner", {
+      style: {
+        marginRight: "30px"
+      },
+      addon: {
+        src: bsrc
+      }
+    }, document.getElementsByClassName(shipobj[i][0])[0])
+
     for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
       if (shipobj[i][1][Object.keys(shipobj[i][1])[ii]] != 0) {
         // s == t0 t1 t2 usw
-        let s = document.createElement("div");
-        s.className = Object.keys(shipobj[i][1])[ii];
-        let sizecheck = await tiersize(
-          shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length
-        );
-        s.style.width = sizecheck.result;
-        s.style.marginRight = "20px";
-        document.getElementsByClassName(shipobj[i][0])[0].appendChild(s);
-
-        let f = document.createElement("div");
-        f.className = "tierbanner";
-        f.draggable = false;
-        let ttext = await tiertext(Object.keys(shipobj[i][1])[ii]);
-        f.innerHTML = ttext;
-        f.style.width = sizecheck.rawresult - 10 + "px";
-        document
-          .getElementsByClassName(shipobj[i][0])[0]
-          .getElementsByClassName(Object.keys(shipobj[i][1])[ii])[0]
-          .appendChild(f);
-
-        await filltier(classname, s.className);
+        let sizecheck = tiersize(shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length);
+        htmldombuilder("div", Object.keys(shipobj[i][1])[ii], {
+          style: {
+            width: sizecheck.result,
+            marginRight: "20px"
+          }
+        }, document.getElementsByClassName(shipobj[i][0])[0])
+        htmldombuilder("div", "tierbanner", {
+          style: {
+            width: sizecheck.rawresult - 10 + "px"
+          },
+          addon: {
+            text: Object.keys(shipobj[i][1])[ii]
+          }
+        }, document.getElementsByClassName(shipobj[i][0])[0].getElementsByClassName(Object.keys(shipobj[i][1])[ii])[0])
+        filltier(shipobj[i][0], Object.keys(shipobj[i][1])[ii]);
       }
     }
   }
 }
 
-async function filltier(a1, a2) {
-  let lang;
-  let textcheck;
-  for (let i = 0; i < ships[`${a1}`][`${a2}`].length; i++) {
-    // Main div
-    let a = document.createElement("div");
-    a.className = "parent";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .appendChild(a);
-    // rarity
-    a = document.createElement("img");
-    a.className = "rarityimg";
-    a.src =
-      "Assets/RarityBGs/" +
-      (await removespaces(ships[`${a1}`][`${a2}`][i].rarity)) +
-      ".png";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    a = document.createElement("a");
-    a.className = "link";
-    a.href = ships[`${a1}`][`${a2}`][i].wikiUrl;
-    a.draggable = false;
-    a.target = "_blank";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // thumbnail
-    a = document.createElement("img");
-    a.className = "thumbnail";
-    a.src = ships[`${a1}`][`${a2}`][i].thumbnail;
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Bannerright
-    if (ships[`${a1}`][`${a2}`][i].banner != null) {
-      a = document.createElement("img");
-      a.className = "bannerright";
-      a.src = ships[`${a1}`][`${a2}`][i].bannerlink;
-      document
-        .getElementsByClassName(a1)[0]
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName("parent")[i].appendChild(a);
-    }
-    // Bannerleft
-    if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
-      a = document.createElement("img");
-      a.className = "bannerleft";
-      a.src = ships[`${a1}`][`${a2}`][i].banneraltlink;
-      document
-        .getElementsByClassName(a1)[0]
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName("parent")[i].appendChild(a);
-    }
-    // Tags en
-    a = document.createElement("div");
-    if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-      a.className = "tags_en show";
-    } else {
-      a.className = "tags_en";
-    }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "tags_cn show";
-    } else {
-      a.className = "tags_cn";
-    }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // tags filler
-    if (ships[`${a1}`][`${a2}`][i].tags != null) {
-      for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-        a = document.createElement("img");
-        if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png";
-        document
-          .getElementsByClassName(a1)[0]
-          .getElementsByClassName(a2)[0]
-          .getElementsByClassName("tags_en")[i].appendChild(a);
+function buildhulltypehtml(a1) {
+  let shipobj = Object.entries(ships);
+  document.getElementsByClassName("main")[0].innerHTML = "";
 
-        a = document.createElement("img");
-        if (languageid == "cn") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png";
-        document
-          .getElementsByClassName(a1)[0]
-          .getElementsByClassName(a2)[0]
-          .getElementsByClassName("tags_cn")[i].appendChild(a);
+  if (a1 == undefined) {
+    buildhtmlall();
+  } else {
+    if (
+      a1 == "AviationBattleship" ||
+      a1 == "Monitor" ||
+      a1 == "Repairship" ||
+      a1 == "SubmarineCarrier"
+    ) {
+      buildspecialtype(a1);
+    } else {
+      buildhulltype(a1);
+    }
+  }
+
+  function buildhulltype(a1) {
+    let i;
+    switch (a1) {
+      case "battleship":
+        i = 0;
+        break;
+      case "carrier":
+        i = 1;
+        break;
+      case "heavycruiser":
+        i = 2;
+        break;
+      case "lightcruiser":
+        i = 3;
+        break;
+      case "destroyer":
+        i = 4;
+        break;
+      case "submarine":
+        i = 5;
+        break;
+    }
+    // Hulltype class
+    htmldombuilder("div", shipobj[i][0] + " all", undefined, undefined)
+    // Hulltype class banner
+    let bsrc
+    if (shipobj[i][0] == "heavycruiser") {
+      bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
+    } else if (shipobj[i][0] == "lightcruiser") {
+      bsrc = "Assets/TierClassBanner/LightCruiser.png";
+    } else {
+      bsrc =
+        "Assets/TierClassBanner/" +
+        shipobj[i][0].charAt(0).toUpperCase() +
+        shipobj[i][0].slice(1) +
+        ".png";
+    }
+    htmldombuilder("img", shipobj[i][0] + "banner", {
+      style: {
+        marginRight: "30px"
+      },
+      addon: {
+        src: bsrc
+      }
+    }, document.getElementsByClassName(shipobj[i][0])[0])
+
+    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
+      if (shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length != 0) {
+        // s == t0 t1 t2 usw
+        let sizecheck = tiersize(shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length);
+        htmldombuilder("div", Object.keys(shipobj[i][1])[ii], {
+          style: {
+            width: sizecheck.result,
+            marginRight: "20px"
+          }
+        }, document.getElementsByClassName(shipobj[i][0])[0])
+        htmldombuilder("div", "tierbanner", {
+          style: {
+            width: sizecheck.rawresult - 10 + "px"
+          },
+          addon: {
+            text: Object.keys(shipobj[i][1])[ii]
+          }
+        }, document.getElementsByClassName(shipobj[i][0])[0].getElementsByClassName(Object.keys(shipobj[i][1])[ii])[0])
+
+        filltier(shipobj[i][0], Object.keys(shipobj[i][1])[ii]);
       }
     }
-    // Greyblock
-    a = document.createElement("img");
-    a.className = "greyblock";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Hulltype
-    a = document.createElement("img");
-    a.className = "hulltype";
-    a.src =
-      "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png";
-    a.draggable = false;
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
+  }
 
-    // Namechange html builder
-    // Textblock jp
-    a = document.createElement("div");
-    if (languageid == "en") {
-      a.className = "text_en show";
-    } else {
-      a.className = "text_en";
+  function buildspecialtype(a1) {
+    let tier;
+    let hulltypeidf;
+    let idf;
+    switch (a1) {
+      case "AviationBattleship":
+        hulltypeidf = "battleship";
+        idf = 0;
+        break;
+      case "Monitor":
+        hulltypeidf = "battleship";
+        idf = 0;
+        break;
+      case "Repairship":
+        hulltypeidf = "carrier";
+        idf = 1;
+        break;
+      case "SubmarineCarrier":
+        hulltypeidf = "submarine";
+        idf = 5;
+        break;
     }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Textblock jp
-    a = document.createElement("div");
-    if (languageid == "jp") {
-      a.className = "text_jp show";
-    } else {
-      a.className = "text_jp";
-    }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Textblock kr
-    a = document.createElement("div");
-    if (languageid == "kr") {
-      a.className = "text_kr show";
-    } else {
-      a.className = "text_kr";
-    }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Textblock cn
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "text_cn show";
-    } else {
-      a.className = "text_cn";
-    }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Span text
-    for (let ii = 0; ii < 4; ii++) {
-      a = document.createElement("span");
-      switch (ii) {
+    // Hulltype class
+    htmldombuilder("div", hulltypeidf + " all", undefined, undefined)
+    // Hulltype class banner
+    htmldombuilder("img", hulltypeidf + "banner", {
+      style: {
+        marginRight: "30px"
+      },
+      addon: {
+        src: "Assets/TierClassBanner/" + hulltypeidf.charAt(0).toUpperCase() + hulltypeidf.slice(1) + ".png"
+      }
+    }, document.getElementsByClassName(hulltypeidf)[0])
+    for (let i = 0; i < 8; i++) {
+      switch (i) {
         case 0:
-          language = "en";
-          lang = "en";
+          tier = "t0";
           break;
         case 1:
-          language = "jp";
-          lang = "jp";
+          tier = "t1";
           break;
         case 2:
-          language = "cn";
-          lang = "cn";
+          tier = "t2";
           break;
         case 3:
-          language = "kr";
-          lang = "kr";
+          tier = "t3";
+          break;
+        case 4:
+          tier = "t4";
+          break;
+        case 5:
+          tier = "t5";
+          break;
+        case 6:
+          tier = "t6";
+          break;
+        case 7:
+          tier = "t7";
           break;
       }
-      if (ships[`${a1}`][`${a2}`][i].names[language] == null) {
-        lang = "en";
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          lang
-        );
-      } else {
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          language
-        );
-      }
 
-      if (textcheck.className != undefined) {
-        a.className = textcheck.className;
+      let index = getAllIndexes(
+        shipobj[idf][1][tier],
+        a1,
+        "hullTypeId",
+        false
+      );
+      if (index.length != 0) {
+        buildspecialtier(tier, index, hulltypeidf);
       }
-
-      if (textcheck.fontSize != undefined) {
-        a.style.fontSize = textcheck.fontSize;
-      }
-
-      if (textcheck.lineHeight != undefined) {
-        a.style.lineHeight = textcheck.lineHeight;
-      }
-      a.innerHTML = ships[`${a1}`][`${a2}`][i].names[lang];
-      document
-        .getElementsByClassName(a1)[0]
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName("parent")[i].getElementsByClassName("text_" + language)[0]
-        .appendChild(a);
     }
+  }
+
+  function buildspecialtier(a1, a2, a3) {
+    // s == t0 t1 t2 usw
+    let sizecheck = tiersize(a2.length);
+    htmldombuilder("div", a1, {
+      style: {
+        marginRight: "20px",
+        width: sizecheck.result
+      }
+    }, document.getElementsByClassName(a3)[0])
+    htmldombuilder("div", "tierbanner", {
+      style: {
+        width: sizecheck.rawresult - 10 + "px"
+      },
+      addon: {
+        text: a1
+      }
+    }, document.getElementsByClassName(a3)[0].getElementsByClassName(a1)[0])
+    filltier(a3, a1, a2);
   }
 }
 
-async function filltierspecial(a1, a2, a3) {
-  //console.log(a1)
-  // console.log(a2)
-  //console.log(a3)
-  let lang;
-  let textcheck;
-  for (let i = 0; i < a3.length; i++) {
+function filltier(a1, a2, a3) {
+  let loopidf
+  if (a3 == undefined) {
+    loopidf = ships[`${a1}`][`${a2}`].length
+  } else {
+    loopidf = a3.length
+  }
+  for (let i = 0; i < loopidf; i++) {
     // Main div
-    let a = document.createElement("div");
-    a.className = "parent";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .appendChild(a);
-    a = document.createElement("a");
-    a.className = "link";
-    a.href = ships[`${a1}`][`${a2}`][a3[i]].wikiUrl;
-    a.target = "_blank";
-    a.draggable = false;
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // rarity
-    a = document.createElement("img");
-    a.className = "rarityimg";
-    a.src =
-      "Assets/RarityBGs/" +
-      (await removespaces(ships[`${a1}`][`${a2}`][a3[i]].rarity)) +
-      ".png";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // thumbnail
-    a = document.createElement("img");
-    a.className = "thumbnail";
-    a.src = ships[`${a1}`][`${a2}`][a3[i]].thumbnail;
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Bannerright
-    if (ships[`${a1}`][`${a2}`][a3[i]].banner != null) {
-      a = document.createElement("img");
-      a.className = "bannerright";
-      a.src = ships[`${a1}`][`${a2}`][a3[i]].bannerlink;
-      document
-        .getElementsByClassName(a1)[0]
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName("parent")[i].appendChild(a);
-    }
-    // Bannerleft
-    if (ships[`${a1}`][`${a2}`][a3[i]].banneralt != null) {
-      a = document.createElement("img");
-      a.className = "bannerleft";
-      a.src = ships[`${a1}`][`${a2}`][a3[i]].banneraltlink;
-      document
-        .getElementsByClassName(a1)[0]
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName("parent")[i].appendChild(a);
-    }
+    htmldombuilder("div", "parent", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0])
     // Tags en
-    a = document.createElement("div");
     if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-      a.className = "tags_en show";
+      htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
-      a.className = "tags_en";
+      htmldombuilder("div", "tags_en", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    a = document.createElement("div");
     if (languageid == "cn") {
-      a.className = "tags_cn show";
+      htmldombuilder("div", "tags_cn show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
-      a.className = "tags_cn";
-    }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // tags filler
-    if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
-      for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
-        a = document.createElement("img");
-        if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/EN/" +
-          ships[`${a1}`][`${a2}`][a3[i]].tags[ii] +
-          ".png";
-        document
-          .getElementsByClassName(a1)[0]
-          .getElementsByClassName(a2)[0]
-          .getElementsByClassName("tags_en")[i].appendChild(a);
-
-        a = document.createElement("img");
-        if (languageid == "cn") {
-          a.className = "tag" + (ii + 1) + " show";
-        } else {
-          a.className = "tag" + (ii + 1);
-        }
-        a.src =
-          "Assets/TagIcons/CN/" +
-          ships[`${a1}`][`${a2}`][a3[i]].tags[ii] +
-          ".png";
-        document
-          .getElementsByClassName(a1)[0]
-          .getElementsByClassName(a2)[0]
-          .getElementsByClassName("tags_cn")[i].appendChild(a);
-      }
+      htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
     // Greyblock
-    a = document.createElement("img");
-    a.className = "greyblock";
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Hulltype
-    a = document.createElement("img");
-    a.className = "hulltype";
-    a.src =
-      "Assets/HullTypeIcons/" +
-      ships[`${a1}`][`${a2}`][a3[i]].hullTypeId +
-      ".png";
-    a.draggable = false;
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-
+    htmldombuilder("img", "greyblock", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     // Namechange html builder
     // Textblock en
-    a = document.createElement("div");
     if (languageid == "en") {
-      a.className = "text_en show";
+      htmldombuilder("div", "text_en show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
-      a.className = "text_en";
+      htmldombuilder("div", "text_en", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
     // Textblock jp
-    a = document.createElement("div");
     if (languageid == "jp") {
-      a.className = "text_jp show";
+      htmldombuilder("div", "text_jp show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
-      a.className = "text_jp";
+      htmldombuilder("div", "text_jp", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
     // Textblock kr
-    a = document.createElement("div");
     if (languageid == "kr") {
-      a.className = "text_kr show";
+      htmldombuilder("div", "text_kr show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
-      a.className = "text_kr";
+      htmldombuilder("div", "text_kr", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
     // Textblock cn
-    a = document.createElement("div");
-    if (languageid == "cn") {
-      a.className = "text_cn show";
+    if (languageid == "kr") {
+      htmldombuilder("div", "text_cn show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
-      a.className = "text_cn";
+      htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
-    document
-      .getElementsByClassName(a1)[0]
-      .getElementsByClassName(a2)[0]
-      .getElementsByClassName("parent")[i].appendChild(a);
-    // Span text
-    for (let ii = 0; ii < 4; ii++) {
-      a = document.createElement("span");
-      switch (ii) {
-        case 0:
-          language = "en";
-          lang = "en";
-          break;
-        case 1:
-          language = "jp";
-          lang = "jp";
-          break;
-        case 2:
-          language = "cn";
-          lang = "cn";
-          break;
-        case 3:
-          language = "kr";
-          lang = "kr";
-          break;
+    if (a3 == undefined) {
+      // rarity
+      htmldombuilder("img", "rarityimg", {
+        addon: {
+          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][i].rarity)) + ".png"
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      htmldombuilder("a", "link", {
+        addon: {
+          href: ships[`${a1}`][`${a2}`][i].wikiUrl
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      // thumbnail
+      htmldombuilder("img", "thumbnail", {
+        addon: {
+          src: ships[`${a1}`][`${a2}`][i].thumbnail
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      // Bannerright
+      if (ships[`${a1}`][`${a2}`][i].banner != null) {
+        htmldombuilder("img", "bannerright", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][i].bannerlink
+          }
+        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       }
-      if (ships[`${a1}`][`${a2}`][a3[i]].names[language] == null) {
-        lang = "en";
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][i].names[lang].length,
-          ships[`${a1}`][`${a2}`][i].names[lang],
-          lang
-        );
-      } else {
-        textcheck = await texthandler(
-          ships[`${a1}`][`${a2}`][a3[i]].names[lang].length,
-          ships[`${a1}`][`${a2}`][a3[i]].names[lang],
-          language
-        );
+      // Bannerleft
+      if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
+        htmldombuilder("img", "bannerleft", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][i].banneraltlink
+          }
+        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       }
-
-      if (textcheck.className != undefined) {
-        a.className = textcheck.className;
+      // tags filler
+      if (ships[`${a1}`][`${a2}`][i].tags != null) {
+        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
+          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
+          }
+          if (languageid == "cn") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
+          }
+        }
       }
-
-      if (textcheck.fontSize != undefined) {
-        a.style.fontSize = textcheck.fontSize;
+      // Hulltype
+      htmldombuilder("img", "hulltype", {
+        addon: {
+          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png"
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      // Span text
+      spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+    } else {
+      htmldombuilder("a", "link", {
+        addon: {
+          href: ships[`${a1}`][`${a2}`][a3[i]].wikiUrl
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      htmldombuilder("img", "rarityimg", {
+        addon: {
+          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][a3[i]].rarity)) + ".png"
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      htmldombuilder("img", "thumbnail", {
+        addon: {
+          src: ships[`${a1}`][`${a2}`][a3[i]].thumbnail
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      if (ships[`${a1}`][`${a2}`][a3[i]].banner != null) {
+        htmldombuilder("img", "bannerright", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][a3[i]].bannerlink
+          }
+        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       }
-
-      if (textcheck.lineHeight != undefined) {
-        a.style.lineHeight = textcheck.lineHeight;
+      // Bannerleft
+      if (ships[`${a1}`][`${a2}`][a3[i]].banneralt != null) {
+        htmldombuilder("img", "bannerleft", {
+          addon: {
+            src: ships[`${a1}`][`${a2}`][a3[i]].banneraltlink
+          }
+        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       }
-      a.innerHTML = ships[`${a1}`][`${a2}`][a3[i]].names[lang];
-      document
-        .getElementsByClassName(a1)[0]
-        .getElementsByClassName(a2)[0]
-        .getElementsByClassName("parent")[i].getElementsByClassName("text_" + language)[0]
-        .appendChild(a);
+      if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
+        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
+          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
+          }
+          if (languageid == "cn") {
+            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
+          } else {
+            htmldombuilder("img", "tag" + (ii + 1), {
+              addon: {
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+              }
+            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
+          }
+        }
+      }
+      htmldombuilder("img", "hulltype", {
+        addon: {
+          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][a3[i]].hullTypeId + ".png"
+        }
+      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      spantextbuild(ships[`${a1}`][`${a2}`][a3[i]].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
   }
-  await deleteProperties(arraysobj)
+  deleteProperties(arraysobj)
 }
 
-async function deleteProperties(cleanme) {
+function deleteProperties(cleanme) {
   for (var x in cleanme)
     if (cleanme.hasOwnProperty(x)) delete cleanme[x];
 }
