@@ -626,12 +626,19 @@ button:focus {
   margin-left: 25px;
   order: 3;
   margin-right: 85px;
+  display: inline-flex;
   margin-top: 5px;
 }
 
 .lang {
   width: 53px;
   height: 35px;
+  border: 1px solid white;
+  margin-right: 1px;
+}
+
+.lang:hover {
+  opacity: 0.6;
 }
 
 .legendicon_en, .legendicon_cn {

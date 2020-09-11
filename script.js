@@ -2737,7 +2737,7 @@ async function buildfiltermainhtml(a1, a2, a3, a4) {
 
   }
 }
-
+console.time("buildall")
 async function buildhtmlall() {
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
@@ -3268,3 +3268,4 @@ async function deleteProperties(cleanme) {
   for (var x in cleanme)
     if (cleanme.hasOwnProperty(x)) delete cleanme[x];
 }
+console.timeEnd("buildall")
