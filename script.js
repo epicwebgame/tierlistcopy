@@ -2368,13 +2368,7 @@ function buildfiltermainhtml(a1, a2, a3, a4) {
 
   }
 }
-<<<<<<< HEAD
-console.time("buildall")
 async function buildhtmlall() {
-=======
-
-function buildhtmlall() {
->>>>>>> 62a3c87... smol fixes + test
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
 
@@ -2807,4 +2801,3 @@ function deleteProperties(cleanme) {
   for (var x in cleanme)
     if (cleanme.hasOwnProperty(x)) delete cleanme[x];
 }
-console.timeEnd("buildall")
