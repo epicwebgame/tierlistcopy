@@ -2571,7 +2571,6 @@ function buildhulltypehtml(a1) {
           tier = "t7";
           break;
       }
-
       let index = getAllIndexes(
         shipobj[idf][1][tier],
         a1,
