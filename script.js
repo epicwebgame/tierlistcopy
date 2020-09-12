@@ -587,7 +587,7 @@ function openChangelog(changelog) {
   var oldWidth = htmlbody.clientWidth
   htmlbody.style.overflow = "hidden";
   htmlbody.style.width = oldWidth;
-  document.getElementsByClassName("language")[0].style.marginRight = "102px";
+  document.getElementsByClassName("language")[0].style.marginRight = "22px";
 }
 
 function closeChangelog(changelog) {
@@ -597,7 +597,7 @@ function closeChangelog(changelog) {
   var htmlbody = document.body
   htmlbody.style.overflow = "auto"
   htmlbody.style.width = "auto"
-  document.getElementsByClassName("language")[0].style.marginRight = "85px";
+  document.getElementsByClassName("language")[0].style.marginRight = "5px";
 }
 
 function mutifiltercheck(a1, a2, a3) {
