@@ -236,7 +236,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-radius: 5px;
   text-align: center;
   text-shadow: 2px 1px #00000070;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 .tierfiltercontainer {
@@ -247,7 +247,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   display: inline-flex;
   margin-left: 85px;
   margin-top: 5px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 
@@ -521,9 +521,9 @@ button:focus {
 .language {
   z-index: 9997;
   white-space: normal;
-  margin-left: 25px;
+  margin-left: 10px;
   order: 3;
-  margin-right: 85px;
+  margin-right: 5px;
   display: inline-flex;
   margin-top: 5px;
 }
