@@ -440,7 +440,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   font-family: "Lato", sans-serif;
   height: 50px;
   width: 50px;
-  background-color: #3498DB;
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
   border-radius: 50%;
   border-width: 1px;
   border-style: solid;
@@ -466,7 +466,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 
 .legend-dropdown-content {
   margin-left: -49px;
-  background-image: linear-gradient(#1e8dff, #3c9dfe);
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   margin-bottom: 15px;
   padding: 7px;
