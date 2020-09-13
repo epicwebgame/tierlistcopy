@@ -88,7 +88,7 @@ body {
   margin-right: 10px;
 }
 
-.rarityimg, .thumbnail, .link, .bannerright {
+.thumbnail, .link {
   z-index: 0;
   position: absolute;
   width: 100px;
@@ -97,14 +97,11 @@ body {
 
 .thumbnail {
   z-index: 1;
+  height: 120px;
 }
 
 .link {
   z-index: 95;
-}
-
-.bannerright {
-  z-index: 2;
 }
 
 .tag1, .tag2, .tag3, .tag4 {
@@ -130,15 +127,6 @@ body {
   display: block;
 }
 
-.greyblock, .hulltype, .bannerleft {
-  z-index: 1;
-  position: absolute;
-  margin-top: 100px;
-  height: 20px;
-  width: 100px;
-  background-color: grey;
-}
-
 .tierchanges {
   z-index: 1;
   position: absolute;
@@ -151,18 +139,11 @@ body {
   font-size: 20px;
 }
 
-.hulltype {
-  z-index: 2;
-  width: 32px;
-  height: 20px;
-  background-color: transparent;
-}
-
 .bannerleft {
   z-index: 2;
-  margin-top: 0px;
+  position: absolute;
   height: 100px;
-  background-color: transparent;
+  width: 100px;
 }
 
 .text_en, .text_jp, .text_kr, .text_cn {
@@ -507,7 +488,6 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   left: 5px;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .legend-dropdown-content.show {
   display: block;
 }

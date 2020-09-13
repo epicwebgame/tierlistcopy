@@ -321,12 +321,6 @@ function getchangelog(a1) {
       }
       //Main
       htmldombuilder("div", "changelogparentadded", undefined, document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2)[0])
-      // Rarity
-      htmldombuilder("img", "rarityimg", {
-        addon: {
-          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][i].rarity)) + ".png"
-        }
-      }, document.getElementsByClassName("changelogparentadded")[b4])
       //WikiUrl
       htmldombuilder("a", "link", {
         addon: {
@@ -339,21 +333,15 @@ function getchangelog(a1) {
           src: ships[`${a1}`][`${a2}`][i].thumbnail
         }
       }, document.getElementsByClassName("changelogparentadded")[b4])
-      //Bannerright
-      if (ships[`${a1}`][`${a2}`][i].banner != null) {
-        htmldombuilder("img", "bannerright", {
-          addon: {
-            src: ships[`${a1}`][`${a2}`][i].bannerlink
-          }
-        }, document.getElementsByClassName("changelogparentadded")[b4])
-      }
       //Bannerleft
       if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
+        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
         htmldombuilder("img", "bannerleft", {
           addon: {
             src: ships[`${a1}`][`${a2}`][i].banneraltlink
           }
         }, document.getElementsByClassName("changelogparentadded")[b4])
+      }
       }
       //Tags en
       if (languageid == "en" || languageid == "jp" || languageid == "kr") {
@@ -398,14 +386,6 @@ function getchangelog(a1) {
           }
         }
       }
-      //Greyblock
-      htmldombuilder("img", "greyblock", undefined, document.getElementsByClassName("changelogparentadded")[b4])
-      //Hulltype
-      htmldombuilder("img", "hulltype", {
-        addon: {
-          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png"
-        }
-      }, document.getElementsByClassName("changelogparentadded")[b4])
       //Namechange html
       //Textblock en
       if (languageid == "en") {
@@ -437,12 +417,6 @@ function getchangelog(a1) {
     if (b5 == "promotions" || b5 == "demotions") {
       //Main div
       htmldombuilder("div", "changelogparent", undefined, document.getElementsByClassName("changelogmain" + b5)[0])
-      //Rarity
-      htmldombuilder("img", "rarityimg", {
-        addon: {
-          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][i].rarity)) + ".png"
-        }
-      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       //WikiUrl
       htmldombuilder("a", "link", {
         addon: {
@@ -455,22 +429,16 @@ function getchangelog(a1) {
           src: ships[`${a1}`][`${a2}`][i].thumbnail
         }
       }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
-      //Bannerright
-      if (ships[`${a1}`][`${a2}`][i].banner != null) {
-        htmldombuilder("img", "bannerright", {
-          addon: {
-            src: ships[`${a1}`][`${a2}`][i].bannerlink
-          }
-        }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
-      }
       //Bannerleft
       if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
+        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
         htmldombuilder("img", "bannerleft", {
           addon: {
             src: ships[`${a1}`][`${a2}`][i].banneraltlink
           }
         }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       }
+    }
       //Tags en
       if (languageid == "en" || languageid == "jp" || languageid == "kr") {
         htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
@@ -514,14 +482,6 @@ function getchangelog(a1) {
           }
         }
       }
-      //Greyblock
-      htmldombuilder("img", "greyblock", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
-      // Hulltype
-      htmldombuilder("img", "hulltype", {
-        addon: {
-          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png"
-        }
-      }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       //Namechange html
       //Textblock en
       if (languageid == "en") {
@@ -1527,8 +1487,12 @@ function texthandler(a1, a2, a3) {
       if ((countcheck.count) >= 1) {
         fontSize = "10px";
       }
+      if ((countcheck.count) == 1 && a1 == 11) {
+        fontSize = "10px";
+        lineHeight = "20px";
+      }
       className = "shipname";
-      if (a1 == 11) {
+      if ((countcheck.count) == 0 && a1 == 11) {
         fontSize = "11px";
       }
     }
@@ -2625,8 +2589,6 @@ function filltier(a1, a2, a3) {
     } else {
       htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
-    // Greyblock
-    htmldombuilder("img", "greyblock", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     // Namechange html builder
     // Textblock en
     if (languageid == "en") {
@@ -2653,12 +2615,6 @@ function filltier(a1, a2, a3) {
       htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
     if (a3 == undefined) {
-      // rarity
-      htmldombuilder("img", "rarityimg", {
-        addon: {
-          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][i].rarity)) + ".png"
-        }
-      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       htmldombuilder("a", "link", {
         addon: {
           href: ships[`${a1}`][`${a2}`][i].wikiUrl
@@ -2670,22 +2626,16 @@ function filltier(a1, a2, a3) {
           src: ships[`${a1}`][`${a2}`][i].thumbnail
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
-      // Bannerright
-      if (ships[`${a1}`][`${a2}`][i].banner != null) {
-        htmldombuilder("img", "bannerright", {
-          addon: {
-            src: ships[`${a1}`][`${a2}`][i].bannerlink
-          }
-        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
-      }
       // Bannerleft
       if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
+        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
         htmldombuilder("img", "bannerleft", {
           addon: {
             src: ships[`${a1}`][`${a2}`][i].banneraltlink
           }
         }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       }
+    }
       // tags filler
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
@@ -2717,12 +2667,6 @@ function filltier(a1, a2, a3) {
           }
         }
       }
-      // Hulltype
-      htmldombuilder("img", "hulltype", {
-        addon: {
-          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][i].hullTypeId + ".png"
-        }
-      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       // Span text
       spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
@@ -2731,31 +2675,21 @@ function filltier(a1, a2, a3) {
           href: ships[`${a1}`][`${a2}`][a3[i]].wikiUrl
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
-      htmldombuilder("img", "rarityimg", {
-        addon: {
-          src: "Assets/RarityBGs/" + (removespaces(ships[`${a1}`][`${a2}`][a3[i]].rarity)) + ".png"
-        }
-      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       htmldombuilder("img", "thumbnail", {
         addon: {
           src: ships[`${a1}`][`${a2}`][a3[i]].thumbnail
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
-      if (ships[`${a1}`][`${a2}`][a3[i]].banner != null) {
-        htmldombuilder("img", "bannerright", {
-          addon: {
-            src: ships[`${a1}`][`${a2}`][a3[i]].bannerlink
-          }
-        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
-      }
       // Bannerleft
       if (ships[`${a1}`][`${a2}`][a3[i]].banneralt != null) {
+        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
         htmldombuilder("img", "bannerleft", {
           addon: {
             src: ships[`${a1}`][`${a2}`][a3[i]].banneraltlink
           }
         }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       }
+    }
       if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
           if (languageid == "en" || languageid == "jp" || languageid == "kr") {
@@ -2786,11 +2720,6 @@ function filltier(a1, a2, a3) {
           }
         }
       }
-      htmldombuilder("img", "hulltype", {
-        addon: {
-          src: "Assets/HullTypeIcons/" + ships[`${a1}`][`${a2}`][a3[i]].hullTypeId + ".png"
-        }
-      }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       spantextbuild(ships[`${a1}`][`${a2}`][a3[i]].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
   }
