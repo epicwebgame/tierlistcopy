@@ -2265,7 +2265,7 @@ function buildfiltermainhtml(a1, a2, a3, a4) {
         }, document.getElementsByClassName(Object.keys(a4)[i])[0])
 
         // s == t0 t1 t2 usw
-        let sizecheck = tiersize(Object.entries(a4)[0][1][a3].length);
+        let sizecheck = tiersize(Object.entries(a4)[i][1][a3].length);
         htmldombuilder("div", a3, {
           style: {
             width: sizecheck.result,

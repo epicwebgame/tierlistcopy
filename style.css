@@ -338,6 +338,20 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   margin-top: 5px;
 }
 
+.tags-dropdown-content .show {
+border-width: 1px;
+border-style: solid;
+border-color: transparent;
+border-radius: 50%;
+}
+
+.tags-dropdown-content .show:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+}
+
 .hulltypefilter, .rarityfilter, .nationalityfilter, .tagsfilter {
   display: block;
   height: 35px;
@@ -384,7 +398,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 }
 
 .tagfilter_en.show.active, .tagfilter_cn.show.active {
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .tagfilter_en, .tagfilter_cn, .tagfilter_ico {
@@ -442,7 +456,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-bottom-left-radius: 0px;
 }
 
-#t4.tierfilter:hover, #t4.tierfilter.active, #t5.tierfilter:hover, #t5.tierfilter.active, #t6.tierfilter:hover, #t6.tierfilter.active, #t7.tierfilter:hover, #t7.tierfilter:active {
+#t4.tierfilter:hover, #t4.tierfilter.active, #t5.tierfilter:hover, #t5.tierfilter.active, #t6.tierfilter:hover, #t6.tierfilter.active, #t7.tierfilter:hover, #t7.tierfilter.active {
   background-image: linear-gradient(#0064a1, #0056fe);
 }
 
