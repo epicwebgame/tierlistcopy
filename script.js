@@ -547,7 +547,7 @@ function openChangelog(changelog) {
   var oldWidth = htmlbody.clientWidth
   htmlbody.style.overflow = "hidden";
   htmlbody.style.width = oldWidth;
-  document.getElementsByClassName("language")[0].style.marginRight = "22px";
+  document.getElementsByClassName("language")[0].style.marginRight = "10px";
 }
 
 function closeChangelog(changelog) {
