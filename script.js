@@ -39,10 +39,10 @@ window.onload = async function () {
     })
   })
 
-  let changelogdropdown = document.getElementById("changelogsdrop")
+  let changelogselectelem = document.getElementById("changelogsdrop")
   getchangelog(Object.entries(changelog)[(Object.entries(changelog).length - 1)][0])
-  fillchangelogselect(changelog, changelogdropdown)
-  changelogdropdown.addEventListener("change", getchangelog);
+  fillchangelogselect(changelog, changelogselectelem)
+  changelogselectelem.addEventListener("change", getchangelog);
 
   maincont = document.getElementsByClassName("main")[0];
 
@@ -359,7 +359,7 @@ function getchangelog(a1) {
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
           if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
@@ -372,7 +372,7 @@ function getchangelog(a1) {
             }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_en")[0])
           }
           if (languageid == "cn") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
@@ -455,7 +455,7 @@ function getchangelog(a1) {
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
           if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
@@ -468,7 +468,7 @@ function getchangelog(a1) {
             }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
           }
           if (languageid == "cn") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
@@ -669,23 +669,6 @@ function mutifiltercheck(a1, a2, a3) {
     }
   }
   if (filters.length != 0) {
-    if (filters.length == 1) {
-      if (checker[0] == "f1") {
-        buildhulltypehtml(filters[0])
-      }
-      if (checker[0] == "f2") {
-        buildrarityhtml(filters[0])
-      }
-      if (checker[0] == "f3") {
-        buildtaghtml(filters[0])
-      }
-      if (checker[0] == "f4") {
-        buildtierhtml(filters[0])
-      }
-      if (checker[0] == "f5") {
-        buildnationalityhtml(filters[0])
-      }
-    } else {
       if (Object.entries(arraysobj).length == 0) {
         arraysobj = {
           battleship: {
@@ -749,7 +732,6 @@ function mutifiltercheck(a1, a2, a3) {
             t7: []
           }
         }
-      }
       buildmultihtml(filters, checker)
     }
   } else {
@@ -808,533 +790,54 @@ window.onclick = function (event) {
     }
   }
 };
+
+function languagechangerfunc(a1) {
+  document.querySelectorAll(".lang").forEach((e) => {
+    console.log(e.classList[1])
+  if (e.classList.contains(a1) && e.classList.contains("active") != "active") {
+    e.classList.add("active");
+  } else {
+    e.classList.remove("active")
+  }
+  })
+
+  document.querySelectorAll("[class*='text_']").forEach((e) => {
+    if (!e.classList.contains("show") && e.classList.contains("text_" + a1)) {
+      e.classList.add("show")
+    } else {
+      e.classList.remove("show")
+    }
+  })
+
+  if (a1 == "en" || a1 == "cn") {
+  document.querySelectorAll("[class*='tagfilter_'], [class*='legendicon_'], [class*='legendspan_'], [class*='tags_']").forEach((e) => {
+    if (!e.classList.contains("show") && e.classList.contains("tagfilter_" + a1) || e.classList.contains("legendicon_" + a1) || e.classList.contains("legendspan_" + a1) || e.classList.contains("tags_" + a1)) {
+      e.classList.add("show")
+    } else {
+      e.classList.remove("show")
+    }
+  })
+}
+}
+
 // Namechange function
 function shipnamecheck(a1, a2) {
   switch (a1) {
     case "en":
       languageid = "en";
-      if (
-        !document.getElementsByClassName("en")[0].classList.contains("active")
-      ) {
-        document.getElementsByClassName("en")[0].classList.add("active");
-      }
-      document.getElementsByClassName("jp")[0].classList.remove("active");
-      document.getElementsByClassName("cn")[0].classList.remove("active");
-      document.getElementsByClassName("kr")[0].classList.remove("active");
-      for (
-        let i = 0; i < document.getElementsByClassName("text_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("text_en")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("text_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_jp")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_jp")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_cn")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_kr")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_kr")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tagfilter_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tagfilter_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tagfilter_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendicon_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendicon_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendicon_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendspan_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendspan_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendspan_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tags_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tags_en")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("tags_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tags_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tags_cn")[i].classList.remove("show");
-        }
-        for (
-          let ii = 0; ii < document.getElementsByClassName("tags_en")[i].children.length; ii++
-        ) {
-          if (
-            !document
-            .getElementsByClassName("tags_en")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_en")[i].children[ii].classList.add("show");
-          }
-          if (
-            document
-            .getElementsByClassName("tags_cn")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_cn")[i].children[ii].classList.remove("show");
-          }
-        }
-      }
+      languagechangerfunc(languageid)
       break;
     case "jp":
       languageid = "jp";
-      if (
-        !document.getElementsByClassName("jp")[0].classList.contains("active")
-      ) {
-        document.getElementsByClassName("jp")[0].classList.add("active");
-      }
-      document.getElementsByClassName("en")[0].classList.remove("active");
-      document.getElementsByClassName("cn")[0].classList.remove("active");
-      document.getElementsByClassName("kr")[0].classList.remove("active");
-      for (
-        let i = 0; i < document.getElementsByClassName("text_jp").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("text_jp")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("text_jp")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_en")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_cn")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_kr")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_kr")[i].classList.remove("show");
-        }
-      }
-      // for now eng
-      for (
-        let i = 0; i < document.getElementsByClassName("tagfilter_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tagfilter_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tagfilter_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendicon_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendicon_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendicon_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendspan_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendspan_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendspan_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tags_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tags_en")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("tags_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tags_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tags_cn")[i].classList.remove("show");
-        }
-        for (
-          let ii = 0; ii < document.getElementsByClassName("tags_en")[i].children.length; ii++
-        ) {
-          if (
-            !document
-            .getElementsByClassName("tags_en")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_en")[i].children[ii].classList.add("show");
-          }
-          if (
-            document
-            .getElementsByClassName("tags_cn")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_cn")[i].children[ii].classList.remove("show");
-          }
-        }
-      }
+      languagechangerfunc(languageid)
       break;
     case "cn":
       languageid = "cn";
-      if (
-        !document.getElementsByClassName("cn")[0].classList.contains("active")
-      ) {
-        document.getElementsByClassName("cn")[0].classList.add("active");
-      }
-      document.getElementsByClassName("jp")[0].classList.remove("active");
-      document.getElementsByClassName("en")[0].classList.remove("active");
-      document.getElementsByClassName("kr")[0].classList.remove("active");
-      for (
-        let i = 0; i < document.getElementsByClassName("text_cn").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("text_cn")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("text_cn")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_en")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_jp")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_jp")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_kr")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_kr")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tagfilter_cn").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tagfilter_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_cn")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tagfilter_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_en")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendicon_cn").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendicon_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_cn")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendicon_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_en")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendspan_cn").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendspan_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_cn")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendspan_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_en")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tags_cn").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tags_cn")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("tags_cn")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tags_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tags_en")[i].classList.remove("show");
-        }
-        for (
-          let ii = 0; ii < document.getElementsByClassName("tags_cn")[i].children.length; ii++
-        ) {
-          if (
-            !document
-            .getElementsByClassName("tags_cn")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_cn")[i].children[ii].classList.add("show");
-          }
-          if (
-            document
-            .getElementsByClassName("tags_en")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_en")[i].children[ii].classList.remove("show");
-          }
-        }
-      }
+      languagechangerfunc(languageid)
       break;
     case "kr":
       languageid = "kr";
-      if (
-        !document.getElementsByClassName("kr")[0].classList.contains("active")
-      ) {
-        document.getElementsByClassName("kr")[0].classList.add("active");
-      }
-      document.getElementsByClassName("jp")[0].classList.remove("active");
-      document.getElementsByClassName("en")[0].classList.remove("active");
-      document.getElementsByClassName("cn")[0].classList.remove("active");
-      for (
-        let i = 0; i < document.getElementsByClassName("text_kr").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("text_kr")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("text_kr")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_en")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_jp")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_jp")[i].classList.remove("show");
-        }
-        if (
-          document
-          .getElementsByClassName("text_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("text_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tagfilter_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tagfilter_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tagfilter_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tagfilter_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendicon_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendicon_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendicon_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendicon_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("legendspan_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("legendspan_en")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("legendspan_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("legendspan_cn")[i].classList.remove("show");
-        }
-      }
-      for (
-        let i = 0; i < document.getElementsByClassName("tags_en").length; i++
-      ) {
-        if (
-          !document
-          .getElementsByClassName("tags_en")[i].classList.contains("show")
-        ) {
-          document.getElementsByClassName("tags_en")[i].classList.add("show");
-        }
-        if (
-          document
-          .getElementsByClassName("tags_cn")[i].classList.contains("show")
-        ) {
-          document
-            .getElementsByClassName("tags_cn")[i].classList.remove("show");
-        }
-        for (
-          let ii = 0; ii < document.getElementsByClassName("tags_en")[i].children.length; ii++
-        ) {
-          if (
-            !document
-            .getElementsByClassName("tags_en")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_en")[i].children[ii].classList.add("show");
-          }
-          if (
-            document
-            .getElementsByClassName("tags_cn")[i].children[ii].classList.contains("show")
-          ) {
-            document
-              .getElementsByClassName("tags_cn")[i].children[ii].classList.remove("show");
-          }
-        }
-      }
+      languagechangerfunc(languageid)
       break;
   }
 }
@@ -1578,112 +1081,6 @@ function texthandler(a1, a2, a3) {
 function tiertext(a1) {
   var result = a1.toUpperCase();
   return result;
-}
-
-function buildnationalityhtml(a1) {
-  a1 = a1.replace("_", " ");
-  let shipobj = Object.entries(ships);
-  document.getElementsByClassName("main")[0].innerHTML = "";
-  if (a1 == undefined) {
-    buildhtmlall();
-  }
-
-  for (let i = 0; i < shipobj.length; i++) {
-    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      let index = getAllIndexes(
-        shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-        a1,
-        "nationality",
-        false
-      );
-      if (index.length != 0) {
-        let hullindex = i;
-        let hullname = shipobj[i][0];
-        let tier = Object.keys(shipobj[i][1])[ii];
-        buildit(hullindex, hullname, tier, index, shipobj);
-      }
-    }
-  }
-}
-
-function buildtierhtml(a1) {
-  let shipobj = Object.entries(ships);
-  document.getElementsByClassName("main")[0].innerHTML = "";
-  if (a1 == undefined) {
-    buildhtmlall();
-  }
-  let ii = a1.match(/\d+/)[0];
-
-  for (let i = 0; i < shipobj.length; i++) {
-    let index = getAllIndexes(
-      shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-      ii,
-      "usagitier",
-      false
-    );
-    if (index.length != 0) {
-      let hullindex = i;
-      let hullname = shipobj[i][0];
-      let tier = a1;
-      buildit(hullindex, hullname, tier, index, shipobj);
-    }
-  }
-}
-
-function buildtaghtml(a1) {
-  a1 = a1.replace(" en", "");
-  a1 = a1.replace(" jp", "");
-  a1 = a1.replace(" cn", "");
-  let shipobj = Object.entries(ships);
-  document.getElementsByClassName("main")[0].innerHTML = "";
-  if (a1 == undefined) {
-    buildhtmlall();
-  }
-
-  for (let i = 0; i < shipobj.length; i++) {
-    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      let index = getAllIndexes(
-        shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-        a1,
-        "tags",
-        true
-      );
-      if (index.length != 0) {
-        let hullindex = i;
-        let hullname = shipobj[i][0];
-        let tier = Object.keys(shipobj[i][1])[ii];
-        buildit(hullindex, hullname, tier, index, shipobj);
-      }
-    }
-  }
-}
-
-function buildrarityhtml(a1) {
-  let shipobj = Object.entries(ships);
-  document.getElementsByClassName("main")[0].innerHTML = "";
-  if (a1 == undefined) {
-    buildhtmlall();
-  } else {
-    if (a1 == "SuperRare") {
-      a1 = "Super Rare";
-    }
-  }
-  for (let i = 0; i < shipobj.length; i++) {
-    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      let index = getAllIndexes(
-        shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-        a1,
-        "rarity",
-        false
-      );
-      if (index.length != 0) {
-        let hullindex = i;
-        let hullname = shipobj[i][0];
-        let tier = Object.keys(shipobj[i][1])[ii];
-        buildit(hullindex, hullname, tier, index, shipobj);
-      }
-    }
-  }
 }
 
 function buildit(b1, b2, b3, b4, shipobj) {
@@ -1948,7 +1345,7 @@ function buildmultihtml(a1, a2) {
     }
   }
 
-  pushintoarray(result)
+  pushintoarray(result, a1.length)
 }
 
 function removeemptyarr(arr) {
@@ -1977,7 +1374,7 @@ function arraysobjpusher(a1, i) {
   }
 }
 
-function pushintoarray(result) {
+function pushintoarray(result, b1) {
   let a1
   for (let i = 0; i < Object.entries(result).length; i++) {
     switch (Object.entries(result)[i][0]) {
@@ -2003,10 +1400,10 @@ function pushintoarray(result) {
         break;
     }
   }
-  getmatchesfilter(result)
+  getmatchesfilter(result, b1)
 }
 
-function getmatchesfilter(a4) {
+function getmatchesfilter(a4, b1) {
   let a1 = arraysobj
   let a2
   let a3
@@ -2035,7 +1432,7 @@ function getmatchesfilter(a4) {
   if (a2 != undefined) {
     hullobj = a1[a2];
     if (a3 != undefined) {
-      if (hullobj[a3].length > 1 && hullobj[a3].length == Object.entries(a4).length) {
+      if (hullobj[a3].length == Object.entries(a4).length) {
         returnfilterindex = filter(hullobj[a3])
         let shipobj = ships;
         let newhullobj = shipobj[a2][a3]
@@ -2061,7 +1458,7 @@ function getmatchesfilter(a4) {
       }
     } else {
       for (let i = 0; i < Object.keys(hullobj).length; i++) {
-        if (hullobj[Object.keys(hullobj)[i]].length > 1 && hullobj[Object.keys(hullobj)[i]].length == Object.entries(a4).length) {
+        if (hullobj[Object.keys(hullobj)[i]].length == Object.entries(a4).length) {
           returnfilterindex = filter(hullobj[Object.keys(hullobj)[i]])
           if (returnfilterindex.length != 0) {
             newshipobj[a2][Object.keys(hullobj)[i]] = returnfilterindex
@@ -2087,7 +1484,7 @@ function getmatchesfilter(a4) {
     if (a3 != undefined) {
       for (let i = 0; i < Object.keys(a1).length; i++) {
         hullobj = a1[Object.keys(a1)[i]]
-        if (hullobj[a3].length > 1 && hullobj[a3].length == Object.entries(a4).length) {
+        if (hullobj[a3].length == Object.entries(a4).length) {
           returnfilterindex = filter(hullobj[a3])
           if (returnfilterindex.length != 0) {
             newshipobj[Object.keys(a1)[i]][a3] = returnfilterindex
@@ -2112,7 +1509,7 @@ function getmatchesfilter(a4) {
       for (let i = 0; i < Object.keys(a1).length; i++) {
         hullobj = a1[Object.keys(a1)[i]]
         for (let ii = 0; ii < Object.entries(hullobj).length; ii++) {
-          if (hullobj[Object.entries(hullobj)[ii][0]].length > 1 && hullobj[Object.entries(hullobj)[ii][0]].length == Object.entries(a4).length) {
+          if (hullobj[Object.entries(hullobj)[ii][0]].length == Object.entries(a4).length) {
             returnfilterindex = filter(hullobj[Object.entries(hullobj)[ii][0]])
             if (returnfilterindex.length != 0) {
               newshipobj[Object.keys(a1)[i]][Object.entries(hullobj)[ii][0]] = returnfilterindex
@@ -2332,6 +1729,7 @@ function buildfiltermainhtml(a1, a2, a3, a4) {
 
   }
 }
+
 async function buildhtmlall() {
   let shipobj = Object.entries(ships);
   document.getElementsByClassName("main")[0].innerHTML = "";
@@ -2382,189 +1780,6 @@ async function buildhtmlall() {
         filltier(shipobj[i][0], Object.keys(shipobj[i][1])[ii]);
       }
     }
-  }
-}
-
-function buildhulltypehtml(a1) {
-  let shipobj = Object.entries(ships);
-  document.getElementsByClassName("main")[0].innerHTML = "";
-
-  if (a1 == undefined) {
-    buildhtmlall();
-  } else {
-    if (
-      a1 == "AviationBattleship" ||
-      a1 == "Monitor" ||
-      a1 == "Repairship" ||
-      a1 == "SubmarineCarrier"
-    ) {
-      buildspecialtype(a1);
-    } else {
-      buildhulltype(a1);
-    }
-  }
-
-  function buildhulltype(a1) {
-    let i;
-    switch (a1) {
-      case "battleship":
-        i = 0;
-        break;
-      case "carrier":
-        i = 1;
-        break;
-      case "heavycruiser":
-        i = 2;
-        break;
-      case "lightcruiser":
-        i = 3;
-        break;
-      case "destroyer":
-        i = 4;
-        break;
-      case "submarine":
-        i = 5;
-        break;
-    }
-    // Hulltype class
-    htmldombuilder("div", shipobj[i][0] + " all", undefined, undefined)
-    // Hulltype class banner
-    let bsrc
-    if (shipobj[i][0] == "heavycruiser") {
-      bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-    } else if (shipobj[i][0] == "lightcruiser") {
-      bsrc = "Assets/TierClassBanner/LightCruiser.png";
-    } else {
-      bsrc =
-        "Assets/TierClassBanner/" +
-        shipobj[i][0].charAt(0).toUpperCase() +
-        shipobj[i][0].slice(1) +
-        ".png";
-    }
-    htmldombuilder("img", shipobj[i][0] + "banner", {
-      style: {
-        marginRight: "30px"
-      },
-      addon: {
-        src: bsrc
-      }
-    }, document.getElementsByClassName(shipobj[i][0])[0])
-
-    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      if (shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length != 0) {
-        // s == t0 t1 t2 usw
-        let sizecheck = tiersize(shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length);
-        htmldombuilder("div", Object.keys(shipobj[i][1])[ii], {
-          style: {
-            width: sizecheck.result,
-            marginRight: "20px"
-          }
-        }, document.getElementsByClassName(shipobj[i][0])[0])
-        htmldombuilder("div", "tierbanner", {
-          style: {
-            width: sizecheck.rawresult - 10 + "px"
-          },
-          addon: {
-            text: Object.keys(shipobj[i][1])[ii]
-          }
-        }, document.getElementsByClassName(shipobj[i][0])[0].getElementsByClassName(Object.keys(shipobj[i][1])[ii])[0])
-
-        filltier(shipobj[i][0], Object.keys(shipobj[i][1])[ii]);
-      }
-    }
-  }
-
-  function buildspecialtype(a1) {
-    let tier;
-    let hulltypeidf;
-    let idf;
-    switch (a1) {
-      case "AviationBattleship":
-        hulltypeidf = "battleship";
-        idf = 0;
-        break;
-      case "Monitor":
-        hulltypeidf = "battleship";
-        idf = 0;
-        break;
-      case "Repairship":
-        hulltypeidf = "carrier";
-        idf = 1;
-        break;
-      case "SubmarineCarrier":
-        hulltypeidf = "submarine";
-        idf = 5;
-        break;
-    }
-    // Hulltype class
-    htmldombuilder("div", hulltypeidf + " all", undefined, undefined)
-    // Hulltype class banner
-    htmldombuilder("img", hulltypeidf + "banner", {
-      style: {
-        marginRight: "30px"
-      },
-      addon: {
-        src: "Assets/TierClassBanner/" + hulltypeidf.charAt(0).toUpperCase() + hulltypeidf.slice(1) + ".png"
-      }
-    }, document.getElementsByClassName(hulltypeidf)[0])
-    for (let i = 0; i < 8; i++) {
-      switch (i) {
-        case 0:
-          tier = "t0";
-          break;
-        case 1:
-          tier = "t1";
-          break;
-        case 2:
-          tier = "t2";
-          break;
-        case 3:
-          tier = "t3";
-          break;
-        case 4:
-          tier = "t4";
-          break;
-        case 5:
-          tier = "t5";
-          break;
-        case 6:
-          tier = "t6";
-          break;
-        case 7:
-          tier = "t7";
-          break;
-      }
-
-      let index = getAllIndexes(
-        shipobj[idf][1][tier],
-        a1,
-        "hullTypeId",
-        false
-      );
-      if (index.length != 0) {
-        buildspecialtier(tier, index, hulltypeidf);
-      }
-    }
-  }
-
-  function buildspecialtier(a1, a2, a3) {
-    // s == t0 t1 t2 usw
-    let sizecheck = tiersize(a2.length);
-    htmldombuilder("div", a1, {
-      style: {
-        marginRight: "20px",
-        width: sizecheck.result
-      }
-    }, document.getElementsByClassName(a3)[0])
-    htmldombuilder("div", "tierbanner", {
-      style: {
-        width: sizecheck.rawresult - 10 + "px"
-      },
-      addon: {
-        text: a1
-      }
-    }, document.getElementsByClassName(a3)[0].getElementsByClassName(a1)[0])
-    filltier(a3, a1, a2);
   }
 }
 
@@ -2640,7 +1855,7 @@ function filltier(a1, a2, a3) {
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
           if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
@@ -2653,7 +1868,7 @@ function filltier(a1, a2, a3) {
             }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
           }
           if (languageid == "cn") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
@@ -2693,7 +1908,7 @@ function filltier(a1, a2, a3) {
       if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
           if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
               }
@@ -2706,7 +1921,7 @@ function filltier(a1, a2, a3) {
             }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
           }
           if (languageid == "cn") {
-            htmldombuilder("img", "tag" + (ii + 1) + " show", {
+            htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
               }
