@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="Assets/Misc/favicon.ico"/>
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
   </div>
     <div class="dropdowns">
       <div class="hulltype-dropdown">
-        <button onclick="myFunction(this.classList)" class="hulltype-dropbtn">
+        <button onclick="activehandler(this.classList)" class="hulltype-dropbtn">
           Hull Type
         </button>
         <div id="hulltype-dropdown" class="hulltype-dropdown-content">
@@ -45,7 +46,7 @@
         </div>
       </div>
       <div class="rarity-dropdown">
-        <button onclick="myFunction(this.classList)" class="rarity-dropbtn">
+        <button onclick="activehandler(this.classList)" class="rarity-dropbtn">
           Rarity
         </button>
         <div id="rarity-dropdown" class="rarity-dropdown-content">
@@ -58,7 +59,7 @@
         </div>
       </div>
       <div class="nationality-dropdown">
-        <button onclick="myFunction(this.classList)" class="nationality-dropbtn">
+        <button onclick="activehandler(this.classList)" class="nationality-dropbtn">
           Nationality
         </button>
         <div id="nationality-dropdown" class="nationality-dropdown-content">
@@ -80,7 +81,7 @@
         </div>
       </div>
       <div class="tags-dropdown">
-        <button onclick="myFunction(this.classList)" class="tags-dropbtn">
+        <button onclick="activehandler(this.classList)" class="tags-dropbtn">
           Tag
         </button>
         <div id="tags-dropdown" class="tags-dropdown-content">

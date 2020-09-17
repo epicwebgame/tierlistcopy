@@ -4,7 +4,7 @@ let changelog;
 let identid;
 let identmain;
 let language;
-let languageid = "en";
+let languageid;
 let f1 = undefined;
 let f2 = undefined;
 let f3 = undefined;
@@ -12,7 +12,111 @@ let f4 = undefined;
 let f5 = undefined;
 let arraysobj = {};
 
+async function cookieread() {
+ let cookieread = Cookies.get('language')
+ return cookieread
+}
+
+async function languageselector() {
+  document.getElementsByClassName("main")[0].style.display = "block"
+  document.getElementsByClassName("main")[0].style.position = "unset"
+  document.getElementsByClassName("bannertwo")[0].style.display = "none"
+  htmldombuilder("div", "mainlanguageselector", {
+    style: {
+      top: "50%",
+      left: "50%",
+      margin: "-200px 0px 0px -285.79px",
+      position: "absolute"
+    }
+  }, document.getElementsByClassName("main")[0])
+  htmldombuilder("div", "languageselector", {
+    style: {
+      color: "white",
+      textAlign: "center",
+      fontSize: "50px",
+      marginBottom: "35px"
+    },
+    addon: {
+      innerText: "Please choose a language."
+    }
+  }, document.getElementsByClassName("mainlanguageselector")[0])
+  htmldombuilder("div", "languagemain", {
+    style: {
+      marginLeft: "30.79px"
+    }
+  }, document.getElementsByClassName("mainlanguageselector")[0])
+  htmldombuilder("img", "langen", {
+    style: {
+      width: "120px",
+      height: "80px",
+      marginRight: "10px"
+    },
+    addon: {
+      src: "Assets/LanguageFlags/English.svg"
+    }
+  }, document.getElementsByClassName("languagemain")[0])
+  htmldombuilder("img", "langjp", {
+    style: {
+      width: "120px",
+      marginRight: "10px"
+    },
+    addon: {
+      src: "Assets/LanguageFlags/Japanese.svg"
+    }
+  }, document.getElementsByClassName("languagemain")[0])
+  htmldombuilder("img", "langkr", {
+    style: {
+      width: "120px",
+      marginRight: "10px"
+    },
+    addon: {
+      src: "Assets/LanguageFlags/Korean.svg"
+    }
+  }, document.getElementsByClassName("languagemain")[0])
+  htmldombuilder("img", "langcn", {
+    style: {
+      width: "120px"
+    },
+    addon: {
+      src: "Assets/LanguageFlags/Chinese.svg"
+    }
+  }, document.getElementsByClassName("languagemain")[0])
+  let langchange = document.querySelectorAll(".langen, .langjp, .langkr, .langcn");
+  langchange.forEach(function (langadd) {
+    langadd.addEventListener(
+      "click",
+      function () {
+        setcookie(this.classList[0]);
+      },
+      false
+    );
+  });
+}
+
+async function setcookie(a1) {
+  let str = a1.replace("lang", "")
+  Cookies.set('language', str, { expires: 365 })
+  languageid = str
+  loaddata()
+}
+
+async function setcookieghost(a1) {
+  let str = a1.replace("lang", "")
+  Cookies.set('language', str, { expires: 365 })
+  languageid = str
+}
+
 window.onload = async function () {
+  let languagecheck = await cookieread()
+  if (languagecheck == undefined) {
+    languageselector()
+  } else {
+    languageid = languagecheck
+    loaddata()
+  }
+};
+
+async function loaddata() {
   ships = await getjson("ships");
   changelog = await getjson("changelog");
   let openChangelogButtons = document.querySelectorAll('[data-changelog-target]')
@@ -125,7 +229,7 @@ window.onload = async function () {
       }
     }
   }
-};
+}
 
 function fillchangelogselect(a1, a2) {
   var i = Object.entries(a1).length;
@@ -358,32 +462,16 @@ function getchangelog(a1) {
       //Tags filler
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_en")[0])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_en")[0])
-          }
-          if (languageid == "cn") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_cn")[0])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_cn")[0])
-          }
         }
       }
       //Namechange html
@@ -454,32 +542,16 @@ function getchangelog(a1) {
       //Tags filler
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
-          }
-          if (languageid == "cn") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
-          }
         }
       }
       //Namechange html
@@ -792,9 +864,10 @@ window.onclick = function (event) {
 };
 
 function languagechangerfunc(a1) {
+  setcookieghost(a1)
+
   document.querySelectorAll(".lang").forEach((e) => {
-    console.log(e.classList[1])
-  if (e.classList.contains(a1) && e.classList.contains("active") != "active") {
+  if (e.classList.contains(a1) && !e.classList.contains("active")) {
     e.classList.add("active");
   } else {
     e.classList.remove("active")
@@ -802,10 +875,10 @@ function languagechangerfunc(a1) {
   })
 
   document.querySelectorAll("[class*='text_']").forEach((e) => {
-    if (!e.classList.contains("show") && e.classList.contains("text_" + a1)) {
-      e.classList.add("show")
-    } else {
+    if (!e.classList.contains("text_" + a1)) {
       e.classList.remove("show")
+    } else {
+      e.classList.add("show")
     }
   })
 
@@ -842,7 +915,7 @@ function shipnamecheck(a1, a2) {
   }
 }
 
-function myFunction(a1) {
+function activehandler(a1) {
   if (a1 != identmain && identmain != undefined) {
     document.getElementById(identid).classList.remove("show");
     identmain = undefined;
@@ -1081,48 +1154,6 @@ function texthandler(a1, a2, a3) {
 function tiertext(a1) {
   var result = a1.toUpperCase();
   return result;
-}
-
-function buildit(b1, b2, b3, b4, shipobj) {
-  if (document.getElementsByClassName(b2).length == 0) {
-    // Hulltype class
-    htmldombuilder("div", shipobj[b1][0] + " all", undefined, undefined)
-    // Hulltype class banner
-    let bsrc
-    if (shipobj[b1][0] == "heavycruiser") {
-      bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-    } else if (shipobj[b1][0] == "lightcruiser") {
-      bsrc = "Assets/TierClassBanner/LightCruiser.png";
-    } else {
-      bsrc = "Assets/TierClassBanner/" + shipobj[b1][0].charAt(0).toUpperCase() + shipobj[b1][0].slice(1) + ".png";
-    }
-    htmldombuilder("img", shipobj[b1][0] + " banner", {
-      style: {
-        marginRight: "30px"
-      },
-      addon: {
-        src: bsrc
-      }
-    }, document.getElementsByClassName(shipobj[b1][0])[0])
-  }
-
-  // s == t0 t1 t2 usw
-  let sizecheck = tiersize(b4.length);
-  htmldombuilder("div", b3, {
-    style: {
-      width: sizecheck.result,
-      marginRight: "20px"
-    }
-  }, document.getElementsByClassName(b2)[0])
-  htmldombuilder("div", "tierbanner", {
-    style: {
-      width: sizecheck.rawresult - 10 + "px"
-    },
-    addon: {
-      text: b3
-    }
-  }, document.getElementsByClassName(b2)[0].getElementsByClassName(b3)[0])
-  filltier(b2, b3, b4);
 }
 
 function buildmultihtml(a1, a2) {
@@ -1854,32 +1885,16 @@ function filltier(a1, a2, a3) {
       // tags filler
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
-          }
-          if (languageid == "cn") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
-          }
         }
       }
       // Span text
@@ -1907,32 +1922,16 @@ function filltier(a1, a2, a3) {
     }
       if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
-          if (languageid == "en" || languageid == "jp" || languageid == "kr") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
               }
             }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
-          }
-          if (languageid == "cn") {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
                 src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
               }
             }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
-          } else {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
-          }
         }
       }
       spantextbuild(ships[`${a1}`][`${a2}`][a3[i]].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])

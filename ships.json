@@ -12,7 +12,6 @@
           "kr": "프리드리히 데어 그로세"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan011/thumbnail.png",
         "rarity": "Decisive",
@@ -33,7 +32,6 @@
           "kr": "모나크"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan002/thumbnail.png",
         "rarity": "Priority",
@@ -54,7 +52,6 @@
           "kr": "워스파이트"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/131/thumbnail.png",
         "rarity": "Super Rare",
@@ -75,7 +72,6 @@
           "kr": "조지아"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan008/thumbnail.png",
         "rarity": "Priority",
@@ -96,7 +92,6 @@
           "kr": "가스코뉴"
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan012/thumbnail.png",
         "rarity": "Priority",
@@ -117,7 +112,6 @@
           "kr": null
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/Plan016/thumbnail.png",
         "rarity": "Priority",
@@ -138,7 +132,6 @@
           "kr": null
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/453/thumbnail.png",
         "rarity": "Super Rare",
@@ -159,7 +152,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/461/thumbnail.png",
         "rarity": "Super Rare",
@@ -180,7 +172,6 @@
           "kr": "나가토"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/212/thumbnail.png",
         "rarity": "Super Rare",
@@ -203,7 +194,6 @@
           "kr": null
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan017/thumbnail.png",
         "rarity": "Priority",
@@ -224,7 +214,6 @@
           "kr": "앨라배마"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/401/thumbnail.png",
         "rarity": "Super Rare",
@@ -245,7 +234,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/441/thumbnail.png",
         "rarity": "Super Rare",
@@ -266,7 +254,6 @@
           "kr": "비스마르크"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/250/thumbnail.png",
         "rarity": "Super Rare",
@@ -287,7 +274,6 @@
           "kr": "아마기"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/367/thumbnail.png",
         "rarity": "Super Rare",
@@ -308,7 +294,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/215/thumbnail.png",
         "rarity": "Super Rare",
@@ -329,7 +314,6 @@
           "kr": "장 바르"
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/353/thumbnail.png",
         "rarity": "Super Rare",
@@ -350,7 +334,6 @@
           "kr": "듀크 오브 요크"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/136/thumbnail.png",
         "rarity": "Super Rare",
@@ -371,7 +354,6 @@
           "kr": "킹 조지 5세"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/134/thumbnail.png",
         "rarity": "Super Rare",
@@ -392,7 +374,6 @@
           "kr": "리토리오"
         },
         "nationality": "Sardegna Empire",
-        "nationalitylink": "Assets/Nationalities/SardegnaEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/410/thumbnail.png",
         "rarity": "Super Rare",
@@ -415,7 +396,6 @@
           "kr": "이즈모"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan004/thumbnail.png",
         "rarity": "Priority",
@@ -436,7 +416,6 @@
           "kr": "키즈나 아이 - 슈퍼 게이머"
         },
         "nationality": "KizunaAI",
-        "nationalitylink": "Assets/Nationalities/KizunaAI.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Collab044/thumbnail.png",
         "rarity": "Super Rare",
@@ -457,7 +436,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/425/thumbnail.png",
         "rarity": "Super Rare",
@@ -478,7 +456,6 @@
           "kr": "카가"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/368/thumbnail.png",
         "rarity": "Super Rare",
@@ -499,7 +476,6 @@
           "kr": null
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/418/thumbnail.png",
         "rarity": "Super Rare",
@@ -520,7 +496,6 @@
           "kr": "티르피츠"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/251/thumbnail.png",
         "rarity": "Super Rare",
@@ -541,7 +516,6 @@
           "kr": "워싱턴"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/064/thumbnail.png",
         "rarity": "Super Rare",
@@ -562,7 +536,6 @@
           "kr": "후드"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/129/thumbnail.png",
         "rarity": "Super Rare",
@@ -583,7 +556,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/437/thumbnail.png",
         "rarity": "Elite",
@@ -604,7 +576,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/451/thumbnail.png",
         "rarity": "Elite",
@@ -625,7 +596,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/464/thumbnail.png",
         "rarity": "Elite",
@@ -646,7 +616,6 @@
           "kr": "휴가"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/211/thumbnail.png",
         "rarity": "Rare",
@@ -669,7 +638,6 @@
           "kr": "매사추세츠"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/354/thumbnail.png",
         "rarity": "Super Rare",
@@ -690,7 +658,6 @@
           "kr": "노스캐롤라이나"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/063/thumbnail.png",
         "rarity": "Super Rare",
@@ -711,7 +678,6 @@
           "kr": "퀸 엘리자베스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/130/thumbnail.png",
         "rarity": "Elite",
@@ -732,7 +698,6 @@
           "kr": "이세"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/210/thumbnail.png",
         "rarity": "Rare",
@@ -753,7 +718,6 @@
           "kr": "후소"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/208/thumbnail.png",
         "rarity": "Rare",
@@ -774,7 +738,6 @@
           "kr": "야마시로"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/209/thumbnail.png",
         "rarity": "Rare",
@@ -797,7 +760,6 @@
           "kr": "미카사"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/320/thumbnail.png",
         "rarity": "Super Rare",
@@ -818,7 +780,6 @@
           "kr": "프린스 오브 웨일즈"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/135/thumbnail.png",
         "rarity": "Super Rare",
@@ -839,7 +800,6 @@
           "kr": "사우스다코타"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/065/thumbnail.png",
         "rarity": "Super Rare",
@@ -860,7 +820,6 @@
           "kr": "됭케르크"
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/352/thumbnail.png",
         "rarity": "Elite",
@@ -881,7 +840,6 @@
           "kr": "무츠"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/213/thumbnail.png",
         "rarity": "Elite",
@@ -902,7 +860,6 @@
           "kr": "메릴랜드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/061/thumbnail.png",
         "rarity": "Elite",
@@ -923,7 +880,6 @@
           "kr": "로드니"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/133/thumbnail.png",
         "rarity": "Elite",
@@ -944,7 +900,6 @@
           "kr": "넬슨"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/132/thumbnail.png",
         "rarity": "Elite",
@@ -965,7 +920,6 @@
           "kr": "애리조나"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/055/thumbnail.png",
         "rarity": "Elite",
@@ -988,7 +942,6 @@
           "kr": "콜로라도"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/060/thumbnail.png",
         "rarity": "Elite",
@@ -1009,7 +962,6 @@
           "kr": "웨스트버지니아"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/062/thumbnail.png",
         "rarity": "Elite",
@@ -1030,7 +982,6 @@
           "kr": "줄리오 체사레"
         },
         "nationality": "Sardegna Empire",
-        "nationalitylink": "Assets/Nationalities/SardegnaEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/412/thumbnail.png",
         "rarity": "Elite",
@@ -1051,7 +1002,6 @@
           "kr": "샤른호르스트"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/248/thumbnail.png",
         "rarity": "Elite",
@@ -1072,7 +1022,6 @@
           "kr": "그나이제나우"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/249/thumbnail.png",
         "rarity": "Elite",
@@ -1093,7 +1042,6 @@
           "kr": "키리시마"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/207/thumbnail.png",
         "rarity": "Elite",
@@ -1114,7 +1062,6 @@
           "kr": "꼬마 히에이"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/383/thumbnail.png",
         "rarity": "Elite",
@@ -1135,7 +1082,6 @@
           "kr": "에레버스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Monitor",
         "thumbnail": "Assets/ShipPortraits/149/thumbnail.png",
         "rarity": "Elite",
@@ -1156,7 +1102,6 @@
           "kr": "테러"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Monitor",
         "thumbnail": "Assets/ShipPortraits/150/thumbnail.png",
         "rarity": "Elite",
@@ -1177,7 +1122,6 @@
           "kr": "애버크롬비"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Monitor",
         "thumbnail": "Assets/ShipPortraits/336/thumbnail.png",
         "rarity": "Elite",
@@ -1200,7 +1144,6 @@
           "kr": "콘고"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/204/thumbnail.png",
         "rarity": "Elite",
@@ -1221,7 +1164,6 @@
           "kr": "하루나"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/206/thumbnail.png",
         "rarity": "Elite",
@@ -1242,7 +1184,6 @@
           "kr": "히에이"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/205/thumbnail.png",
         "rarity": "Elite",
@@ -1263,7 +1204,6 @@
           "kr": "오클라호마"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/053/thumbnail.png",
         "rarity": "Normal",
@@ -1284,7 +1224,6 @@
           "kr": "네바다"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/052/thumbnail.png",
         "rarity": "Normal",
@@ -1305,7 +1244,6 @@
           "kr": "펜실베이니아"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/054/thumbnail.png",
         "rarity": "Rare",
@@ -1328,7 +1266,6 @@
           "kr": "리나운"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/127/thumbnail.png",
         "rarity": "Elite",
@@ -1349,7 +1286,6 @@
           "kr": "콘테 디 카보우르"
         },
         "nationality": "Sardegna Empire",
-        "nationalitylink": "Assets/Nationalities/SardegnaEmpire.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/411/thumbnail.png",
         "rarity": "Rare",
@@ -1370,7 +1306,6 @@
           "kr": "캘리포니아"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/059/thumbnail.png",
         "rarity": "Rare",
@@ -1391,7 +1326,6 @@
           "kr": "테네시"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/058/thumbnail.png",
         "rarity": "Rare",
@@ -1412,7 +1346,6 @@
           "kr": "리펄스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/128/thumbnail.png",
         "rarity": "Rare",
@@ -1437,7 +1370,6 @@
           "kr": "에식스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/357/thumbnail.png",
         "rarity": "Super Rare",
@@ -1458,7 +1390,6 @@
           "kr": "센토"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/356/thumbnail.png",
         "rarity": "Super Rare",
@@ -1479,7 +1410,6 @@
           "kr": "포미더블"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/147/thumbnail.png",
         "rarity": "Super Rare",
@@ -1500,7 +1430,6 @@
           "kr": "엔터프라이즈"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/077/thumbnail.png",
         "rarity": "Super Rare",
@@ -1521,7 +1450,6 @@
           "kr": "새러토가"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/074/thumbnail.png",
         "rarity": "Elite",
@@ -1542,7 +1470,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/426/thumbnail.png",
         "rarity": "Super Rare",
@@ -1563,7 +1490,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/462/thumbnail.png",
         "rarity": "Super Rare",
@@ -1584,7 +1510,6 @@
           "kr": "유니콘"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/142/thumbnail.png",
         "rarity": "Elite",
@@ -1605,7 +1530,6 @@
           "kr": "아카시"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Repair Ship",
         "thumbnail": "Assets/ShipPortraits/232/thumbnail.png",
         "rarity": "Super Rare",
@@ -1628,7 +1552,6 @@
           "kr": "샹그릴라"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/378/thumbnail.png",
         "rarity": "Super Rare",
@@ -1649,7 +1572,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/442/thumbnail.png",
         "rarity": "Super Rare",
@@ -1670,7 +1592,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab052/thumbnail.png",
         "rarity": "Super Rare",
@@ -1691,7 +1612,6 @@
           "kr": "일러스트리어스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/145/thumbnail.png",
         "rarity": "Super Rare",
@@ -1712,7 +1632,6 @@
           "kr": "아크 로열"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/144/thumbnail.png",
         "rarity": "Elite",
@@ -1733,7 +1652,6 @@
           "kr": "쇼호"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/222/thumbnail.png",
         "rarity": "Rare",
@@ -1754,7 +1672,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/447/thumbnail.png",
         "rarity": "Rare",
@@ -1775,7 +1692,6 @@
           "kr": "베스탈"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Repair Ship",
         "thumbnail": "Assets/ShipPortraits/080/thumbnail.png",
         "rarity": "Elite",
@@ -1798,7 +1714,6 @@
           "kr": "쇼카쿠"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/228/thumbnail.png",
         "rarity": "Super Rare",
@@ -1819,7 +1734,6 @@
           "kr": "즈이카쿠"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/229/thumbnail.png",
         "rarity": "Super Rare",
@@ -1840,7 +1754,6 @@
           "kr": "아카기"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/224/thumbnail.png",
         "rarity": "Super Rare",
@@ -1861,7 +1774,6 @@
           "kr": "카가"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/225/thumbnail.png",
         "rarity": "Super Rare",
@@ -1882,7 +1794,6 @@
           "kr": "소류"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/226/thumbnail.png",
         "rarity": "Elite",
@@ -1903,7 +1814,6 @@
           "kr": "히류"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/227/thumbnail.png",
         "rarity": "Elite",
@@ -1924,7 +1834,6 @@
           "kr": "키즈나 아이 - 애니버서리"
         },
         "nationality": "KizunaAI",
-        "nationalitylink": "Assets/Nationalities/KizunaAI.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab043/thumbnail.png",
         "rarity": "Super Rare",
@@ -1945,7 +1854,6 @@
           "kr": "다이호"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/230/thumbnail.png",
         "rarity": "Super Rare",
@@ -1966,7 +1874,6 @@
           "kr": "벙커힐"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/380/thumbnail.png",
         "rarity": "Super Rare",
@@ -1987,7 +1894,6 @@
           "kr": "빅토리어스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/146/thumbnail.png",
         "rarity": "Super Rare",
@@ -2008,7 +1914,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/419/thumbnail.png",
         "rarity": "Super Rare",
@@ -2029,7 +1934,6 @@
           "kr": "레인저"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/075/thumbnail.png",
         "rarity": "Normal",
@@ -2052,7 +1956,6 @@
           "kr": "그라프 체펠린"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/252/thumbnail.png",
         "rarity": "Super Rare",
@@ -2073,7 +1976,6 @@
           "kr": "바탄"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/403/thumbnail.png",
         "rarity": "Elite",
@@ -2094,7 +1996,6 @@
           "kr": null
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/458/thumbnail.png",
         "rarity": "Elite",
@@ -2115,7 +2016,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/143/thumbnail.png",
         "rarity": "Elite",
@@ -2136,7 +2036,6 @@
           "kr": "렉싱턴"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/073/thumbnail.png",
         "rarity": "Elite",
@@ -2157,7 +2056,6 @@
           "kr": "호넷"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/078/thumbnail.png",
         "rarity": "Elite",
@@ -2178,7 +2076,6 @@
           "kr": "꼬마 그라프 체펠린"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/385/thumbnail.png",
         "rarity": "Elite",
@@ -2199,7 +2096,6 @@
           "kr": "체이서"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/376/thumbnail.png",
         "rarity": "Elite",
@@ -2222,7 +2118,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab057/thumbnail.png",
         "rarity": "Elite",
@@ -2243,7 +2138,6 @@
           "kr": "후미뤼르"
         },
         "nationality": "Utawarerumono",
-        "nationalitylink": "Assets/Nationalities/Utawarerumono.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab036/thumbnail.png",
         "rarity": "Elite",
@@ -2264,7 +2158,6 @@
           "kr": "인디펜던스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/377/thumbnail.png",
         "rarity": "Elite",
@@ -2285,7 +2178,6 @@
           "kr": "류조"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/223/thumbnail.png",
         "rarity": "Elite",
@@ -2306,7 +2198,6 @@
           "kr": "요크타운"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/076/thumbnail.png",
         "rarity": "Elite",
@@ -2327,7 +2218,6 @@
           "kr": "꼬마 아카기"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/384/thumbnail.png",
         "rarity": "Elite",
@@ -2348,7 +2238,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/459/thumbnail.png",
         "rarity": "Elite",
@@ -2369,7 +2258,6 @@
           "kr": "롱 아일랜드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/070/thumbnail.png",
         "rarity": "Rare",
@@ -2392,7 +2280,6 @@
           "kr": "그린 하트"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab008/thumbnail.png",
         "rarity": "Super Rare",
@@ -2413,7 +2300,6 @@
           "kr": "허미즈"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/140/thumbnail.png",
         "rarity": "Normal",
@@ -2436,7 +2322,6 @@
           "kr": "벨"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab004/thumbnail.png",
         "rarity": "Elite",
@@ -2457,7 +2342,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab056/thumbnail.png",
         "rarity": "Elite",
@@ -2478,7 +2362,6 @@
           "kr": "호쇼"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/220/thumbnail.png",
         "rarity": "Elite",
@@ -2499,7 +2382,6 @@
           "kr": "랭글리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/072/thumbnail.png",
         "rarity": "Normal",
@@ -2520,7 +2402,6 @@
           "kr": "보그"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/071/thumbnail.png",
         "rarity": "Normal",
@@ -2543,7 +2424,6 @@
           "kr": "우루루"
         },
         "nationality": "Utawarerumono",
-        "nationalitylink": "Assets/Nationalities/Utawarerumono.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab034/thumbnail.png",
         "rarity": "Elite",
@@ -2564,7 +2444,6 @@
           "kr": "사라나"
         },
         "nationality": "Utawarerumono",
-        "nationalitylink": "Assets/Nationalities/Utawarerumono.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab035/thumbnail.png",
         "rarity": "Elite",
@@ -2585,7 +2464,6 @@
           "kr": "히요"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/218/thumbnail.png",
         "rarity": "Rare",
@@ -2606,7 +2484,6 @@
           "kr": "준요"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/219/thumbnail.png",
         "rarity": "Rare",
@@ -2627,7 +2504,6 @@
           "kr": "글로리어스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/148/thumbnail.png",
         "rarity": "Elite",
@@ -2648,7 +2524,6 @@
           "kr": "와스프"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/079/thumbnail.png",
         "rarity": "Rare",
@@ -2673,7 +2548,6 @@
           "kr": "아즈마"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Large Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan010/thumbnail.png",
         "rarity": "Decisive",
@@ -2694,7 +2568,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan014/thumbnail.png",
         "rarity": "Decisive",
@@ -2715,7 +2588,6 @@
           "kr": "론"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan005/thumbnail.png",
         "rarity": "Priority",
@@ -2736,7 +2608,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan013/thumbnail.png",
         "rarity": "Priority",
@@ -2757,7 +2628,6 @@
           "kr": "볼티모어"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/050/thumbnail.png",
         "rarity": "Super Rare",
@@ -2778,7 +2648,6 @@
           "kr": "차라"
         },
         "nationality": "Sardegna Empire",
-        "nationalitylink": "Assets/Nationalities/SardegnaEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/413/thumbnail.png",
         "rarity": "Super Rare",
@@ -2799,7 +2668,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/443/thumbnail.png",
         "rarity": "Super Rare",
@@ -2822,7 +2690,6 @@
           "kr": "생 루이"
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan006/thumbnail.png",
         "rarity": "Priority",
@@ -2843,7 +2710,6 @@
           "kr": "이부키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan003/thumbnail.png",
         "rarity": "Priority",
@@ -2864,7 +2730,6 @@
           "kr": "미니애폴리스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/364/thumbnail.png",
         "rarity": "Super Rare",
@@ -2885,7 +2750,6 @@
           "kr": "런던"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "London subclass",
         "thumbnail": "Assets/ShipPortraits/119/thumbnail.png",
         "rarity": "Elite",
@@ -2906,7 +2770,6 @@
           "kr": "포틀랜드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/044/thumbnail.png",
         "rarity": "Rare",
@@ -2929,7 +2792,6 @@
           "kr": "키즈나 아이 - 엘레강트"
         },
         "nationality": "KizunaAI",
-        "nationalitylink": "Assets/Nationalities/KizunaAI.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab042/thumbnail.png",
         "rarity": "Super Rare",
@@ -2950,7 +2812,6 @@
           "kr": null
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/455/thumbnail.png",
         "rarity": "Super Rare",
@@ -2971,7 +2832,6 @@
           "kr": "요크"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/125/thumbnail.png",
         "rarity": "Elite",
@@ -2992,7 +2852,6 @@
           "kr": "프린츠 오이겐"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/244/thumbnail.png",
         "rarity": "Super Rare",
@@ -3013,7 +2872,6 @@
           "kr": "위치타"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/049/thumbnail.png",
         "rarity": "Elite",
@@ -3036,7 +2894,6 @@
           "kr": "타카오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/200/thumbnail.png",
         "rarity": "Super Rare",
@@ -3057,7 +2914,6 @@
           "kr": "아타고"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/201/thumbnail.png",
         "rarity": "Super Rare",
@@ -3078,7 +2934,6 @@
           "kr": "마야"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/202/thumbnail.png",
         "rarity": "Super Rare",
@@ -3099,7 +2954,6 @@
           "kr": "초카이"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/203/thumbnail.png",
         "rarity": "Super Rare",
@@ -3120,7 +2974,6 @@
           "kr": "아드미랄 그라프 슈피"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/246/thumbnail.png",
         "rarity": "Elite",
@@ -3141,7 +2994,6 @@
           "kr": "도이칠란트"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/245/thumbnail.png",
         "rarity": "Elite",
@@ -3164,7 +3016,6 @@
           "kr": "블랙 하트"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab006/thumbnail.png",
         "rarity": "Super Rare",
@@ -3185,7 +3036,6 @@
           "kr": "엑세터"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/126/thumbnail.png",
         "rarity": "Elite",
@@ -3206,7 +3056,6 @@
           "kr": "인디애나폴리스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/045/thumbnail.png",
         "rarity": "Elite",
@@ -3227,7 +3076,6 @@
           "kr": "서포크"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Kent subclass",
         "thumbnail": "Assets/ShipPortraits/122/thumbnail.png",
         "rarity": "Rare",
@@ -3248,7 +3096,6 @@
           "kr": "카코"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/191/thumbnail.png",
         "rarity": "Normal",
@@ -3269,7 +3116,6 @@
           "kr": "후루타카"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/190/thumbnail.png",
         "rarity": "Normal",
@@ -3292,7 +3138,6 @@
           "kr": "쿠온"
         },
         "nationality": "Utawarerumono",
-        "nationalitylink": "Assets/Nationalities/Utawarerumono.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab031/thumbnail.png",
         "rarity": "Super Rare",
@@ -3313,7 +3158,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab055/thumbnail.png",
         "rarity": "Elite",
@@ -3334,7 +3178,6 @@
           "kr": "아스토리아"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/046/thumbnail.png",
         "rarity": "Elite",
@@ -3355,7 +3198,6 @@
           "kr": "퀸시"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/047/thumbnail.png",
         "rarity": "Elite",
@@ -3376,7 +3218,6 @@
           "kr": "빈센스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/048/thumbnail.png",
         "rarity": "Elite",
@@ -3397,7 +3238,6 @@
           "kr": null
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/422/thumbnail.png",
         "rarity": "Elite",
@@ -3418,7 +3258,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/382/thumbnail.png",
         "rarity": "Elite",
@@ -3439,7 +3278,6 @@
           "kr": "아드미랄 히퍼"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/242/thumbnail.png",
         "rarity": "Elite",
@@ -3460,7 +3298,6 @@
           "kr": "도셋셔"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Norfolk subclass",
         "thumbnail": "Assets/ShipPortraits/124/thumbnail.png",
         "rarity": "Elite",
@@ -3481,7 +3318,6 @@
           "kr": "휴스턴"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/043/thumbnail.png",
         "rarity": "Elite",
@@ -3502,7 +3338,6 @@
           "kr": "시카고"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/042/thumbnail.png",
         "rarity": "Rare",
@@ -3523,7 +3358,6 @@
           "kr": "노샘프턴"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/041/thumbnail.png",
         "rarity": "Rare",
@@ -3546,7 +3380,6 @@
           "kr": "느와르"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab002/thumbnail.png",
         "rarity": "Elite",
@@ -3567,7 +3400,6 @@
           "kr": "아시가라"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/198/thumbnail.png",
         "rarity": "Elite",
@@ -3588,7 +3420,6 @@
           "kr": "나치"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/197/thumbnail.png",
         "rarity": "Rare",
@@ -3609,7 +3440,6 @@
           "kr": "묘코"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/196/thumbnail.png",
         "rarity": "Rare",
@@ -3630,7 +3460,6 @@
           "kr": "펜사콜라"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/039/thumbnail.png",
         "rarity": "Normal",
@@ -3651,7 +3480,6 @@
           "kr": "솔트레이크시티"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/040/thumbnail.png",
         "rarity": "Normal",
@@ -3674,7 +3502,6 @@
           "kr": "트렌토"
         },
         "nationality": "Sardegna Empire",
-        "nationalitylink": "Assets/Nationalities/SardegnaEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/414/thumbnail.png",
         "rarity": "Rare",
@@ -3695,7 +3522,6 @@
           "kr": "서식스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "London subclass",
         "thumbnail": "Assets/ShipPortraits/337/thumbnail.png",
         "rarity": "Rare",
@@ -3716,7 +3542,6 @@
           "kr": "슈롭셔"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "London subclass",
         "thumbnail": "Assets/ShipPortraits/120/thumbnail.png",
         "rarity": "Rare",
@@ -3737,7 +3562,6 @@
           "kr": "노포크"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Norfolk subclass",
         "thumbnail": "Assets/ShipPortraits/123/thumbnail.png",
         "rarity": "Rare",
@@ -3758,7 +3582,6 @@
           "kr": "켄트"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Kent subclass",
         "thumbnail": "Assets/ShipPortraits/121/thumbnail.png",
         "rarity": "Rare",
@@ -3779,7 +3602,6 @@
           "kr": "아오바"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/192/thumbnail.png",
         "rarity": "Normal",
@@ -3800,7 +3622,6 @@
           "kr": "키누가사"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/193/thumbnail.png",
         "rarity": "Normal",
@@ -3825,7 +3646,6 @@
           "kr": "샌디에이고"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/036/thumbnail.png",
         "rarity": "Super Rare",
@@ -3846,7 +3666,6 @@
           "kr": "헬레나"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "St. Louis subclass",
         "thumbnail": "Assets/ShipPortraits/033/thumbnail.png",
         "rarity": "Elite",
@@ -3867,7 +3686,6 @@
           "kr": "시애틀"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan007/thumbnail.png",
         "rarity": "Priority",
@@ -3888,7 +3706,6 @@
           "kr": null
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan015/thumbnail.png",
         "rarity": "Priority",
@@ -3909,7 +3726,6 @@
           "kr": "넵튠"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan001/thumbnail.png",
         "rarity": "Priority",
@@ -3930,7 +3746,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/322/thumbnail.png",
         "rarity": "Super Rare",
@@ -3951,7 +3766,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/436/thumbnail.png",
         "rarity": "Super Rare",
@@ -3972,7 +3786,6 @@
           "kr": "얏센"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/257/thumbnail.png",
         "rarity": "Elite",
@@ -3993,7 +3806,6 @@
           "kr": "닝하이"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/258/thumbnail.png",
         "rarity": "Elite",
@@ -4014,7 +3826,6 @@
           "kr": "핑하이"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/259/thumbnail.png",
         "rarity": "Elite",
@@ -4037,7 +3848,6 @@
           "kr": "몬트필리어"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/329/thumbnail.png",
         "rarity": "Super Rare",
@@ -4058,7 +3868,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/393/thumbnail.png",
         "rarity": "Super Rare",
@@ -4079,7 +3888,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/107/thumbnail.png",
         "rarity": "Super Rare",
@@ -4100,7 +3908,6 @@
           "kr": "모가미"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/188/thumbnail.png",
         "rarity": "Elite",
@@ -4121,7 +3928,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/463/thumbnail.png",
         "rarity": "Super Rare",
@@ -4142,7 +3948,6 @@
           "kr": "진츠"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/309/thumbnail.png",
         "rarity": "Elite",
@@ -4163,7 +3968,6 @@
           "kr": "클리블랜드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/037/thumbnail.png",
         "rarity": "Elite",
@@ -4184,7 +3988,6 @@
           "kr": "컬럼비아"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/038/thumbnail.png",
         "rarity": "Elite",
@@ -4205,7 +4008,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/420/thumbnail.png",
         "rarity": "Elite",
@@ -4226,7 +4028,6 @@
           "kr": "버밍햄"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/405/thumbnail.png",
         "rarity": "Elite",
@@ -4247,7 +4048,6 @@
           "kr": "이스즈"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/183/thumbnail.png",
         "rarity": "Rare",
@@ -4268,7 +4068,6 @@
           "kr": "오로라"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/118/thumbnail.png",
         "rarity": "Elite",
@@ -4291,7 +4090,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/186/thumbnail.png",
         "rarity": "Elite",
@@ -4312,7 +4110,6 @@
           "kr": null
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/454/thumbnail.png",
         "rarity": "Super Rare",
@@ -4333,7 +4130,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/371/thumbnail.png",
         "rarity": "Super Rare",
@@ -4354,7 +4150,6 @@
           "kr": "벨파스트"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Edinburgh subclass",
         "thumbnail": "Assets/ShipPortraits/115/thumbnail.png",
         "rarity": "Super Rare",
@@ -4375,7 +4170,6 @@
           "kr": "아브로라"
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/262/thumbnail.png",
         "rarity": "Super Rare",
@@ -4396,7 +4190,6 @@
           "kr": "컬루"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/373/thumbnail.png",
         "rarity": "Rare",
@@ -4417,7 +4210,6 @@
           "kr": "퀴라소"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/372/thumbnail.png",
         "rarity": "Rare",
@@ -4438,7 +4230,6 @@
           "kr": "덴버"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/330/thumbnail.png",
         "rarity": "Elite",
@@ -4459,7 +4250,6 @@
           "kr": "뉴캐슬"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/361/thumbnail.png",
         "rarity": "Rare",
@@ -4480,7 +4270,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/428/thumbnail.png",
         "rarity": "Elite",
@@ -4501,7 +4290,6 @@
           "kr": "센다이"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/308/thumbnail.png",
         "rarity": "Rare",
@@ -4522,7 +4310,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/421/thumbnail.png",
         "rarity": "Elite",
@@ -4543,7 +4330,6 @@
           "kr": "라이프치히"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/241/thumbnail.png",
         "rarity": "Rare",
@@ -4564,7 +4350,6 @@
           "kr": "꼬마 벨파스트"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Edinburgh subclass",
         "thumbnail": "Assets/ShipPortraits/335/thumbnail.png",
         "rarity": "Elite",
@@ -4585,7 +4370,6 @@
           "kr": "피닉스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/032/thumbnail.png",
         "rarity": "Rare",
@@ -4608,7 +4392,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/445/thumbnail.png",
         "rarity": "Super Rare",
@@ -4629,7 +4412,6 @@
           "kr": "에밀 베르탱"
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/349/thumbnail.png",
         "rarity": "Elite",
@@ -4650,7 +4432,6 @@
           "kr": "유바리"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/179/thumbnail.png",
         "rarity": "Elite",
@@ -4671,7 +4452,6 @@
           "kr": "에이잭스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/106/thumbnail.png",
         "rarity": "Rare",
@@ -4692,7 +4472,6 @@
           "kr": "아킬레스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/105/thumbnail.png",
         "rarity": "Rare",
@@ -4713,7 +4492,6 @@
           "kr": "세인트루이스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "St. Louis subclass",
         "thumbnail": "Assets/ShipPortraits/305/thumbnail.png",
         "rarity": "Elite",
@@ -4734,7 +4512,6 @@
           "kr": "셰필드"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/111/thumbnail.png",
         "rarity": "Elite",
@@ -4755,7 +4532,6 @@
           "kr": "꼬마 클리블랜드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/391/thumbnail.png",
         "rarity": "Elite",
@@ -4776,7 +4552,6 @@
           "kr": "꼬마 헬레나"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "St. Louis subclass",
         "thumbnail": "Assets/ShipPortraits/390/thumbnail.png",
         "rarity": "Elite",
@@ -4797,7 +4572,6 @@
           "kr": "브루클린"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/031/thumbnail.png",
         "rarity": "Rare",
@@ -4818,7 +4592,6 @@
           "kr": "리엔더"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/104/thumbnail.png",
         "rarity": "Normal",
@@ -4839,7 +4612,6 @@
           "kr": "호놀룰루"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/304/thumbnail.png",
         "rarity": "Rare",
@@ -4862,7 +4634,6 @@
           "kr": "퍼플 하트"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab005/thumbnail.png",
         "rarity": "Super Rare",
@@ -4883,7 +4654,6 @@
           "kr": "꼬마 샌디에이고"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/392/thumbnail.png",
         "rarity": "Elite",
@@ -4904,7 +4674,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/434/thumbnail.png",
         "rarity": "Elite",
@@ -4925,7 +4694,6 @@
           "kr": "에든버러"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Edinburgh subclass",
         "thumbnail": "Assets/ShipPortraits/114/thumbnail.png",
         "rarity": "Elite",
@@ -4946,7 +4714,6 @@
           "kr": "블랙 프린스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/408/thumbnail.png",
         "rarity": "Elite",
@@ -4967,7 +4734,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/113/thumbnail.png",
         "rarity": "Elite",
@@ -4988,7 +4754,6 @@
           "kr": null
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/456/thumbnail.png",
         "rarity": "Elite",
@@ -5009,7 +4774,6 @@
           "kr": "나카"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/310/thumbnail.png",
         "rarity": "Rare",
@@ -5030,7 +4794,6 @@
           "kr": "쾰른"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/240/thumbnail.png",
         "rarity": "Normal",
@@ -5051,7 +4814,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/423/thumbnail.png",
         "rarity": "Rare",
@@ -5074,7 +4836,6 @@
           "kr": "루루티에"
         },
         "nationality": "Utawarerumono",
-        "nationalitylink": "Assets/Nationalities/Utawarerumono.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab033/thumbnail.png",
         "rarity": "Super Rare",
@@ -5095,7 +4856,6 @@
           "kr": "아가노"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/321/thumbnail.png",
         "rarity": "Elite",
@@ -5116,7 +4876,6 @@
           "kr": "아부쿠마"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/187/thumbnail.png",
         "rarity": "Normal",
@@ -5137,7 +4896,6 @@
           "kr": "카를스루에"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/239/thumbnail.png",
         "rarity": "Normal",
@@ -5158,7 +4916,6 @@
           "kr": "사우스햄튼"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/110/thumbnail.png",
         "rarity": "Rare",
@@ -5181,7 +4938,6 @@
           "kr": "넵튠"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab001/thumbnail.png",
         "rarity": "Elite",
@@ -5202,7 +4958,6 @@
           "kr": "미쿠마"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/189/thumbnail.png",
         "rarity": "Elite",
@@ -5223,7 +4978,6 @@
           "kr": "피지"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/327/thumbnail.png",
         "rarity": "Rare",
@@ -5244,7 +4998,6 @@
           "kr": "자메이카"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/328/thumbnail.png",
         "rarity": "Rare",
@@ -5265,7 +5018,6 @@
           "kr": "산후안"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/404/thumbnail.png",
         "rarity": "Rare",
@@ -5286,7 +5038,6 @@
           "kr": "애틀란타"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/034/thumbnail.png",
         "rarity": "Rare",
@@ -5307,7 +5058,6 @@
           "kr": "쥬노"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/035/thumbnail.png",
         "rarity": "Rare",
@@ -5330,7 +5080,6 @@
           "kr": "멤피스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/360/thumbnail.png",
         "rarity": "Rare",
@@ -5351,7 +5100,6 @@
           "kr": "콩코드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/366/thumbnail.png",
         "rarity": "Rare",
@@ -5372,7 +5120,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/448/thumbnail.png",
         "rarity": "Rare",
@@ -5393,7 +5140,6 @@
           "kr": "아레투사"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/116/thumbnail.png",
         "rarity": "Rare",
@@ -5414,7 +5160,6 @@
           "kr": "갈라테아"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/117/thumbnail.png",
         "rarity": "Rare",
@@ -5435,7 +5180,6 @@
           "kr": "오마하"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/029/thumbnail.png",
         "rarity": "Normal",
@@ -5456,7 +5200,6 @@
           "kr": "롤리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/030/thumbnail.png",
         "rarity": "Normal",
@@ -5477,7 +5220,6 @@
           "kr": "나가라"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/182/thumbnail.png",
         "rarity": "Normal",
@@ -5498,7 +5240,6 @@
           "kr": "리치몬드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/303/thumbnail.png",
         "rarity": "Normal",
@@ -5519,7 +5260,6 @@
           "kr": "쾨니히스베르크"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/238/thumbnail.png",
         "rarity": "Normal",
@@ -5544,7 +5284,6 @@
           "kr": "키타카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Plan009/thumbnail.png",
         "rarity": "Priority",
@@ -5565,7 +5304,6 @@
           "kr": "아야나미"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Ayanami subclass",
         "thumbnail": "Assets/ShipPortraits/155/thumbnail.png",
         "rarity": "Elite",
@@ -5586,7 +5324,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/433/thumbnail.png",
         "rarity": "Super Rare",
@@ -5607,7 +5344,6 @@
           "kr": "라피"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/019/thumbnail.png",
         "rarity": "Elite",
@@ -5628,7 +5364,6 @@
           "kr": "Z23"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/236/thumbnail.png",
         "rarity": "Elite",
@@ -5649,7 +5384,6 @@
           "kr": "유키카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/166/thumbnail.png",
         "rarity": "Super Rare",
@@ -5672,7 +5406,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab051/thumbnail.png",
         "rarity": "Super Rare",
@@ -5693,7 +5426,6 @@
           "kr": "재블린"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/101/thumbnail.png",
         "rarity": "Elite",
@@ -5714,7 +5446,6 @@
           "kr": "Z1"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/233/thumbnail.png",
         "rarity": "Elite",
@@ -5735,7 +5466,6 @@
           "kr": "니콜라스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/301/thumbnail.png",
         "rarity": "Elite",
@@ -5756,7 +5486,6 @@
           "kr": null
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/394/thumbnail.png",
         "rarity": "Super Rare",
@@ -5777,7 +5506,6 @@
           "kr": "르 트리옹팡"
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/347/thumbnail.png",
         "rarity": "Super Rare",
@@ -5798,7 +5526,6 @@
           "kr": "엘드릿지"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/028/thumbnail.png",
         "rarity": "Super Rare",
@@ -5819,7 +5546,6 @@
           "kr": "안샨"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/253/thumbnail.png",
         "rarity": "Elite",
@@ -5840,7 +5566,6 @@
           "kr": "창춘"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/255/thumbnail.png",
         "rarity": "Elite",
@@ -5863,7 +5588,6 @@
           "kr": "카와카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/288/thumbnail.png",
         "rarity": "Super Rare",
@@ -5884,7 +5608,6 @@
           "kr": "시구레"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/165/thumbnail.png",
         "rarity": "Elite",
@@ -5905,7 +5628,6 @@
           "kr": "유다치"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/164/thumbnail.png",
         "rarity": "Super Rare",
@@ -5926,7 +5648,6 @@
           "kr": "Z46"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/267/thumbnail.png",
         "rarity": "Super Rare",
@@ -5947,7 +5668,6 @@
           "kr": "푸슌"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/254/thumbnail.png",
         "rarity": "Elite",
@@ -5968,7 +5688,6 @@
           "kr": "타이위안"
         },
         "nationality": "Eastern Radiance",
-        "nationalitylink": "Assets/Nationalities/EasternRadiance.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/256/thumbnail.png",
         "rarity": "Elite",
@@ -5989,7 +5708,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/460/thumbnail.png",
         "rarity": "Elite",
@@ -6010,7 +5728,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/450/thumbnail.png",
         "rarity": "Elite",
@@ -6031,7 +5748,6 @@
           "kr": "타니카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/319/thumbnail.png",
         "rarity": "Rare",
@@ -6052,7 +5768,6 @@
           "kr": "아덴트"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "A subclass",
         "thumbnail": "Assets/ShipPortraits/083/thumbnail.png",
         "rarity": "Rare",
@@ -6073,7 +5788,6 @@
           "kr": "아마존"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "A subclass",
         "thumbnail": "Assets/ShipPortraits/081/thumbnail.png",
         "rarity": "Rare",
@@ -6096,7 +5810,6 @@
           "kr": "키즈나 아이"
         },
         "nationality": "KizunaAI",
-        "nationalitylink": "Assets/Nationalities/KizunaAI.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab041/thumbnail.png",
         "rarity": "Elite",
@@ -6117,7 +5830,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/449/thumbnail.png",
         "rarity": "Elite",
@@ -6138,7 +5850,6 @@
           "kr": "요이즈키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/297/thumbnail.png",
         "rarity": "Elite",
@@ -6159,7 +5870,6 @@
           "kr": "하루츠키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/296/thumbnail.png",
         "rarity": "Elite",
@@ -6180,7 +5890,6 @@
           "kr": "하마카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/318/thumbnail.png",
         "rarity": "Rare",
@@ -6201,7 +5910,6 @@
           "kr": "카라비니에레"
         },
         "nationality": "Sardegna Empire",
-        "nationalitylink": "Assets/Nationalities/SardegnaEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/415/thumbnail.png",
         "rarity": "Elite",
@@ -6222,7 +5930,6 @@
           "kr": "하츠하루"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/171/thumbnail.png",
         "rarity": "Rare",
@@ -6243,7 +5950,6 @@
           "kr": "유구레"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/176/thumbnail.png",
         "rarity": "Rare",
@@ -6264,7 +5970,6 @@
           "kr": "카게로"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/167/thumbnail.png",
         "rarity": "Rare",
@@ -6285,7 +5990,6 @@
           "kr": "하츠시모"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/174/thumbnail.png",
         "rarity": "Rare",
@@ -6306,7 +6010,6 @@
           "kr": "키요나미"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/293/thumbnail.png",
         "rarity": "Rare",
@@ -6329,7 +6032,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Akatsuki subclass",
         "thumbnail": "Assets/ShipPortraits/160/thumbnail.png",
         "rarity": "Elite",
@@ -6350,7 +6052,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/444/thumbnail.png",
         "rarity": "Elite",
@@ -6371,7 +6072,6 @@
           "kr": null
         },
         "nationality": "Iron Blood",
-        "nationalitylink": "Assets/Nationalities/IronBlood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/466/thumbnail.png",
         "rarity": "Elite",
@@ -6394,7 +6094,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/465/thumbnail.png",
         "rarity": "Elite",
@@ -6415,7 +6114,6 @@
           "kr": "포춘"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/092/thumbnail.png",
         "rarity": "Rare",
@@ -6436,7 +6134,6 @@
           "kr": "후부키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/151/thumbnail.png",
         "rarity": "Elite",
@@ -6457,7 +6154,6 @@
           "kr": "시그넷"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/090/thumbnail.png",
         "rarity": "Normal",
@@ -6478,7 +6174,6 @@
           "kr": "시라누이"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/168/thumbnail.png",
         "rarity": "Normal",
@@ -6499,7 +6194,6 @@
           "kr": "플레처"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/011/thumbnail.png",
         "rarity": "Rare",
@@ -6522,7 +6216,6 @@
           "kr": "화이트 하트"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab007/thumbnail.png",
         "rarity": "Super Rare",
@@ -6543,7 +6236,6 @@
           "kr": "네코네"
         },
         "nationality": "Utawarerumono",
-        "nationalitylink": "Assets/Nationalities/Utawarerumono.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab032/thumbnail.png",
         "rarity": "Super Rare",
@@ -6564,7 +6256,6 @@
           "kr": "마키나미"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/370/thumbnail.png",
         "rarity": "Elite",
@@ -6585,7 +6276,6 @@
           "kr": "하디"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/096/thumbnail.png",
         "rarity": "Elite",
@@ -6606,7 +6296,6 @@
           "kr": "Z2"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/379/thumbnail.png",
         "rarity": "Elite",
@@ -6627,7 +6316,6 @@
           "kr": "르 마르스"
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/351/thumbnail.png",
         "rarity": "Rare",
@@ -6648,7 +6336,6 @@
           "kr": "포르뱅"
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/348/thumbnail.png",
         "rarity": "Rare",
@@ -6669,7 +6356,6 @@
           "kr": "그렌빌"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/093/thumbnail.png",
         "rarity": "Elite",
@@ -6690,7 +6376,6 @@
           "kr": "르 테메레르"
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/359/thumbnail.png",
         "rarity": "Elite",
@@ -6711,7 +6396,6 @@
           "kr": null
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/395/thumbnail.png",
         "rarity": "Elite",
@@ -6732,7 +6416,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/424/thumbnail.png",
         "rarity": "Elite",
@@ -6753,7 +6436,6 @@
           "kr": "뱀파이어"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/103/thumbnail.png",
         "rarity": "Elite",
@@ -6774,7 +6456,6 @@
           "kr": "모리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/010/thumbnail.png",
         "rarity": "Elite",
@@ -6795,7 +6476,6 @@
           "kr": "니이즈키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/295/thumbnail.png",
         "rarity": "Elite",
@@ -6816,7 +6496,6 @@
           "kr": "매치리스"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/325/thumbnail.png",
         "rarity": "Elite",
@@ -6837,7 +6516,6 @@
           "kr": null
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/457/thumbnail.png",
         "rarity": "Elite",
@@ -6858,7 +6536,6 @@
           "kr": null
         },
         "nationality": "Vichya Dominion",
-        "nationalitylink": "Assets/Nationalities/VichyaDominion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/452/thumbnail.png",
         "rarity": "Elite",
@@ -6879,7 +6556,6 @@
           "kr": "마츠카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/270/thumbnail.png",
         "rarity": "Rare",
@@ -6900,7 +6576,6 @@
           "kr": "카미카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/269/thumbnail.png",
         "rarity": "Rare",
@@ -6921,7 +6596,6 @@
           "kr": "심즈"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/026/thumbnail.png",
         "rarity": "Rare",
@@ -6942,7 +6616,6 @@
           "kr": "허먼"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/027/thumbnail.png",
         "rarity": "Rare",
@@ -6963,7 +6636,6 @@
           "kr": "아카스타"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "A subclass",
         "thumbnail": "Assets/ShipPortraits/082/thumbnail.png",
         "rarity": "Rare",
@@ -6984,7 +6656,6 @@
           "kr": "Z25"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/237/thumbnail.png",
         "rarity": "Elite",
@@ -7005,7 +6676,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/431/thumbnail.png",
         "rarity": "Elite",
@@ -7026,7 +6696,6 @@
           "kr": null
         },
         "nationality": "North Union",
-        "nationalitylink": "Assets/Nationalities/NorthUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/432/thumbnail.png",
         "rarity": "Elite",
@@ -7047,7 +6716,6 @@
           "kr": "폭스하운드"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/091/thumbnail.png",
         "rarity": "Normal",
@@ -7068,7 +6736,6 @@
           "kr": "크레센트"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/089/thumbnail.png",
         "rarity": "Normal",
@@ -7089,7 +6756,6 @@
           "kr": "코멧"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/088/thumbnail.png",
         "rarity": "Normal",
@@ -7112,7 +6778,6 @@
           "kr": "블랑"
         },
         "nationality": "Neptunia",
-        "nationalitylink": "Assets/Nationalities/Neptunia.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab003/thumbnail.png",
         "rarity": "Elite",
@@ -7133,7 +6798,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab054/thumbnail.png",
         "rarity": "Elite",
@@ -7154,7 +6818,6 @@
           "kr": "베일리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/263/thumbnail.png",
         "rarity": "Rare",
@@ -7175,7 +6838,6 @@
           "kr": "멀라니"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/375/thumbnail.png",
         "rarity": "Elite",
@@ -7196,7 +6858,6 @@
           "kr": "찰스 오스본"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/013/thumbnail.png",
         "rarity": "Elite",
@@ -7217,7 +6878,6 @@
           "kr": "글로우웜"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/094/thumbnail.png",
         "rarity": "Elite",
@@ -7238,7 +6898,6 @@
           "kr": "머스킷티어"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/326/thumbnail.png",
         "rarity": "Elite",
@@ -7259,7 +6918,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/429/thumbnail.png",
         "rarity": "Elite",
@@ -7280,7 +6938,6 @@
           "kr": "노와키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/170/thumbnail.png",
         "rarity": "Elite",
@@ -7301,7 +6958,6 @@
           "kr": "Z35"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/345/thumbnail.png",
         "rarity": "Elite",
@@ -7322,7 +6978,6 @@
           "kr": "Z36"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/388/thumbnail.png",
         "rarity": "Elite",
@@ -7343,7 +6998,6 @@
           "kr": "쿠로시오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/177/thumbnail.png",
         "rarity": "Rare",
@@ -7364,7 +7018,6 @@
           "kr": "오야시오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/178/thumbnail.png",
         "rarity": "Rare",
@@ -7385,7 +7038,6 @@
           "kr": "미치시오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/333/thumbnail.png",
         "rarity": "Rare",
@@ -7406,7 +7058,6 @@
           "kr": "아사시오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/331/thumbnail.png",
         "rarity": "Rare",
@@ -7427,7 +7078,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/427/thumbnail.png",
         "rarity": "Rare",
@@ -7448,7 +7098,6 @@
           "kr": "에코"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/389/thumbnail.png",
         "rarity": "Rare",
@@ -7469,7 +7118,6 @@
           "kr": "아일윈"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/406/thumbnail.png",
         "rarity": "Rare",
@@ -7490,7 +7138,6 @@
           "kr": "아라시오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/334/thumbnail.png",
         "rarity": "Rare",
@@ -7511,7 +7158,6 @@
           "kr": "하타카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/369/thumbnail.png",
         "rarity": "Rare",
@@ -7532,7 +7178,6 @@
           "kr": "캐신"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/005/thumbnail.png",
         "rarity": "Normal",
@@ -7553,7 +7198,6 @@
           "kr": "다운즈"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/006/thumbnail.png",
         "rarity": "Normal",
@@ -7574,7 +7218,6 @@
           "kr": "무츠키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/271/thumbnail.png",
         "rarity": "Normal",
@@ -7595,7 +7238,6 @@
           "kr": "키사라기"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/272/thumbnail.png",
         "rarity": "Normal",
@@ -7616,7 +7258,6 @@
           "kr": "시라츠유"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/163/thumbnail.png",
         "rarity": "Rare",
@@ -7637,7 +7278,6 @@
           "kr": "그리들리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/007/thumbnail.png",
         "rarity": "Rare",
@@ -7658,7 +7298,6 @@
           "kr": "우라카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/316/thumbnail.png",
         "rarity": "Rare",
@@ -7679,7 +7318,6 @@
           "kr": "이소카제"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/317/thumbnail.png",
         "rarity": "Rare",
@@ -7700,7 +7338,6 @@
           "kr": "주피터"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/306/thumbnail.png",
         "rarity": "Rare",
@@ -7721,7 +7358,6 @@
           "kr": "이카즈치"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Akatsuki subclass",
         "thumbnail": "Assets/ShipPortraits/161/thumbnail.png",
         "rarity": "Rare",
@@ -7742,7 +7378,6 @@
           "kr": "이나즈마"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Akatsuki subclass",
         "thumbnail": "Assets/ShipPortraits/162/thumbnail.png",
         "rarity": "Rare",
@@ -7763,7 +7398,6 @@
           "kr": "와카바"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/173/thumbnail.png",
         "rarity": "Rare",
@@ -7784,7 +7418,6 @@
           "kr": "벤슨"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/018/thumbnail.png",
         "rarity": "Rare",
@@ -7805,7 +7438,6 @@
           "kr": "듀이"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/004/thumbnail.png",
         "rarity": "Rare",
@@ -7826,7 +7458,6 @@
           "kr": "아카츠키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Akatsuki subclass",
         "thumbnail": "Assets/ShipPortraits/159/thumbnail.png",
         "rarity": "Rare",
@@ -7847,7 +7478,6 @@
           "kr": "래드포드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/299/thumbnail.png",
         "rarity": "Rare",
@@ -7868,7 +7498,6 @@
           "kr": "젠킨스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/300/thumbnail.png",
         "rarity": "Rare",
@@ -7889,7 +7518,6 @@
           "kr": "오오시오"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/332/thumbnail.png",
         "rarity": "Rare",
@@ -7910,7 +7538,6 @@
           "kr": "아리아케"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/175/thumbnail.png",
         "rarity": "Rare",
@@ -7931,7 +7558,6 @@
           "kr": "하비"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/362/thumbnail.png",
         "rarity": "Rare",
@@ -7952,7 +7578,6 @@
           "kr": "주노"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/102/thumbnail.png",
         "rarity": "Rare",
@@ -7973,7 +7598,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/417/thumbnail.png",
         "rarity": "Rare",
@@ -7996,7 +7620,6 @@
           "kr": null
         },
         "nationality": "Bilibili",
-        "nationalitylink": "Assets/Nationalities/Bilibili.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab021/thumbnail.png",
         "rarity": "Elite",
@@ -8017,7 +7640,6 @@
           "kr": null
         },
         "nationality": "Bilibili",
-        "nationalitylink": "Assets/Nationalities/Bilibili.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab022/thumbnail.png",
         "rarity": "Elite",
@@ -8038,7 +7660,6 @@
           "kr": "대처"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/014/thumbnail.png",
         "rarity": "Rare",
@@ -8059,7 +7680,6 @@
           "kr": "헤이즐우드"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/365/thumbnail.png",
         "rarity": "Rare",
@@ -8080,7 +7700,6 @@
           "kr": "후미즈키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/277/thumbnail.png",
         "rarity": "Rare",
@@ -8101,7 +7720,6 @@
           "kr": "나가츠키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/278/thumbnail.png",
         "rarity": "Rare",
@@ -8122,7 +7740,6 @@
           "kr": "커크"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/363/thumbnail.png",
         "rarity": "Rare",
@@ -8143,7 +7760,6 @@
           "kr": "킴벌리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/374/thumbnail.png",
         "rarity": "Rare",
@@ -8164,7 +7780,6 @@
           "kr": "헌터"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/100/thumbnail.png",
         "rarity": "Rare",
@@ -8185,7 +7800,6 @@
           "kr": "배시"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/407/thumbnail.png",
         "rarity": "Rare",
@@ -8206,7 +7820,6 @@
           "kr": "스탠리"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/409/thumbnail.png",
         "rarity": "Rare",
@@ -8227,7 +7840,6 @@
           "kr": "부시"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/355/thumbnail.png",
         "rarity": "Rare",
@@ -8248,7 +7860,6 @@
           "kr": null
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/307/thumbnail.png",
         "rarity": "Rare",
@@ -8269,7 +7880,6 @@
           "kr": "Z18"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/346/thumbnail.png",
         "rarity": "Rare",
@@ -8290,7 +7900,6 @@
           "kr": "Z19"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/264/thumbnail.png",
         "rarity": "Rare",
@@ -8311,7 +7920,6 @@
           "kr": "Z20"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/265/thumbnail.png",
         "rarity": "Normal",
@@ -8332,7 +7940,6 @@
           "kr": "Z21"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/266/thumbnail.png",
         "rarity": "Normal",
@@ -8353,7 +7960,6 @@
           "kr": "우즈키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/274/thumbnail.png",
         "rarity": "Normal",
@@ -8374,7 +7980,6 @@
           "kr": "미카즈키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/280/thumbnail.png",
         "rarity": "Normal",
@@ -8395,7 +8000,6 @@
           "kr": "미나즈키"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/276/thumbnail.png",
         "rarity": "Normal",
@@ -8416,7 +8020,6 @@
           "kr": "맥콜"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/009/thumbnail.png",
         "rarity": "Normal",
@@ -8437,7 +8040,6 @@
           "kr": "크레이븐"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/008/thumbnail.png",
         "rarity": "Normal",
@@ -8458,7 +8060,6 @@
           "kr": "얼릭"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/015/thumbnail.png",
         "rarity": "Normal",
@@ -8479,7 +8080,6 @@
           "kr": "푸트"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/016/thumbnail.png",
         "rarity": "Normal",
@@ -8500,7 +8100,6 @@
           "kr": "스펜스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/017/thumbnail.png",
         "rarity": "Normal",
@@ -8521,7 +8120,6 @@
           "kr": "비글"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "B subclass",
         "thumbnail": "Assets/ShipPortraits/086/thumbnail.png",
         "rarity": "Normal",
@@ -8542,7 +8140,6 @@
           "kr": "불독"
         },
         "nationality": "Royal Navy",
-        "nationalitylink": "Assets/Nationalities/RoyalNavy.png",
         "hullType": "B subclass",
         "thumbnail": "Assets/ShipPortraits/087/thumbnail.png",
         "rarity": "Normal",
@@ -8563,7 +8160,6 @@
           "kr": "시제형 부린 MKⅡ"
         },
         "nationality": "Universal",
-        "nationalitylink": "Assets/Nationalities/Universal.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/002/thumbnail.png",
         "rarity": "Super Rare",
@@ -8584,7 +8180,6 @@
           "kr": "범용형 부린"
         },
         "nationality": "Universal",
-        "nationalitylink": "Assets/Nationalities/Universal.png",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/001/thumbnail.png",
         "rarity": "Elite",
@@ -8609,7 +8204,6 @@
           "kr": null
         },
         "nationality": "Iron Blood",
-        "nationalitylink": "Assets/Nationalities/IronBlood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/467/thumbnail.png",
         "rarity": "Super Rare",
@@ -8632,7 +8226,6 @@
           "kr": "U-47"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/343/thumbnail.png",
         "rarity": "Super Rare",
@@ -8653,7 +8246,6 @@
           "kr": "U-81"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/341/thumbnail.png",
         "rarity": "Super Rare",
@@ -8676,7 +8268,6 @@
           "kr": null
         },
         "nationality": "Hololive",
-        "nationalitylink": "Assets/Nationalities/Hololive.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/Collab053/thumbnail.png",
         "rarity": "Super Rare",
@@ -8697,7 +8288,6 @@
           "kr": "카발라"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/402/thumbnail.png",
         "rarity": "Super Rare",
@@ -8718,7 +8308,6 @@
           "kr": "알바코어"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/358/thumbnail.png",
         "rarity": "Super Rare",
@@ -8739,7 +8328,6 @@
           "kr": "이168"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/398/thumbnail.png",
         "rarity": "Super Rare",
@@ -8760,7 +8348,6 @@
           "kr": null
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine Carrier",
         "thumbnail": "Assets/ShipPortraits/381/thumbnail.png",
         "rarity": "Super Rare",
@@ -8781,7 +8368,6 @@
           "kr": "U-101"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/399/thumbnail.png",
         "rarity": "Super Rare",
@@ -8804,7 +8390,6 @@
           "kr": "이19"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/338/thumbnail.png",
         "rarity": "Super Rare",
@@ -8825,7 +8410,6 @@
           "kr": "U-522"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/400/thumbnail.png",
         "rarity": "Elite",
@@ -8846,7 +8430,6 @@
           "kr": null
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/416/thumbnail.png",
         "rarity": "Elite",
@@ -8869,7 +8452,6 @@
           "kr": "쉬르쿠프"
         },
         "nationality": "Iris Libre",
-        "nationalitylink": "Assets/Nationalities/IrisLibre.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/350/thumbnail.png",
         "rarity": "Elite",
@@ -8890,7 +8472,6 @@
           "kr": "이25"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/396/thumbnail.png",
         "rarity": "Elite",
@@ -8911,7 +8492,6 @@
           "kr": "이56"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/397/thumbnail.png",
         "rarity": "Elite",
@@ -8934,7 +8514,6 @@
           "kr": "U-73"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/387/thumbnail.png",
         "rarity": "Elite",
@@ -8955,7 +8534,6 @@
           "kr": "U-556"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/386/thumbnail.png",
         "rarity": "Elite",
@@ -8976,7 +8554,6 @@
           "kr": null
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/446/thumbnail.png",
         "rarity": "Elite",
@@ -8997,7 +8574,6 @@
           "kr": "U-557"
         },
         "nationality": "Ironblood",
-        "nationalitylink": "Assets/Nationalities/Ironblood.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/344/thumbnail.png",
         "rarity": "Elite",
@@ -9018,7 +8594,6 @@
           "kr": "이26"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/339/thumbnail.png",
         "rarity": "Elite",
@@ -9039,7 +8614,6 @@
           "kr": "이58"
         },
         "nationality": "Sakura Empire",
-        "nationalitylink": "Assets/Nationalities/SakuraEmpire.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/340/thumbnail.png",
         "rarity": "Elite",
@@ -9060,7 +8634,6 @@
           "kr": "데이스"
         },
         "nationality": "Eagle Union",
-        "nationalitylink": "Assets/Nationalities/EagleUnion.png",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/342/thumbnail.png",
         "rarity": "Elite",
