@@ -46,37 +46,21 @@ async function languageselector() {
     }
   }, document.getElementsByClassName("mainlanguageselector")[0])
   htmldombuilder("img", "langen", {
-    style: {
-      width: "120px",
-      height: "80px",
-      marginRight: "10px"
-    },
     addon: {
       src: "Assets/LanguageFlags/English.svg"
     }
   }, document.getElementsByClassName("languagemain")[0])
   htmldombuilder("img", "langjp", {
-    style: {
-      width: "120px",
-      marginRight: "10px"
-    },
     addon: {
       src: "Assets/LanguageFlags/Japanese.svg"
     }
   }, document.getElementsByClassName("languagemain")[0])
   htmldombuilder("img", "langkr", {
-    style: {
-      width: "120px",
-      marginRight: "10px"
-    },
     addon: {
       src: "Assets/LanguageFlags/Korean.svg"
     }
   }, document.getElementsByClassName("languagemain")[0])
   htmldombuilder("img", "langcn", {
-    style: {
-      width: "120px"
-    },
     addon: {
       src: "Assets/LanguageFlags/Chinese.svg"
     }
@@ -97,6 +81,7 @@ async function setcookie(a1) {
   let str = a1.replace("lang", "")
   Cookies.set('language', str, { expires: 365 })
   languageid = str
+  document.getElementsByClassName("bannertwo")[0].style.display = "inline-flex"
   loaddata()
 }
 

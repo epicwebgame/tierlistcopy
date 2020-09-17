@@ -699,6 +699,26 @@ button:focus {
   background-color: #3c9dfe;
 }
 
+.langen, .langjp, .langkr, .langcn {
+  width: 120px;
+  margin-right: 10px;
+  border: 3px solid transparent;
+  opacity: 0.8;
+}
+
+.langen {
+  height: 80px;
+}
+
+.langcn {
+  margin-right: 0px;
+}
+
+.langen:hover, .langjp:hover, .langkr:hover, .langcn:hover {
+  border: 3px solid darkgrey;
+  opacity: 1;
+}
+
 #overlay {
   position: fixed;
   opacity: 0;
