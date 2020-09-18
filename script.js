@@ -92,7 +92,6 @@ async function setcookieghost(a1) {
 }
 
 function scrollwidth() {
-  console.log(window.scrollX)
   document.querySelector(".topbanner").style.left = window.scrollX + "px"
   document.querySelector(".bannertwo").style.left = window.scrollX + "px"
 }
