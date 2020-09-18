@@ -11,10 +11,17 @@ let f3 = undefined;
 let f4 = undefined;
 let f5 = undefined;
 let arraysobj = {};
+let changeloglastupdatedate;
 
-async function cookieread() {
+async function langcookieread() {
  let cookieread = Cookies.get('language')
  return cookieread
+}
+
+function changelognotify() {
+  if (Cookies.get('changelog') == undefined || Cookies.get('changelog') != changeloglastupdatedate) {
+    document.getElementsByClassName("notification")[0].style.display = "block"
+   }
 }
 
 async function languageselector() {
@@ -104,19 +111,20 @@ window.onload = async function () {
     },
     false
   );
-
-  let languagecheck = await cookieread()
+  loaddata()
+  let languagecheck = await langcookieread()
   if (languagecheck == undefined) {
     languageselector()
   } else {
     languageid = languagecheck
-    loaddata()
   }
 };
 
 async function loaddata() {
   ships = await getjson("ships");
   changelog = await getjson("changelog");
+  changeloglastupdatedate = Object.entries(changelog)[(Object.entries(changelog).length - 1)][1].updatedate
+  changelognotify()
   let openChangelogButtons = document.querySelectorAll('[data-changelog-target]')
   let closeChangelogButtons = document.querySelectorAll('[data-close-button]')
   let overlay = document.getElementById('overlay')
@@ -611,6 +619,12 @@ function getchangelog(a1) {
 
 function openChangelog(changelog) {
   if (changelog == null) return
+  if (Cookies.get('changelog') != changeloglastupdatedate) {
+    Cookies.set('changelog', changeloglastupdatedate, { expires: 365 })
+    document.getElementsByClassName("notification")[0].style.display = "none"
+  } else {
+    document.getElementsByClassName("notification")[0].style.display = "none"
+  }
   changelog.classList.add('active')
   overlay.classList.add('active')
   var htmlbody = document.body
