@@ -91,7 +91,21 @@ async function setcookieghost(a1) {
   languageid = str
 }
 
+function scrollwidth() {
+  console.log(window.scrollX)
+  document.querySelector(".topbanner").style.left = window.scrollX + "px"
+  document.querySelector(".bannertwo").style.left = window.scrollX + "px"
+}
+
 window.onload = async function () {
+  window.addEventListener(
+    "scroll",
+    function () {
+      scrollwidth();
+    },
+    false
+  );
+
   let languagecheck = await cookieread()
   if (languagecheck == undefined) {
     languageselector()

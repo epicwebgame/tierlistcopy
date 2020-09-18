@@ -38,6 +38,7 @@ body {
 }
 
 .topbanner {
+  position: absolute;
   width: 100%;
   height: 140px;
   background-image: linear-gradient(#1e8dff, #3c9dfe);
@@ -57,6 +58,8 @@ body {
 }
 
 .bannertwo {
+  position: absolute;
+  padding-top: 140px;
   height: 35px;
   width: 100%;
   margin-top: 5px;
@@ -75,9 +78,12 @@ body {
 }
 
 .main {
+  padding-top: 175px;
   display: grid;
   margin-top: 20px;
   position: absolute;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .dropdowns {
