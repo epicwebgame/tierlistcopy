@@ -147,56 +147,5 @@
                     }
                 ]
             }
-        },
-        "57": {
-            "updatedate": null,
-            "fullname": "PvE Ship Tier List #57",
-            "number": 57,
-            "changes": {
-                "new": [{
-                    "shipname": "Shinano",
-                    "changedrank": "null",
-                    "shiptype": "carrier"
-                },
-                {
-                    "shipname": "Kii",
-                    "changedrank": "null",
-                    "shiptype": "battleship"
-                },
-                {
-                    "shipname": "Suzutsuki",
-                    "changedrank": "null",
-                    "shiptype": "destroyer"
-                },
-                {
-                    "shipname": "Chitose",
-                    "changedrank": "null",
-                    "shiptype": "carrier"
-                },
-                {
-                    "shipname": "Chiyoda",
-                    "changedrank": "null",
-                    "shiptype": "carrier"
-                },
-                {
-                    "shipname": "Kashino",
-                    "changedrank": "null",
-                    "shiptype": "null"
-                },
-                {
-                    "shipname": "Kumano",
-                    "changedrank": "null",
-                    "shiptype": "null"
-                }
-            ],
-            "promotions": [
-                {
-            }
-        ],
-            "demotions": [
-                {
-            }
-        ]
         }
     }
-}
