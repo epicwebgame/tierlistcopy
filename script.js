@@ -111,12 +111,12 @@ window.onload = async function () {
     },
     false
   );
-  loaddata()
   let languagecheck = await langcookieread()
   if (languagecheck == undefined) {
     languageselector()
   } else {
     languageid = languagecheck
+    loaddata()
   }
 };
 
