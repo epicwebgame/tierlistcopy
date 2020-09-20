@@ -16,9 +16,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan011/thumbnail.png",
         "rarity": "Decisive",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 1,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "1",
         "tags": ["BA", "DEF"]
       },
       {
@@ -36,9 +35,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan002/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 2,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "2",
         "tags": ["BA", "DEF"]
       },
       {
@@ -56,9 +54,8 @@
         "thumbnail": "Assets/ShipPortraits/131/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 3,
-        "banner": "EventRetrofit",
+        "usagitier": "0",
+        "usagisubtier": "3",
         "tags": ["BA", "DEF"]
       },
       {
@@ -76,9 +73,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan008/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 4,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -96,9 +92,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan012/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 5,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "5",
         "tags": ["BA", "DEF"]
       },
       {
@@ -109,16 +104,15 @@
           "code": "KMS Odin",
           "cn": "奥丁",
           "jp": "オーディン",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Ironblood",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/Plan016/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 6,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "6",
         "tags": ["BA", "DEF", "AS"]
       },
       {
@@ -129,16 +123,15 @@
           "code": "FFNF Richelieu",
           "cn": "黎塞留",
           "jp": "リシュリュー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iris Libre",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/453/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "7",
         "tags": ["BA", "BUFFDMG", "BUFFDEF"]
       },
       {
@@ -149,16 +142,15 @@
           "code": "HMS Howe",
           "cn": "豪",
           "jp": "ハウ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/461/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "8",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -176,9 +168,8 @@
         "thumbnail": "Assets/ShipPortraits/212/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 0,
-        "usagisubtier": 9,
-        "banner": "ENEvent",
+        "usagitier": "0",
+        "usagisubtier": "9",
         "tags": ["BA", "BUFFSHL", "BUFFAIR", "BUFFDMG"]
       }
     ],
@@ -191,16 +182,15 @@
           "code": "FFNF Champagne",
           "cn": "香槟",
           "jp": "シャンパーニュ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iris Libre",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/Plan017/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 1,
-        "banner": "Research",
+        "usagitier": "1",
+        "usagisubtier": "1",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -218,9 +208,8 @@
         "thumbnail": "Assets/ShipPortraits/401/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "2",
         "tags": ["BA", "DEF", "BUFFDEF"]
       },
       {
@@ -231,16 +220,15 @@
           "code": "SN Sovetskaya Rossiya",
           "cn": "苏维埃罗西亚",
           "jp": "ソビエツカヤ・ロシア",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/441/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "3",
         "tags": ["BA"]
       },
       {
@@ -258,9 +246,8 @@
         "thumbnail": "Assets/ShipPortraits/250/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "4",
         "tags": ["BA", "BUFFAIR", "BUFFDMG"]
       },
       {
@@ -278,9 +265,8 @@
         "thumbnail": "Assets/ShipPortraits/367/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 5,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "5",
         "tags": ["BA", "BUFFDEF", "BUFFDMG"]
       },
       {
@@ -291,16 +277,15 @@
           "code": "IJN Tosa",
           "cn": "䲠",
           "jp": "土佐",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/215/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "6",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -318,10 +303,9 @@
         "thumbnail": "Assets/ShipPortraits/353/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 7,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "7",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Duke_of_York",
@@ -338,9 +322,8 @@
         "thumbnail": "Assets/ShipPortraits/136/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "8",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -358,9 +341,8 @@
         "thumbnail": "Assets/ShipPortraits/134/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 9,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "9",
         "tags": ["BA"]
       },
       {
@@ -378,9 +360,8 @@
         "thumbnail": "Assets/ShipPortraits/410/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 1,
-        "usagisubtier": 10,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "10",
         "tags": ["BA", "BUFFDEF"]
       }
     ],
@@ -400,9 +381,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan004/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": "Research",
+        "usagitier": "2",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -420,9 +400,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab044/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": "Collab",
+        "usagitier": "2",
+        "usagisubtier": "2",
         "tags": ["BA"]
       },
       {
@@ -433,16 +412,15 @@
           "code": "IJN Suruga",
           "cn": "鲪",
           "jp": "駿河",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/425/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "3",
         "tags": ["BA", "DEF", "BUFFDEF"]
       },
       {
@@ -460,9 +438,8 @@
         "thumbnail": "Assets/ShipPortraits/368/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "4",
         "tags": ["BA", "TRP"]
       },
       {
@@ -473,16 +450,15 @@
           "code": "MNF Gascogne",
           "cn": "加斯科涅(μ兵装)",
           "jp": "ガスコーニュ（μ兵装）",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Vichya Dominion",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/418/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 5,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "5",
         "tags": ["BUFFDMG"]
       },
       {
@@ -500,9 +476,8 @@
         "thumbnail": "Assets/ShipPortraits/251/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 6,
-        "banner": "ENEvent",
+        "usagitier": "2",
+        "usagisubtier": "6",
         "tags": ["TRP"]
       },
       {
@@ -520,9 +495,8 @@
         "thumbnail": "Assets/ShipPortraits/064/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "7",
         "tags": ["BA"]
       },
       {
@@ -540,9 +514,8 @@
         "thumbnail": "Assets/ShipPortraits/129/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "8",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -553,16 +526,15 @@
           "code": "SN Gangut",
           "cn": "甘古特",
           "jp": "ガングート",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/437/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 9,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "9",
         "tags": ["BUFFDMG", "BUFFDEF"]
       },
       {
@@ -573,17 +545,16 @@
           "code": "HMS Renown",
           "cn": "小声望",
           "jp": "リトル・レナウン",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Battlecruiser",
         "thumbnail": "Assets/ShipPortraits/451/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 10,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "10",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Valiant",
@@ -593,16 +564,15 @@
           "code": "HMS Valiant",
           "cn": "英勇",
           "jp": "ヴァリアント",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Battleship",
         "thumbnail": "Assets/ShipPortraits/464/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 2,
-        "usagisubtier": 11,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "11",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -620,9 +590,8 @@
         "thumbnail": "Assets/ShipPortraits/211/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AviationBattleship",
-        "usagitier": 2,
-        "usagisubtier": 12,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "12",
         "tags": ["BA", "BUFFSHL"]
       }
     ],
@@ -642,9 +611,8 @@
         "thumbnail": "Assets/ShipPortraits/354/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 3,
-        "usagisubtier": 1,
-        "banner": "ENEvent",
+        "usagitier": "3",
+        "usagisubtier": "1",
         "tags": ["DEF"]
       },
       {
@@ -662,9 +630,8 @@
         "thumbnail": "Assets/ShipPortraits/063/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 3,
-        "usagisubtier": 2,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "2",
         "tags": ["BUFFDEF"]
       },
       {
@@ -682,9 +649,8 @@
         "thumbnail": "Assets/ShipPortraits/130/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 3,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "3",
         "tags": ["BUFFDMG"]
       },
       {
@@ -702,9 +668,8 @@
         "thumbnail": "Assets/ShipPortraits/210/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AviationBattleship",
-        "usagitier": 3,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -722,9 +687,8 @@
         "thumbnail": "Assets/ShipPortraits/208/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AviationBattleship",
-        "usagitier": 3,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "5",
         "tags": ["BA"]
       },
       {
@@ -742,9 +706,8 @@
         "thumbnail": "Assets/ShipPortraits/209/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AviationBattleship",
-        "usagitier": 3,
-        "usagisubtier": 6,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "6",
         "tags": ["BA"]
       }
     ],
@@ -764,9 +727,8 @@
         "thumbnail": "Assets/ShipPortraits/320/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 1,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "1",
         "tags": ["BUFFSHL", "BUFFDMG"]
       },
       {
@@ -784,10 +746,9 @@
         "thumbnail": "Assets/ShipPortraits/135/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/South_Dakota",
@@ -804,9 +765,8 @@
         "thumbnail": "Assets/ShipPortraits/065/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "3",
         "tags": ["DEF", "BUFFDEF"]
       },
       {
@@ -824,9 +784,8 @@
         "thumbnail": "Assets/ShipPortraits/352/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 4,
-        "banner": "ENEvent",
+        "usagitier": "4",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -844,9 +803,8 @@
         "thumbnail": "Assets/ShipPortraits/213/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 5,
-        "banner": "ENEvent",
+        "usagitier": "4",
+        "usagisubtier": "5",
         "tags": ["BA"]
       },
       {
@@ -864,9 +822,8 @@
         "thumbnail": "Assets/ShipPortraits/061/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "6",
         "tags": ["BA"]
       },
       {
@@ -884,9 +841,8 @@
         "thumbnail": "Assets/ShipPortraits/133/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "7",
         "tags": ["BA"]
       },
       {
@@ -904,9 +860,8 @@
         "thumbnail": "Assets/ShipPortraits/132/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "8",
         "tags": ["BA"]
       },
       {
@@ -924,9 +879,8 @@
         "thumbnail": "Assets/ShipPortraits/055/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 4,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "9",
         "tags": ["HEAL"]
       }
     ],
@@ -946,9 +900,8 @@
         "thumbnail": "Assets/ShipPortraits/060/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 1,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -966,9 +919,8 @@
         "thumbnail": "Assets/ShipPortraits/062/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 2,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "2",
         "tags": ["BA"]
       },
       {
@@ -986,9 +938,8 @@
         "thumbnail": "Assets/ShipPortraits/412/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "3",
         "tags": ["BA", "TRP"]
       },
       {
@@ -1006,9 +957,8 @@
         "thumbnail": "Assets/ShipPortraits/248/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 4,
-        "banner": "ENEvent",
+        "usagitier": "5",
+        "usagisubtier": "4",
         "tags": ["TRP", "BA"]
       },
       {
@@ -1026,9 +976,8 @@
         "thumbnail": "Assets/ShipPortraits/249/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 5,
-        "banner": "ENEvent",
+        "usagitier": "5",
+        "usagisubtier": "5",
         "tags": ["TRP"]
       },
       {
@@ -1046,9 +995,8 @@
         "thumbnail": "Assets/ShipPortraits/207/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "6",
         "tags": ["BA"]
       },
       {
@@ -1066,9 +1014,8 @@
         "thumbnail": "Assets/ShipPortraits/383/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 5,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "7",
         "tags": ["TRP", "BUFFDEF"]
       },
       {
@@ -1086,9 +1033,8 @@
         "thumbnail": "Assets/ShipPortraits/149/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Monitor",
-        "usagitier": 5,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "8",
         "tags": ["BA"]
       },
       {
@@ -1106,9 +1052,8 @@
         "thumbnail": "Assets/ShipPortraits/150/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Monitor",
-        "usagitier": 5,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "9",
         "tags": ["BA"]
       },
       {
@@ -1126,9 +1071,8 @@
         "thumbnail": "Assets/ShipPortraits/336/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Monitor",
-        "usagitier": 5,
-        "usagisubtier": 10,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "10",
         "tags": ["BA"]
       }
     ],
@@ -1148,9 +1092,8 @@
         "thumbnail": "Assets/ShipPortraits/204/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 6,
-        "usagisubtier": 1,
-        "banner": "ENEvent",
+        "usagitier": "6",
+        "usagisubtier": "1",
         "tags": ["BUFFSHL", "BUFFDEF"]
       },
       {
@@ -1168,10 +1111,9 @@
         "thumbnail": "Assets/ShipPortraits/206/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 6,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Hiei",
@@ -1188,9 +1130,8 @@
         "thumbnail": "Assets/ShipPortraits/205/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 6,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "3",
         "tags": ["BUFFDEF"]
       },
       {
@@ -1208,10 +1149,9 @@
         "thumbnail": "Assets/ShipPortraits/053/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Battleship",
-        "usagitier": 6,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Nevada",
@@ -1228,10 +1168,9 @@
         "thumbnail": "Assets/ShipPortraits/052/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Battleship",
-        "usagitier": 6,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Pennsylvania",
@@ -1248,9 +1187,8 @@
         "thumbnail": "Assets/ShipPortraits/054/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 6,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "6",
         "tags": ["BA"]
       }
     ],
@@ -1270,10 +1208,9 @@
         "thumbnail": "Assets/ShipPortraits/127/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Battleship",
-        "usagitier": 7,
-        "usagisubtier": 1,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Conte_di_Cavour",
@@ -1290,9 +1227,8 @@
         "thumbnail": "Assets/ShipPortraits/411/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 7,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "7",
+        "usagisubtier": "2",
         "tags": ["TRP"]
       },
       {
@@ -1310,10 +1246,9 @@
         "thumbnail": "Assets/ShipPortraits/059/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 7,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Tennessee",
@@ -1330,9 +1265,8 @@
         "thumbnail": "Assets/ShipPortraits/058/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 7,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "7",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -1350,10 +1284,9 @@
         "thumbnail": "Assets/ShipPortraits/128/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Battleship",
-        "usagitier": 7,
-        "usagisubtier": 5,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "5",
+        "tags": [null]
       }
     ]
   },
@@ -1374,9 +1307,8 @@
         "thumbnail": "Assets/ShipPortraits/357/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 1,
-        "banner": null,
+        "usagitier": "0",
+        "usagisubtier": "1",
         "tags": ["BA", "BUFFDEF"]
       },
       {
@@ -1394,9 +1326,8 @@
         "thumbnail": "Assets/ShipPortraits/356/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 2,
-        "banner": null,
+        "usagitier": "0",
+        "usagisubtier": "2",
         "tags": ["BA", "BUFFDMG", "BUFFAIR", "BUFFSHL"]
       },
       {
@@ -1414,9 +1345,8 @@
         "thumbnail": "Assets/ShipPortraits/147/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "3",
         "tags": ["BA", "BUFFDMG", "BUFFDEF"]
       },
       {
@@ -1434,10 +1364,9 @@
         "thumbnail": "Assets/ShipPortraits/077/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 4,
-        "banner": null,
-        "tags": null
+        "usagitier": "0",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Saratoga",
@@ -1454,10 +1383,9 @@
         "thumbnail": "Assets/ShipPortraits/074/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "0",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Ryuuhou",
@@ -1467,16 +1395,15 @@
           "code": "IJN Ryuuhou",
           "cn": "鸗",
           "jp": "龍鳳",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/426/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "6",
         "tags": ["HEAL", "BUFFDEF"]
       },
       {
@@ -1487,16 +1414,15 @@
           "code": "HMS Perseus",
           "cn": "英仙座",
           "jp": "パーシュース",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/462/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "7",
         "tags": ["HEAL"]
       },
       {
@@ -1514,9 +1440,8 @@
         "thumbnail": "Assets/ShipPortraits/142/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 0,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "0",
+        "usagisubtier": "8",
         "tags": ["HEAL", "BUFFDMG"]
       },
       {
@@ -1534,9 +1459,8 @@
         "thumbnail": "Assets/ShipPortraits/232/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Repairship",
-        "usagitier": 0,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "0",
+        "usagisubtier": "9",
         "tags": ["HEAL", "DEF", "BUFFDMG"]
       }
     ],
@@ -1556,9 +1480,8 @@
         "thumbnail": "Assets/ShipPortraits/378/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 1,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -1569,16 +1492,15 @@
           "code": "USS Intrepid",
           "cn": "无畏",
           "jp": "イントレピッド",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/442/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "2",
         "tags": ["BA", "DEF"]
       },
       {
@@ -1589,16 +1511,15 @@
           "code": "Tokino Sora",
           "cn": "时乃空",
           "jp": "ときのそら",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab052/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 3,
-        "banner": "Collab",
+        "usagitier": "1",
+        "usagisubtier": "3",
         "tags": ["BA", "BUFFDEF"]
       },
       {
@@ -1616,9 +1537,8 @@
         "thumbnail": "Assets/ShipPortraits/145/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "4",
         "tags": ["BUFFDEF"]
       },
       {
@@ -1636,9 +1556,8 @@
         "thumbnail": "Assets/ShipPortraits/144/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "5",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -1656,9 +1575,8 @@
         "thumbnail": "Assets/ShipPortraits/222/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 6,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "6",
         "tags": ["HEAL", "BUFFAIR"]
       },
       {
@@ -1669,16 +1587,15 @@
           "code": "USS Casablanca",
           "cn": "卡萨布兰卡",
           "jp": "カサブランカ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/447/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 1,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "7",
         "tags": ["BUFFAIR"]
       },
       {
@@ -1696,9 +1613,8 @@
         "thumbnail": "Assets/ShipPortraits/080/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Repairship",
-        "usagitier": 1,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "8",
         "tags": ["HEAL", "AA"]
       }
     ],
@@ -1718,9 +1634,8 @@
         "thumbnail": "Assets/ShipPortraits/228/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "1",
         "tags": ["BUFFDMG"]
       },
       {
@@ -1738,9 +1653,8 @@
         "thumbnail": "Assets/ShipPortraits/229/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "1",
         "tags": ["BUFFDMG"]
       },
       {
@@ -1758,10 +1672,9 @@
         "thumbnail": "Assets/ShipPortraits/224/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kaga",
@@ -1778,10 +1691,9 @@
         "thumbnail": "Assets/ShipPortraits/225/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Souryuu",
@@ -1798,9 +1710,8 @@
         "thumbnail": "Assets/ShipPortraits/226/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "3",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -1818,9 +1729,8 @@
         "thumbnail": "Assets/ShipPortraits/227/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "3",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -1838,9 +1748,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab043/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 4,
-        "banner": "Collab",
+        "usagitier": "2",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -1858,9 +1767,8 @@
         "thumbnail": "Assets/ShipPortraits/230/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "5",
         "tags": ["BA", "DEF"]
       },
       {
@@ -1878,9 +1786,8 @@
         "thumbnail": "Assets/ShipPortraits/380/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "6",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -1898,9 +1805,8 @@
         "thumbnail": "Assets/ShipPortraits/146/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "7",
         "tags": ["DEF"]
       },
       {
@@ -1911,16 +1817,15 @@
           "code": "IJN Akagi",
           "cn": "凰(μ兵装)",
           "jp": "赤城（μ兵装）",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/419/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "8",
         "tags": ["BA"]
       },
       {
@@ -1938,10 +1843,9 @@
         "thumbnail": "Assets/ShipPortraits/075/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 2,
-        "usagisubtier": 9,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "9",
+        "tags": [null]
       }
     ],
     "t3": [
@@ -1960,9 +1864,8 @@
         "thumbnail": "Assets/ShipPortraits/252/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 1,
-        "banner": "ENEvent",
+        "usagitier": "3",
+        "usagisubtier": "1",
         "tags": ["DEF", "BUFFDEF"]
       },
       {
@@ -1980,9 +1883,8 @@
         "thumbnail": "Assets/ShipPortraits/403/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "3",
+        "usagisubtier": "2",
         "tags": ["BA", "BUFFAIR"]
       },
       {
@@ -1993,16 +1895,15 @@
           "code": "FFNF Béarn",
           "cn": "贝亚恩",
           "jp": "ベアルン",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iris Libre",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/458/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "3",
+        "usagisubtier": "3",
         "tags": ["BA"]
       },
       {
@@ -2013,16 +1914,15 @@
           "code": "HMS Eagle",
           "cn": "鹰",
           "jp": "イーグル",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/143/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "3",
+        "usagisubtier": "4",
         "tags": ["MG+1", "BA"]
       },
       {
@@ -2040,9 +1940,8 @@
         "thumbnail": "Assets/ShipPortraits/073/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "5",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -2060,9 +1959,8 @@
         "thumbnail": "Assets/ShipPortraits/078/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "6",
         "tags": ["BA"]
       },
       {
@@ -2080,9 +1978,8 @@
         "thumbnail": "Assets/ShipPortraits/385/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "7",
         "tags": ["BA"]
       },
       {
@@ -2100,9 +1997,8 @@
         "thumbnail": "Assets/ShipPortraits/376/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 3,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "8",
         "tags": ["AS"]
       }
     ],
@@ -2115,16 +2011,15 @@
           "code": "Ookami Mio",
           "cn": "大神澪",
           "jp": "大神ミオ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab057/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "4",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -2142,9 +2037,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab036/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 2,
-        "banner": "Collab",
+        "usagitier": "4",
+        "usagisubtier": "2",
         "tags": ["HEAL", "BA"]
       },
       {
@@ -2162,9 +2056,8 @@
         "thumbnail": "Assets/ShipPortraits/377/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "3",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -2182,9 +2075,8 @@
         "thumbnail": "Assets/ShipPortraits/223/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "4",
         "tags": ["BA", "BUFFAIR"]
       },
       {
@@ -2202,9 +2094,8 @@
         "thumbnail": "Assets/ShipPortraits/076/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "5",
         "tags": ["BA", "DEF", "BUFFDMG"]
       },
       {
@@ -2222,9 +2113,8 @@
         "thumbnail": "Assets/ShipPortraits/384/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "7",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -2235,16 +2125,15 @@
           "code": "HMS Illustrious",
           "cn": "小光辉",
           "jp": "リトル・イラストリアス",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/459/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "7",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -2262,9 +2151,8 @@
         "thumbnail": "Assets/ShipPortraits/070/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 4,
-        "usagisubtier": 8,
-        "banner": "Retrofit",
+        "usagitier": "4",
+        "usagisubtier": "8",
         "tags": ["BUFFAIR"]
       }
     ],
@@ -2284,9 +2172,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab008/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 5,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "5",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -2304,9 +2191,8 @@
         "thumbnail": "Assets/ShipPortraits/140/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 5,
-        "usagisubtier": 2,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "2",
         "tags": ["BA"]
       }
     ],
@@ -2326,10 +2212,9 @@
         "thumbnail": "Assets/ShipPortraits/Collab004/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 6,
-        "usagisubtier": 1,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Murasaki_Shion",
@@ -2339,16 +2224,15 @@
           "code": "Murasaki Shion",
           "cn": "紫咲诗音",
           "jp": "紫咲シオン",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Light Aircraft Carrier",
         "thumbnail": "Assets/ShipPortraits/Collab056/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 6,
-        "usagisubtier": 2,
-        "banner": "Collab",
+        "usagitier": "6",
+        "usagisubtier": "2",
         "tags": ["BA"]
       },
       {
@@ -2366,9 +2250,8 @@
         "thumbnail": "Assets/ShipPortraits/220/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 6,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "3",
         "tags": ["BUFFEXP"]
       },
       {
@@ -2386,9 +2269,8 @@
         "thumbnail": "Assets/ShipPortraits/072/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 6,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
+        "usagitier": "6",
+        "usagisubtier": "4",
         "tags": ["BUFFAIR", "BUFFEXP"]
       },
       {
@@ -2406,10 +2288,9 @@
         "thumbnail": "Assets/ShipPortraits/071/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 6,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "5",
+        "tags": [null]
       }
     ],
     "t7": [
@@ -2428,9 +2309,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab034/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 7,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "7",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -2448,9 +2328,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab035/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 7,
-        "usagisubtier": 2,
-        "banner": "Collab",
+        "usagitier": "7",
+        "usagisubtier": "2",
         "tags": ["BA"]
       },
       {
@@ -2468,10 +2347,9 @@
         "thumbnail": "Assets/ShipPortraits/218/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 7,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Junyou",
@@ -2488,10 +2366,9 @@
         "thumbnail": "Assets/ShipPortraits/219/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 7,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Glorious",
@@ -2508,9 +2385,8 @@
         "thumbnail": "Assets/ShipPortraits/148/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 7,
-        "usagisubtier": 4,
-        "banner": "ENEvent",
+        "usagitier": "7",
+        "usagisubtier": "4",
         "tags": ["BUFFDMG", "BUFFDEF"]
       },
       {
@@ -2528,10 +2404,9 @@
         "thumbnail": "Assets/ShipPortraits/079/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "AircraftCarrier",
-        "usagitier": 7,
-        "usagisubtier": 5,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "5",
+        "tags": [null]
       }
     ]
   },
@@ -2552,9 +2427,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan010/thumbnail.png",
         "rarity": "Decisive",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 1,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "1",
         "tags": ["MG+1", "BA", "DEF"]
       },
       {
@@ -2565,16 +2439,15 @@
           "code": "HMS Drake",
           "cn": "德雷克",
           "jp": "ドレイク",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan014/thumbnail.png",
         "rarity": "Decisive",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 2,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "2",
         "tags": ["MG+1", "BA", "DEF"]
       },
       {
@@ -2592,9 +2465,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan005/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 3,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "3",
         "tags": ["MG+1", "DEF", "BUFFDEF"]
       },
       {
@@ -2605,16 +2477,15 @@
           "code": "HMS Cheshire",
           "cn": "柴郡",
           "jp": "チェシャー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan013/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 4,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "4",
         "tags": ["AA", "BA", "DEF"]
       },
       {
@@ -2632,9 +2503,8 @@
         "thumbnail": "Assets/ShipPortraits/050/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 5,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "5",
         "tags": ["MG+1", "AA", "BUFFAA", "BUFFAIR"]
       },
       {
@@ -2652,9 +2522,8 @@
         "thumbnail": "Assets/ShipPortraits/413/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "6",
         "tags": ["MG+1", "DEF", "BUFFDEF"]
       },
       {
@@ -2665,16 +2534,15 @@
           "code": "USS Bremerton",
           "cn": "布莱默顿",
           "jp": "ブレマートン",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/443/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 0,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "7",
         "tags": ["MG+1", "BA", "DEF", "AA"]
       }
     ],
@@ -2694,9 +2562,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan006/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 1,
-        "usagisubtier": 1,
-        "banner": "Research",
+        "usagitier": "1",
+        "usagisubtier": "1",
         "tags": ["MG+1", "DEF"]
       },
       {
@@ -2714,9 +2581,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan003/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 1,
-        "usagisubtier": 2,
-        "banner": "Research",
+        "usagitier": "1",
+        "usagisubtier": "2",
         "tags": ["TRP", "BA"]
       },
       {
@@ -2734,9 +2600,8 @@
         "thumbnail": "Assets/ShipPortraits/364/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 1,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "4",
         "tags": ["MG+1", "DEF", "AA"]
       },
       {
@@ -2754,9 +2619,8 @@
         "thumbnail": "Assets/ShipPortraits/119/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 1,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "5",
         "tags": ["BUFFSHL"]
       },
       {
@@ -2774,9 +2638,8 @@
         "thumbnail": "Assets/ShipPortraits/044/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 1,
-        "usagisubtier": 6,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "6",
         "tags": ["MG+1", "DEF", "AA", "BUFFDEF"]
       }
     ],
@@ -2796,9 +2659,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab042/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "2",
+        "usagisubtier": "1",
         "tags": ["MG+1"]
       },
       {
@@ -2807,18 +2669,17 @@
         "names": {
           "en": "Algérie",
           "code": "MNF Algérie",
-          "cn": null,
-          "jp": null,
-          "kr": null
+          "cn": "null",
+          "jp": "null",
+          "kr": "null"
         },
         "nationality": "Vichya Dominion",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/455/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "2",
         "tags": ["BA", "BUFFDEF"]
       },
       {
@@ -2836,10 +2697,9 @@
         "thumbnail": "Assets/ShipPortraits/125/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Prinz_Eugen",
@@ -2856,9 +2716,8 @@
         "thumbnail": "Assets/ShipPortraits/244/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 2,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "4",
         "tags": ["DEF", "BUFFDEF"]
       },
       {
@@ -2876,9 +2735,8 @@
         "thumbnail": "Assets/ShipPortraits/049/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 2,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "5",
         "tags": ["MG+1", "BUFFSHL"]
       }
     ],
@@ -2898,10 +2756,9 @@
         "thumbnail": "Assets/ShipPortraits/200/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 3,
-        "usagisubtier": 1,
-        "banner": null,
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Atago",
@@ -2918,10 +2775,9 @@
         "thumbnail": "Assets/ShipPortraits/201/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 3,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Maya",
@@ -2938,10 +2794,9 @@
         "thumbnail": "Assets/ShipPortraits/202/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 3,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Choukai",
@@ -2958,9 +2813,8 @@
         "thumbnail": "Assets/ShipPortraits/203/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 3,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "4",
         "tags": ["BUFFSHL", "BUFFTRP"]
       },
       {
@@ -2978,9 +2832,8 @@
         "thumbnail": "Assets/ShipPortraits/246/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 3,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "5",
         "tags": ["BA"]
       },
       {
@@ -2998,9 +2851,8 @@
         "thumbnail": "Assets/ShipPortraits/245/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 3,
-        "usagisubtier": 6,
-        "banner": "ENEvent",
+        "usagitier": "3",
+        "usagisubtier": "6",
         "tags": ["BA"]
       }
     ],
@@ -3020,9 +2872,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab006/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 4,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "4",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -3040,9 +2891,8 @@
         "thumbnail": "Assets/ShipPortraits/126/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 4,
-        "usagisubtier": 2,
-        "banner": "Retrofit",
+        "usagitier": "4",
+        "usagisubtier": "2",
         "tags": ["BUFFDEF"]
       },
       {
@@ -3060,9 +2910,8 @@
         "thumbnail": "Assets/ShipPortraits/045/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 4,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "3",
         "tags": ["MG+1", "DEF", "BUFFDEF"]
       },
       {
@@ -3080,10 +2929,9 @@
         "thumbnail": "Assets/ShipPortraits/122/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 4,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kako",
@@ -3100,10 +2948,9 @@
         "thumbnail": "Assets/ShipPortraits/191/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 4,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Furutaka",
@@ -3120,10 +2967,9 @@
         "thumbnail": "Assets/ShipPortraits/190/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 4,
-        "usagisubtier": 6,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "6",
+        "tags": [null]
       }
     ],
     "t5": [
@@ -3142,9 +2988,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab031/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "5",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -3155,16 +3000,15 @@
           "code": "Nakiri Ayame",
           "cn": "百鬼绫目",
           "jp": "百鬼あやめ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/Collab055/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 2,
-        "banner": "Collab",
+        "usagitier": "5",
+        "usagisubtier": "2",
         "tags": ["BA"]
       },
       {
@@ -3182,9 +3026,8 @@
         "thumbnail": "Assets/ShipPortraits/046/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "3",
         "tags": ["MG+1", "BUFFSHL"]
       },
       {
@@ -3202,9 +3045,8 @@
         "thumbnail": "Assets/ShipPortraits/047/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "4",
         "tags": ["MG+1"]
       },
       {
@@ -3222,9 +3064,8 @@
         "thumbnail": "Assets/ShipPortraits/048/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 5,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "5",
         "tags": ["MG+1"]
       },
       {
@@ -3235,16 +3076,15 @@
           "code": "KMS Admiral Hipper",
           "cn": "希佩尔海军上将(μ兵装)",
           "jp": "アドミラル·ヒッパー（μ兵装）",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Ironblood",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/422/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "6",
         "tags": ["BUFFDEF"]
       },
       {
@@ -3255,16 +3095,15 @@
           "code": "IJN Suzuya",
           "cn": "狺",
           "jp": "鈴谷",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Heavy Cruiser",
         "thumbnail": "Assets/ShipPortraits/382/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 7,
-        "banner": "ENEvent",
+        "usagitier": "5",
+        "usagisubtier": "7",
         "tags": ["BA"]
       },
       {
@@ -3282,10 +3121,9 @@
         "thumbnail": "Assets/ShipPortraits/242/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 8,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "5",
+        "usagisubtier": "8",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Dorsetshire",
@@ -3302,9 +3140,8 @@
         "thumbnail": "Assets/ShipPortraits/124/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "9",
         "tags": ["TRP"]
       },
       {
@@ -3322,9 +3159,8 @@
         "thumbnail": "Assets/ShipPortraits/043/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 10,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "10",
         "tags": ["MG+1"]
       },
       {
@@ -3342,9 +3178,8 @@
         "thumbnail": "Assets/ShipPortraits/042/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 11,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "11",
         "tags": ["MG+1"]
       },
       {
@@ -3362,9 +3197,8 @@
         "thumbnail": "Assets/ShipPortraits/041/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 5,
-        "usagisubtier": 12,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "12",
         "tags": ["MG+1", "BUFFSHL"]
       }
     ],
@@ -3384,10 +3218,9 @@
         "thumbnail": "Assets/ShipPortraits/Collab002/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 6,
-        "usagisubtier": 1,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Ashigara",
@@ -3404,10 +3237,9 @@
         "thumbnail": "Assets/ShipPortraits/198/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 6,
-        "usagisubtier": 2,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Nachi",
@@ -3424,9 +3256,8 @@
         "thumbnail": "Assets/ShipPortraits/197/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 6,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "3",
         "tags": ["BUFFDEF"]
       },
       {
@@ -3444,9 +3275,8 @@
         "thumbnail": "Assets/ShipPortraits/196/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 6,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "4",
         "tags": ["BUFFDEF"]
       },
       {
@@ -3464,9 +3294,8 @@
         "thumbnail": "Assets/ShipPortraits/039/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 6,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "5",
         "tags": ["MG+1"]
       },
       {
@@ -3484,9 +3313,8 @@
         "thumbnail": "Assets/ShipPortraits/040/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 6,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "6",
         "tags": ["MG+1"]
       }
     ],
@@ -3506,10 +3334,9 @@
         "thumbnail": "Assets/ShipPortraits/414/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 1,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Sussex",
@@ -3526,10 +3353,9 @@
         "thumbnail": "Assets/ShipPortraits/337/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Shropshire",
@@ -3546,10 +3372,9 @@
         "thumbnail": "Assets/ShipPortraits/120/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Norfolk",
@@ -3566,9 +3391,8 @@
         "thumbnail": "Assets/ShipPortraits/123/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "7",
+        "usagisubtier": "4",
         "tags": ["DEF"]
       },
       {
@@ -3586,10 +3410,9 @@
         "thumbnail": "Assets/ShipPortraits/121/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 5,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Aoba",
@@ -3606,10 +3429,9 @@
         "thumbnail": "Assets/ShipPortraits/192/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 6,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "6",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kinugasa",
@@ -3626,10 +3448,9 @@
         "thumbnail": "Assets/ShipPortraits/193/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "HeavyCruiser",
-        "usagitier": 7,
-        "usagisubtier": 7,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "7",
+        "tags": [null]
       }
     ]
   },
@@ -3650,9 +3471,8 @@
         "thumbnail": "Assets/ShipPortraits/036/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 1,
-        "banner": "EventRetrofit",
+        "usagitier": "0",
+        "usagisubtier": "1",
         "tags": ["BA", "AA", "BUFFAA"]
       },
       {
@@ -3670,9 +3490,8 @@
         "thumbnail": "Assets/ShipPortraits/033/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 2,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "2",
         "tags": ["MG+1", "BUFFDMG", "AA", "BUFFDEF"]
       },
       {
@@ -3690,9 +3509,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan007/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 3,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "3",
         "tags": ["MG+1", "AA"]
       },
       {
@@ -3703,16 +3521,15 @@
           "code": "KMS Mainz",
           "cn": "美因茨",
           "jp": "マインツ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Ironblood",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/Plan015/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 4,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "4",
         "tags": ["MG+1", "DEF"]
       },
       {
@@ -3730,9 +3547,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan001/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 5,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "5",
         "tags": ["BA", "DEF"]
       },
       {
@@ -3743,16 +3559,15 @@
           "code": "IJN Noshiro",
           "cn": "貅",
           "jp": "能代",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/322/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "6",
         "tags": ["DEF", "TRP", "BUFFTRP"]
       },
       {
@@ -3763,16 +3578,15 @@
           "code": "SN Chapayev",
           "cn": "恰巴耶夫",
           "jp": "チャパエフ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/436/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "7",
         "tags": ["MG+1", "BA", "BUFFDMG"]
       },
       {
@@ -3790,9 +3604,8 @@
         "thumbnail": "Assets/ShipPortraits/257/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 8,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "8",
         "tags": ["DEF"]
       },
       {
@@ -3810,9 +3623,8 @@
         "thumbnail": "Assets/ShipPortraits/258/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 8,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "8",
         "tags": ["DEF"]
       },
       {
@@ -3830,9 +3642,8 @@
         "thumbnail": "Assets/ShipPortraits/259/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 0,
-        "usagisubtier": 8,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "8",
         "tags": ["DEF"]
       }
     ],
@@ -3852,9 +3663,8 @@
         "thumbnail": "Assets/ShipPortraits/329/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 1,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "1",
         "tags": ["MG+1", "AA", "BUFFSHL", "BUFFDMG"]
       },
       {
@@ -3865,16 +3675,15 @@
           "code": "HMS Swiftsure",
           "cn": "确捷",
           "jp": "スウィフトシュア",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/393/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 2,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "2",
         "tags": ["BUFFAA", "BUFFDMG"]
       },
       {
@@ -3885,16 +3694,15 @@
           "code": "HMS Dido",
           "cn": "黛朵",
           "jp": "ダイドー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/107/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "3",
         "tags": ["AA", "BUFFDMG"]
       },
       {
@@ -3912,9 +3720,8 @@
         "thumbnail": "Assets/ShipPortraits/188/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "3",
         "tags": ["MG+1"]
       },
       {
@@ -3925,16 +3732,15 @@
           "code": "HMS Hermione",
           "cn": "赫敏",
           "jp": "ハーマイオニー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/463/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -3952,9 +3758,8 @@
         "thumbnail": "Assets/ShipPortraits/309/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "5",
         "tags": ["TRP", "BUFFTRP", "BUFFDMG"]
       },
       {
@@ -3972,9 +3777,8 @@
         "thumbnail": "Assets/ShipPortraits/037/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "6",
         "tags": ["MG+1", "AA", "BUFFDMG"]
       },
       {
@@ -3992,9 +3796,8 @@
         "thumbnail": "Assets/ShipPortraits/038/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "7",
         "tags": ["MG+1", "AA", "BUFFDEF"]
       },
       {
@@ -4005,16 +3808,15 @@
           "code": "USS Cleveland",
           "cn": "克利夫兰(μ兵装)",
           "jp": "クリーブランド（μ兵装）",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/420/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "8",
         "tags": ["MG+1", "AA"]
       },
       {
@@ -4032,9 +3834,8 @@
         "thumbnail": "Assets/ShipPortraits/405/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 9,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "9",
         "tags": ["MG+1", "DEF", "AA"]
       },
       {
@@ -4052,9 +3853,8 @@
         "thumbnail": "Assets/ShipPortraits/183/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 10,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "10",
         "tags": ["AA"]
       },
       {
@@ -4072,9 +3872,8 @@
         "thumbnail": "Assets/ShipPortraits/118/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 1,
-        "usagisubtier": 11,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "11",
         "tags": ["BUFFDMG"]
       }
     ],
@@ -4087,16 +3886,15 @@
           "code": "IJN Kinu",
           "cn": "猤",
           "jp": "鬼怒",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/186/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": "EventRetrofit",
+        "usagitier": "2",
+        "usagisubtier": "1",
         "tags": ["TRP", "AS", "BUFFDEF"]
       },
       {
@@ -4107,16 +3905,15 @@
           "code": "FFNF Jeanne d'Arc",
           "cn": "圣女贞德",
           "jp": "ジャンヌ・ダルク",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iris Libre",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/454/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "2",
         "tags": ["BUFFDEF", "HEAL"]
       },
       {
@@ -4127,16 +3924,15 @@
           "code": "HMS Sirius",
           "cn": "天狼星",
           "jp": "シリアス",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/371/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "3",
         "tags": ["BUFFAIR"]
       },
       {
@@ -4154,9 +3950,8 @@
         "thumbnail": "Assets/ShipPortraits/115/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "4",
         "tags": ["BUFFDEF"]
       },
       {
@@ -4174,9 +3969,8 @@
         "thumbnail": "Assets/ShipPortraits/262/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "5",
         "tags": ["BUFFDMG"]
       },
       {
@@ -4194,9 +3988,8 @@
         "thumbnail": "Assets/ShipPortraits/373/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 6,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "6",
         "tags": ["MG+1", "AA", "BUFFAIR"]
       },
       {
@@ -4214,9 +4007,8 @@
         "thumbnail": "Assets/ShipPortraits/372/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 7,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "7",
         "tags": ["MG+1", "AA", "BUFFAA"]
       },
       {
@@ -4234,9 +4026,8 @@
         "thumbnail": "Assets/ShipPortraits/330/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "9",
         "tags": ["MG+1", "AA"]
       },
       {
@@ -4254,9 +4045,8 @@
         "thumbnail": "Assets/ShipPortraits/361/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 9,
-        "banner": "EventRetrofit",
+        "usagitier": "2",
+        "usagisubtier": "9",
         "tags": ["AA", "BUFFSHL", "BUFFDMG"]
       },
       {
@@ -4267,16 +4057,15 @@
           "code": "USS Biloxi",
           "cn": "比洛克西",
           "jp": "ビロクシ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/428/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 11,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "11",
         "tags": ["MG+1", "AA", "BUFFDEF"]
       },
       {
@@ -4294,9 +4083,8 @@
         "thumbnail": "Assets/ShipPortraits/308/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 12,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "12",
         "tags": ["TRP", "BUFFTRP", "BUFFDMG"]
       },
       {
@@ -4307,16 +4095,15 @@
           "code": "HMS Sheffield",
           "cn": "谢菲尔德(μ兵装)",
           "jp": "シェフィールド（μ兵装）",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/421/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 12,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "12",
         "tags": ["BUFFDEF"]
       },
       {
@@ -4334,9 +4121,8 @@
         "thumbnail": "Assets/ShipPortraits/241/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 13,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "13",
         "tags": ["BUFFSHL", "BUFFTRP", "BUFFDEF", "BUFFDMG"]
       },
       {
@@ -4354,9 +4140,8 @@
         "thumbnail": "Assets/ShipPortraits/335/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 14,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "14",
         "tags": ["DEF", "HEAL"]
       },
       {
@@ -4374,9 +4159,8 @@
         "thumbnail": "Assets/ShipPortraits/032/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 2,
-        "usagisubtier": 15,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "15",
         "tags": ["MG+1", "DEF"]
       }
     ],
@@ -4389,16 +4173,15 @@
           "code": "USS Reno",
           "cn": "里诺",
           "jp": "リノ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/445/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 1,
-        "banner": "Event",
+        "usagitier": "3",
+        "usagisubtier": "1",
         "tags": ["AA", "BUFFAIR"]
       },
       {
@@ -4416,9 +4199,8 @@
         "thumbnail": "Assets/ShipPortraits/349/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 2,
-        "banner": "ENEventRetrofit",
+        "usagitier": "3",
+        "usagisubtier": "2",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -4436,9 +4218,8 @@
         "thumbnail": "Assets/ShipPortraits/179/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "3",
         "tags": ["BA", "BUFFEXP"]
       },
       {
@@ -4456,10 +4237,9 @@
         "thumbnail": "Assets/ShipPortraits/106/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Achilles",
@@ -4476,10 +4256,9 @@
         "thumbnail": "Assets/ShipPortraits/105/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/St._Louis",
@@ -4496,9 +4275,8 @@
         "thumbnail": "Assets/ShipPortraits/305/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "6",
         "tags": ["MG+1"]
       },
       {
@@ -4516,9 +4294,8 @@
         "thumbnail": "Assets/ShipPortraits/111/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "7",
         "tags": ["BUFFDEF"]
       },
       {
@@ -4536,9 +4313,8 @@
         "thumbnail": "Assets/ShipPortraits/391/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "8",
         "tags": ["MG+1", "AA", "BUFFDMG"]
       },
       {
@@ -4556,9 +4332,8 @@
         "thumbnail": "Assets/ShipPortraits/390/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "9",
         "tags": ["MG+1", "AA", "BUFFDEF"]
       },
       {
@@ -4576,9 +4351,8 @@
         "thumbnail": "Assets/ShipPortraits/031/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 10,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "10",
         "tags": ["MG+1", "BUFFSHL"]
       },
       {
@@ -4596,9 +4370,8 @@
         "thumbnail": "Assets/ShipPortraits/104/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 11,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "11",
         "tags": ["BUFFSHL", "BUFFDEF"]
       },
       {
@@ -4616,9 +4389,8 @@
         "thumbnail": "Assets/ShipPortraits/304/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 3,
-        "usagisubtier": 12,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "12",
         "tags": ["MG+1"]
       }
     ],
@@ -4638,9 +4410,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab005/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "4",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -4658,9 +4429,8 @@
         "thumbnail": "Assets/ShipPortraits/392/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "2",
         "tags": ["BA", "AA", "AS", "BUFFDEF"]
       },
       {
@@ -4671,16 +4441,15 @@
           "code": "SN Pamiat Merkuria",
           "cn": "水星纪念",
           "jp": "パーミャチ・メルクーリヤ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/434/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "3",
         "tags": ["DEF"]
       },
       {
@@ -4698,10 +4467,9 @@
         "thumbnail": "Assets/ShipPortraits/114/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 4,
-        "banner": null,
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Black_Prince",
@@ -4718,9 +4486,8 @@
         "thumbnail": "Assets/ShipPortraits/408/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "5",
         "tags": ["BUFFDEF"]
       },
       {
@@ -4731,16 +4498,15 @@
           "code": "HMS Gloucester",
           "cn": "格罗斯特",
           "jp": "グロスター",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/113/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "6",
         "tags": ["BUFFDEF"]
       },
       {
@@ -4749,18 +4515,17 @@
         "names": {
           "en": "La Galissonnière",
           "code": "MNF La Galissonnière",
-          "cn": null,
-          "jp": null,
-          "kr": null
+          "cn": "null",
+          "jp": "null",
+          "kr": "null"
         },
         "nationality": "Vichya Dominion",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/456/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "7",
         "tags": ["DEF", "BA"]
       },
       {
@@ -4778,9 +4543,8 @@
         "thumbnail": "Assets/ShipPortraits/310/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "8",
         "tags": ["TRP", "BUFFTRP"]
       },
       {
@@ -4798,9 +4562,8 @@
         "thumbnail": "Assets/ShipPortraits/240/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 9,
-        "banner": "Retrofit",
+        "usagitier": "4",
+        "usagisubtier": "9",
         "tags": ["AS"]
       },
       {
@@ -4811,16 +4574,15 @@
           "code": "HMS Glasgow",
           "cn": "格拉斯哥",
           "jp": "グラスゴー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Southampton subclass",
         "thumbnail": "Assets/ShipPortraits/423/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 4,
-        "usagisubtier": 10,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "10",
         "tags": ["BUFFDEF"]
       }
     ],
@@ -4840,9 +4602,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab033/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 5,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "5",
+        "usagisubtier": "1",
         "tags": ["BA"]
       },
       {
@@ -4860,9 +4621,8 @@
         "thumbnail": "Assets/ShipPortraits/321/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 5,
-        "usagisubtier": 2,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "2",
         "tags": ["BUFFSHL", "BUFFAIR"]
       },
       {
@@ -4880,9 +4640,8 @@
         "thumbnail": "Assets/ShipPortraits/187/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 5,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "3",
         "tags": ["TRP", "BUFFTRP"]
       },
       {
@@ -4900,10 +4659,9 @@
         "thumbnail": "Assets/ShipPortraits/239/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 5,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "5",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Southampton",
@@ -4920,9 +4678,8 @@
         "thumbnail": "Assets/ShipPortraits/110/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 5,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "5",
         "tags": ["BUFFDMG", "BUFFDEF"]
       }
     ],
@@ -4942,10 +4699,9 @@
         "thumbnail": "Assets/ShipPortraits/Collab001/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 1,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Mikuma",
@@ -4962,9 +4718,8 @@
         "thumbnail": "Assets/ShipPortraits/189/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 2,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "2",
         "tags": ["BUFFAIR"]
       },
       {
@@ -4982,10 +4737,9 @@
         "thumbnail": "Assets/ShipPortraits/327/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Jamaica",
@@ -5002,10 +4756,9 @@
         "thumbnail": "Assets/ShipPortraits/328/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 4,
-        "banner": null,
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/San_Juan",
@@ -5022,9 +4775,8 @@
         "thumbnail": "Assets/ShipPortraits/404/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 5,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "5",
         "tags": ["AA", "BUFFAA"]
       },
       {
@@ -5042,9 +4794,8 @@
         "thumbnail": "Assets/ShipPortraits/034/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "6",
         "tags": ["AA", "BUFFAA"]
       },
       {
@@ -5062,9 +4813,8 @@
         "thumbnail": "Assets/ShipPortraits/035/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 6,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "7",
         "tags": ["AA"]
       }
     ],
@@ -5084,10 +4834,9 @@
         "thumbnail": "Assets/ShipPortraits/360/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 1,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Concord",
@@ -5104,10 +4853,9 @@
         "thumbnail": "Assets/ShipPortraits/366/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Marblehead",
@@ -5117,17 +4865,16 @@
           "code": "USS Marblehead",
           "cn": "马布尔黑德",
           "jp": "マーブルヘッド",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Light Cruiser",
         "thumbnail": "Assets/ShipPortraits/448/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 3,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Arethusa",
@@ -5144,10 +4891,9 @@
         "thumbnail": "Assets/ShipPortraits/116/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 4,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Galatea",
@@ -5164,10 +4910,9 @@
         "thumbnail": "Assets/ShipPortraits/117/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 5,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Omaha",
@@ -5184,10 +4929,9 @@
         "thumbnail": "Assets/ShipPortraits/029/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 6,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "6",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Raleigh",
@@ -5204,10 +4948,9 @@
         "thumbnail": "Assets/ShipPortraits/030/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 7,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "7",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Nagara",
@@ -5224,10 +4967,9 @@
         "thumbnail": "Assets/ShipPortraits/182/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 8,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "8",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Richmond",
@@ -5244,9 +4986,8 @@
         "thumbnail": "Assets/ShipPortraits/303/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "7",
+        "usagisubtier": "9",
         "tags": ["BUFFSHL"]
       },
       {
@@ -5264,10 +5005,9 @@
         "thumbnail": "Assets/ShipPortraits/238/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "LightCruiser",
-        "usagitier": 7,
-        "usagisubtier": 10,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "10",
+        "tags": [null]
       }
     ]
   },
@@ -5288,9 +5028,8 @@
         "thumbnail": "Assets/ShipPortraits/Plan009/thumbnail.png",
         "rarity": "Priority",
         "hullTypeId": "Destroyer",
-        "usagitier": 0,
-        "usagisubtier": 1,
-        "banner": "Research",
+        "usagitier": "0",
+        "usagisubtier": "1",
         "tags": ["MG+1", "BA"]
       },
       {
@@ -5308,9 +5047,8 @@
         "thumbnail": "Assets/ShipPortraits/155/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 0,
-        "usagisubtier": 2,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "2",
         "tags": ["TRP", "BA"]
       },
       {
@@ -5321,16 +5059,15 @@
           "code": "SN Tashkent",
           "cn": "塔什干",
           "jp": "タシュケント",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/433/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 0,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "0",
+        "usagisubtier": "3",
         "tags": ["BA", "DEF"]
       },
       {
@@ -5348,9 +5085,8 @@
         "thumbnail": "Assets/ShipPortraits/019/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 0,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -5368,9 +5104,8 @@
         "thumbnail": "Assets/ShipPortraits/236/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 0,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
+        "usagitier": "0",
+        "usagisubtier": "5",
         "tags": ["BA", "BUFFDEF"]
       },
       {
@@ -5388,9 +5123,8 @@
         "thumbnail": "Assets/ShipPortraits/166/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 0,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "0",
+        "usagisubtier": "6",
         "tags": ["TRP", "DEF", "HEAL", "BUFFDEF"]
       }
     ],
@@ -5403,16 +5137,15 @@
           "code": "Shirakami Fubuki",
           "cn": "白上吹雪",
           "jp": "白上フブキ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab051/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "1",
+        "usagisubtier": "1",
         "tags": ["TRP", "BA"]
       },
       {
@@ -5430,9 +5163,8 @@
         "thumbnail": "Assets/ShipPortraits/101/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 2,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "2",
         "tags": ["BA", "DEF"]
       },
       {
@@ -5450,9 +5182,8 @@
         "thumbnail": "Assets/ShipPortraits/233/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "3",
         "tags": ["TRP", "BA", "BUFFSHL", "BUFFDEF"]
       },
       {
@@ -5470,9 +5201,8 @@
         "thumbnail": "Assets/ShipPortraits/301/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 4,
-        "banner": "Retrofit",
+        "usagitier": "1",
+        "usagisubtier": "4",
         "tags": ["DEF", "AS", "BUFFDEF"]
       },
       {
@@ -5483,16 +5213,15 @@
           "code": "MNF Le Malin",
           "cn": "恶毒",
           "jp": "ル・マラン",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Vichya Dominion",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/394/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 5,
-        "banner": "ENEvent",
+        "usagitier": "1",
+        "usagisubtier": "5",
         "tags": ["BA"]
       },
       {
@@ -5510,10 +5239,9 @@
         "thumbnail": "Assets/ShipPortraits/347/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 6,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "6",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Eldridge",
@@ -5530,9 +5258,8 @@
         "thumbnail": "Assets/ShipPortraits/028/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "7",
         "tags": ["BUFFDEF"]
       },
       {
@@ -5550,9 +5277,8 @@
         "thumbnail": "Assets/ShipPortraits/253/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "1",
+        "usagisubtier": "8",
         "tags": ["BA", "BUFFDMG"]
       },
       {
@@ -5570,9 +5296,8 @@
         "thumbnail": "Assets/ShipPortraits/255/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 1,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "1",
+        "usagisubtier": "9",
         "tags": ["BA", "BUFFDMG"]
       }
     ],
@@ -5592,9 +5317,8 @@
         "thumbnail": "Assets/ShipPortraits/288/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": "ENEvent",
+        "usagitier": "2",
+        "usagisubtier": "1",
         "tags": ["TRP", "BUFFDMG"]
       },
       {
@@ -5612,9 +5336,8 @@
         "thumbnail": "Assets/ShipPortraits/165/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "2",
         "tags": ["TRP", "BA", "DEF", "HEAL"]
       },
       {
@@ -5632,9 +5355,8 @@
         "thumbnail": "Assets/ShipPortraits/164/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "3",
         "tags": ["TRP", "BA"]
       },
       {
@@ -5652,9 +5374,8 @@
         "thumbnail": "Assets/ShipPortraits/267/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 4,
-        "banner": "ENEvent",
+        "usagitier": "2",
+        "usagisubtier": "4",
         "tags": ["BA", "AA"]
       },
       {
@@ -5672,9 +5393,8 @@
         "thumbnail": "Assets/ShipPortraits/254/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 5,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "5",
         "tags": ["BA"]
       },
       {
@@ -5692,9 +5412,8 @@
         "thumbnail": "Assets/ShipPortraits/256/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "2",
+        "usagisubtier": "6",
         "tags": ["BA"]
       },
       {
@@ -5705,16 +5424,15 @@
           "code": "HMS Eskimo",
           "cn": "爱斯基摩人",
           "jp": "エスキモー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/460/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 7,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "7",
         "tags": ["MG+1"]
       },
       {
@@ -5725,16 +5443,15 @@
           "code": "IJN Naganami",
           "cn": "苌",
           "jp": "長波",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/450/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "2",
+        "usagisubtier": "8",
         "tags": ["TRP", "BUFFTRP", "BUFFDEF"]
       },
       {
@@ -5752,9 +5469,8 @@
         "thumbnail": "Assets/ShipPortraits/319/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 9,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "9",
         "tags": ["TRP", "DEF", "BUFFDMG"]
       },
       {
@@ -5772,9 +5488,8 @@
         "thumbnail": "Assets/ShipPortraits/083/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 10,
-        "banner": "ENEventRetrofit",
+        "usagitier": "2",
+        "usagisubtier": "10",
         "tags": ["BUFFAIR", "BUFFDMG"]
       },
       {
@@ -5792,9 +5507,8 @@
         "thumbnail": "Assets/ShipPortraits/081/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 2,
-        "usagisubtier": 11,
-        "banner": "Retrofit",
+        "usagitier": "2",
+        "usagisubtier": "11",
         "tags": ["AA", "BUFFDEF", "BUFFEXP"]
       }
     ],
@@ -5814,9 +5528,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab041/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "3",
+        "usagisubtier": "1",
         "tags": ["TRP", "BA", "DEF", "BUFFDMG"]
       },
       {
@@ -5827,16 +5540,15 @@
           "code": "IJN Hanazuki",
           "cn": "榵",
           "jp": "花月",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/449/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "3",
+        "usagisubtier": "2",
         "tags": ["MG+1", "AA"]
       },
       {
@@ -5854,9 +5566,8 @@
         "thumbnail": "Assets/ShipPortraits/297/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 3,
-        "banner": "ENEvent",
+        "usagitier": "3",
+        "usagisubtier": "3",
         "tags": ["MG+1", "AA"]
       },
       {
@@ -5874,9 +5585,8 @@
         "thumbnail": "Assets/ShipPortraits/296/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 4,
-        "banner": "ENEvent",
+        "usagitier": "3",
+        "usagisubtier": "4",
         "tags": ["MG+1", "AA"]
       },
       {
@@ -5894,9 +5604,8 @@
         "thumbnail": "Assets/ShipPortraits/318/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 5,
-        "banner": "EventRetrofit",
+        "usagitier": "3",
+        "usagisubtier": "5",
         "tags": ["TRP", "DEF"]
       },
       {
@@ -5914,9 +5623,8 @@
         "thumbnail": "Assets/ShipPortraits/415/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 6,
-        "banner": "Event",
+        "usagitier": "3",
+        "usagisubtier": "6",
         "tags": ["BUFFDMG"]
       },
       {
@@ -5934,9 +5642,8 @@
         "thumbnail": "Assets/ShipPortraits/171/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 7,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "7",
         "tags": ["TRP", "BUFFTRP"]
       },
       {
@@ -5954,9 +5661,8 @@
         "thumbnail": "Assets/ShipPortraits/176/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 8,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "8",
         "tags": ["TRP", "BUFFAIR"]
       },
       {
@@ -5974,9 +5680,8 @@
         "thumbnail": "Assets/ShipPortraits/167/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 9,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "9",
         "tags": ["TRP", "BUFFTRP", "BUFFDMG"]
       },
       {
@@ -5994,9 +5699,8 @@
         "thumbnail": "Assets/ShipPortraits/174/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 10,
-        "banner": "Retrofit",
+        "usagitier": "3",
+        "usagisubtier": "10",
         "tags": ["TRP", "BUFFDEF"]
       },
       {
@@ -6014,9 +5718,8 @@
         "thumbnail": "Assets/ShipPortraits/293/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 3,
-        "usagisubtier": 11,
-        "banner": null,
+        "usagitier": "3",
+        "usagisubtier": "11",
         "tags": ["TRP"]
       }
     ],
@@ -6029,16 +5732,15 @@
           "code": "IJN Hibiki",
           "cn": "栀",
           "jp": "響",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Akatsuki subclass",
         "thumbnail": "Assets/ShipPortraits/160/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 1,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "1",
         "tags": ["TRP", "DEF"]
       },
       {
@@ -6049,16 +5751,15 @@
           "code": "USS Cooper",
           "cn": "库珀",
           "jp": "クーパー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/444/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 2,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "2",
         "tags": ["AS"]
       },
       {
@@ -6069,18 +5770,15 @@
           "code": "KMS Z26",
           "cn": "Z26",
           "jp": "Z26",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iron Blood",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/466/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 3,
-        "banner": "Event",
-        "banneralt": "NEW",
-        "banneraltlink": "Assets/BannerAlt/NEW.png",
+        "usagitier": "4",
+        "usagisubtier": "3",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6091,16 +5789,15 @@
           "code": "HMS Icarus",
           "cn": "伊卡洛斯",
           "jp": "イカルス",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/465/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 4,
-        "banner": "Event",
+        "usagitier": "4",
+        "usagisubtier": "4",
         "tags": ["BA"]
       },
       {
@@ -6118,9 +5815,8 @@
         "thumbnail": "Assets/ShipPortraits/092/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 5,
-        "banner": "Retrofit",
+        "usagitier": "4",
+        "usagisubtier": "5",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6138,9 +5834,8 @@
         "thumbnail": "Assets/ShipPortraits/151/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "6",
         "tags": ["TRP", "BUFFTRP", "BUFFDMG"]
       },
       {
@@ -6158,9 +5853,8 @@
         "thumbnail": "Assets/ShipPortraits/090/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 7,
-        "banner": "Retrofit",
+        "usagitier": "4",
+        "usagisubtier": "7",
         "tags": ["DEF", "BUFFDEF"]
       },
       {
@@ -6178,9 +5872,8 @@
         "thumbnail": "Assets/ShipPortraits/168/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 8,
-        "banner": "Retrofit",
+        "usagitier": "4",
+        "usagisubtier": "8",
         "tags": ["TRP", "BUFFAIR"]
       },
       {
@@ -6198,9 +5891,8 @@
         "thumbnail": "Assets/ShipPortraits/011/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 4,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "4",
+        "usagisubtier": "9",
         "tags": ["DEF", "BUFFDMG"]
       }
     ],
@@ -6220,9 +5912,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab007/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 1,
-        "banner": "Collab",
+        "usagitier": "5",
+        "usagisubtier": "1",
         "tags": ["TRP", "BA"]
       },
       {
@@ -6240,9 +5931,8 @@
         "thumbnail": "Assets/ShipPortraits/Collab032/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 2,
-        "banner": "Collab",
+        "usagitier": "5",
+        "usagisubtier": "2",
         "tags": ["HEAL", "BA"]
       },
       {
@@ -6260,9 +5950,8 @@
         "thumbnail": "Assets/ShipPortraits/370/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 3,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "3",
         "tags": ["TRP"]
       },
       {
@@ -6280,9 +5969,8 @@
         "thumbnail": "Assets/ShipPortraits/096/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 4,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "4",
         "tags": ["BUFFTRP"]
       },
       {
@@ -6300,10 +5988,9 @@
         "thumbnail": "Assets/ShipPortraits/379/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 5,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "5",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Le_Mars",
@@ -6320,9 +6007,8 @@
         "thumbnail": "Assets/ShipPortraits/351/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 6,
-        "banner": "ENEventRetrofit",
+        "usagitier": "5",
+        "usagisubtier": "6",
         "tags": ["BUFFDMG"]
       },
       {
@@ -6340,9 +6026,8 @@
         "thumbnail": "Assets/ShipPortraits/348/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 7,
-        "banner": "ENEventRetrofit",
+        "usagitier": "5",
+        "usagisubtier": "7",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6360,9 +6045,8 @@
         "thumbnail": "Assets/ShipPortraits/093/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 8,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "8",
         "tags": ["BUFFSHL"]
       },
       {
@@ -6380,9 +6064,8 @@
         "thumbnail": "Assets/ShipPortraits/359/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 9,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "9",
         "tags": ["BUFFSHL"]
       },
       {
@@ -6393,16 +6076,15 @@
           "code": "FFNF L'Opiniâtre",
           "cn": "倔强",
           "jp": "ルピニャート",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iris Libre",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/395/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 10,
-        "banner": "ENEvent",
+        "usagitier": "5",
+        "usagisubtier": "10",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6413,16 +6095,15 @@
           "code": "IJN Kasumi",
           "cn": "蕸",
           "jp": "霞",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/424/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 11,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "11",
         "tags": ["TRP", "BUFFTRP"]
       },
       {
@@ -6440,9 +6121,8 @@
         "thumbnail": "Assets/ShipPortraits/103/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 12,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "12",
         "tags": ["DEF"]
       },
       {
@@ -6460,9 +6140,8 @@
         "thumbnail": "Assets/ShipPortraits/010/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 13,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "13",
         "tags": ["TRP", "DEF"]
       },
       {
@@ -6480,9 +6159,8 @@
         "thumbnail": "Assets/ShipPortraits/295/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 14,
-        "banner": null,
+        "usagitier": "5",
+        "usagisubtier": "14",
         "tags": ["MG+1"]
       },
       {
@@ -6500,9 +6178,8 @@
         "thumbnail": "Assets/ShipPortraits/325/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 15,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "15",
         "tags": ["BUFFDMG"]
       },
       {
@@ -6511,18 +6188,17 @@
         "names": {
           "en": "Vauquelin",
           "code": "MNF Vauquelin",
-          "cn": null,
-          "jp": null,
-          "kr": null
+          "cn": "null",
+          "jp": "null",
+          "kr": "null"
         },
         "nationality": "Vichya Dominion",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/457/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 16,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "16",
         "tags": ["TRP", "BUFFDEF"]
       },
       {
@@ -6533,16 +6209,15 @@
           "code": "MNF Tartu",
           "cn": "塔尔图",
           "jp": "タルテュ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Vichya Dominion",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/452/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 17,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "17",
         "tags": ["BUFFSHL", "BUFFAA"]
       },
       {
@@ -6560,10 +6235,9 @@
         "thumbnail": "Assets/ShipPortraits/270/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 18,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "5",
+        "usagisubtier": "18",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kamikaze",
@@ -6580,10 +6254,9 @@
         "thumbnail": "Assets/ShipPortraits/269/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 19,
-        "banner": null,
-        "tags": null
+        "usagitier": "5",
+        "usagisubtier": "19",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Sims",
@@ -6600,9 +6273,8 @@
         "thumbnail": "Assets/ShipPortraits/026/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 20,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "20",
         "tags": ["BUFFSHL", "BUFFDEF"]
       },
       {
@@ -6620,9 +6292,8 @@
         "thumbnail": "Assets/ShipPortraits/027/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 21,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "21",
         "tags": ["AA", "BUFFDEF"]
       },
       {
@@ -6640,9 +6311,8 @@
         "thumbnail": "Assets/ShipPortraits/082/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 22,
-        "banner": "ENEvent",
+        "usagitier": "5",
+        "usagisubtier": "22",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6660,9 +6330,8 @@
         "thumbnail": "Assets/ShipPortraits/237/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 23,
-        "banner": "ENEvent",
+        "usagitier": "5",
+        "usagisubtier": "23",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6673,16 +6342,15 @@
           "code": "SN Grozny",
           "cn": "威严",
           "jp": "グロズヌイ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/431/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 24,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "24",
         "tags": ["AA"]
       },
       {
@@ -6693,16 +6361,15 @@
           "code": "SN Minsk",
           "cn": "明斯克",
           "jp": "ミンスク",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "North Union",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/432/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 25,
-        "banner": "Event",
+        "usagitier": "5",
+        "usagisubtier": "25",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6720,9 +6387,8 @@
         "thumbnail": "Assets/ShipPortraits/091/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 26,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "26",
         "tags": ["BUFFDEF", "BUFFDMG"]
       },
       {
@@ -6740,9 +6406,8 @@
         "thumbnail": "Assets/ShipPortraits/089/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 27,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "27",
         "tags": ["DEF", "BUFFDEF"]
       },
       {
@@ -6760,9 +6425,8 @@
         "thumbnail": "Assets/ShipPortraits/088/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 5,
-        "usagisubtier": 28,
-        "banner": "Retrofit",
+        "usagitier": "5",
+        "usagisubtier": "28",
         "tags": ["BUFFTRP", "BUFFDEF"]
       }
     ],
@@ -6782,10 +6446,9 @@
         "thumbnail": "Assets/ShipPortraits/Collab003/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 1,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Natsuiro_Matsuri",
@@ -6795,17 +6458,16 @@
           "code": "Natsuiro Matsuri",
           "cn": "夏色祭",
           "jp": "夏色まつり",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab054/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 2,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Bailey",
@@ -6822,9 +6484,8 @@
         "thumbnail": "Assets/ShipPortraits/263/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 3,
-        "banner": "Retrofit",
+        "usagitier": "6",
+        "usagisubtier": "3",
         "tags": ["BUFFDMG", "BUFFDEF"]
       },
       {
@@ -6842,10 +6503,9 @@
         "thumbnail": "Assets/ShipPortraits/375/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 4,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Charles_Ausburne",
@@ -6862,9 +6522,8 @@
         "thumbnail": "Assets/ShipPortraits/013/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 5,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "5",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6882,9 +6541,8 @@
         "thumbnail": "Assets/ShipPortraits/094/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 6,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "6",
         "tags": ["BUFFDEF"]
       },
       {
@@ -6902,9 +6560,8 @@
         "thumbnail": "Assets/ShipPortraits/326/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 7,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "7",
         "tags": ["TRP"]
       },
       {
@@ -6915,16 +6572,15 @@
           "code": "IJN Uranami",
           "cn": "朴",
           "jp": "浦波",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/429/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 8,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "8",
         "tags": ["TRP", "HEAL"]
       },
       {
@@ -6942,9 +6598,8 @@
         "thumbnail": "Assets/ShipPortraits/170/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 9,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "9",
         "tags": ["TRP"]
       },
       {
@@ -6962,10 +6617,9 @@
         "thumbnail": "Assets/ShipPortraits/345/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 10,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "10",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Z36",
@@ -6982,10 +6636,9 @@
         "thumbnail": "Assets/ShipPortraits/388/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 11,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "11",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kuroshio",
@@ -7002,9 +6655,8 @@
         "thumbnail": "Assets/ShipPortraits/177/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 12,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "12",
         "tags": ["TRP"]
       },
       {
@@ -7022,9 +6674,8 @@
         "thumbnail": "Assets/ShipPortraits/178/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 13,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "13",
         "tags": ["TRP"]
       },
       {
@@ -7042,9 +6693,8 @@
         "thumbnail": "Assets/ShipPortraits/333/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 14,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "14",
         "tags": ["TRP", "BUFFDEF"]
       },
       {
@@ -7062,9 +6712,8 @@
         "thumbnail": "Assets/ShipPortraits/331/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 15,
-        "banner": "ENEvent",
+        "usagitier": "6",
+        "usagisubtier": "15",
         "tags": ["BUFFDMG"]
       },
       {
@@ -7075,16 +6724,15 @@
           "code": "USS Halsey Powell",
           "cn": "哈尔西·鲍威尔",
           "jp": "ハルゼー・パウエル",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/427/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 16,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "16",
         "tags": ["AS"]
       },
       {
@@ -7102,9 +6750,8 @@
         "thumbnail": "Assets/ShipPortraits/389/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 17,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "17",
         "tags": ["BUFFDEF"]
       },
       {
@@ -7122,10 +6769,9 @@
         "thumbnail": "Assets/ShipPortraits/406/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 18,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "18",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Arashio",
@@ -7142,9 +6788,8 @@
         "thumbnail": "Assets/ShipPortraits/334/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 19,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "19",
         "tags": ["BUFFDEF"]
       },
       {
@@ -7162,9 +6807,8 @@
         "thumbnail": "Assets/ShipPortraits/369/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 20,
-        "banner": "Event",
+        "usagitier": "6",
+        "usagisubtier": "20",
         "tags": ["BUFFDEF"]
       },
       {
@@ -7182,10 +6826,9 @@
         "thumbnail": "Assets/ShipPortraits/005/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 21,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "21",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Downes",
@@ -7202,10 +6845,9 @@
         "thumbnail": "Assets/ShipPortraits/006/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 22,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "22",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Mutsuki",
@@ -7222,9 +6864,8 @@
         "thumbnail": "Assets/ShipPortraits/271/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 23,
-        "banner": "Retrofit",
+        "usagitier": "6",
+        "usagisubtier": "23",
         "tags": ["TRP"]
       },
       {
@@ -7242,10 +6883,9 @@
         "thumbnail": "Assets/ShipPortraits/272/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 24,
-        "banner": "Retrofit",
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "24",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Shiratsuyu",
@@ -7262,9 +6902,8 @@
         "thumbnail": "Assets/ShipPortraits/163/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 25,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "25",
         "tags": ["TRP", "BUFFTRP"]
       },
       {
@@ -7282,9 +6921,8 @@
         "thumbnail": "Assets/ShipPortraits/007/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 26,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "26",
         "tags": ["TRP", "BUFFTRP"]
       },
       {
@@ -7302,9 +6940,8 @@
         "thumbnail": "Assets/ShipPortraits/316/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 27,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "27",
         "tags": ["TRP"]
       },
       {
@@ -7322,9 +6959,8 @@
         "thumbnail": "Assets/ShipPortraits/317/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 28,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "28",
         "tags": ["TRP"]
       },
       {
@@ -7342,9 +6978,8 @@
         "thumbnail": "Assets/ShipPortraits/306/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 29,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "29",
         "tags": ["BUFFDEF"]
       },
       {
@@ -7362,9 +6997,8 @@
         "thumbnail": "Assets/ShipPortraits/161/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 30,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "30",
         "tags": ["TRP"]
       },
       {
@@ -7382,9 +7016,8 @@
         "thumbnail": "Assets/ShipPortraits/162/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 31,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "31",
         "tags": ["TRP"]
       },
       {
@@ -7402,9 +7035,8 @@
         "thumbnail": "Assets/ShipPortraits/173/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 32,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "32",
         "tags": ["TRP"]
       },
       {
@@ -7422,9 +7054,8 @@
         "thumbnail": "Assets/ShipPortraits/018/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 33,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "33",
         "tags": ["BUFFAIR"]
       },
       {
@@ -7442,9 +7073,8 @@
         "thumbnail": "Assets/ShipPortraits/004/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 34,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "34",
         "tags": ["BUFFDEF"]
       },
       {
@@ -7462,9 +7092,8 @@
         "thumbnail": "Assets/ShipPortraits/159/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 35,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "35",
         "tags": ["TRP"]
       },
       {
@@ -7482,10 +7111,9 @@
         "thumbnail": "Assets/ShipPortraits/299/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 36,
-        "banner": null,
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "36",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Jenkins",
@@ -7502,10 +7130,9 @@
         "thumbnail": "Assets/ShipPortraits/300/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 37,
-        "banner": null,
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "37",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Ooshio",
@@ -7522,10 +7149,9 @@
         "thumbnail": "Assets/ShipPortraits/332/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 38,
-        "banner": null,
-        "tags": null
+        "usagitier": "6",
+        "usagisubtier": "38",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Ariake",
@@ -7542,9 +7168,8 @@
         "thumbnail": "Assets/ShipPortraits/175/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 39,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "39",
         "tags": ["TRP"]
       },
       {
@@ -7562,9 +7187,8 @@
         "thumbnail": "Assets/ShipPortraits/362/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 40,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "40",
         "tags": ["BUFFDMG"]
       },
       {
@@ -7582,9 +7206,8 @@
         "thumbnail": "Assets/ShipPortraits/102/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 41,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "41",
         "tags": ["BUFFDEF"]
       },
       {
@@ -7595,40 +7218,19 @@
           "code": "USS Smalley",
           "cn": "斯莫利",
           "jp": "スモーリー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/417/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 6,
-        "usagisubtier": 42,
-        "banner": null,
+        "usagitier": "6",
+        "usagisubtier": "42",
         "tags": ["BUFFDEF"]
       }
     ],
     "t7": [
-      {
-        "wikiUrl": "https://azurlane.koumakan.jp/22",
-        "id": "Collab021",
-        "names": {
-          "en": "22",
-          "code": "22",
-          "cn": "22",
-          "jp": null,
-          "kr": null
-        },
-        "nationality": "Bilibili",
-        "hullType": "Destroyer",
-        "thumbnail": "Assets/ShipPortraits/Collab021/thumbnail.png",
-        "rarity": "Elite",
-        "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 1,
-        "banner": "Collab",
-        "tags": null
-      },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/33",
         "id": "Collab022",
@@ -7636,18 +7238,17 @@
           "en": "33",
           "code": "33",
           "cn": "33",
-          "jp": null,
-          "kr": null
+          "jp": "null",
+          "kr": "null"
         },
         "nationality": "Bilibili",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/Collab022/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 2,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Thatcher",
@@ -7664,10 +7265,9 @@
         "thumbnail": "Assets/ShipPortraits/014/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Hazelwood",
@@ -7684,10 +7284,9 @@
         "thumbnail": "Assets/ShipPortraits/365/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 4,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Fumizuki",
@@ -7704,10 +7303,9 @@
         "thumbnail": "Assets/ShipPortraits/277/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 5,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Nagatsuki",
@@ -7724,10 +7322,9 @@
         "thumbnail": "Assets/ShipPortraits/278/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 6,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "6",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kalk",
@@ -7744,10 +7341,9 @@
         "thumbnail": "Assets/ShipPortraits/363/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 7,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "7",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Kimberly",
@@ -7764,10 +7360,9 @@
         "thumbnail": "Assets/ShipPortraits/374/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 8,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "8",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Hunter",
@@ -7784,10 +7379,9 @@
         "thumbnail": "Assets/ShipPortraits/100/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 9,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "9",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Bache",
@@ -7804,10 +7398,9 @@
         "thumbnail": "Assets/ShipPortraits/407/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 10,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "10",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Stanly",
@@ -7824,10 +7417,9 @@
         "thumbnail": "Assets/ShipPortraits/409/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 11,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "11",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Bush",
@@ -7844,10 +7436,9 @@
         "thumbnail": "Assets/ShipPortraits/355/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 12,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "12",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Jersey",
@@ -7857,17 +7448,16 @@
           "code": "HMS Jersey",
           "cn": "泽西",
           "jp": "ジャージー",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Royal Navy",
         "hullType": "Destroyer",
         "thumbnail": "Assets/ShipPortraits/307/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 13,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "13",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Z18",
@@ -7884,10 +7474,9 @@
         "thumbnail": "Assets/ShipPortraits/346/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 14,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "14",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Z19",
@@ -7904,10 +7493,9 @@
         "thumbnail": "Assets/ShipPortraits/264/thumbnail.png",
         "rarity": "Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 15,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "15",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Z20",
@@ -7924,10 +7512,9 @@
         "thumbnail": "Assets/ShipPortraits/265/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 16,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "16",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Z21",
@@ -7944,10 +7531,9 @@
         "thumbnail": "Assets/ShipPortraits/266/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 17,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "17",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Uzuki",
@@ -7964,10 +7550,9 @@
         "thumbnail": "Assets/ShipPortraits/274/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 18,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "18",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Mikazuki",
@@ -7984,10 +7569,9 @@
         "thumbnail": "Assets/ShipPortraits/280/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 19,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "19",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Minazuki",
@@ -8004,10 +7588,9 @@
         "thumbnail": "Assets/ShipPortraits/276/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 20,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "20",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/McCall",
@@ -8024,10 +7607,9 @@
         "thumbnail": "Assets/ShipPortraits/009/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 21,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "21",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Craven",
@@ -8044,10 +7626,9 @@
         "thumbnail": "Assets/ShipPortraits/008/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 22,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "22",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Aulick",
@@ -8064,10 +7645,9 @@
         "thumbnail": "Assets/ShipPortraits/015/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 23,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "23",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Foote",
@@ -8084,10 +7664,9 @@
         "thumbnail": "Assets/ShipPortraits/016/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 24,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "24",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Spence",
@@ -8104,10 +7683,9 @@
         "thumbnail": "Assets/ShipPortraits/017/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 25,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "25",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Beagle",
@@ -8124,10 +7702,9 @@
         "thumbnail": "Assets/ShipPortraits/086/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 27,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "27",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Bulldog",
@@ -8144,10 +7721,9 @@
         "thumbnail": "Assets/ShipPortraits/087/thumbnail.png",
         "rarity": "Normal",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 28,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "28",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Prototype_Bulin_MKII",
@@ -8164,10 +7740,9 @@
         "thumbnail": "Assets/ShipPortraits/002/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 29,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "29",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Universal_Bulin",
@@ -8184,10 +7759,9 @@
         "thumbnail": "Assets/ShipPortraits/001/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Destroyer",
-        "usagitier": 7,
-        "usagisubtier": 30,
-        "banner": null,
-        "tags": null
+        "usagitier": "7",
+        "usagisubtier": "30",
+        "tags": [null]
       }
     ]
   },
@@ -8201,19 +7775,16 @@
           "code": "KMS U-96",
           "cn": "U-96",
           "jp": "U-96",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Iron Blood",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/467/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 0,
-        "usagisubtier": 1,
-        "banner": "Event",
-        "banneralt": "NEW",
-        "banneraltlink": "Assets/BannerAlt/NEW.png",
-        "tags": null
+        "usagitier": "0",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-47",
@@ -8230,10 +7801,9 @@
         "thumbnail": "Assets/ShipPortraits/343/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 0,
-        "usagisubtier": 2,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "0",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-81",
@@ -8250,10 +7820,9 @@
         "thumbnail": "Assets/ShipPortraits/341/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 0,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "0",
+        "usagisubtier": "3",
+        "tags": [null]
       }
     ],
     "t1": [
@@ -8265,17 +7834,16 @@
           "code": "Minato Aqua",
           "cn": "湊阿库娅",
           "jp": "湊あくあ",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Hololive",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/Collab053/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 1,
-        "usagisubtier": 1,
-        "banner": "Collab",
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Cavalla",
@@ -8292,10 +7860,9 @@
         "thumbnail": "Assets/ShipPortraits/402/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 1,
-        "usagisubtier": 2,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Albacore",
@@ -8312,10 +7879,9 @@
         "thumbnail": "Assets/ShipPortraits/358/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 1,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/I-168",
@@ -8332,10 +7898,9 @@
         "thumbnail": "Assets/ShipPortraits/398/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 1,
-        "usagisubtier": 4,
-        "banner": null,
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/I-13",
@@ -8345,17 +7910,16 @@
           "code": "IJN I-13",
           "cn": "伊13",
           "jp": "伊13",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Sakura Empire",
         "hullType": "Submarine Carrier",
         "thumbnail": "Assets/ShipPortraits/381/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "SubmarineCarrier",
-        "usagitier": 1,
-        "usagisubtier": 5,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-101",
@@ -8372,10 +7936,9 @@
         "thumbnail": "Assets/ShipPortraits/399/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 1,
-        "usagisubtier": 6,
-        "banner": null,
-        "tags": null
+        "usagitier": "1",
+        "usagisubtier": "6",
+        "tags": [null]
       }
     ],
     "t2": [
@@ -8394,10 +7957,9 @@
         "thumbnail": "Assets/ShipPortraits/338/thumbnail.png",
         "rarity": "Super Rare",
         "hullTypeId": "Submarine",
-        "usagitier": 2,
-        "usagisubtier": 1,
-        "banner": null,
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-522",
@@ -8414,10 +7976,9 @@
         "thumbnail": "Assets/ShipPortraits/400/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 2,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-110",
@@ -8427,17 +7988,16 @@
           "code": "KMS U-110",
           "cn": "U-110",
           "jp": "U-110",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Ironblood",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/416/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 2,
-        "usagisubtier": 3,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "2",
+        "usagisubtier": "3",
+        "tags": [null]
       }
     ],
     "t3": [
@@ -8456,10 +8016,9 @@
         "thumbnail": "Assets/ShipPortraits/350/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 3,
-        "usagisubtier": 1,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/I-25",
@@ -8476,10 +8035,9 @@
         "thumbnail": "Assets/ShipPortraits/396/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 3,
-        "usagisubtier": 2,
-        "banner": null,
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/I-56",
@@ -8496,10 +8054,9 @@
         "thumbnail": "Assets/ShipPortraits/397/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 3,
-        "usagisubtier": 3,
-        "banner": null,
-        "tags": null
+        "usagitier": "3",
+        "usagisubtier": "3",
+        "tags": [null]
       }
     ],
     "t4": [
@@ -8518,10 +8075,9 @@
         "thumbnail": "Assets/ShipPortraits/387/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 1,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "1",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-556",
@@ -8538,10 +8094,9 @@
         "thumbnail": "Assets/ShipPortraits/386/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 2,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "2",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Bluegill",
@@ -8551,17 +8106,16 @@
           "code": "USS Bluegill",
           "cn": "蓝鳃鱼",
           "jp": "ブルーギル",
-          "kr": null
+          "kr": "null"
         },
         "nationality": "Eagle Union",
         "hullType": "Submarine",
         "thumbnail": "Assets/ShipPortraits/446/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 3,
-        "banner": "Event",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "3",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/U-557",
@@ -8578,10 +8132,9 @@
         "thumbnail": "Assets/ShipPortraits/344/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 4,
-        "banner": "ENEvent",
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "4",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/I-26",
@@ -8598,10 +8151,9 @@
         "thumbnail": "Assets/ShipPortraits/339/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 5,
-        "banner": null,
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "5",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/I-58",
@@ -8618,10 +8170,9 @@
         "thumbnail": "Assets/ShipPortraits/340/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 6,
-        "banner": null,
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "6",
+        "tags": [null]
       },
       {
         "wikiUrl": "https://azurlane.koumakan.jp/Dace",
@@ -8638,10 +8189,9 @@
         "thumbnail": "Assets/ShipPortraits/342/thumbnail.png",
         "rarity": "Elite",
         "hullTypeId": "Submarine",
-        "usagitier": 4,
-        "usagisubtier": 7,
-        "banner": null,
-        "tags": null
+        "usagitier": "4",
+        "usagisubtier": "7",
+        "tags": [null]
       }
     ],
     "t5": [],
