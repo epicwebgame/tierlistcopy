@@ -28,6 +28,7 @@ async function languageselector() {
   document.getElementsByClassName("main")[0].style.display = "block"
   document.getElementsByClassName("main")[0].style.position = "unset"
   document.getElementsByClassName("bannertwo")[0].style.display = "none"
+  document.getElementsByClassName("topbanner")[0].style.position = "inherit"
   htmldombuilder("div", "mainlanguageselector", {
     style: {
       top: "50%",
@@ -88,7 +89,9 @@ async function setcookie(a1) {
   let str = a1.replace("lang", "")
   Cookies.set('language', str, { expires: 365 })
   languageid = str
-  document.getElementsByClassName("bannertwo")[0].style.display = "inline-flex"
+  document.getElementsByClassName("main")[0].removeAttribute("style")
+  document.getElementsByClassName("bannertwo")[0].removeAttribute("style")
+  document.getElementsByClassName("topbanner")[0].removeAttribute("style")
   loaddata()
 }
 
@@ -99,18 +102,13 @@ async function setcookieghost(a1) {
 }
 
 function scrollwidth() {
+  if (window.scrollX <= 5000) {
   document.querySelector(".topbanner").style.left = window.scrollX + "px"
   document.querySelector(".bannertwo").style.left = window.scrollX + "px"
 }
+}
 
 window.onload = async function () {
-  window.addEventListener(
-    "scroll",
-    function () {
-      scrollwidth();
-    },
-    false
-  );
   let languagecheck = await langcookieread()
   if (languagecheck == undefined) {
     languageselector()
@@ -118,6 +116,14 @@ window.onload = async function () {
     languageid = languagecheck
     loaddata()
   }
+  window.addEventListener(
+    "scroll",
+    function () {
+      scrollwidth();
+    },
+    false
+  );
+
 };
 
 async function loaddata() {
