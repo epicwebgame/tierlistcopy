@@ -20,8 +20,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,7 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 8px;
   background: #ffffff;
   
 }
@@ -642,23 +642,45 @@ button:focus {
   border: 1px solid white;
   border-radius: 10px;
   z-index: 99999;
-  width: 650px;
+  height: 550px;
+  width: 1000px;
   max-width: 80%;
 }
 
 .changelogmainblock {
-  display: flex;
+  display: none;
   position: relative;
-  justify-content: center;
-  max-height: 260px;
+  max-height: 395px;
   overflow-y: overlay;
+  justify-content: center;
+}
+
+.changelogmainblock.active {
+  display: grid;
+}
+
+.changelogmainsupport {
+  display: none;
+  position: relative;
+  max-height: 395px;
+  overflow-y: overlay;
+  justify-content: center;
+}
+
+.changelogmainsupport.active {
+  display: grid;
 }
 
 .changelogmainpromotions, .changelogmaindemotions {
   text-align: center;
   position: relative;
-  max-height: 260px;
+  max-height: 395px;
   overflow-y: overlay;
+  display: none;
+}
+
+.changelogmainpromotions.active, .changelogmaindemotions.active {
+display: block;
 }
 
 .changelogtextadded, .changelogtextpromos, .changelogtextpromotions, .changelogtextdemotions {
@@ -670,7 +692,7 @@ button:focus {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.changelogparent, .changelogparentadded {
+.changelogparent, .changelogparentadded, .changelogparentsupport {
   display: inline-flex;
   width: 100px;
   height: 143px;
@@ -678,35 +700,118 @@ button:focus {
   margin-right: 10px;
 }
 
-.changelogparentadded {
+.changelogparentadded, .changelogparentsupport {
   height: 118px;
 }
 
-.changelog-header, .changelogheader {
-  padding: 10px 15px;
+.changelog-header {
+  margin: 10px;
   display: flex;
+  width: 980px;
+}
+.changelogmainbody {
+  height: 395px;
+}
+
+.changelogheader, .changelogmainheader {
+  display: flex;
+  width: 720px;
+  height: 30px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid white;
+  font-size: 25px;
 }
 
-.changelog-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+.changelogmainheader {
+  margin-bottom: 10px;
 }
 
-.changelog-header .close-button {
+.changelog-title {
+  height: 40px;
+  width: 920px;
+  background-color: darkblue;
+  margin-right: 10px;
+  font-size: 33px;
+  display: flex;
+  place-items: center;
+}
+
+.close-button {
   color: white;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
+  height: 40px;
+  background-color: red;
+  width: 55px;
+  font-size: 57px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
 }
 
 .changelog-body {
-  padding: 10px 15px;
+  display: inline-flex;
+}
+
+.changelog-body-left {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 250px;
+  height: 475px;
+  background-color: yellow;
+  overflow: overlay;
+}
+
+.changelog-body-left .item {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  height: 60px;
+  width: 232px;
+  place-items: center;
+  justify-content: flex-end;
+  display: flex;
+  color: black;
+  background-color: aqua;
+}
+
+.changelogbuttons {
+  display: flex;
+  width: 720px;
+  height: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.item span {
+  width: 120px;
+  text-align: center;
+}
+
+.item {
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  border: 1px solid yellow;
+}
+
+.item:hover {
+  opacity: 1;
+}
+
+.item.active {
+  opacity: 1;
+  border: 1px solid red;
+}
+
+.changelog-body-right {
+  width: 720px;
+  height: 475px;
 }
 
 .changelogselectelem {

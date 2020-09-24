@@ -1,4 +1,1855 @@
 {
+    "46": {
+        "updatedate": 1562889600,
+        "fullname": "PvE Ship Tier List #46",
+        "number": 46,
+        "changes": {
+            "new": [{
+                    "shipname": "Tokino Sora",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Shirakami Fubuki",
+                    "changedrank": "t1",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Minato Aqua",
+                    "changedrank": "t1",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Ookami Mio",
+                    "changedrank": "t3",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Nakiri Ayame",
+                    "changedrank": "t4",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Murasaki Shion",
+                    "changedrank": "t6",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Natsuiro Matsuri",
+                    "changedrank": "t6",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [],
+            "demotions": []
+        }
+    },
+    "47": {
+        "updatedate": 1577664000,
+        "fullname": "PvE Ship Tier List #47",
+        "number": 47,
+        "changes": {
+            "new": [{
+                    "shipname": "Ryuuhou",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Noshiro",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Suruga",
+                    "changedrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Kinu",
+                    "changedrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Hatsuharu",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Hibiki",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kasumi",
+                    "changedrank": "t5",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "York",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Black Heart",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Nachi",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Myoukou",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Le Malin",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chang Chun",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "An Shan",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fu Shun",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Tai Yuan",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Cygnet",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Foxhound",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Shiranui",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fletcher",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Crescent",
+                    "changedrank": "t5",
+                    "oldrank": "t6",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Comet",
+                    "changedrank": "t5",
+                    "oldrank": "t6",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "U-81",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "submarine"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Gascogne µ",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Terror",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Abercrombie",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Pennsylvania",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Elegant Kizuna AI",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Phoenix",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Agano",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Naka",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Abukuma",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Juneau",
+                    "changedrank": "t7",
+                    "oldrank": "t6",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Tanikaze",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Hamakaze",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fubuki",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kiyonami",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "I-13",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "I-19",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Albacore",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Surcouf",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-522",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "I-25",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "I-56",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-110",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-73",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-556",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-557",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "I-26",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "I-58",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Dace",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                }
+            ]
+        }
+    },
+    "48": {
+        "updatedate": 1580083200,
+        "fullname": "PvE Ship Tier List #48",
+        "number": 48,
+        "changes": {
+            "new": [{
+                    "shipname": "Dido",
+                    "changedrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Biloxi",
+                    "changedrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Gloucester",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Uranami",
+                    "changedrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Halsey Powell",
+                    "changedrank": "t6",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "Curlew",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Curacoa",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Le Triomphant",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kiyonami",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Amazon",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Edinburgh",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Brooklyn",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Yuudachi",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                }
+            ]
+        }
+    },
+    "49": {
+        "updatedate": 1583193600,
+        "fullname": "PvE Ship Tier List #49",
+        "number": 49,
+        "changes": {
+            "new": [{
+                    "shipname": "Sovetskaya Rossiya",
+                    "changedrank": "t0",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Chapayev",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Tashkent",
+                    "changedrank": "t0",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Gangut",
+                    "changedrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Pamiat Merkuria",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Grozny",
+                    "changedrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Minsk",
+                    "changedrank": "t5",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "Saratoga",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Ark Royal",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Zeppy",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "HMS Neptune",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Cleveland",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Cleveland µ",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Columbia",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Biloxi",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Curlew",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Curacoa",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Denver",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Newcastle",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Sheffield",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Sheffield µ",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Little Bel",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Yuubari",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Phoenix",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Naka",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Brooklyn",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Laffey",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Z23",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Le Malin",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Le Triomphant",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Z1",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Nicholas",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "An Shan",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chang Chun",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Shigure",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Yuudachi",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Yoizuki",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Harutsuki",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kagerou",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fu Shun",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Tai Yuan",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Carabiniere",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Hatsuharu",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fortune",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Acasta",
+                    "changedrank": "t3",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fubuki",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kiyonami",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Foxhound",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Cygnet",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Le Téméraire",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "L'Opiniâtre",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Matchless",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Maury",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Amazon",
+                    "changedrank": "t4",
+                    "oldrank": "t6",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Mutsu",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "West Virginia",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Scharnhorst",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Gneisenau",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Ookami Mio",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Jintsuu",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "lightcruiser"
+                }
+            ],
+            "support": [{
+                    "shipname": "Ryuuhou",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Akashi",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Unicorn",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Vestal",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Helena",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Illustrious",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Shouhou",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Queen Elizabeth",
+                    "changedrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Aurora",
+                    "changedrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Eldridge",
+                    "changedrank": "t1",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fumiruiru",
+                    "changedrank": "t2",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Arizona",
+                    "changedrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Avrora",
+                    "changedrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Ardent",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chaser",
+                    "changedrank": "t3",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Leipzig",
+                    "changedrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Yuugure",
+                    "changedrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Gloucester",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Fletcher",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                }
+            ]
+        }
+    },
+    "50": {
+        "updatedate": 1583280000,
+        "fullname": "PvE Ship Tier List #50",
+        "number": 50,
+        "changes": {
+            "new": [{
+                    "shipname": "Bremerton",
+                    "changedrank": "t0",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Intrepid",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Casablanca",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Reno",
+                    "changedrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Bluegill",
+                    "changedrank": "t4",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Cooper",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Marblehead",
+                    "changedrank": "t6",
+                    "shiptype": "lightcruiser"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "Mutsu",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Avrora",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Yuugure",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Baltimore",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Portland",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Minneapolis",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Black Prince",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Ise",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Maryland",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Eldridge",
+                    "changedrank": "t1",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chaser",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Isuzu",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Edinburgh",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Matchless",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "support": [{
+                    "shipname": "Ryuuhou",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Akashi",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Unicorn",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Vestal",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Helena",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Illustrious",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Shouhou",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Casablanca",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Aurora",
+                    "changedrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Avrora",
+                    "changedrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Fumiruiru",
+                    "changedrank": "t2",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Arizona",
+                    "changedrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Ardent",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Yuugure",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Leipzig",
+                    "changedrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Eldridge",
+                    "changedrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chaser",
+                    "changedrank": "t4",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Gloucester",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Cooper",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Köln",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                }
+            ]
+        }
+    },
+    "51": {
+        "updatedate": 1588118400,
+        "fullname": "PvE Ship Tier List #51",
+        "number": 51,
+        "changes": {
+            "new": [{
+                    "shipname": "Isuzu",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Tosa",
+                    "changedrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Little Renown",
+                    "changedrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Hanazuki",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Naganami",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "Tanikaze",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Zara",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "London",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Suffolk",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Edinburgh",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Juneau",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Amazon",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Hyuuga",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Rodney",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Nelson",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Mutsu",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Colorado",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "West Virginia",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Erebus",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Kongou",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Haruna",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Hiei",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Portland",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Minneapolis",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Takao",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Black Heart",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Nakiri Ayame",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Suzuya",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Salt Lake City",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Marblehead",
+                    "changedrank": "t7",
+                    "oldrank": "t6",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Acasta",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fubuki",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kiyonami",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Makinami",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Vampire",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "support": [{
+                    "shipname": "Ryuuhou",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Akashi",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Unicorn",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Vestal",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Helena",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Illustrious",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Shouhou",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Casablanca",
+                    "changedrank": "t1",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Aurora",
+                    "changedrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Avrora",
+                    "changedrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Fumiruiru",
+                    "changedrank": "t2",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Arizona",
+                    "changedrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Ardent",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Yuugure",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Leipzig",
+                    "changedrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Eldridge",
+                    "changedrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chaser",
+                    "changedrank": "t4",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Gloucester",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Cooper",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Köln",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                }
+            ]
+        }
+    },
+    "52": {
+        "updatedate": 1590537600,
+        "fullname": "PvE Ship Tier List #52",
+        "number": 52,
+        "changes": {
+            "new": [{
+                    "shipname": "Richelieu",
+                    "changedrank": "t0",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Béarn",
+                    "changedrank": "t3",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Algérie",
+                    "changedrank": "t2",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Jeanne d'Arc",
+                    "changedrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "La Galissonnière",
+                    "changedrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Vauquelin",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Tartu",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "Queen Elizabeth",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Akagi µ",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Chaser",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Jintsuu",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Sendai",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Leipzig",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Phoenix",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "St. Louis",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Brooklyn",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Leander",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Honolulu",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Black Heart",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Naka",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Glasgow",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Eldridge",
+                    "changedrank": "t1",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Arizona",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Vestal",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Fumiruiru",
+                    "changedrank": "t4",
+                    "oldrank": "t2",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Kuon",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Chicago",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Avrora",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Le Téméraire",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "L'Opiniâtre",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Maury",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Foxhound",
+                    "changedrank": "t5",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Uranami",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Z26",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                }
+            ]
+        }
+    },
+    "53": {
+        "updatedate": 1590537600,
+        "fullname": "PvE Ship Tier List #53",
+        "number": 53,
+        "changes": {
+            "new": [
+                {
+                    "shipname": "Helena",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Eskimo",
+                    "changedrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Hatsushimo",
+                    "changedrank": "t3",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [
+                {
+                    "shipname": "Ise",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Arizona",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                }
+            ],
+            "demotions": [
+                {
+                    "shipname": "Gascogne",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Hood",
+                        "changedrank": "t1",
+                        "oldrank": "t2",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "North Carolina",
+                        "changedrank": "t3",
+                        "oldrank": "t2",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Queen Elizabeth",
+                        "changedrank": "t3",
+                        "oldrank": "t2",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "South Dakota",
+                        "changedrank": "t4",
+                        "oldrank": "t3",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Mikasa",
+                        "changedrank": "t4",
+                        "oldrank": "t3",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Giulio Cesare",
+                        "changedrank": "t5",
+                        "oldrank": "t4",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Kirishima",
+                        "changedrank": "t5",
+                        "oldrank": "t4",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Naganami",
+                        "changedrank": "t3",
+                        "oldrank": "t2",
+                        "shiptype": "destroyer"
+                    },
+                    {
+                        "shipname": "Fortune",
+                        "changedrank": "t4",
+                        "oldrank": "t3",
+                        "shiptype": "destroyer"
+                    },
+                    {
+                        "shipname": "Cygnet",
+                        "changedrank": "t4",
+                        "oldrank": "t3",
+                        "shiptype": "destroyer"
+                    },
+                    {
+                        "shipname": "Vauquelin",
+                        "changedrank": "t5",
+                        "oldrank": "t4",
+                        "shiptype": "destroyer"
+                    },
+                    {
+                        "shipname": "Z35",
+                        "changedrank": "t6",
+                        "oldrank": "t5",
+                        "shiptype": "destroyer"
+                    }
+            ]
+        }
+    },
+    "54": {
+        "updatedate": 1594944000,
+        "fullname": "PvE Ship Tier List #54",
+        "number": 54,
+        "changes": {
+            "new": [
+                {
+                    "shipname": "Odin",
+                    "changedrank": "t0",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Champagne",
+                    "changedrank": "t0",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Drake",
+                    "changedrank": "t0",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Cheshire",
+                    "changedrank": "t0",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Mainz",
+                    "changedrank": "t0",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Little Illustrious",
+                    "changedrank": "t4",
+                    "shiptype": "carrier"
+                }
+                ],
+                "promotions": [{
+                    "shipname": "Gascogne",
+                    "changedrank": "t0",
+                    "oldrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Long Island",
+                    "changedrank": "t3",
+                    "oldrank": "t4",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Albacore",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-522",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "U-110",
+                    "changedrank": "t2",
+                    "oldrank": "t3",
+                    "shiptype": "submarine"
+                }
+            ],
+                "demotions": [
+                    {
+                        "shipname": "Alabama",
+                        "changedrank": "t1",
+                        "oldrank": "t0",
+                        "shiptype": "battleship"
+                    },
+                    {
+                        "shipname": "Sovetskaya Rossiya",
+                        "changedrank": "t1",
+                        "oldrank": "t0",
+                        "shiptype": "battleship"
+                    }
+                ]
+                }
+            },
     "55": {
         "updatedate": 1596121818,
         "fullname": "PvE Ship Tier List #55",
@@ -74,23 +1925,23 @@
             ]
         }
     },
-        "56": {
-            "updatedate": 1598958769,
-            "fullname": "PvE Ship Tier List #56",
-            "number": 56,
-            "changes": {
-                "new": [{
-                        "shipname": "U-96",
-                        "changedrank": "t0",
-                        "shiptype": "submarine"
-                    },
-                    {
-                        "shipname": "Z26",
-                        "changedrank": "t4",
-                        "shiptype": "destroyer"
-                    }
-                ],
-                "promotions": [{
+    "56": {
+        "updatedate": 1598958769,
+        "fullname": "PvE Ship Tier List #56",
+        "number": 56,
+        "changes": {
+            "new": [{
+                    "shipname": "U-96",
+                    "changedrank": "t0",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Z26",
+                    "changedrank": "t4",
+                    "shiptype": "destroyer"
+                }
+            ],
+            "promotions": [{
                     "shipname": "Naganami",
                     "changedrank": "t2",
                     "oldrank": "t3",
@@ -109,43 +1960,43 @@
                     "shiptype": "destroyer"
                 }
             ],
-                "demotions": [{
-                        "shipname": "U-101",
-                        "changedrank": "t1",
-                        "oldrank": "t0",
-                        "shiptype": "submarine"
-                    },
-                    {
-                        "shipname": "Hanazuki",
-                        "changedrank": "t3",
-                        "oldrank": "t2",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Yoizuki",
-                        "changedrank": "t3",
-                        "oldrank": "t2",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Harutsuki",
-                        "changedrank": "t3",
-                        "oldrank": "t2",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Tartu",
-                        "changedrank": "t5",
-                        "oldrank": "t4",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Musketeer",
-                        "changedrank": "t6",
-                        "oldrank": "t5",
-                        "shiptype": "destroyer"
-                    }
-                ]
-            }
+            "demotions": [{
+                    "shipname": "U-101",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "submarine"
+                },
+                {
+                    "shipname": "Hanazuki",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Yoizuki",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Harutsuki",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Tartu",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Musketeer",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                }
+            ]
         }
     }
+}

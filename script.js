@@ -155,10 +155,18 @@ async function loaddata() {
     })
   })
 
-  let changelogselectelem = document.getElementById("changelogsdrop")
-  getchangelog(Object.entries(changelog)[(Object.entries(changelog).length - 1)][0])
-  fillchangelogselect(changelog, changelogselectelem)
-  changelogselectelem.addEventListener("change", getchangelog);
+  fillchangelog(changelog, "changelog-body-left")
+  let changelogleftitems = document.querySelectorAll(".changelog-body-left .item")
+  nodrag("changelog-body-left");
+  changelogleftitems.forEach(function (itemadd) {
+    itemadd.addEventListener(
+      "click",
+      function () {
+        getchangelog(this.id);
+      },
+      false
+    );
+  });
 
   maincont = document.getElementsByClassName("main")[0];
 
@@ -243,13 +251,20 @@ async function loaddata() {
   }
 }
 
-function fillchangelogselect(a1, a2) {
+function fillchangelog(a1, a2) {
   var i = Object.entries(a1).length;
   while (i--) {
-    var opt = document.createElement('option');
-    opt.appendChild(document.createTextNode('#' + a1[Object.entries(a1)[i][0]].number));
-    opt.value = a1[Object.entries(a1)[i][0]].number;
-    a2.appendChild(opt);
+    var date = new Date(a1[Object.entries(a1)[i][0]].updatedate * 1000);
+    let formateddate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth()+1)).slice(-2) + '/' + date.getFullYear()
+    htmldombuilder("div", "item", {
+      addon: {
+        innerHTML: `<span>#${a1[Object.entries(a1)[i][0]].number} <br> ${formateddate}</span>`,
+        id: "item_" + a1[Object.entries(a1)[i][0]].number
+      },
+      style: {
+        backgroundImage: `url("Assets/Misc/UsagiThumbnails/${a1[Object.entries(a1)[i][0]].number}.png")`
+      }
+    }, document.getElementsByClassName(a2)[0])
   }
 }
 
@@ -286,6 +301,9 @@ function htmldombuilder(a1, a2, a3, a4) {
           a.target = "_blank"
           a.rel = "noopener"
           a.ariaLabel = a2
+        }
+        if (Object.entries(a3.addon)[i][0] == "id") {
+          a.id = a3.addon[Object.entries(a3.addon)[i][0]]
         }
       }
     }
@@ -356,57 +374,159 @@ function spantextbuild(a1, a2, a3) {
 }
 
 function getchangelog(a1) {
+  a1 = a1.replace("item_", "")
+  document.querySelectorAll(".item").forEach((e) => {
+    if (e.id.includes(a1)) {
+      if (!e.classList.contains("active")) {
+        e.classList.add("active");
+      }
+    } else {
+      if (e.classList.contains("active")) {
+      e.classList.remove("active")
+    }
+  }
+    })
   if (isNaN(a1) == false) {
     a1 = a1
   } else {
     a1 = this.value
   }
 
-  document.getElementsByClassName("changelog-body")[0].innerHTML = "";
-
-  var date = new Date(changelog[a1].updatedate * 1000);
-
-  htmldombuilder("div", "changelogheader", undefined, document.getElementsByClassName("changelog-body")[0])
+  document.getElementsByClassName("changelogmainbody")[0].innerHTML = "";
+  document.getElementsByClassName("changelogmainheader")[0].innerHTML = "";
+  document.getElementsByClassName("changelogbuttons")[0].innerHTML = "";
+  
   htmldombuilder("div", "changelogtext", {
     addon: {
       text: changelog[a1].fullname
     }
-  }, document.getElementsByClassName("changelogheader")[0])
-  htmldombuilder("div", "updated", {
-    addon: {
-      innerHTML: date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear()
-    }
-  }, document.getElementsByClassName("changelogheader")[0])
-  htmldombuilder("div", "changelogtextadded", {
-    addon: {
-      innerHTML: "Added"
-    }
-  }, document.getElementsByClassName("changelog-body")[0])
-  htmldombuilder("div", "changelogmainblock", undefined, document.getElementsByClassName("changelog-body")[0])
-  htmldombuilder("div", "changelogtextpromotions", {
-    addon: {
-      innerHTML: "Promotions"
-    }
-  }, document.getElementsByClassName("changelog-body")[0])
-  htmldombuilder("div", "changelogmainpromotions", undefined, document.getElementsByClassName("changelog-body")[0])
-  htmldombuilder("div", "changelogtextdemotions", {
-    addon: {
-      innerHTML: "Demotions"
-    }
-  }, document.getElementsByClassName("changelog-body")[0])
-  htmldombuilder("div", "changelogmaindemotions", undefined, document.getElementsByClassName("changelog-body")[0])
+  }, document.getElementsByClassName("changelogmainheader")[0])
 
-  function getindexforship(b1, b2, b3, b4, b5, b6) {
-    for (let i = 0; i < ships[b2][b3].length; i++) {
-      if (ships[b2][b3][i].names.en == b1) {
-        buildchangelogships(b2, b3, i, b4, b5, b6)
+  if (!changelog[a1].changes.new.length < 1) {
+  htmldombuilder("button", "changelog-added-button", {
+    addon: {
+      innerText: "Added"
+    }
+  }, document.getElementsByClassName("changelogbuttons")[0])
+
+  document.getElementsByClassName("changelog-added-button")[0].addEventListener(
+    "click",
+    function () {
+      changedomanactive(this.innerText, "changelogmainblock");
+    },
+    false
+  );
+}
+
+if(changelog[a1].changes.support != undefined) {
+if (!changelog[a1].changes.support.length < 1) {
+  htmldombuilder("button", "changelog-support-button", {
+    addon: {
+      innerText: "Support"
+    }
+  }, document.getElementsByClassName("changelogbuttons")[0])
+
+  document.getElementsByClassName("changelog-support-button")[0].addEventListener(
+    "click",
+    function () {
+      changedomanactive(this.innerText, "changelogmainsupport");
+    },
+    false
+  );
+}
+}
+
+if (!changelog[a1].changes.promotions.length < 1) {
+  htmldombuilder("button", "changelog-promotions-button", {
+    addon: {
+      innerText: "Promotions"
+    }
+  }, document.getElementsByClassName("changelogbuttons")[0])
+
+  document.getElementsByClassName("changelog-promotions-button")[0].addEventListener(
+    "click",
+    function () {
+      changedomanactive(this.innerText, "changelogmainpromotions");
+    },
+    false
+  );
+}
+
+if (!changelog[a1].changes.promotions.length < 1) {
+  htmldombuilder("button", "changelog-demotions-button", {
+    addon: {
+      innerText: "Demotions"
+    }
+  }, document.getElementsByClassName("changelogbuttons")[0])
+
+  document.getElementsByClassName("changelog-demotions-button")[0].addEventListener(
+    "click",
+    function () {
+      changedomanactive(this.innerText, "changelogmaindemotions");
+    },
+    false
+  );
+}
+
+  function changedomanactive(a1, a2) {
+    document.querySelectorAll(".changelogbuttons button").forEach((e) => {
+      if (e.innerText == a1) {
+        if (!e.classList.contains("active")) {
+          e.classList.add("active");
+        }
+      } else {
+        if (e.classList.contains("active")) {
+        e.classList.remove("active")
       }
     }
+    })
+    aeds1(a2)
+  }
+
+  function aeds1(a1) {
+    document.querySelectorAll(".changelogmainbody [class^=changelogmain]").forEach((e) => {
+      if (e.classList.contains(a1)) {
+        if (!e.classList.contains("active")) {
+        e.classList.add("active");
+        }
+      } else {
+        if (e.classList.contains("active")) {
+        e.classList.remove("active")
+      }
+    }
+    })
+  }
+
+
+  htmldombuilder("div", "changelogmainblock", undefined, document.getElementsByClassName("changelogmainbody")[0])
+
+  htmldombuilder("div", "changelogmainsupport", undefined, document.getElementsByClassName("changelogmainbody")[0])
+
+  htmldombuilder("div", "changelogmainpromotions", undefined, document.getElementsByClassName("changelogmainbody")[0])
+
+  htmldombuilder("div", "changelogmaindemotions", undefined, document.getElementsByClassName("changelogmainbody")[0])
+
+  function getindexforship(b1, b2, b3, b4, b5, b6) {
+    for (let a = 0; a < 8; a++) {
+      if (ships[b2][Object.entries(ships[b2])[a][0]] != undefined) {
+    for (let i = 0; i < ships[b2][Object.entries(ships[b2])[a][0]].length; i++) {
+      if (ships[b2][Object.entries(ships[b2])[a][0]][i].names.en == b1) {
+        buildchangelogships(b2, b3, i, b4, b5, b6, Object.entries(ships[b2])[a][0])
+      }
+    }
+  }
+}
   }
 
   for (let i = 0; i < changelog[a1].changes.new.length; i++) {
     getindexforship(changelog[a1].changes.new[i].shipname, changelog[a1].changes.new[i].shiptype, changelog[a1].changes.new[i].changedrank, i, "new")
   }
+
+  if(changelog[a1].changes.support != undefined) {
+  for (let i = 0; i < changelog[a1].changes.support.length; i++) {
+    getindexforship(changelog[a1].changes.support[i].shipname, changelog[a1].changes.support[i].shiptype, changelog[a1].changes.support[i].changedrank, i, "support")
+  }
+}
 
   for (let i = 0; i < changelog[a1].changes.promotions.length; i++) {
     getindexforship(changelog[a1].changes.promotions[i].shipname, changelog[a1].changes.promotions[i].shiptype, changelog[a1].changes.promotions[i].changedrank, i, "promotions", changelog[a1].changes.promotions[i].oldrank)
@@ -416,103 +536,125 @@ function getchangelog(a1) {
     getindexforship(changelog[a1].changes.demotions[i].shipname, changelog[a1].changes.demotions[i].shiptype, changelog[a1].changes.demotions[i].changedrank, i, "demotions", changelog[a1].changes.demotions[i].oldrank)
   }
 
-  function buildchangelogships(a1, a2, i, b4, b5, b6) {
-    if (b5 == "new") {
-      if (document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2).length == 0) {
+  function buildchangelogships(a1, a2, i, b4, b5, b6, b7) {
+    if (b5 == "new" || b5 == "support") {
+      let newidf
+      let fullidf
+      if (b5 == "new") {
+        newidf = "block"
+        fullidf = "changelogparentadded"
+      } else {
+        newidf = "support"
+        fullidf = "changelogparentsupport"
+      }
+      if (document.getElementsByClassName("changelogmain" + newidf)[0].getElementsByClassName(a2).length == 0) {
         htmldombuilder("div", a2, {
           style: {
-            width: "110px",
-            display: "inline-block"
+            height: "120px",
+            display: "inline-flex",
+            marginBottom: "10px"
           }
-        }, document.getElementsByClassName("changelogmainblock")[0])
+        }, document.getElementsByClassName("changelogmain" + newidf)[0])
+
         htmldombuilder("div", "tierbanner", {
           style: {
-            width: "100px",
-            display: "inline-block"
+            height: "120px",
+            width: "55px",
+            marginRight: "5px",
+            marginTop: "5px",
+            display: "flex"
+          }
+        }, document.getElementsByClassName("changelogmain" + newidf)[0].getElementsByClassName(a2)[0])
+        htmldombuilder("span", "", {
+          style: {
+            alignSelf: "center",
+            width: "55px",
+            fontSize: "47px"
           },
           addon: {
-            text: a2
+            innerHTML: `${a2.charAt(0).toUpperCase()} <br> ${a2.charAt(1)}`
           }
-        }, document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2)[0])
+        }, document.getElementsByClassName("changelogmain" + newidf)[0].getElementsByClassName(a2)[0].getElementsByClassName("tierbanner")[0])
       }
+
       //Main
-      htmldombuilder("div", "changelogparentadded", undefined, document.getElementsByClassName("changelogmainblock")[0].getElementsByClassName(a2)[0])
+      htmldombuilder("div", fullidf, undefined, document.getElementsByClassName("changelogmain" + newidf)[0].getElementsByClassName(a2)[0])
       //WikiUrl
       htmldombuilder("a", "link", {
         addon: {
-          href: ships[`${a1}`][`${a2}`][i].wikiUrl
+          href: ships[`${a1}`][`${b7}`][i].wikiUrl
         }
-      }, document.getElementsByClassName("changelogparentadded")[b4])
+      }, document.getElementsByClassName(fullidf)[b4])
       //Thumbnail
       htmldombuilder("img", "thumbnail", {
         addon: {
-          src: ships[`${a1}`][`${a2}`][i].thumbnail
+          src: ships[`${a1}`][`${b7}`][i].thumbnail
         }
-      }, document.getElementsByClassName("changelogparentadded")[b4])
+      }, document.getElementsByClassName(fullidf)[b4])
       //Bannerleft
-      if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
-        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
+      if (ships[`${a1}`][`${b7}`][i].banneralt != null) {
+        if (ships[`${a1}`][`${b7}`][i].banneralt == "NEW") {
         htmldombuilder("img", "bannerleft", {
           addon: {
-            src: ships[`${a1}`][`${a2}`][i].banneraltlink
+            src: ships[`${a1}`][`${b7}`][i].banneraltlink
           }
-        }, document.getElementsByClassName("changelogparentadded")[b4])
+        }, document.getElementsByClassName(fullidf)[b4])
       }
       }
       //Tags en
       if (languageid == "en" || languageid == "jp" || languageid == "kr") {
-        htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName(fullidf)[b4])
       } else {
-        htmldombuilder("div", "tags_en", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "tags_en", undefined, document.getElementsByClassName(fullidf)[b4])
       }
       //Tags cn
       if (languageid == "cn") {
-        htmldombuilder("div", "tags_cn show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "tags_cn show", undefined, document.getElementsByClassName(fullidf)[b4])
       } else {
-        htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName(fullidf)[b4])
       }
       //Tags filler
-      if (ships[`${a1}`][`${a2}`][i].tags != null) {
-        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
+      if (ships[`${a1}`][`${b7}`][i].tags != null) {
+        for (let ii = 0; ii < ships[`${a1}`][`${b7}`][i].tags.length; ii++) {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
               }
-            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_en")[0])
+            }, document.getElementsByClassName(fullidf)[b4].getElementsByClassName("tags_en")[0])
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
               }
-            }, document.getElementsByClassName("changelogparentadded")[b4].getElementsByClassName("tags_cn")[0])
+            }, document.getElementsByClassName(fullidf)[b4].getElementsByClassName("tags_cn")[0])
         }
       }
       //Namechange html
       //Textblock en
       if (languageid == "en") {
-        htmldombuilder("div", "text_en show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_en show", undefined, document.getElementsByClassName(fullidf)[b4])
       } else {
-        htmldombuilder("div", "text_en", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_en", undefined, document.getElementsByClassName(fullidf)[b4])
       }
       //Textblock jp
       if (languageid == "jp") {
-        htmldombuilder("div", "text_jp show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_jp show", undefined, document.getElementsByClassName(fullidf)[b4])
       } else {
-        htmldombuilder("div", "text_jp", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_jp", undefined, document.getElementsByClassName(fullidf)[b4])
       }
       //Textblock kr
       if (languageid == "kr") {
-        htmldombuilder("div", "text_kr show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_kr show", undefined, document.getElementsByClassName(fullidf)[b4])
       } else {
-        htmldombuilder("div", "text_kr", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_kr", undefined, document.getElementsByClassName(fullidf)[b4])
       }
       //Textblock cn
       if (languageid == "cn") {
-        htmldombuilder("div", "text_cn show", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_cn show", undefined, document.getElementsByClassName(fullidf)[b4])
       } else {
-        htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName("changelogparentadded")[b4])
+        htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName(fullidf)[b4])
       }
       // Span text
-      spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName("changelogparentadded")[b4])
+      spantextbuild(ships[`${a1}`][`${b7}`][i].names, ships[`${a1}`][`${b7}`][i].names, document.getElementsByClassName(fullidf)[b4])
     }
     if (b5 == "promotions" || b5 == "demotions") {
       //Main div
@@ -520,21 +662,21 @@ function getchangelog(a1) {
       //WikiUrl
       htmldombuilder("a", "link", {
         addon: {
-          href: ships[`${a1}`][`${a2}`][i].wikiUrl
+          href: ships[`${a1}`][`${b7}`][i].wikiUrl
         }
       }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       //Thumbnail
       htmldombuilder("img", "thumbnail", {
         addon: {
-          src: ships[`${a1}`][`${a2}`][i].thumbnail
+          src: ships[`${a1}`][`${b7}`][i].thumbnail
         }
       }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       //Bannerleft
-      if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
-        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
+      if (ships[`${a1}`][`${b7}`][i].banneralt != null) {
+        if (ships[`${a1}`][`${b7}`][i].banneralt == "NEW") {
         htmldombuilder("img", "bannerleft", {
           addon: {
-            src: ships[`${a1}`][`${a2}`][i].banneraltlink
+            src: ships[`${a1}`][`${b7}`][i].banneraltlink
           }
         }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       }
@@ -552,16 +694,16 @@ function getchangelog(a1) {
         htmldombuilder("div", "tags_cn", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       }
       //Tags filler
-      if (ships[`${a1}`][`${a2}`][i].tags != null) {
-        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
+      if (ships[`${a1}`][`${b7}`][i].tags != null) {
+        for (let ii = 0; ii < ships[`${a1}`][`${b7}`][i].tags.length; ii++) {
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
             htmldombuilder("img", "tag" + (ii + 1), {
               addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
               }
             }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
         }
@@ -592,7 +734,7 @@ function getchangelog(a1) {
         htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       }
       // Span text
-      spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+      spantextbuild(ships[`${a1}`][`${b7}`][i].names, ships[`${a1}`][`${b7}`][i].names, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       //Tierchanges
       htmldombuilder("div", "tierchanges", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
       htmldombuilder("div", "oldranktext", {
@@ -637,7 +779,7 @@ function openChangelog(changelog) {
   var oldWidth = htmlbody.clientWidth
   htmlbody.style.overflow = "hidden";
   htmlbody.style.width = oldWidth;
-  document.getElementsByClassName("language")[0].style.marginRight = "10px";
+  document.getElementsByClassName("language")[0].style.marginRight = "13px";
 }
 
 function closeChangelog(changelog) {
