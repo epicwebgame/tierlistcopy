@@ -29,7 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
+  border-radius: 10px;
   background: #ffffff;
 
 }
@@ -328,6 +328,7 @@ div.t7>div.tierbanner {
   border-radius: 10px;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
 
 .nationality-dropdown-content {
@@ -516,6 +517,7 @@ div.t7>div.tierbanner {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: 1px solid white;
+  cursor: pointer;
 }
 
 #t0.tierfilter:hover,
@@ -657,6 +659,7 @@ button:focus {
   height: 35px;
   border: 1px solid white;
   margin-right: 1px;
+  cursor: pointer;
 }
 
 .lang:hover {
@@ -740,7 +743,8 @@ button:focus {
   border-radius: 5px;
   text-align: center;
   text-shadow: 2px 1px #00000070;
-  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
 }
 
 .changelog {
@@ -832,6 +836,9 @@ button:focus {
 
 .changelogmainbody {
   height: 395px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: 1px solid white;
 }
 
 .changelogheader,
@@ -849,13 +856,23 @@ button:focus {
 }
 
 .changelog-title {
+  text-shadow: 2px 1px #00000070;
   height: 40px;
   width: 920px;
-  background-color: darkblue;
   margin-right: 10px;
   font-size: 33px;
-  display: flex;
   place-items: center;
+  text-align: center;
+}
+
+
+.changelogtext {
+  text-shadow: 2px 1px #00000070;
+  height: 30px;
+  width: 920px;
+  font-size: 25px;
+  place-items: center;
+  text-align: center;
 }
 
 .close-button {
@@ -871,6 +888,7 @@ button:focus {
   display: flex;
   justify-content: center;
   place-items: center;
+  border-radius: 5px;
 }
 
 .changelog-body {
@@ -883,8 +901,10 @@ button:focus {
   margin-right: 10px;
   width: 250px;
   height: 475px;
-  background-color: yellow;
   overflow: overlay;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid white;
 }
 
 .changelog-body-left .item {
@@ -897,8 +917,7 @@ button:focus {
   place-items: center;
   justify-content: flex-end;
   display: flex;
-  color: black;
-  background-color: aqua;
+  color: white;
 }
 
 .changelogbuttons {
@@ -911,15 +930,48 @@ button:focus {
   margin-bottom: 10px;
 }
 
-.item span {
-  width: 120px;
+.changelog-added-button,
+.changelog-promotions-button,
+.changelog-demotions-button,
+.changelog-support-button {
+  background-image: linear-gradient(#3c9dfe, #1e8dff);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  height: 37px;
+  border: 1px solid white;
+  border-radius: 5px;
   text-align: center;
+  text-shadow: 2px 1px #00000070;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.changelog-added-button:hover,
+.changelog-added-button:focus,
+.changelog-promotions-button:hover,
+.changelog-promotions-button:focus,
+.changelog-demotions-button:hover,
+.changelog-demotions-button:focus,
+.changelog-support-button:hover,
+.changelog-support-button:focus {
+  background: #1d61a6;
+  border: 1px solid white;
+}
+
+.item span {
+  width: 100px;
+  text-align: center;
+  margin-right: 7px;
 }
 
 .item {
   background-repeat: no-repeat;
   opacity: 0.5;
-  border: 1px solid yellow;
+  border: 1px solid white;
+  text-shadow: 2px 1px #00000070;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .item:hover {
@@ -928,7 +980,6 @@ button:focus {
 
 .item.active {
   opacity: 1;
-  border: 1px solid red;
 }
 
 .changelog-body-right {
@@ -955,6 +1006,7 @@ button:focus {
   margin-right: 10px;
   border: 3px solid transparent;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .langen {
@@ -969,7 +1021,7 @@ button:focus {
 .langjp:hover,
 .langkr:hover,
 .langcn:hover {
-  border: 3px solid darkgrey;
+  border: 2px solid white;
   opacity: 1;
 }
 

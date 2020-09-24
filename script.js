@@ -31,7 +31,7 @@ async function languageselector() {
   document.getElementsByClassName("topbanner")[0].style.position = "inherit"
   htmldombuilder("div", "mainlanguageselector", {
     style: {
-      top: "50%",
+      top: "350px",
       left: "50%",
       margin: "-200px 0px 0px -285.79px",
       position: "absolute"
@@ -45,7 +45,7 @@ async function languageselector() {
       marginBottom: "35px"
     },
     addon: {
-      innerText: "Please choose a language."
+      innerText: "Please select a language"
     }
   }, document.getElementsByClassName("mainlanguageselector")[0])
   htmldombuilder("div", "languagemain", {
@@ -266,7 +266,7 @@ function fillchangelog(a1, a2) {
         id: "item_" + a1[Object.entries(a1)[i][0]].number
       },
       style: {
-        backgroundImage: `url("Assets/Misc/UsagiThumbnails/${a1[Object.entries(a1)[i][0]].number}.png")`
+        backgroundImage: `url("Assets/Misc/UsagiThumbnails/${a1[Object.entries(a1)[i][0]].number}.png"), linear-gradient(#1e8dff, #3c9dfe)`
       }
     }, document.getElementsByClassName(a2)[0])
   }
