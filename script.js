@@ -14,14 +14,14 @@ let arraysobj = {};
 let changeloglastupdatedate;
 
 async function langcookieread() {
- let cookieread = Cookies.get('language')
- return cookieread
+  let cookieread = Cookies.get('language')
+  return cookieread
 }
 
 function changelognotify() {
   if (Cookies.get('changelog') == undefined || Cookies.get('changelog') != changeloglastupdatedate) {
     document.getElementsByClassName("notification")[0].style.display = "block"
-   }
+  }
 }
 
 async function languageselector() {
@@ -87,7 +87,9 @@ async function languageselector() {
 
 async function setcookie(a1) {
   let str = a1.replace("lang", "")
-  Cookies.set('language', str, { expires: 365 })
+  Cookies.set('language', str, {
+    expires: 365
+  })
   languageid = str
   document.getElementsByClassName("main")[0].removeAttribute("style")
   document.getElementsByClassName("bannertwo")[0].removeAttribute("style")
@@ -97,15 +99,17 @@ async function setcookie(a1) {
 
 async function setcookieghost(a1) {
   let str = a1.replace("lang", "")
-  Cookies.set('language', str, { expires: 365 })
+  Cookies.set('language', str, {
+    expires: 365
+  })
   languageid = str
 }
 
 function scrollwidth() {
   if (window.scrollX <= 5000) {
-  document.querySelector(".topbanner").style.left = window.scrollX + "px"
-  document.querySelector(".bannertwo").style.left = window.scrollX + "px"
-}
+    document.querySelector(".topbanner").style.left = window.scrollX + "px"
+    document.querySelector(".bannertwo").style.left = window.scrollX + "px"
+  }
 }
 
 window.onload = async function () {
@@ -255,7 +259,7 @@ function fillchangelog(a1, a2) {
   var i = Object.entries(a1).length;
   while (i--) {
     var date = new Date(a1[Object.entries(a1)[i][0]].updatedate * 1000);
-    let formateddate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth()+1)).slice(-2) + '/' + date.getFullYear()
+    let formateddate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear()
     htmldombuilder("div", "item", {
       addon: {
         innerHTML: `<span>#${a1[Object.entries(a1)[i][0]].number} <br> ${formateddate}</span>`,
@@ -382,10 +386,10 @@ function getchangelog(a1) {
       }
     } else {
       if (e.classList.contains("active")) {
-      e.classList.remove("active")
+        e.classList.remove("active")
+      }
     }
-  }
-    })
+  })
   if (isNaN(a1) == false) {
     a1 = a1
   } else {
@@ -395,7 +399,7 @@ function getchangelog(a1) {
   document.getElementsByClassName("changelogmainbody")[0].innerHTML = "";
   document.getElementsByClassName("changelogmainheader")[0].innerHTML = "";
   document.getElementsByClassName("changelogbuttons")[0].innerHTML = "";
-  
+
   htmldombuilder("div", "changelogtext", {
     addon: {
       text: changelog[a1].fullname
@@ -403,70 +407,70 @@ function getchangelog(a1) {
   }, document.getElementsByClassName("changelogmainheader")[0])
 
   if (!changelog[a1].changes.new.length < 1) {
-  htmldombuilder("button", "changelog-added-button", {
-    addon: {
-      innerText: "Added"
+    htmldombuilder("button", "changelog-added-button", {
+      addon: {
+        innerText: "Added"
+      }
+    }, document.getElementsByClassName("changelogbuttons")[0])
+
+    document.getElementsByClassName("changelog-added-button")[0].addEventListener(
+      "click",
+      function () {
+        changedomanactive(this.innerText, "changelogmainblock");
+      },
+      false
+    );
+  }
+
+  if (changelog[a1].changes.support != undefined) {
+    if (!changelog[a1].changes.support.length < 1) {
+      htmldombuilder("button", "changelog-support-button", {
+        addon: {
+          innerText: "Support"
+        }
+      }, document.getElementsByClassName("changelogbuttons")[0])
+
+      document.getElementsByClassName("changelog-support-button")[0].addEventListener(
+        "click",
+        function () {
+          changedomanactive(this.innerText, "changelogmainsupport");
+        },
+        false
+      );
     }
-  }, document.getElementsByClassName("changelogbuttons")[0])
+  }
 
-  document.getElementsByClassName("changelog-added-button")[0].addEventListener(
-    "click",
-    function () {
-      changedomanactive(this.innerText, "changelogmainblock");
-    },
-    false
-  );
-}
+  if (!changelog[a1].changes.promotions.length < 1) {
+    htmldombuilder("button", "changelog-promotions-button", {
+      addon: {
+        innerText: "Promotions"
+      }
+    }, document.getElementsByClassName("changelogbuttons")[0])
 
-if(changelog[a1].changes.support != undefined) {
-if (!changelog[a1].changes.support.length < 1) {
-  htmldombuilder("button", "changelog-support-button", {
-    addon: {
-      innerText: "Support"
-    }
-  }, document.getElementsByClassName("changelogbuttons")[0])
+    document.getElementsByClassName("changelog-promotions-button")[0].addEventListener(
+      "click",
+      function () {
+        changedomanactive(this.innerText, "changelogmainpromotions");
+      },
+      false
+    );
+  }
 
-  document.getElementsByClassName("changelog-support-button")[0].addEventListener(
-    "click",
-    function () {
-      changedomanactive(this.innerText, "changelogmainsupport");
-    },
-    false
-  );
-}
-}
+  if (!changelog[a1].changes.promotions.length < 1) {
+    htmldombuilder("button", "changelog-demotions-button", {
+      addon: {
+        innerText: "Demotions"
+      }
+    }, document.getElementsByClassName("changelogbuttons")[0])
 
-if (!changelog[a1].changes.promotions.length < 1) {
-  htmldombuilder("button", "changelog-promotions-button", {
-    addon: {
-      innerText: "Promotions"
-    }
-  }, document.getElementsByClassName("changelogbuttons")[0])
-
-  document.getElementsByClassName("changelog-promotions-button")[0].addEventListener(
-    "click",
-    function () {
-      changedomanactive(this.innerText, "changelogmainpromotions");
-    },
-    false
-  );
-}
-
-if (!changelog[a1].changes.promotions.length < 1) {
-  htmldombuilder("button", "changelog-demotions-button", {
-    addon: {
-      innerText: "Demotions"
-    }
-  }, document.getElementsByClassName("changelogbuttons")[0])
-
-  document.getElementsByClassName("changelog-demotions-button")[0].addEventListener(
-    "click",
-    function () {
-      changedomanactive(this.innerText, "changelogmaindemotions");
-    },
-    false
-  );
-}
+    document.getElementsByClassName("changelog-demotions-button")[0].addEventListener(
+      "click",
+      function () {
+        changedomanactive(this.innerText, "changelogmaindemotions");
+      },
+      false
+    );
+  }
 
   function changedomanactive(a1, a2) {
     document.querySelectorAll(".changelogbuttons button").forEach((e) => {
@@ -476,9 +480,9 @@ if (!changelog[a1].changes.promotions.length < 1) {
         }
       } else {
         if (e.classList.contains("active")) {
-        e.classList.remove("active")
+          e.classList.remove("active")
+        }
       }
-    }
     })
     aeds1(a2)
   }
@@ -487,13 +491,13 @@ if (!changelog[a1].changes.promotions.length < 1) {
     document.querySelectorAll(".changelogmainbody [class^=changelogmain]").forEach((e) => {
       if (e.classList.contains(a1)) {
         if (!e.classList.contains("active")) {
-        e.classList.add("active");
+          e.classList.add("active");
         }
       } else {
         if (e.classList.contains("active")) {
-        e.classList.remove("active")
+          e.classList.remove("active")
+        }
       }
-    }
     })
   }
 
@@ -509,24 +513,24 @@ if (!changelog[a1].changes.promotions.length < 1) {
   function getindexforship(b1, b2, b3, b4, b5, b6) {
     for (let a = 0; a < 8; a++) {
       if (ships[b2][Object.entries(ships[b2])[a][0]] != undefined) {
-    for (let i = 0; i < ships[b2][Object.entries(ships[b2])[a][0]].length; i++) {
-      if (ships[b2][Object.entries(ships[b2])[a][0]][i].names.en == b1) {
-        buildchangelogships(b2, b3, i, b4, b5, b6, Object.entries(ships[b2])[a][0])
+        for (let i = 0; i < ships[b2][Object.entries(ships[b2])[a][0]].length; i++) {
+          if (ships[b2][Object.entries(ships[b2])[a][0]][i].names.en == b1) {
+            buildchangelogships(b2, b3, i, b4, b5, b6, Object.entries(ships[b2])[a][0])
+          }
+        }
       }
     }
-  }
-}
   }
 
   for (let i = 0; i < changelog[a1].changes.new.length; i++) {
     getindexforship(changelog[a1].changes.new[i].shipname, changelog[a1].changes.new[i].shiptype, changelog[a1].changes.new[i].changedrank, i, "new")
   }
 
-  if(changelog[a1].changes.support != undefined) {
-  for (let i = 0; i < changelog[a1].changes.support.length; i++) {
-    getindexforship(changelog[a1].changes.support[i].shipname, changelog[a1].changes.support[i].shiptype, changelog[a1].changes.support[i].changedrank, i, "support")
+  if (changelog[a1].changes.support != undefined) {
+    for (let i = 0; i < changelog[a1].changes.support.length; i++) {
+      getindexforship(changelog[a1].changes.support[i].shipname, changelog[a1].changes.support[i].shiptype, changelog[a1].changes.support[i].changedrank, i, "support")
+    }
   }
-}
 
   for (let i = 0; i < changelog[a1].changes.promotions.length; i++) {
     getindexforship(changelog[a1].changes.promotions[i].shipname, changelog[a1].changes.promotions[i].shiptype, changelog[a1].changes.promotions[i].changedrank, i, "promotions", changelog[a1].changes.promotions[i].oldrank)
@@ -594,12 +598,12 @@ if (!changelog[a1].changes.promotions.length < 1) {
       //Bannerleft
       if (ships[`${a1}`][`${b7}`][i].banneralt != null) {
         if (ships[`${a1}`][`${b7}`][i].banneralt == "NEW") {
-        htmldombuilder("img", "bannerleft", {
-          addon: {
-            src: ships[`${a1}`][`${b7}`][i].banneraltlink
-          }
-        }, document.getElementsByClassName(fullidf)[b4])
-      }
+          htmldombuilder("img", "bannerleft", {
+            addon: {
+              src: ships[`${a1}`][`${b7}`][i].banneraltlink
+            }
+          }, document.getElementsByClassName(fullidf)[b4])
+        }
       }
       //Tags en
       if (languageid == "en" || languageid == "jp" || languageid == "kr") {
@@ -616,16 +620,16 @@ if (!changelog[a1].changes.promotions.length < 1) {
       //Tags filler
       if (ships[`${a1}`][`${b7}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${b7}`][i].tags.length; ii++) {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(fullidf)[b4].getElementsByClassName("tags_en")[0])
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(fullidf)[b4].getElementsByClassName("tags_cn")[0])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName(fullidf)[b4].getElementsByClassName("tags_en")[0])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName(fullidf)[b4].getElementsByClassName("tags_cn")[0])
         }
       }
       //Namechange html
@@ -674,13 +678,13 @@ if (!changelog[a1].changes.promotions.length < 1) {
       //Bannerleft
       if (ships[`${a1}`][`${b7}`][i].banneralt != null) {
         if (ships[`${a1}`][`${b7}`][i].banneralt == "NEW") {
-        htmldombuilder("img", "bannerleft", {
-          addon: {
-            src: ships[`${a1}`][`${b7}`][i].banneraltlink
-          }
-        }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+          htmldombuilder("img", "bannerleft", {
+            addon: {
+              src: ships[`${a1}`][`${b7}`][i].banneraltlink
+            }
+          }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
+        }
       }
-    }
       //Tags en
       if (languageid == "en" || languageid == "jp" || languageid == "kr") {
         htmldombuilder("div", "tags_en show", undefined, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
@@ -696,16 +700,16 @@ if (!changelog[a1].changes.promotions.length < 1) {
       //Tags filler
       if (ships[`${a1}`][`${b7}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${b7}`][i].tags.length; ii++) {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_en")[0])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${b7}`][i].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4].getElementsByClassName("tags_cn")[0])
         }
       }
       //Namechange html
@@ -768,7 +772,9 @@ if (!changelog[a1].changes.promotions.length < 1) {
 function openChangelog(changelog) {
   if (changelog == null) return
   if (Cookies.get('changelog') != changeloglastupdatedate) {
-    Cookies.set('changelog', changeloglastupdatedate, { expires: 365 })
+    Cookies.set('changelog', changeloglastupdatedate, {
+      expires: 365
+    })
     document.getElementsByClassName("notification")[0].style.display = "none"
   } else {
     document.getElementsByClassName("notification")[0].style.display = "none"
@@ -901,69 +907,69 @@ function mutifiltercheck(a1, a2, a3) {
     }
   }
   if (filters.length != 0) {
-      if (Object.entries(arraysobj).length == 0) {
-        arraysobj = {
-          battleship: {
-            t0: [],
-            t1: [],
-            t2: [],
-            t3: [],
-            t4: [],
-            t5: [],
-            t6: [],
-            t7: []
-          },
-          carrier: {
-            t0: [],
-            t1: [],
-            t2: [],
-            t3: [],
-            t4: [],
-            t5: [],
-            t6: [],
-            t7: []
-          },
-          heavycruiser: {
-            t0: [],
-            t1: [],
-            t2: [],
-            t3: [],
-            t4: [],
-            t5: [],
-            t6: [],
-            t7: []
-          },
-          lightcruiser: {
-            t0: [],
-            t1: [],
-            t2: [],
-            t3: [],
-            t4: [],
-            t5: [],
-            t6: [],
-            t7: []
-          },
-          destroyer: {
-            t0: [],
-            t1: [],
-            t2: [],
-            t3: [],
-            t4: [],
-            t5: [],
-            t6: [],
-            t7: []
-          },
-          submarine: {
-            t0: [],
-            t1: [],
-            t2: [],
-            t3: [],
-            t4: [],
-            t5: [],
-            t6: [],
-            t7: []
-          }
+    if (Object.entries(arraysobj).length == 0) {
+      arraysobj = {
+        battleship: {
+          t0: [],
+          t1: [],
+          t2: [],
+          t3: [],
+          t4: [],
+          t5: [],
+          t6: [],
+          t7: []
+        },
+        carrier: {
+          t0: [],
+          t1: [],
+          t2: [],
+          t3: [],
+          t4: [],
+          t5: [],
+          t6: [],
+          t7: []
+        },
+        heavycruiser: {
+          t0: [],
+          t1: [],
+          t2: [],
+          t3: [],
+          t4: [],
+          t5: [],
+          t6: [],
+          t7: []
+        },
+        lightcruiser: {
+          t0: [],
+          t1: [],
+          t2: [],
+          t3: [],
+          t4: [],
+          t5: [],
+          t6: [],
+          t7: []
+        },
+        destroyer: {
+          t0: [],
+          t1: [],
+          t2: [],
+          t3: [],
+          t4: [],
+          t5: [],
+          t6: [],
+          t7: []
+        },
+        submarine: {
+          t0: [],
+          t1: [],
+          t2: [],
+          t3: [],
+          t4: [],
+          t5: [],
+          t6: [],
+          t7: []
         }
+      }
       buildmultihtml(filters, checker)
     }
   } else {
@@ -1027,11 +1033,11 @@ function languagechangerfunc(a1) {
   setcookieghost(a1)
 
   document.querySelectorAll(".lang").forEach((e) => {
-  if (e.classList.contains(a1) && !e.classList.contains("active")) {
-    e.classList.add("active");
-  } else {
-    e.classList.remove("active")
-  }
+    if (e.classList.contains(a1) && !e.classList.contains("active")) {
+      e.classList.add("active");
+    } else {
+      e.classList.remove("active")
+    }
   })
 
   document.querySelectorAll("[class*='text_']").forEach((e) => {
@@ -1043,14 +1049,14 @@ function languagechangerfunc(a1) {
   })
 
   if (a1 == "en" || a1 == "cn") {
-  document.querySelectorAll("[class*='tagfilter_'], [class*='legendicon_'], [class*='legendspan_'], [class*='tags_']").forEach((e) => {
-    if (!e.classList.contains("show") && e.classList.contains("tagfilter_" + a1) || e.classList.contains("legendicon_" + a1) || e.classList.contains("legendspan_" + a1) || e.classList.contains("tags_" + a1)) {
-      e.classList.add("show")
-    } else {
-      e.classList.remove("show")
-    }
-  })
-}
+    document.querySelectorAll("[class*='tagfilter_'], [class*='legendicon_'], [class*='legendspan_'], [class*='tags_']").forEach((e) => {
+      if (!e.classList.contains("show") && e.classList.contains("tagfilter_" + a1) || e.classList.contains("legendicon_" + a1) || e.classList.contains("legendspan_" + a1) || e.classList.contains("tags_" + a1)) {
+        e.classList.add("show")
+      } else {
+        e.classList.remove("show")
+      }
+    })
+  }
 }
 
 // Namechange function
@@ -2035,26 +2041,26 @@ function filltier(a1, a2, a3) {
       // Bannerleft
       if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
         if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
-        htmldombuilder("img", "bannerleft", {
-          addon: {
-            src: ships[`${a1}`][`${a2}`][i].banneraltlink
-          }
-        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+          htmldombuilder("img", "bannerleft", {
+            addon: {
+              src: ships[`${a1}`][`${a2}`][i].banneraltlink
+            }
+          }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+        }
       }
-    }
       // tags filler
       if (ships[`${a1}`][`${a2}`][i].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
         }
       }
       // Span text
@@ -2073,25 +2079,25 @@ function filltier(a1, a2, a3) {
       // Bannerleft
       if (ships[`${a1}`][`${a2}`][a3[i]].banneralt != null) {
         if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
-        htmldombuilder("img", "bannerleft", {
-          addon: {
-            src: ships[`${a1}`][`${a2}`][a3[i]].banneraltlink
-          }
-        }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+          htmldombuilder("img", "bannerleft", {
+            addon: {
+              src: ships[`${a1}`][`${a2}`][a3[i]].banneraltlink
+            }
+          }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+        }
       }
-    }
       if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
         for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
-            htmldombuilder("img", "tag" + (ii + 1), {
-              addon: {
-                src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
-              }
-            }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
+          htmldombuilder("img", "tag" + (ii + 1), {
+            addon: {
+              src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+            }
+          }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
         }
       }
       spantextbuild(ships[`${a1}`][`${a2}`][a3[i]].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])

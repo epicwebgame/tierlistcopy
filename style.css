@@ -31,8 +31,9 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: #ffffff;
-  
+
 }
+
 ::-webkit-scrollbar-corner {
   background: #3c9dfe;
 }
@@ -92,12 +93,22 @@ body {
   margin-top: 5px;
 }
 
-.destroyer, .battleship, .carrier, .heavycruiser, .lightcruiser, .submarine {
+.destroyer,
+.battleship,
+.carrier,
+.heavycruiser,
+.lightcruiser,
+.submarine {
   display: inline-flex;
   height: 428px;
 }
 
-.destroyerbanner, .battleshipbanner, .carrierbanner, .heavycruiserbanner, .lightcruiserbanner, .submarinebanner {
+.destroyerbanner,
+.battleshipbanner,
+.carrierbanner,
+.heavycruiserbanner,
+.lightcruiserbanner,
+.submarinebanner {
   display: inline-flex;
 }
 
@@ -113,7 +124,8 @@ body {
   margin-right: 10px;
 }
 
-.thumbnail, .link {
+.thumbnail,
+.link {
   z-index: 0;
   position: absolute;
   width: 100px;
@@ -129,7 +141,10 @@ body {
   z-index: 95;
 }
 
-.tag1, .tag2, .tag3, .tag4 {
+.tag1,
+.tag2,
+.tag3,
+.tag4 {
   z-index: 2;
   position: absolute;
   margin-top: 75px;
@@ -147,7 +162,10 @@ body {
   margin-left: 75px;
 }
 
-.tag1.show, .tag2.show, .tag3.show, .tag4.show {
+.tag1.show,
+.tag2.show,
+.tag3.show,
+.tag4.show {
   display: block;
 }
 
@@ -170,7 +188,10 @@ body {
   width: 100px;
 }
 
-.text_en, .text_jp, .text_kr, .text_cn {
+.text_en,
+.text_jp,
+.text_kr,
+.text_cn {
   margin-top: 100px;
   margin-left: 32px;
   height: 20px;
@@ -178,11 +199,15 @@ body {
   display: none;
 }
 
-.text_en.show, .text_jp.show, .text_kr.show, .text_cn.show {
+.text_en.show,
+.text_jp.show,
+.text_kr.show,
+.text_cn.show {
   display: block;
 }
 
-.shipname, .shipnamealt {
+.shipname,
+.shipnamealt {
   font-size: 12px;
   width: 68px;
   text-align: center;
@@ -199,7 +224,14 @@ body {
   line-height: 9px;
 }
 
-div.t0>div.tierbanner, div.t1>div.tierbanner, div.t2>div.tierbanner, div.t3>div.tierbanner, div.t4>div.tierbanner, div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner{
+div.t0>div.tierbanner,
+div.t1>div.tierbanner,
+div.t2>div.tierbanner,
+div.t3>div.tierbanner,
+div.t4>div.tierbanner,
+div.t5>div.tierbanner,
+div.t6>div.tierbanner,
+div.t7>div.tierbanner {
   background-image: linear-gradient(#ff6d00, #ff9900);
   border-radius: 10px;
   text-align: center;
@@ -227,11 +259,16 @@ div.t4>div.tierbanner {
   background-image: linear-gradient(#009eff, #0056fe);
 }
 
-div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
+div.t5>div.tierbanner,
+div.t6>div.tierbanner,
+div.t7>div.tierbanner {
   background-image: linear-gradient(#009eff, #0056fe);
 }
 
-.hulltype-dropbtn, .rarity-dropbtn, .nationality-dropbtn, .tags-dropbtn {
+.hulltype-dropbtn,
+.rarity-dropbtn,
+.nationality-dropbtn,
+.tags-dropbtn {
   background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   font-size: 22px;
@@ -257,12 +294,24 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 }
 
 
-.hulltype-dropbtn:hover, .hulltype-dropbtn:focus, .rarity-dropbtn:hover, .rarity-dropbtn:focus, .nationality-dropbtn:hover, .nationality-dropbtn:focus, .tags-dropbtn:hover, .tags-dropbtn:focus, .changelogbtn:hover, .changelogbtn:focus {
+.hulltype-dropbtn:hover,
+.hulltype-dropbtn:focus,
+.rarity-dropbtn:hover,
+.rarity-dropbtn:focus,
+.nationality-dropbtn:hover,
+.nationality-dropbtn:focus,
+.tags-dropbtn:hover,
+.tags-dropbtn:focus,
+.changelogbtn:hover,
+.changelogbtn:focus {
   background: #1d61a6;
   border: 1px solid white;
 }
 
-.hulltype-dropdown-content, .rarity-dropdown-content, .nationality-dropdown-content, .tags-dropdown-content {
+.hulltype-dropdown-content,
+.rarity-dropdown-content,
+.nationality-dropdown-content,
+.tags-dropdown-content {
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   margin-top: 15px;
   display: none;
@@ -278,7 +327,7 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-color: white;
   border-radius: 10px;
   text-align: center;
-  color:white;
+  color: white;
 }
 
 .nationality-dropdown-content {
@@ -295,11 +344,17 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   min-width: 0px;
 }
 
-.hulltype-dropdown-content.show, .rarity-dropdown-content.show, .nationality-dropdown-content.show, .tags-dropdown-content.show {
+.hulltype-dropdown-content.show,
+.rarity-dropdown-content.show,
+.nationality-dropdown-content.show,
+.tags-dropdown-content.show {
   display: block;
 }
 
-.hulltype-dropdown-content::before, .rarity-dropdown-content::before, .nationality-dropdown-content::before, .tags-dropdown-content::before {
+.hulltype-dropdown-content::before,
+.rarity-dropdown-content::before,
+.nationality-dropdown-content::before,
+.tags-dropdown-content::before {
   content: " ";
   position: absolute;
   bottom: 100%;
@@ -310,7 +365,10 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-color: transparent transparent white transparent;
 }
 
-.hulltype-dropdown-content::after, .rarity-dropdown-content::after, .nationality-dropdown-content::after, .tags-dropdown-content::after {
+.hulltype-dropdown-content::after,
+.rarity-dropdown-content::after,
+.nationality-dropdown-content::after,
+.tags-dropdown-content::after {
   content: " ";
   position: absolute;
   bottom: 100%;
@@ -336,7 +394,9 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
   border-color: #1e8dff transparent transparent transparent;
 }
 
-.natparent, .tagfilter_en.show, .tagfilter_cn.show {
+.natparent,
+.tagfilter_en.show,
+.tagfilter_cn.show {
   display: inline-flex;
   width: 25px;
   text-align: center;
@@ -345,10 +405,10 @@ div.t5>div.tierbanner, div.t6>div.tierbanner, div.t7>div.tierbanner {
 }
 
 .tags-dropdown-content .show {
-border-width: 1px;
-border-style: solid;
-border-color: transparent;
-border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
 }
 
 .tags-dropdown-content .show:hover {
@@ -358,60 +418,92 @@ border-radius: 50%;
   border-radius: 50%;
 }
 
-.hulltypefilter, .rarityfilter, .nationalityfilter, .tagsfilter {
+.hulltypefilter,
+.rarityfilter,
+.nationalityfilter,
+.tagsfilter {
   display: block;
   height: 35px;
   text-align: center;
   line-height: 35px;
 }
 
-.hulltypefilter:hover, .rarityfilter:hover, .nationalityfilter:hover, .tagsfilter:hover {
+.hulltypefilter:hover,
+.rarityfilter:hover,
+.nationalityfilter:hover,
+.tagsfilter:hover {
   background: #1d61a6;
 }
 
-#battleship.hulltypefilter:hover, #Normal.rarityfilter:hover, #n1.nationalityfilter:hover {
+#battleship.hulltypefilter:hover,
+#Normal.rarityfilter:hover,
+#n1.nationalityfilter:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-#SubmarineCarrier.hulltypefilter:hover, #Decisive.rarityfilter:hover, #n15.nationalityfilter:hover {
+#SubmarineCarrier.hulltypefilter:hover,
+#Decisive.rarityfilter:hover,
+#n15.nationalityfilter:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.hulltypefilter.active, .rarityfilter.active, .nationalityfilter.active, .tagsfilter.active {
+.hulltypefilter.active,
+.rarityfilter.active,
+.nationalityfilter.active,
+.tagsfilter.active {
   background: #0d2c4c;
 }
 
-#battleship.hulltypefilter.active, #Normal.rarityfilter.active, #n1.nationalityfilter.active {
+#battleship.hulltypefilter.active,
+#Normal.rarityfilter.active,
+#n1.nationalityfilter.active {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-#SubmarineCarrier.hulltypefilter.active, #Decisive.rarityfilter.active, #n15.nationalityfilter.active {
+#SubmarineCarrier.hulltypefilter.active,
+#Decisive.rarityfilter.active,
+#n15.nationalityfilter.active {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-#n3.nationalityfilter, #n12.nationalityfilter, #n15.nationalityfilter, #SuperRare.rarityfilter {
+#n3.nationalityfilter,
+#n12.nationalityfilter,
+#n15.nationalityfilter,
+#SuperRare.rarityfilter {
   line-height: 17px;
 }
 
-.natparent.active, .tagfilter_en.show.active, .tagfilter_cn.show.active {
+.natparent.active,
+.tagfilter_en.show.active,
+.tagfilter_cn.show.active {
   border-width: 1px;
   border-style: solid;
   border-color: white;
 }
 
-.tagfilter_en.show.active, .tagfilter_cn.show.active {
+.tagfilter_en.show.active,
+.tagfilter_cn.show.active {
   border-radius: 50%;
 }
 
-.tagfilter_en, .tagfilter_cn, .tagfilter_ico {
+.tagfilter_en,
+.tagfilter_cn,
+.tagfilter_ico {
   display: none;
 }
 
-#t0.tierfilter, #t1.tierfilter, #t2.tierfilter, #t3.tierfilter, #t4.tierfilter, #t5.tierfilter, #t6.tierfilter, #t7.tierfilter {
+#t0.tierfilter,
+#t1.tierfilter,
+#t2.tierfilter,
+#t3.tierfilter,
+#t4.tierfilter,
+#t5.tierfilter,
+#t6.tierfilter,
+#t7.tierfilter {
   background-image: linear-gradient(#3c9dfe, #1e8dff);
   display: inline-block;
   text-align: center;
@@ -426,7 +518,8 @@ border-radius: 50%;
   border-right: 1px solid white;
 }
 
-#t0.tierfilter:hover, #t0.tierfilter.active {
+#t0.tierfilter:hover,
+#t0.tierfilter.active {
   background-image: linear-gradient(#ff6d00, #ff9900);
 }
 
@@ -435,7 +528,8 @@ border-radius: 50%;
   border-bottom-left-radius: 0px;
 }
 
-#t1.tierfilter:hover, #t1.tierfilter.active {
+#t1.tierfilter:hover,
+#t1.tierfilter.active {
   background-image: linear-gradient(#fe016e, #fe012f);
 }
 
@@ -444,7 +538,8 @@ border-radius: 50%;
   border-bottom-left-radius: 0px;
 }
 
-#t2.tierfilter:hover, #t2.tierfilter.active {
+#t2.tierfilter:hover,
+#t2.tierfilter.active {
   background-image: linear-gradient(#ff0a96, #ff5cd1);
 }
 
@@ -453,16 +548,26 @@ border-radius: 50%;
   border-bottom-left-radius: 0px;
 }
 
-#t3.tierfilter:hover, #t3.tierfilter.active {
+#t3.tierfilter:hover,
+#t3.tierfilter.active {
   background-image: linear-gradient(#b002ff, #9320ff);
 }
 
-#t4.tierfilter, #t5.tierfilter, #t6.tierfilter {
+#t4.tierfilter,
+#t5.tierfilter,
+#t6.tierfilter {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-#t4.tierfilter:hover, #t4.tierfilter.active, #t5.tierfilter:hover, #t5.tierfilter.active, #t6.tierfilter:hover, #t6.tierfilter.active, #t7.tierfilter:hover, #t7.tierfilter.active {
+#t4.tierfilter:hover,
+#t4.tierfilter.active,
+#t5.tierfilter:hover,
+#t5.tierfilter.active,
+#t6.tierfilter:hover,
+#t6.tierfilter.active,
+#t7.tierfilter:hover,
+#t7.tierfilter.active {
   background-image: linear-gradient(#0064a1, #0056fe);
 }
 
@@ -558,17 +663,20 @@ button:focus {
   opacity: 0.6;
 }
 
-.legendicon_en, .legendicon_cn {
+.legendicon_en,
+.legendicon_cn {
   display: none;
   vertical-align: middle;
   margin-right: 5px;
 }
 
-.legendicon_en.show, .legendicon_cn.show {
+.legendicon_en.show,
+.legendicon_cn.show {
   display: inline-block;
 }
 
-.legendspan_en, .legendspan_cn {
+.legendspan_en,
+.legendspan_cn {
   display: none;
   vertical-align: middle;
   font-size: 15px;
@@ -576,15 +684,18 @@ button:focus {
   text-shadow: 2px 1px #00000070;
 }
 
-.legendspan_en.show, .legendspan_cn.show {
+.legendspan_en.show,
+.legendspan_cn.show {
   display: inline-block;
 }
 
-.tags_en, .tags_cn {
+.tags_en,
+.tags_cn {
   display: none;
 }
 
-.tags_en.show, .tags_cn.show {
+.tags_en.show,
+.tags_cn.show {
   display: block;
 }
 
@@ -592,7 +703,8 @@ button:focus {
   color: white;
 }
 
-.rankiconup, .rankicondown {
+.rankiconup,
+.rankicondown {
   height: 20px;
   filter: invert(71%) sepia(92%) saturate(4862%) hue-rotate(79deg) brightness(132%) contrast(114%);
 }
@@ -671,7 +783,8 @@ button:focus {
   display: grid;
 }
 
-.changelogmainpromotions, .changelogmaindemotions {
+.changelogmainpromotions,
+.changelogmaindemotions {
   text-align: center;
   position: relative;
   max-height: 395px;
@@ -679,11 +792,15 @@ button:focus {
   display: none;
 }
 
-.changelogmainpromotions.active, .changelogmaindemotions.active {
-display: block;
+.changelogmainpromotions.active,
+.changelogmaindemotions.active {
+  display: block;
 }
 
-.changelogtextadded, .changelogtextpromos, .changelogtextpromotions, .changelogtextdemotions {
+.changelogtextadded,
+.changelogtextpromos,
+.changelogtextpromotions,
+.changelogtextdemotions {
   text-align: center;
   font-size: 30px;
 }
@@ -692,7 +809,9 @@ display: block;
   transform: translate(-50%, -50%) scale(1);
 }
 
-.changelogparent, .changelogparentadded, .changelogparentsupport {
+.changelogparent,
+.changelogparentadded,
+.changelogparentsupport {
   display: inline-flex;
   width: 100px;
   height: 143px;
@@ -700,7 +819,8 @@ display: block;
   margin-right: 10px;
 }
 
-.changelogparentadded, .changelogparentsupport {
+.changelogparentadded,
+.changelogparentsupport {
   height: 118px;
 }
 
@@ -709,11 +829,13 @@ display: block;
   display: flex;
   width: 980px;
 }
+
 .changelogmainbody {
   height: 395px;
 }
 
-.changelogheader, .changelogmainheader {
+.changelogheader,
+.changelogmainheader {
   display: flex;
   width: 720px;
   height: 30px;
@@ -825,7 +947,10 @@ display: block;
   background-color: #3c9dfe;
 }
 
-.langen, .langjp, .langkr, .langcn {
+.langen,
+.langjp,
+.langkr,
+.langcn {
   width: 120px;
   margin-right: 10px;
   border: 3px solid transparent;
@@ -840,7 +965,10 @@ display: block;
   margin-right: 0px;
 }
 
-.langen:hover, .langjp:hover, .langkr:hover, .langcn:hover {
+.langen:hover,
+.langjp:hover,
+.langkr:hover,
+.langcn:hover {
   border: 3px solid darkgrey;
   opacity: 1;
 }

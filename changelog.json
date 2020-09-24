@@ -1653,8 +1653,7 @@
         "fullname": "PvE Ship Tier List #53",
         "number": 53,
         "changes": {
-            "new": [
-                {
+            "new": [{
                     "shipname": "Helena",
                     "changedrank": "t0",
                     "shiptype": "lightcruiser"
@@ -1670,8 +1669,7 @@
                     "shiptype": "destroyer"
                 }
             ],
-            "promotions": [
-                {
+            "promotions": [{
                     "shipname": "Ise",
                     "changedrank": "t3",
                     "oldrank": "t4",
@@ -1684,85 +1682,84 @@
                     "shiptype": "battleship"
                 }
             ],
-            "demotions": [
-                {
+            "demotions": [{
                     "shipname": "Gascogne",
                     "changedrank": "t1",
                     "oldrank": "t0",
                     "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Hood",
-                        "changedrank": "t1",
-                        "oldrank": "t2",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "North Carolina",
-                        "changedrank": "t3",
-                        "oldrank": "t2",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Queen Elizabeth",
-                        "changedrank": "t3",
-                        "oldrank": "t2",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "South Dakota",
-                        "changedrank": "t4",
-                        "oldrank": "t3",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Mikasa",
-                        "changedrank": "t4",
-                        "oldrank": "t3",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Giulio Cesare",
-                        "changedrank": "t5",
-                        "oldrank": "t4",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Kirishima",
-                        "changedrank": "t5",
-                        "oldrank": "t4",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Naganami",
-                        "changedrank": "t3",
-                        "oldrank": "t2",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Fortune",
-                        "changedrank": "t4",
-                        "oldrank": "t3",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Cygnet",
-                        "changedrank": "t4",
-                        "oldrank": "t3",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Vauquelin",
-                        "changedrank": "t5",
-                        "oldrank": "t4",
-                        "shiptype": "destroyer"
-                    },
-                    {
-                        "shipname": "Z35",
-                        "changedrank": "t6",
-                        "oldrank": "t5",
-                        "shiptype": "destroyer"
-                    }
+                },
+                {
+                    "shipname": "Hood",
+                    "changedrank": "t1",
+                    "oldrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "North Carolina",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Queen Elizabeth",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "South Dakota",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Mikasa",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Giulio Cesare",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Kirishima",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Naganami",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Fortune",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Cygnet",
+                    "changedrank": "t4",
+                    "oldrank": "t3",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Vauquelin",
+                    "changedrank": "t5",
+                    "oldrank": "t4",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Z35",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "destroyer"
+                }
             ]
         }
     },
@@ -1771,8 +1768,7 @@
         "fullname": "PvE Ship Tier List #54",
         "number": 54,
         "changes": {
-            "new": [
-                {
+            "new": [{
                     "shipname": "Odin",
                     "changedrank": "t0",
                     "shiptype": "battleship"
@@ -1802,8 +1798,8 @@
                     "changedrank": "t4",
                     "shiptype": "carrier"
                 }
-                ],
-                "promotions": [{
+            ],
+            "promotions": [{
                     "shipname": "Gascogne",
                     "changedrank": "t0",
                     "oldrank": "t1",
@@ -1834,22 +1830,21 @@
                     "shiptype": "submarine"
                 }
             ],
-                "demotions": [
-                    {
-                        "shipname": "Alabama",
-                        "changedrank": "t1",
-                        "oldrank": "t0",
-                        "shiptype": "battleship"
-                    },
-                    {
-                        "shipname": "Sovetskaya Rossiya",
-                        "changedrank": "t1",
-                        "oldrank": "t0",
-                        "shiptype": "battleship"
-                    }
-                ]
+            "demotions": [{
+                    "shipname": "Alabama",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Sovetskaya Rossiya",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "battleship"
                 }
-            },
+            ]
+        }
+    },
     "55": {
         "updatedate": 1596121818,
         "fullname": "PvE Ship Tier List #55",

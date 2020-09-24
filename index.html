@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="This a tier list by Usagi Sensei, a CN player who is notable for his contributions to the AL community, made filterable by various things for ease of use.">
+  <meta name="Description"
+    content="This a tier list by Usagi Sensei, a CN player who is notable for his contributions to the AL community, made filterable by various things for ease of use.">
   <title>AZUR LANE PvE SHIP LIST</title>
-  <link rel="icon" type="image/png" href="Assets/Misc/favicon.ico"/>
+  <link rel="icon" type="image/png" href="Assets/Misc/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
@@ -14,35 +15,36 @@
 
 <body>
   <div class="topbanner">
-    <img class="bbmasc" src="Assets/Misc/Maskots.png" alt=""/><h1 class="topbannertext">AZUR LANE PvE SHIP LIST</h1>
+    <img class="bbmasc" src="Assets/Misc/Maskots.png" alt="" />
+    <h1 class="topbannertext">AZUR LANE PvE SHIP LIST</h1>
   </div>
   <div class="bannertwo">
     <div class="tierfiltercontainer">
-    <div class="tierfilter" id="t0">T0</div>
-    <div class="tierfilter" id="t1">T1</div>
-    <div class="tierfilter" id="t2">T2</div>
-    <div class="tierfilter" id="t3">T3</div>
-    <div class="tierfilter" id="t4">T4</div>
-    <div class="tierfilter" id="t5">T5</div>
-    <div class="tierfilter" id="t6">T6</div>
-    <div class="tierfilter" id="t7">T7</div>
-  </div>
+      <div class="tierfilter" id="t0">T0</div>
+      <div class="tierfilter" id="t1">T1</div>
+      <div class="tierfilter" id="t2">T2</div>
+      <div class="tierfilter" id="t3">T3</div>
+      <div class="tierfilter" id="t4">T4</div>
+      <div class="tierfilter" id="t5">T5</div>
+      <div class="tierfilter" id="t6">T6</div>
+      <div class="tierfilter" id="t7">T7</div>
+    </div>
     <div class="dropdowns">
       <div class="hulltype-dropdown">
         <button onclick="activehandler(this.classList)" class="hulltype-dropbtn">
           Hull Type
         </button>
         <div id="hulltype-dropdown" class="hulltype-dropdown-content">
-          <span class="hulltypefilter" id="battleship" >BB/BC</span>
-          <span class="hulltypefilter" id="carrier" >CV/CVL</span>
-          <span class="hulltypefilter" id="heavycruiser" >CA/CB</span>
-          <span class="hulltypefilter" id="lightcruiser" >CL</span>
-          <span class="hulltypefilter" id="destroyer" >DD</span>
-          <span class="hulltypefilter" id="submarine" >SS</span>
-          <span class="hulltypefilter" id="AviationBattleship" >BBV</span>
-          <span class="hulltypefilter" id="Monitor" >BM</span>
-          <span class="hulltypefilter" id="Repairship" >AR</span>
-          <span class="hulltypefilter" id="SubmarineCarrier" >SSV</span>
+          <span class="hulltypefilter" id="battleship">BB/BC</span>
+          <span class="hulltypefilter" id="carrier">CV/CVL</span>
+          <span class="hulltypefilter" id="heavycruiser">CA/CB</span>
+          <span class="hulltypefilter" id="lightcruiser">CL</span>
+          <span class="hulltypefilter" id="destroyer">DD</span>
+          <span class="hulltypefilter" id="submarine">SS</span>
+          <span class="hulltypefilter" id="AviationBattleship">BBV</span>
+          <span class="hulltypefilter" id="Monitor">BM</span>
+          <span class="hulltypefilter" id="Repairship">AR</span>
+          <span class="hulltypefilter" id="SubmarineCarrier">SSV</span>
         </div>
       </div>
       <div class="rarity-dropdown">
@@ -50,12 +52,12 @@
           Rarity
         </button>
         <div id="rarity-dropdown" class="rarity-dropdown-content">
-        <span class="rarityfilter" id="Normal">Normal</span>
-        <span class="rarityfilter" id="Rare">Rare</span>
-        <span class="rarityfilter" id="Elite">Elite</span>
-        <span class="rarityfilter" id="SuperRare">Super Rare</span>
-        <span class="rarityfilter" id="Priority">Priority</span>
-        <span class="rarityfilter" id="Decisive">Decisive</span>
+          <span class="rarityfilter" id="Normal">Normal</span>
+          <span class="rarityfilter" id="Rare">Rare</span>
+          <span class="rarityfilter" id="Elite">Elite</span>
+          <span class="rarityfilter" id="SuperRare">Super Rare</span>
+          <span class="rarityfilter" id="Priority">Priority</span>
+          <span class="rarityfilter" id="Decisive">Decisive</span>
         </div>
       </div>
       <div class="nationality-dropdown">
@@ -63,21 +65,21 @@
           Nationality
         </button>
         <div id="nationality-dropdown" class="nationality-dropdown-content">
-        <span class="nationalityfilter Bilibili nationality" id="n1">Bilibili</span>
-        <span class="nationalityfilter Eagle_Union nationality" id="n2">Eagle Union</span>
-        <span class="nationalityfilter Eastern_Radiance nationality" id="n3">Eastern Radiance</span>
-        <span class="nationalityfilter Hololive nationality" id="n4">Hololive</span>
-        <span class="nationalityfilter Iris_Libre nationality" id="n5">Iris Libre</span>
-        <span class="nationalityfilter Ironblood nationality" id="n6">Ironblood</span>
-        <span class="nationalityfilter KizunaAI nationality" id="n7">Kizuna AI</span>
-        <span class="nationalityfilter Neptunia nationality" id="n8">Neptunia</span>
-        <span class="nationalityfilter North_Union nationality" id="n9">North Union</span>
-        <span class="nationalityfilter Royal_Navy nationality" id="n10">Royal Navy</span>
-        <span class="nationalityfilter Sakura_Empire nationality" id="n11">Sakura Empire</span>
-        <span class="nationalityfilter Sardegna_Empire nationality" id="n12">Sardegna Empire</span>
-        <span class="nationalityfilter Universal nationality" id="n13">Universal</span>
-        <span class="nationalityfilter Utawarerumono nationality" id="n14">Utawarerumono</span>
-        <span class="nationalityfilter Vichya_Dominion nationality" id="n15">Vichya Dominion</span>
+          <span class="nationalityfilter Bilibili nationality" id="n1">Bilibili</span>
+          <span class="nationalityfilter Eagle_Union nationality" id="n2">Eagle Union</span>
+          <span class="nationalityfilter Eastern_Radiance nationality" id="n3">Eastern Radiance</span>
+          <span class="nationalityfilter Hololive nationality" id="n4">Hololive</span>
+          <span class="nationalityfilter Iris_Libre nationality" id="n5">Iris Libre</span>
+          <span class="nationalityfilter Ironblood nationality" id="n6">Ironblood</span>
+          <span class="nationalityfilter KizunaAI nationality" id="n7">Kizuna AI</span>
+          <span class="nationalityfilter Neptunia nationality" id="n8">Neptunia</span>
+          <span class="nationalityfilter North_Union nationality" id="n9">North Union</span>
+          <span class="nationalityfilter Royal_Navy nationality" id="n10">Royal Navy</span>
+          <span class="nationalityfilter Sakura_Empire nationality" id="n11">Sakura Empire</span>
+          <span class="nationalityfilter Sardegna_Empire nationality" id="n12">Sardegna Empire</span>
+          <span class="nationalityfilter Universal nationality" id="n13">Universal</span>
+          <span class="nationalityfilter Utawarerumono nationality" id="n14">Utawarerumono</span>
+          <span class="nationalityfilter Vichya_Dominion nationality" id="n15">Vichya Dominion</span>
         </div>
       </div>
       <div class="tags-dropdown">
@@ -85,63 +87,63 @@
           Tag
         </button>
         <div id="tags-dropdown" class="tags-dropdown-content">
-        <img class="tagfilter_en show" id="AA en" src="Assets/TagIcons/EN/AA.png" />
-        <img class="tagfilter_en show" id="AS en" src="Assets/TagIcons/EN/AS.png" />
-        <img class="tagfilter_en show" id="BA en" src="Assets/TagIcons/EN/BA.png" />
-        <img class="tagfilter_en show" id="BUFFAA en" src="Assets/TagIcons/EN/BUFFAA.png" />
-        <img class="tagfilter_en show" id="BUFFAIR en" src="Assets/TagIcons/EN/BUFFAIR.png" />
-        <img class="tagfilter_en show" id="BUFFDEF en" src="Assets/TagIcons/EN/BUFFDEF.png" />
-        <img class="tagfilter_en show" id="BUFFDMG en" src="Assets/TagIcons/EN/BUFFDMG.png" />
-        <img class="tagfilter_en show" id="BUFFEXP en" src="Assets/TagIcons/EN/BUFFEXP.png" />
-        <img class="tagfilter_en show" id="BUFFSHL en" src="Assets/TagIcons/EN/BUFFSHL.png" />
-        <img class="tagfilter_en show" id="BUFFTRP en" src="Assets/TagIcons/EN/BUFFTRP.png" />
-        <img class="tagfilter_en show" id="DEF en" src="Assets/TagIcons/EN/DEF.png" />
-        <img class="tagfilter_en show" id="HEAL en" src="Assets/TagIcons/EN/HEAL.png" />
-        <img class="tagfilter_en show" id="MG+1 en" src="Assets/TagIcons/EN/MG+1.png" />
-        <img class="tagfilter_en show" id="TRP en" src="Assets/TagIcons/EN/TRP.png" />
-        <img class="tagfilter_ico" id="AA ico" src="Assets/TagIcons/ICO/AA.png" />
-        <img class="tagfilter_ico" id="AS ico" src="Assets/TagIcons/ICO/AS.png" />
-        <img class="tagfilter_ico" id="BA ico" src="Assets/TagIcons/ICO/BA.png" />
-        <img class="tagfilter_ico" id="BUFFAA ico" src="Assets/TagIcons/ICO/BUFFAA.png" />
-        <img class="tagfilter_ico" id="BUFFAIR ico" src="Assets/TagIcons/ICO/BUFFAIR.png" />
-        <img class="tagfilter_ico" id="BUFFDEF ico" src="Assets/TagIcons/ICO/BUFFDEF.png" />
-        <img class="tagfilter_ico" id="BUFFDMG ico" src="Assets/TagIcons/ICO/BUFFDMG.png" />
-        <img class="tagfilter_ico" id="BUFFEXP ico" src="Assets/TagIcons/ICO/BUFFEXP.png" />
-        <img class="tagfilter_ico" id="BUFFSHL ico" src="Assets/TagIcons/ICO/BUFFSHL.png" />
-        <img class="tagfilter_ico" id="BUFFTRP ico" src="Assets/TagIcons/ICO/BUFFTRP.png" />
-        <img class="tagfilter_ico" id="DEF ico" src="Assets/TagIcons/ICO/DEF.png" />
-        <img class="tagfilter_ico" id="HEAL ico" src="Assets/TagIcons/ICO/HEAL.png" />
-        <img class="tagfilter_ico" id="MG+1 ico" src="Assets/TagIcons/ICO/MG+1.png" />
-        <img class="tagfilter_ico" id="TRP ico" src="Assets/TagIcons/ICO/TRP.png" />
-        <img class="tagfilter_cn" id="AA cn" src="Assets/TagIcons/CN/AA.png" />
-        <img class="tagfilter_cn" id="AS cn" src="Assets/TagIcons/CN/AS.png" />
-        <img class="tagfilter_cn" id="BA cn" src="Assets/TagIcons/CN/BA.png" />
-        <img class="tagfilter_cn" id="BUFFAA cn" src="Assets/TagIcons/CN/BUFFAA.png" />
-        <img class="tagfilter_cn" id="BUFFAIR cn" src="Assets/TagIcons/CN/BUFFAIR.png" />
-        <img class="tagfilter_cn" id="BUFFDEF cn" src="Assets/TagIcons/CN/BUFFDEF.png" />
-        <img class="tagfilter_cn" id="BUFFDMG cn" src="Assets/TagIcons/CN/BUFFDMG.png" />
-        <img class="tagfilter_cn" id="BUFFEXP cn" src="Assets/TagIcons/CN/BUFFEXP.png" />
-        <img class="tagfilter_cn" id="BUFFSHL cn" src="Assets/TagIcons/CN/BUFFSHL.png" />
-        <img class="tagfilter_cn" id="BUFFTRP cn" src="Assets/TagIcons/CN/BUFFTRP.png" />
-        <img class="tagfilter_cn" id="DEF cn" src="Assets/TagIcons/CN/DEF.png" />
-        <img class="tagfilter_cn" id="HEAL cn" src="Assets/TagIcons/CN/HEAL.png" />
-        <img class="tagfilter_cn" id="MG+1 cn" src="Assets/TagIcons/CN/MG+1.png" />
-        <img class="tagfilter_cn" id="TRP cn" src="Assets/TagIcons/CN/TRP.png" />
+          <img class="tagfilter_en show" id="AA en" src="Assets/TagIcons/EN/AA.png" />
+          <img class="tagfilter_en show" id="AS en" src="Assets/TagIcons/EN/AS.png" />
+          <img class="tagfilter_en show" id="BA en" src="Assets/TagIcons/EN/BA.png" />
+          <img class="tagfilter_en show" id="BUFFAA en" src="Assets/TagIcons/EN/BUFFAA.png" />
+          <img class="tagfilter_en show" id="BUFFAIR en" src="Assets/TagIcons/EN/BUFFAIR.png" />
+          <img class="tagfilter_en show" id="BUFFDEF en" src="Assets/TagIcons/EN/BUFFDEF.png" />
+          <img class="tagfilter_en show" id="BUFFDMG en" src="Assets/TagIcons/EN/BUFFDMG.png" />
+          <img class="tagfilter_en show" id="BUFFEXP en" src="Assets/TagIcons/EN/BUFFEXP.png" />
+          <img class="tagfilter_en show" id="BUFFSHL en" src="Assets/TagIcons/EN/BUFFSHL.png" />
+          <img class="tagfilter_en show" id="BUFFTRP en" src="Assets/TagIcons/EN/BUFFTRP.png" />
+          <img class="tagfilter_en show" id="DEF en" src="Assets/TagIcons/EN/DEF.png" />
+          <img class="tagfilter_en show" id="HEAL en" src="Assets/TagIcons/EN/HEAL.png" />
+          <img class="tagfilter_en show" id="MG+1 en" src="Assets/TagIcons/EN/MG+1.png" />
+          <img class="tagfilter_en show" id="TRP en" src="Assets/TagIcons/EN/TRP.png" />
+          <img class="tagfilter_ico" id="AA ico" src="Assets/TagIcons/ICO/AA.png" />
+          <img class="tagfilter_ico" id="AS ico" src="Assets/TagIcons/ICO/AS.png" />
+          <img class="tagfilter_ico" id="BA ico" src="Assets/TagIcons/ICO/BA.png" />
+          <img class="tagfilter_ico" id="BUFFAA ico" src="Assets/TagIcons/ICO/BUFFAA.png" />
+          <img class="tagfilter_ico" id="BUFFAIR ico" src="Assets/TagIcons/ICO/BUFFAIR.png" />
+          <img class="tagfilter_ico" id="BUFFDEF ico" src="Assets/TagIcons/ICO/BUFFDEF.png" />
+          <img class="tagfilter_ico" id="BUFFDMG ico" src="Assets/TagIcons/ICO/BUFFDMG.png" />
+          <img class="tagfilter_ico" id="BUFFEXP ico" src="Assets/TagIcons/ICO/BUFFEXP.png" />
+          <img class="tagfilter_ico" id="BUFFSHL ico" src="Assets/TagIcons/ICO/BUFFSHL.png" />
+          <img class="tagfilter_ico" id="BUFFTRP ico" src="Assets/TagIcons/ICO/BUFFTRP.png" />
+          <img class="tagfilter_ico" id="DEF ico" src="Assets/TagIcons/ICO/DEF.png" />
+          <img class="tagfilter_ico" id="HEAL ico" src="Assets/TagIcons/ICO/HEAL.png" />
+          <img class="tagfilter_ico" id="MG+1 ico" src="Assets/TagIcons/ICO/MG+1.png" />
+          <img class="tagfilter_ico" id="TRP ico" src="Assets/TagIcons/ICO/TRP.png" />
+          <img class="tagfilter_cn" id="AA cn" src="Assets/TagIcons/CN/AA.png" />
+          <img class="tagfilter_cn" id="AS cn" src="Assets/TagIcons/CN/AS.png" />
+          <img class="tagfilter_cn" id="BA cn" src="Assets/TagIcons/CN/BA.png" />
+          <img class="tagfilter_cn" id="BUFFAA cn" src="Assets/TagIcons/CN/BUFFAA.png" />
+          <img class="tagfilter_cn" id="BUFFAIR cn" src="Assets/TagIcons/CN/BUFFAIR.png" />
+          <img class="tagfilter_cn" id="BUFFDEF cn" src="Assets/TagIcons/CN/BUFFDEF.png" />
+          <img class="tagfilter_cn" id="BUFFDMG cn" src="Assets/TagIcons/CN/BUFFDMG.png" />
+          <img class="tagfilter_cn" id="BUFFEXP cn" src="Assets/TagIcons/CN/BUFFEXP.png" />
+          <img class="tagfilter_cn" id="BUFFSHL cn" src="Assets/TagIcons/CN/BUFFSHL.png" />
+          <img class="tagfilter_cn" id="BUFFTRP cn" src="Assets/TagIcons/CN/BUFFTRP.png" />
+          <img class="tagfilter_cn" id="DEF cn" src="Assets/TagIcons/CN/DEF.png" />
+          <img class="tagfilter_cn" id="HEAL cn" src="Assets/TagIcons/CN/HEAL.png" />
+          <img class="tagfilter_cn" id="MG+1 cn" src="Assets/TagIcons/CN/MG+1.png" />
+          <img class="tagfilter_cn" id="TRP cn" src="Assets/TagIcons/CN/TRP.png" />
+        </div>
       </div>
     </div>
-    </div>
     <div class="language">
-      <img class="lang en active" id="lang0" src="Assets/LanguageFlags/English.svg" alt=""/>
-      <img class="lang jp" id="lang1" src="Assets/LanguageFlags/Japanese.svg" alt=""/>
-      <img class="lang kr" id="lang2" src="Assets/LanguageFlags/Korean.svg" alt=""/>
-      <img class="lang cn" id="lang3" src="Assets/LanguageFlags/Chinese.svg" alt=""/>
+      <img class="lang en active" id="lang0" src="Assets/LanguageFlags/English.svg" alt="" />
+      <img class="lang jp" id="lang1" src="Assets/LanguageFlags/Japanese.svg" alt="" />
+      <img class="lang kr" id="lang2" src="Assets/LanguageFlags/Korean.svg" alt="" />
+      <img class="lang cn" id="lang3" src="Assets/LanguageFlags/Chinese.svg" alt="" />
     </div>
     <div class="changelogtop" id="changelogbanner">
       <button class="changelogbtn" data-changelog-target="#changelog">Changelog</button>
-      <img class="notification" id="changelognotification" src="Assets/Misc/Notification.png" alt=""/>
+      <img class="notification" id="changelognotification" src="Assets/Misc/Notification.png" alt="" />
     </div>
   </div>
-</div>
+  </div>
   <div class="changelog" id="changelog">
     <div class="changelog-header">
       <div class="changelog-title">Changelogs</div>
@@ -151,47 +153,67 @@
       <div class="changelog-body-left">
       </div>
       <div class="changelog-body-right">
-      <div class="changelogmainheader" draggable="false">
-      </div>
-      <div class="changelogbuttons">
-      </div>
-      <div class="changelogmainbody">
-        <div class="changelogmainblock" draggable="false">
+        <div class="changelogmainheader" draggable="false">
+        </div>
+        <div class="changelogbuttons">
+        </div>
+        <div class="changelogmainbody">
+          <div class="changelogmainblock" draggable="false">
           </div>
-    </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
   <div id="overlay"></div>
   <div class="main"></div>
   <div class="dropdownsbot">
     <div class="legend-dropdowns">
       <button onclick="legenddropdown()" class="legend-dot-dropbtn">?</button>
       <div id="legend-dropdown" class="legend-dropdown-content">
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/AA.png" /><span class="legendspan_en show">Anti-Air</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/AS.png" /><span class="legendspan_en show">Anti-Submarine</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BA.png" /><span class="legendspan_en show">Barrage/Aerial</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFAA.png" /><span class="legendspan_en show">Anti-Air Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFAIR.png" /><span class="legendspan_en show">Air Power Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFDEF.png" /><span class="legendspan_en show">Defense Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFDMG.png" /><span class="legendspan_en show">Damage Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFEXP.png" /><span class="legendspan_en show">Experience Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFSHL.png" /><span class="legendspan_en show">Shelling Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFTRP.png" /><span class="legendspan_en show">Torpedo Buff</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/DEF.png" /><span class="legendspan_en show">Defense</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/HEAL.png" /><span class="legendspan_en show">Healing</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/MG+1.png" /><span class="legendspan_en show">Main Gun +1</span>
-        <img class="legendicon_en show" src="Assets/TagIcons/EN/TRP.png" /><span class="legendspan_en show">Torpedo</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/AA.png" /><span
+          class="legendspan_en show">Anti-Air</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/AS.png" /><span
+          class="legendspan_en show">Anti-Submarine</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BA.png" /><span
+          class="legendspan_en show">Barrage/Aerial</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFAA.png" /><span class="legendspan_en show">Anti-Air
+          Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFAIR.png" /><span class="legendspan_en show">Air
+          Power Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFDEF.png" /><span class="legendspan_en show">Defense
+          Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFDMG.png" /><span class="legendspan_en show">Damage
+          Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFEXP.png" /><span
+          class="legendspan_en show">Experience Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFSHL.png" /><span class="legendspan_en show">Shelling
+          Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/BUFFTRP.png" /><span class="legendspan_en show">Torpedo
+          Buff</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/DEF.png" /><span
+          class="legendspan_en show">Defense</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/HEAL.png" /><span
+          class="legendspan_en show">Healing</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/MG+1.png" /><span class="legendspan_en show">Main Gun
+          +1</span>
+        <img class="legendicon_en show" src="Assets/TagIcons/EN/TRP.png" /><span
+          class="legendspan_en show">Torpedo</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/AA.png" /><span class="legendspan_cn">Anti-Air</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/AS.png" /><span class="legendspan_cn">Anti-Submarine</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/BA.png" /><span class="legendspan_cn">Barrage/Aerial</span>
-        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFAA.png" /><span class="legendspan_cn">Anti-Air Buff</span>
-        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFAIR.png" /><span class="legendspan_cn">Air Power Buff</span>
-        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFDEF.png" /><span class="legendspan_cn">Defense Buff</span>
+        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFAA.png" /><span class="legendspan_cn">Anti-Air
+          Buff</span>
+        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFAIR.png" /><span class="legendspan_cn">Air Power
+          Buff</span>
+        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFDEF.png" /><span class="legendspan_cn">Defense
+          Buff</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFDMG.png" /><span class="legendspan_cn">Damage Buff</span>
-        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFEXP.png" /><span class="legendspan_cn">Experience Buff</span>
-        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFSHL.png" /><span class="legendspan_cn">Shelling Buff</span>
-        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFTRP.png" /><span class="legendspan_cn">Torpedo Buff</span>
+        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFEXP.png" /><span class="legendspan_cn">Experience
+          Buff</span>
+        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFSHL.png" /><span class="legendspan_cn">Shelling
+          Buff</span>
+        <img class="legendicon_cn" src="Assets/TagIcons/CN/BUFFTRP.png" /><span class="legendspan_cn">Torpedo
+          Buff</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/DEF.png" /><span class="legendspan_cn">Defense</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/HEAL.png" /><span class="legendspan_cn">Healing</span>
         <img class="legendicon_cn" src="Assets/TagIcons/CN/MG+1.png" /><span class="legendspan_cn">Main Gun +1</span>
