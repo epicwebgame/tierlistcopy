@@ -38,6 +38,30 @@ body {
   background: #3c9dfe;
 }
 
+.changelog-body-left::-webkit-scrollbar,
+.changelogmainblock::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.changelog-body-left::-webkit-scrollbar-track,
+.changelogmainblock::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.changelog-body-left::-webkit-scrollbar-thumb
+.changelogmainblock::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: white;
+
+}
+
+.changelog-body-left::-webkit-scrollbar-corner
+.changelogmainblock::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 .topbanner {
   position: absolute;
   width: 100%;
@@ -1021,7 +1045,7 @@ button:focus {
 .langjp:hover,
 .langkr:hover,
 .langcn:hover {
-  border: 2px solid white;
+  border: 3px solid white;
   opacity: 1;
 }
 
