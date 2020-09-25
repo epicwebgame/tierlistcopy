@@ -39,26 +39,35 @@ body {
 }
 
 .changelog-body-left::-webkit-scrollbar,
-.changelogmainblock::-webkit-scrollbar {
+.changelogmainblock::-webkit-scrollbar,
+.changelogmainsupport::-webkit-scrollbar,
+.changelogmainpromotions::-webkit-scrollbar,
+.changelogmaindemotions::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 .changelog-body-left::-webkit-scrollbar-track,
-.changelogmainblock::-webkit-scrollbar-track {
+.changelogmainblock::-webkit-scrollbar-track,
+.changelogmainsupport::-webkit-scrollbar-track,
+.changelogmainpromotions::-webkit-scrollbar-track,
+.changelogmaindemotions::-webkit-scrollbar-track,
+.changelog-body-left::-webkit-scrollbar-corner,
+.changelogmainblock::-webkit-scrollbar-corner,
+.changelogmainsupport::-webkit-scrollbar-corner,
+.changelogmainpromotions::-webkit-scrollbar-corner,
+.changelogmaindemotions::-webkit-scrollbar-corner {
   background: transparent;
 }
 
-.changelog-body-left::-webkit-scrollbar-thumb
-.changelogmainblock::-webkit-scrollbar-thumb {
+.changelog-body-left::-webkit-scrollbar-thumb,
+.changelogmainblock::-webkit-scrollbar-thumb,
+.changelogmainsupport::-webkit-scrollbar-thumb,
+.changelogmainpromotions::-webkit-scrollbar-thumb,
+.changelogmaindemotions::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: white;
 
-}
-
-.changelog-body-left::-webkit-scrollbar-corner
-.changelogmainblock::-webkit-scrollbar-corner {
-  background: transparent;
 }
 
 
@@ -861,7 +870,7 @@ button:focus {
 .changelogmainbody {
   height: 395px;
   background-color: rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid white;
 }
 
@@ -906,13 +915,17 @@ button:focus {
   outline: none;
   background: none;
   height: 40px;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.788);
   width: 55px;
   font-size: 57px;
   display: flex;
   justify-content: center;
   place-items: center;
   border-radius: 5px;
+}
+
+.close-button:hover {
+  background-color: rgb(255, 0, 0);
 }
 
 .changelog-body {
@@ -926,7 +939,7 @@ button:focus {
   width: 250px;
   height: 475px;
   overflow: overlay;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.15);
   border: 1px solid white;
 }
