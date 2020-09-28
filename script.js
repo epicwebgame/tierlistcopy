@@ -342,7 +342,7 @@ function spantextbuild(a1, a2, a3) {
         lang = "kr";
         break;
     }
-    if (a1[language] == null) {
+    if (a1[language] == null || a1[language] == "") {
       lang = "en";
       textcheck = texthandler(
         a2[lang].length,
@@ -600,7 +600,7 @@ function getchangelog(a1) {
         if (ships[`${a1}`][`${b7}`][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {
             addon: {
-              src: ships[`${a1}`][`${b7}`][i].banneraltlink
+              src: "Assets/BannerAlt/NEW.png"
             }
           }, document.getElementsByClassName(fullidf)[b4])
         }
@@ -680,7 +680,7 @@ function getchangelog(a1) {
         if (ships[`${a1}`][`${b7}`][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {
             addon: {
-              src: ships[`${a1}`][`${b7}`][i].banneraltlink
+              src: "Assets/BannerAlt/NEW.png"
             }
           }, document.getElementsByClassName("changelogmain" + b5)[0].getElementsByClassName("changelogparent")[b4])
         }
@@ -1169,7 +1169,13 @@ function texthandler(a1, a2, a3) {
   let className;
   let fontSize;
   let lineHeight;
-  let countcheck = countspaces(a2);
+  let countcheck
+  if (a2 != "" || a2 != null) {
+  countcheck = countspaces(a2);
+} else {
+  a2 = null
+  countcheck = countspaces(a2);
+}
 
   if (a3 == "en") {
     if (a1 >= 13) {
@@ -1386,6 +1392,11 @@ function buildmultihtml(a1, a2) {
           hulltypeidf = "SubmarineCarrier"
           filtername = "submarine"
           idf = 5
+          break;
+          case "Munition Ship":
+          hulltypeidf = "MunitionShip"
+          filtername = "lightcruiser"
+          idf = 3
           break;
       }
       hullfilterindex = {
@@ -2039,11 +2050,12 @@ function filltier(a1, a2, a3) {
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       // Bannerleft
+      console.log(ships[`${a1}`][`${a2}`][i].banneralt)
       if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
         if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {
             addon: {
-              src: ships[`${a1}`][`${a2}`][i].banneraltlink
+              src: "Assets/BannerAlt/NEW.png"
             }
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
         }
@@ -2081,7 +2093,7 @@ function filltier(a1, a2, a3) {
         if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {
             addon: {
-              src: ships[`${a1}`][`${a2}`][a3[i]].banneraltlink
+              src: "Assets/BannerAlt/NEW.png"
             }
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
         }

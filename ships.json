@@ -98,7 +98,7 @@
         "code": "KMS Odin",
         "cn": "奥丁",
         "jp": "オーディン",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Ironblood",
       "hullType": "Battlecruiser",
@@ -116,7 +116,7 @@
         "code": "FFNF Richelieu",
         "cn": "黎塞留",
         "jp": "リシュリュー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iris Libre",
       "hullType": "Battleship",
@@ -134,7 +134,7 @@
         "code": "HMS Howe",
         "cn": "豪",
         "jp": "ハウ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Battleship",
@@ -171,7 +171,7 @@
         "code": "FFNF Champagne",
         "cn": "香槟",
         "jp": "シャンパーニュ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iris Libre",
       "hullType": "Battleship",
@@ -207,7 +207,7 @@
         "code": "SN Sovetskaya Rossiya",
         "cn": "苏维埃罗西亚",
         "jp": "ソビエツカヤ・ロシア",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Battleship",
@@ -261,7 +261,7 @@
         "code": "IJN Tosa",
         "cn": "䲠",
         "jp": "土佐",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Battleship",
@@ -343,6 +343,25 @@
       "usagitier": "1",
       "usagisubtier": "10",
       "tags": ["BA", "BUFFDEF"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Kii",
+      "id": "214",
+      "names": {
+        "en": "Kii",
+        "code": "IJN Kii",
+        "cn": "鲣",
+        "jp": "紀伊",
+        "kr": ""
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Battleship",
+      "thumbnail": "Assets/ShipPortraits/214/thumbnail.png",
+      "rarity": "Super Rare",
+      "hullTypeId": "Battleship",
+      "usagitier": "1",
+      "usagisubtier": "11",
+      "banneralt": "NEW",
+      "tags": ["BA", "BUFFAA", "BUFFTRP"]
     }],
     "t2": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Izumo",
@@ -388,7 +407,7 @@
         "code": "IJN Suruga",
         "cn": "鲪",
         "jp": "駿河",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Battleship",
@@ -424,7 +443,7 @@
         "code": "MNF Gascogne",
         "cn": "加斯科涅(μ兵装)",
         "jp": "ガスコーニュ（μ兵装）",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Vichya Dominion",
       "hullType": "Battleship",
@@ -496,7 +515,7 @@
         "code": "SN Gangut",
         "cn": "甘古特",
         "jp": "ガングート",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Battleship",
@@ -514,7 +533,7 @@
         "code": "HMS Renown",
         "cn": "小声望",
         "jp": "リトル・レナウン",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Battlecruiser",
@@ -532,7 +551,7 @@
         "code": "HMS Valiant",
         "cn": "英勇",
         "jp": "ヴァリアント",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Battleship",
@@ -1217,6 +1236,25 @@
   },
   "carrier": {
     "t0": [{
+      "wikiUrl": "https://azurlane.koumakan.jp/Shinano",
+      "id": "231",
+      "names": {
+        "en": "Shinano",
+        "code": "IJN Shinano",
+        "cn": "鵗",
+        "jp": "信濃",
+        "kr": ""
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/231/thumbnail.png",
+      "rarity": "Ultra Rare",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "0",
+      "usagisubtier": "1",
+      "tags": ["BA", "BUFFAIR", "BUFFTRP", "BUFFDMG"],
+      "banneralt": "NEW"
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Essex",
       "id": "357",
       "names": {
@@ -1232,7 +1270,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "0",
-      "usagisubtier": "1",
+      "usagisubtier": "2",
       "tags": ["BA", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Centaur",
@@ -1250,7 +1288,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "0",
-      "usagisubtier": "2",
+      "usagisubtier": "3",
       "tags": ["BA", "BUFFDMG", "BUFFAIR", "BUFFSHL"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Formidable",
@@ -1268,26 +1306,8 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "0",
-      "usagisubtier": "3",
-      "tags": ["BA", "BUFFDMG", "BUFFDEF"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Enterprise",
-      "id": "077",
-      "names": {
-        "en": "Enterprise",
-        "code": "USS Enterprise",
-        "cn": "企业",
-        "jp": "エンタープライズ",
-        "kr": "엔터프라이즈"
-      },
-      "nationality": "Eagle Union",
-      "hullType": "Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/077/thumbnail.png",
-      "rarity": "Super Rare",
-      "hullTypeId": "AircraftCarrier",
-      "usagitier": "0",
       "usagisubtier": "4",
-      "tags": null
+      "tags": ["BA", "BUFFDMG", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Saratoga",
       "id": "074",
@@ -1314,7 +1334,7 @@
         "code": "IJN Ryuuhou",
         "cn": "鸗",
         "jp": "龍鳳",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Light Aircraft Carrier",
@@ -1332,7 +1352,7 @@
         "code": "HMS Perseus",
         "cn": "英仙座",
         "jp": "パーシュース",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Light Aircraft Carrier",
@@ -1380,6 +1400,24 @@
       "tags": ["HEAL", "DEF", "BUFFDMG"]
     }],
     "t1": [{
+      "wikiUrl": "https://azurlane.koumakan.jp/Enterprise",
+      "id": "077",
+      "names": {
+        "en": "Enterprise",
+        "code": "USS Enterprise",
+        "cn": "企业",
+        "jp": "エンタープライズ",
+        "kr": "엔터프라이즈"
+      },
+      "nationality": "Eagle Union",
+      "hullType": "Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/077/thumbnail.png",
+      "rarity": "Super Rare",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "1",
+      "usagisubtier": "1",
+      "tags": null
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Shangri-La",
       "id": "378",
       "names": {
@@ -1395,7 +1433,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "1",
-      "usagisubtier": "1",
+      "usagisubtier": "2",
       "tags": ["BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Intrepid",
@@ -1405,7 +1443,7 @@
         "code": "USS Intrepid",
         "cn": "无畏",
         "jp": "イントレピッド",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Aircraft Carrier",
@@ -1413,7 +1451,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "1",
-      "usagisubtier": "2",
+      "usagisubtier": "3",
       "tags": ["BA", "DEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Tokino_Sora",
@@ -1423,7 +1461,7 @@
         "code": "Tokino Sora",
         "cn": "时乃空",
         "jp": "ときのそら",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Hololive",
       "hullType": "Aircraft Carrier",
@@ -1431,7 +1469,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "1",
-      "usagisubtier": "3",
+      "usagisubtier": "4",
       "tags": ["BA", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Illustrious",
@@ -1449,7 +1487,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "1",
-      "usagisubtier": "4",
+      "usagisubtier": "5",
       "tags": ["BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Ark_Royal",
@@ -1467,8 +1505,26 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "1",
-      "usagisubtier": "5",
+      "usagisubtier": "6",
       "tags": ["BA", "BUFFDMG"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Casablanca",
+      "id": "447",
+      "names": {
+        "en": "Casablanca",
+        "code": "USS Casablanca",
+        "cn": "卡萨布兰卡",
+        "jp": "カサブランカ",
+        "kr": ""
+      },
+      "nationality": "Eagle Union",
+      "hullType": "Light Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/447/thumbnail.png",
+      "rarity": "Rare",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "1",
+      "usagisubtier": "7",
+      "tags": ["BUFFAIR"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Shouhou",
       "id": "222",
@@ -1485,26 +1541,8 @@
       "rarity": "Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "1",
-      "usagisubtier": "6",
+      "usagisubtier": "8",
       "tags": ["HEAL", "BUFFAIR"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Casablanca",
-      "id": "447",
-      "names": {
-        "en": "Casablanca",
-        "code": "USS Casablanca",
-        "cn": "卡萨布兰卡",
-        "jp": "カサブランカ",
-        "kr": null
-      },
-      "nationality": "Eagle Union",
-      "hullType": "Light Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/447/thumbnail.png",
-      "rarity": "Rare",
-      "hullTypeId": "AircraftCarrier",
-      "usagitier": "1",
-      "usagisubtier": "7",
-      "tags": ["BUFFAIR"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Vestal",
       "id": "080",
@@ -1521,7 +1559,7 @@
       "rarity": "Elite",
       "hullTypeId": "Repairship",
       "usagitier": "1",
-      "usagisubtier": "8",
+      "usagisubtier": "9",
       "tags": ["HEAL", "AA"]
     }],
     "t2": [{
@@ -1712,7 +1750,7 @@
         "code": "IJN Akagi",
         "cn": "凰(μ兵装)",
         "jp": "赤城（μ兵装）",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Aircraft Carrier",
@@ -1785,7 +1823,7 @@
         "code": "FFNF Béarn",
         "cn": "贝亚恩",
         "jp": "ベアルン",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iris Libre",
       "hullType": "Aircraft Carrier",
@@ -1803,7 +1841,7 @@
         "code": "HMS Eagle",
         "cn": "鹰",
         "jp": "イーグル",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Aircraft Carrier",
@@ -1887,6 +1925,24 @@
       "tags": ["AS"]
     }],
     "t4": [{
+      "wikiUrl": "https://azurlane.koumakan.jp/Green_Heart",
+      "id": "Collab008",
+      "names": {
+        "en": "Green Heart",
+        "code": "HDN Green Heart",
+        "cn": "翡绿之心",
+        "jp": "グリーンハート",
+        "kr": "그린 하트"
+      },
+      "nationality": "Neptunia",
+      "hullType": "Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/Collab008/thumbnail.png",
+      "rarity": "Super Rare",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "4",
+      "usagisubtier": "1",
+      "tags": ["BA"]
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Ookami_Mio",
       "id": "Collab057",
       "names": {
@@ -1894,7 +1950,7 @@
         "code": "Ookami Mio",
         "cn": "大神澪",
         "jp": "大神ミオ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Hololive",
       "hullType": "Aircraft Carrier",
@@ -1902,7 +1958,7 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "1",
+      "usagisubtier": "2",
       "tags": ["BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Fumiruiru",
@@ -1920,7 +1976,7 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "2",
+      "usagisubtier": "3",
       "tags": ["HEAL", "BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Independence",
@@ -1938,7 +1994,7 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "3",
+      "usagisubtier": "4",
       "tags": ["BA", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Ryuujou",
@@ -1956,7 +2012,7 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "4",
+      "usagisubtier": "5",
       "tags": ["BA", "BUFFAIR"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Yorktown",
@@ -1974,7 +2030,7 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "5",
+      "usagisubtier": "6",
       "tags": ["BA", "DEF", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Akagi-chan",
@@ -2002,7 +2058,7 @@
         "code": "HMS Illustrious",
         "cn": "小光辉",
         "jp": "リトル・イラストリアス",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Aircraft Carrier",
@@ -2010,7 +2066,7 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "7",
+      "usagisubtier": "8",
       "tags": ["BA", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Long_Island",
@@ -2028,27 +2084,27 @@
       "rarity": "Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "4",
-      "usagisubtier": "8",
+      "usagisubtier": "9",
       "tags": ["BUFFAIR"]
     }],
     "t5": [{
-      "wikiUrl": "https://azurlane.koumakan.jp/Green_Heart",
-      "id": "Collab008",
+      "wikiUrl": "https://azurlane.koumakan.jp/Vert",
+      "id": "Collab004",
       "names": {
-        "en": "Green Heart",
-        "code": "HDN Green Heart",
-        "cn": "翡绿之心",
-        "jp": "グリーンハート",
-        "kr": "그린 하트"
+        "en": "Vert",
+        "code": "HDN Vert",
+        "cn": "贝露",
+        "jp": "ベール",
+        "kr": "벨"
       },
       "nationality": "Neptunia",
       "hullType": "Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/Collab008/thumbnail.png",
-      "rarity": "Super Rare",
+      "thumbnail": "Assets/ShipPortraits/Collab004/thumbnail.png",
+      "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "5",
       "usagisubtier": "1",
-      "tags": ["BA"]
+      "tags": null
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Hermes",
       "id": "140",
@@ -2069,24 +2125,6 @@
       "tags": ["BA"]
     }],
     "t6": [{
-      "wikiUrl": "https://azurlane.koumakan.jp/Vert",
-      "id": "Collab004",
-      "names": {
-        "en": "Vert",
-        "code": "HDN Vert",
-        "cn": "贝露",
-        "jp": "ベール",
-        "kr": "벨"
-      },
-      "nationality": "Neptunia",
-      "hullType": "Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/Collab004/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "AircraftCarrier",
-      "usagitier": "6",
-      "usagisubtier": "1",
-      "tags": null
-    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Murasaki_Shion",
       "id": "Collab056",
       "names": {
@@ -2094,7 +2132,7 @@
         "code": "Murasaki Shion",
         "cn": "紫咲诗音",
         "jp": "紫咲シオン",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Hololive",
       "hullType": "Light Aircraft Carrier",
@@ -2102,64 +2140,9 @@
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "6",
-      "usagisubtier": "2",
+      "usagisubtier": "1",
       "tags": ["BA"]
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Houshou",
-      "id": "220",
-      "names": {
-        "en": "Houshou",
-        "code": "IJN Houshou",
-        "cn": "凤",
-        "jp": "鳳翔",
-        "kr": "호쇼"
-      },
-      "nationality": "Sakura Empire",
-      "hullType": "Light Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/220/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "AircraftCarrier",
-      "usagitier": "6",
-      "usagisubtier": "3",
-      "tags": ["BUFFEXP"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Langley",
-      "id": "072",
-      "names": {
-        "en": "Langley",
-        "code": "USS Langley",
-        "cn": "兰利",
-        "jp": "ラングレー",
-        "kr": "랭글리"
-      },
-      "nationality": "Eagle Union",
-      "hullType": "Light Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/072/thumbnail.png",
-      "rarity": "Normal",
-      "hullTypeId": "AircraftCarrier",
-      "usagitier": "6",
-      "usagisubtier": "4",
-      "tags": ["BUFFAIR", "BUFFEXP"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Bogue",
-      "id": "071",
-      "names": {
-        "en": "Bogue",
-        "code": "USS Bogue",
-        "cn": "博格",
-        "jp": "ボーグ",
-        "kr": "보그"
-      },
-      "nationality": "Eagle Union",
-      "hullType": "Light Aircraft Carrier",
-      "thumbnail": "Assets/ShipPortraits/071/thumbnail.png",
-      "rarity": "Normal",
-      "hullTypeId": "AircraftCarrier",
-      "usagitier": "6",
-      "usagisubtier": "5",
-      "tags": null
-    }],
-    "t7": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Uruuru",
       "id": "Collab034",
       "names": {
@@ -2174,8 +2157,8 @@
       "thumbnail": "Assets/ShipPortraits/Collab034/thumbnail.png",
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
-      "usagitier": "7",
-      "usagisubtier": "1",
+      "usagitier": "6",
+      "usagisubtier": "2",
       "tags": ["BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Saraana",
@@ -2192,8 +2175,8 @@
       "thumbnail": "Assets/ShipPortraits/Collab035/thumbnail.png",
       "rarity": "Elite",
       "hullTypeId": "AircraftCarrier",
-      "usagitier": "7",
-      "usagisubtier": "2",
+      "usagitier": "6",
+      "usagisubtier": "3",
       "tags": ["BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Hiyou",
@@ -2210,8 +2193,8 @@
       "thumbnail": "Assets/ShipPortraits/218/thumbnail.png",
       "rarity": "Rare",
       "hullTypeId": "AircraftCarrier",
-      "usagitier": "7",
-      "usagisubtier": "3",
+      "usagitier": "6",
+      "usagisubtier": "4",
       "tags": null
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Junyou",
@@ -2228,9 +2211,84 @@
       "thumbnail": "Assets/ShipPortraits/219/thumbnail.png",
       "rarity": "Rare",
       "hullTypeId": "AircraftCarrier",
+      "usagitier": "6",
+      "usagisubtier": "5",
+      "tags": null
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Bogue",
+      "id": "071",
+      "names": {
+        "en": "Bogue",
+        "code": "USS Bogue",
+        "cn": "博格",
+        "jp": "ボーグ",
+        "kr": "보그"
+      },
+      "nationality": "Eagle Union",
+      "hullType": "Light Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/071/thumbnail.png",
+      "rarity": "Normal",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "6",
+      "usagisubtier": "6",
+      "tags": null
+    }],
+    "t7": [{
+      "wikiUrl": "https://azurlane.koumakan.jp/Chiyoda",
+      "id": "471",
+      "names": {
+        "en": "Chiyoda",
+        "code": "IJN Chiyoda",
+        "cn": "鹃",
+        "jp": "千代田",
+        "kr": ""
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Light Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/471/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "7",
+      "usagisubtier": "1",
+      "banneralt": "NEW",
+      "tags": ["BA"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Chitose",
+      "id": "470",
+      "names": {
+        "en": "Chitose",
+        "code": "IJN Chitose",
+        "cn": "鹂",
+        "jp": "千歳",
+        "kr": ""
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Light Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/470/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "7",
+      "usagisubtier": "2",
+      "banneralt": "NEW",
+      "tags": ["BA", "BUFFAIR"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Houshou",
+      "id": "220",
+      "names": {
+        "en": "Houshou",
+        "code": "IJN Houshou",
+        "cn": "凤",
+        "jp": "鳳翔",
+        "kr": "호쇼"
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Light Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/220/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "AircraftCarrier",
       "usagitier": "7",
       "usagisubtier": "3",
-      "tags": null
+      "tags": ["BUFFEXP"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Glorious",
       "id": "148",
@@ -2250,6 +2308,24 @@
       "usagisubtier": "4",
       "tags": ["BUFFDMG", "BUFFDEF"]
     }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Langley",
+      "id": "072",
+      "names": {
+        "en": "Langley",
+        "code": "USS Langley",
+        "cn": "兰利",
+        "jp": "ラングレー",
+        "kr": "랭글리"
+      },
+      "nationality": "Eagle Union",
+      "hullType": "Light Aircraft Carrier",
+      "thumbnail": "Assets/ShipPortraits/072/thumbnail.png",
+      "rarity": "Normal",
+      "hullTypeId": "AircraftCarrier",
+      "usagitier": "7",
+      "usagisubtier": "5",
+      "tags": ["BUFFAIR", "BUFFEXP"]
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Wasp",
       "id": "079",
       "names": {
@@ -2265,7 +2341,7 @@
       "rarity": "Rare",
       "hullTypeId": "AircraftCarrier",
       "usagitier": "7",
-      "usagisubtier": "5",
+      "usagisubtier": "6",
       "tags": null
     }]
   },
@@ -2296,7 +2372,7 @@
         "code": "HMS Drake",
         "cn": "德雷克",
         "jp": "ドレイク",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Heavy Cruiser",
@@ -2332,7 +2408,7 @@
         "code": "HMS Cheshire",
         "cn": "柴郡",
         "jp": "チェシャー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Heavy Cruiser",
@@ -2386,7 +2462,7 @@
         "code": "USS Bremerton",
         "cn": "布莱默顿",
         "jp": "ブレマートン",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Heavy Cruiser",
@@ -2433,6 +2509,24 @@
       "usagitier": "1",
       "usagisubtier": "2",
       "tags": ["TRP", "BA"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Mogami",
+      "id": "188",
+      "names": {
+        "en": "Mogami",
+        "code": "IJN Mogami",
+        "cn": "猨",
+        "jp": "最上",
+        "kr": "모가미"
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Heavy Cruiser",
+      "thumbnail": "Assets/ShipPortraits/188/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "HeavyCruiser",
+      "usagitier": "1",
+      "usagisubtier": "3",
+      "tags": ["MG+1"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Minneapolis",
       "id": "364",
@@ -2512,9 +2606,9 @@
       "names": {
         "en": "Algérie",
         "code": "MNF Algérie",
-        "cn": null,
-        "jp": null,
-        "kr": null
+        "cn": "",
+        "jp": "",
+        "kr": ""
       },
       "nationality": "Vichya Dominion",
       "hullType": "Heavy Cruiser",
@@ -2823,7 +2917,7 @@
         "code": "Nakiri Ayame",
         "cn": "百鬼绫目",
         "jp": "百鬼あやめ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Hololive",
       "hullType": "Heavy Cruiser",
@@ -2895,7 +2989,7 @@
         "code": "KMS Admiral Hipper",
         "cn": "希佩尔海军上将(μ兵装)",
         "jp": "アドミラル·ヒッパー（μ兵装）",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Ironblood",
       "hullType": "Heavy Cruiser",
@@ -2913,7 +3007,7 @@
         "code": "IJN Suzuya",
         "cn": "狺",
         "jp": "鈴谷",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Heavy Cruiser",
@@ -2923,6 +3017,25 @@
       "usagitier": "5",
       "usagisubtier": "7",
       "tags": ["BA"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Kumano",
+      "id": "469",
+      "names": {
+        "en": "Kumano",
+        "code": "IJN Kumano",
+        "cn": "猁",
+        "jp": "",
+        "kr": ""
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Heavy Cruiser",
+      "thumbnail": "Assets/ShipPortraits/469/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "HeavyCruiser",
+      "usagitier": "5",
+      "usagisubtier": "8",
+      "banneralt": "NEW",
+      "tags": ["DEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Admiral_Hipper",
       "id": "242",
@@ -2939,7 +3052,7 @@
       "rarity": "Elite",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "5",
-      "usagisubtier": "8",
+      "usagisubtier": "9",
       "tags": null
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Dorsetshire",
@@ -2957,26 +3070,8 @@
       "rarity": "Elite",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "5",
-      "usagisubtier": "9",
-      "tags": ["TRP"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Houston",
-      "id": "043",
-      "names": {
-        "en": "Houston",
-        "code": "USS Houston",
-        "cn": "休斯敦",
-        "jp": "ヒューストン",
-        "kr": "휴스턴"
-      },
-      "nationality": "Eagle Union",
-      "hullType": "Heavy Cruiser",
-      "thumbnail": "Assets/ShipPortraits/043/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "HeavyCruiser",
-      "usagitier": "5",
       "usagisubtier": "10",
-      "tags": ["MG+1"]
+      "tags": ["TRP"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Chicago",
       "id": "042",
@@ -3051,6 +3146,42 @@
       "usagisubtier": "2",
       "tags": null
     }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Houston",
+      "id": "043",
+      "names": {
+        "en": "Houston",
+        "code": "USS Houston",
+        "cn": "休斯敦",
+        "jp": "ヒューストン",
+        "kr": "휴스턴"
+      },
+      "nationality": "Eagle Union",
+      "hullType": "Heavy Cruiser",
+      "thumbnail": "Assets/ShipPortraits/043/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "HeavyCruiser",
+      "usagitier": "6",
+      "usagisubtier": "3",
+      "tags": ["MG+1"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Norfolk",
+      "id": "123",
+      "names": {
+        "en": "Norfolk",
+        "code": "HMS Norfolk",
+        "cn": "诺福克",
+        "jp": "ノーフォーク",
+        "kr": "노포크"
+      },
+      "nationality": "Royal Navy",
+      "hullType": "Norfolk subclass",
+      "thumbnail": "Assets/ShipPortraits/123/thumbnail.png",
+      "rarity": "Rare",
+      "hullTypeId": "HeavyCruiser",
+      "usagitier": "6",
+      "usagisubtier": "4",
+      "tags": ["DEF"]
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Nachi",
       "id": "197",
       "names": {
@@ -3066,7 +3197,7 @@
       "rarity": "Rare",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "6",
-      "usagisubtier": "3",
+      "usagisubtier": "5",
       "tags": ["BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Myoukou",
@@ -3084,7 +3215,7 @@
       "rarity": "Rare",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "6",
-      "usagisubtier": "4",
+      "usagisubtier": "6",
       "tags": ["BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Pensacola",
@@ -3102,7 +3233,7 @@
       "rarity": "Normal",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "6",
-      "usagisubtier": "5",
+      "usagisubtier": "7",
       "tags": ["MG+1"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Salt_Lake_City",
@@ -3120,7 +3251,7 @@
       "rarity": "Normal",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "6",
-      "usagisubtier": "6",
+      "usagisubtier": "8",
       "tags": ["MG+1"]
     }],
     "t7": [{
@@ -3178,24 +3309,6 @@
       "usagisubtier": "3",
       "tags": null
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Norfolk",
-      "id": "123",
-      "names": {
-        "en": "Norfolk",
-        "code": "HMS Norfolk",
-        "cn": "诺福克",
-        "jp": "ノーフォーク",
-        "kr": "노포크"
-      },
-      "nationality": "Royal Navy",
-      "hullType": "Norfolk subclass",
-      "thumbnail": "Assets/ShipPortraits/123/thumbnail.png",
-      "rarity": "Rare",
-      "hullTypeId": "HeavyCruiser",
-      "usagitier": "7",
-      "usagisubtier": "4",
-      "tags": ["DEF"]
-    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Kent",
       "id": "121",
       "names": {
@@ -3211,7 +3324,7 @@
       "rarity": "Rare",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "7",
-      "usagisubtier": "5",
+      "usagisubtier": "4",
       "tags": null
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Aoba",
@@ -3229,7 +3342,7 @@
       "rarity": "Normal",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "7",
-      "usagisubtier": "6",
+      "usagisubtier": "5",
       "tags": null
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Kinugasa",
@@ -3247,7 +3360,7 @@
       "rarity": "Normal",
       "hullTypeId": "HeavyCruiser",
       "usagitier": "7",
-      "usagisubtier": "7",
+      "usagisubtier": "6",
       "tags": null
     }]
   },
@@ -3314,7 +3427,7 @@
         "code": "KMS Mainz",
         "cn": "美因茨",
         "jp": "マインツ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Ironblood",
       "hullType": "Light Cruiser",
@@ -3350,7 +3463,7 @@
         "code": "IJN Noshiro",
         "cn": "貅",
         "jp": "能代",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Light Cruiser",
@@ -3368,7 +3481,7 @@
         "code": "SN Chapayev",
         "cn": "恰巴耶夫",
         "jp": "チャパエフ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Light Cruiser",
@@ -3459,7 +3572,7 @@
         "code": "HMS Swiftsure",
         "cn": "确捷",
         "jp": "スウィフトシュア",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3477,7 +3590,7 @@
         "code": "HMS Dido",
         "cn": "黛朵",
         "jp": "ダイドー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3488,24 +3601,6 @@
       "usagisubtier": "3",
       "tags": ["AA", "BUFFDMG"]
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Mogami",
-      "id": "188",
-      "names": {
-        "en": "Mogami",
-        "code": "IJN Mogami",
-        "cn": "猨",
-        "jp": "最上",
-        "kr": "모가미"
-      },
-      "nationality": "Sakura Empire",
-      "hullType": "Light Cruiser",
-      "thumbnail": "Assets/ShipPortraits/188/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "LightCruiser",
-      "usagitier": "1",
-      "usagisubtier": "3",
-      "tags": ["MG+1"]
-    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Hermione",
       "id": "463",
       "names": {
@@ -3513,7 +3608,7 @@
         "code": "HMS Hermione",
         "cn": "赫敏",
         "jp": "ハーマイオニー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3585,7 +3680,7 @@
         "code": "USS Cleveland",
         "cn": "克利夫兰(μ兵装)",
         "jp": "クリーブランド（μ兵装）",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -3658,7 +3753,7 @@
         "code": "IJN Kinu",
         "cn": "猤",
         "jp": "鬼怒",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Light Cruiser",
@@ -3676,7 +3771,7 @@
         "code": "FFNF Jeanne d'Arc",
         "cn": "圣女贞德",
         "jp": "ジャンヌ・ダルク",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iris Libre",
       "hullType": "Light Cruiser",
@@ -3694,7 +3789,7 @@
         "code": "HMS Sirius",
         "cn": "天狼星",
         "jp": "シリアス",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3813,24 +3908,6 @@
       "usagisubtier": "9",
       "tags": ["AA", "BUFFSHL", "BUFFDMG"]
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Biloxi",
-      "id": "428",
-      "names": {
-        "en": "Biloxi",
-        "code": "USS Biloxi",
-        "cn": "比洛克西",
-        "jp": "ビロクシ",
-        "kr": null
-      },
-      "nationality": "Eagle Union",
-      "hullType": "Light Cruiser",
-      "thumbnail": "Assets/ShipPortraits/428/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "LightCruiser",
-      "usagitier": "2",
-      "usagisubtier": "11",
-      "tags": ["MG+1", "AA", "BUFFDEF"]
-    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Sendai",
       "id": "308",
       "names": {
@@ -3846,7 +3923,7 @@
       "rarity": "Rare",
       "hullTypeId": "LightCruiser",
       "usagitier": "2",
-      "usagisubtier": "12",
+      "usagisubtier": "11",
       "tags": ["TRP", "BUFFTRP", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Sheffield_µ",
@@ -3856,7 +3933,7 @@
         "code": "HMS Sheffield",
         "cn": "谢菲尔德(μ兵装)",
         "jp": "シェフィールド（μ兵装）",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Southampton subclass",
@@ -3866,6 +3943,24 @@
       "usagitier": "2",
       "usagisubtier": "12",
       "tags": ["BUFFDEF"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Biloxi",
+      "id": "428",
+      "names": {
+        "en": "Biloxi",
+        "code": "USS Biloxi",
+        "cn": "比洛克西",
+        "jp": "ビロクシ",
+        "kr": ""
+      },
+      "nationality": "Eagle Union",
+      "hullType": "Light Cruiser",
+      "thumbnail": "Assets/ShipPortraits/428/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "LightCruiser",
+      "usagitier": "2",
+      "usagisubtier": "12",
+      "tags": ["MG+1", "AA", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Leipzig",
       "id": "241",
@@ -3929,7 +4024,7 @@
         "code": "USS Reno",
         "cn": "里诺",
         "jp": "リノ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -4182,7 +4277,7 @@
         "code": "SN Pamiat Merkuria",
         "cn": "水星纪念",
         "jp": "パーミャチ・メルクーリヤ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Light Cruiser",
@@ -4236,7 +4331,7 @@
         "code": "HMS Gloucester",
         "cn": "格罗斯特",
         "jp": "グロスター",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -4252,9 +4347,9 @@
       "names": {
         "en": "La Galissonnière",
         "code": "MNF La Galissonnière",
-        "cn": null,
-        "jp": null,
-        "kr": null
+        "cn": "",
+        "jp": "",
+        "kr": ""
       },
       "nationality": "Vichya Dominion",
       "hullType": "Light Cruiser",
@@ -4308,7 +4403,7 @@
         "code": "HMS Glasgow",
         "cn": "格拉斯哥",
         "jp": "グラスゴー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Southampton subclass",
@@ -4409,6 +4504,25 @@
       "usagitier": "5",
       "usagisubtier": "5",
       "tags": ["BUFFDMG", "BUFFDEF"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Kashino",
+      "id": "472",
+      "names": {
+        "en": "Kashino",
+        "code": "IJN Kashino",
+        "cn": "㭴",
+        "jp": "",
+        "kr": ""
+      },
+      "nationality": "Sakura Empire",
+      "hullType": "Munition Ship",
+      "thumbnail": "Assets/ShipPortraits/472/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "LightCruiser",
+      "usagitier": "5",
+      "usagisubtier": "6",
+      "banneralt": "NEW",
+      "tags": null
     }],
     "t6": [{
       "wikiUrl": "https://azurlane.koumakan.jp/HDN_Neptune",
@@ -4581,7 +4695,7 @@
         "code": "USS Marblehead",
         "cn": "马布尔黑德",
         "jp": "マーブルヘッド",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -4764,7 +4878,7 @@
         "code": "SN Tashkent",
         "cn": "塔什干",
         "jp": "タシュケント",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Destroyer",
@@ -4775,41 +4889,24 @@
       "usagisubtier": "3",
       "tags": ["BA", "DEF"]
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Laffey",
-      "id": "019",
+      "wikiUrl": "https://azurlane.koumakan.jp/Suzutsuki",
+      "id": "468",
       "names": {
-        "en": "Laffey",
-        "code": "USS Laffey",
-        "cn": "拉菲",
-        "jp": "ラフィー",
-        "kr": "라피"
+        "en": "Suzutsuki",
+        "code": "IJN Suzutsuki",
+        "cn": "栎",
+        "jp": "涼月",
+        "kr": ""
       },
-      "nationality": "Eagle Union",
+      "nationality": "Sakura Empire",
       "hullType": "Destroyer",
-      "thumbnail": "Assets/ShipPortraits/019/thumbnail.png",
-      "rarity": "Elite",
+      "thumbnail": "Assets/ShipPortraits/468/thumbnail.png",
+      "rarity": "Super Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "0",
       "usagisubtier": "4",
-      "tags": ["BA"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Z23",
-      "id": "236",
-      "names": {
-        "en": "Z23",
-        "code": "KMS Z23",
-        "cn": "Z23",
-        "jp": "Z23",
-        "kr": "Z23"
-      },
-      "nationality": "Ironblood",
-      "hullType": "Destroyer",
-      "thumbnail": "Assets/ShipPortraits/236/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "Destroyer",
-      "usagitier": "0",
-      "usagisubtier": "5",
-      "tags": ["BA", "BUFFDEF"]
+      "banneralt": "NEW",
+      "tags": ["DEF", "AA", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Yukikaze",
       "id": "166",
@@ -4826,27 +4923,45 @@
       "rarity": "Super Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "0",
-      "usagisubtier": "6",
+      "usagisubtier": "5",
       "tags": ["TRP", "DEF", "HEAL", "BUFFDEF"]
     }],
     "t1": [{
-      "wikiUrl": "https://azurlane.koumakan.jp/Shirakami_Fubuki",
-      "id": "Collab051",
+      "wikiUrl": "https://azurlane.koumakan.jp/Laffey",
+      "id": "019",
       "names": {
-        "en": "Shirakami Fubuki",
-        "code": "Shirakami Fubuki",
-        "cn": "白上吹雪",
-        "jp": "白上フブキ",
-        "kr": null
+        "en": "Laffey",
+        "code": "USS Laffey",
+        "cn": "拉菲",
+        "jp": "ラフィー",
+        "kr": "라피"
       },
-      "nationality": "Hololive",
+      "nationality": "Eagle Union",
       "hullType": "Destroyer",
-      "thumbnail": "Assets/ShipPortraits/Collab051/thumbnail.png",
-      "rarity": "Super Rare",
+      "thumbnail": "Assets/ShipPortraits/019/thumbnail.png",
+      "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
       "usagisubtier": "1",
-      "tags": ["TRP", "BA"]
+      "tags": ["BA"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Z23",
+      "id": "236",
+      "names": {
+        "en": "Z23",
+        "code": "KMS Z23",
+        "cn": "Z23",
+        "jp": "Z23",
+        "kr": "Z23"
+      },
+      "nationality": "Ironblood",
+      "hullType": "Destroyer",
+      "thumbnail": "Assets/ShipPortraits/236/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "Destroyer",
+      "usagitier": "1",
+      "usagisubtier": "2",
+      "tags": ["BA", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Javelin",
       "id": "101",
@@ -4863,8 +4978,26 @@
       "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
-      "usagisubtier": "2",
+      "usagisubtier": "3",
       "tags": ["BA", "DEF"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Shirakami_Fubuki",
+      "id": "Collab051",
+      "names": {
+        "en": "Shirakami Fubuki",
+        "code": "Shirakami Fubuki",
+        "cn": "白上吹雪",
+        "jp": "白上フブキ",
+        "kr": ""
+      },
+      "nationality": "Hololive",
+      "hullType": "Destroyer",
+      "thumbnail": "Assets/ShipPortraits/Collab051/thumbnail.png",
+      "rarity": "Super Rare",
+      "hullTypeId": "Destroyer",
+      "usagitier": "1",
+      "usagisubtier": "4",
+      "tags": ["TRP", "BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Z1",
       "id": "233",
@@ -4881,7 +5014,7 @@
       "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
-      "usagisubtier": "3",
+      "usagisubtier": "5",
       "tags": ["TRP", "BA", "BUFFSHL", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Nicholas",
@@ -4899,7 +5032,7 @@
       "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
-      "usagisubtier": "4",
+      "usagisubtier": "6",
       "tags": ["DEF", "AS", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Le_Malin",
@@ -4909,7 +5042,7 @@
         "code": "MNF Le Malin",
         "cn": "恶毒",
         "jp": "ル・マラン",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Vichya Dominion",
       "hullType": "Destroyer",
@@ -4917,7 +5050,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
-      "usagisubtier": "5",
+      "usagisubtier": "7",
       "tags": ["BA"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Le_Triomphant",
@@ -4935,7 +5068,7 @@
       "rarity": "Super Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
-      "usagisubtier": "6",
+      "usagisubtier": "8",
       "tags": null
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Eldridge",
@@ -4953,44 +5086,8 @@
       "rarity": "Super Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "1",
-      "usagisubtier": "7",
-      "tags": ["BUFFDEF"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/An_Shan",
-      "id": "253",
-      "names": {
-        "en": "An Shan",
-        "code": "PRAN An Shan",
-        "cn": "鞍山",
-        "jp": "鞍山",
-        "kr": "안샨"
-      },
-      "nationality": "Eastern Radiance",
-      "hullType": "Destroyer",
-      "thumbnail": "Assets/ShipPortraits/253/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "Destroyer",
-      "usagitier": "1",
-      "usagisubtier": "8",
-      "tags": ["BA", "BUFFDMG"]
-    }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Chang_Chun",
-      "id": "255",
-      "names": {
-        "en": "Chang Chun",
-        "code": "PRAN Chang Chun",
-        "cn": "长春",
-        "jp": "長春",
-        "kr": "창춘"
-      },
-      "nationality": "Eastern Radiance",
-      "hullType": "Destroyer",
-      "thumbnail": "Assets/ShipPortraits/255/thumbnail.png",
-      "rarity": "Elite",
-      "hullTypeId": "Destroyer",
-      "usagitier": "1",
       "usagisubtier": "9",
-      "tags": ["BA", "BUFFDMG"]
+      "tags": ["BUFFDEF"]
     }],
     "t2": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Kawakaze",
@@ -5101,23 +5198,41 @@
       "usagisubtier": "6",
       "tags": ["BA"]
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Eskimo",
-      "id": "460",
+      "wikiUrl": "https://azurlane.koumakan.jp/An_Shan",
+      "id": "253",
       "names": {
-        "en": "Eskimo",
-        "code": "HMS Eskimo",
-        "cn": "爱斯基摩人",
-        "jp": "エスキモー",
-        "kr": null
+        "en": "An Shan",
+        "code": "PRAN An Shan",
+        "cn": "鞍山",
+        "jp": "鞍山",
+        "kr": "안샨"
       },
-      "nationality": "Royal Navy",
+      "nationality": "Eastern Radiance",
       "hullType": "Destroyer",
-      "thumbnail": "Assets/ShipPortraits/460/thumbnail.png",
+      "thumbnail": "Assets/ShipPortraits/253/thumbnail.png",
       "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "2",
       "usagisubtier": "7",
-      "tags": ["MG+1"]
+      "tags": ["BA", "BUFFDMG"]
+    }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Chang_Chun",
+      "id": "255",
+      "names": {
+        "en": "Chang Chun",
+        "code": "PRAN Chang Chun",
+        "cn": "长春",
+        "jp": "長春",
+        "kr": "창춘"
+      },
+      "nationality": "Eastern Radiance",
+      "hullType": "Destroyer",
+      "thumbnail": "Assets/ShipPortraits/255/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "Destroyer",
+      "usagitier": "2",
+      "usagisubtier": "8",
+      "tags": ["BA", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Naganami",
       "id": "450",
@@ -5126,7 +5241,7 @@
         "code": "IJN Naganami",
         "cn": "苌",
         "jp": "長波",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -5134,7 +5249,7 @@
       "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "2",
-      "usagisubtier": "8",
+      "usagisubtier": "9",
       "tags": ["TRP", "BUFFTRP", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Tanikaze",
@@ -5152,7 +5267,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "2",
-      "usagisubtier": "9",
+      "usagisubtier": "10",
       "tags": ["TRP", "DEF", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Ardent",
@@ -5170,7 +5285,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "2",
-      "usagisubtier": "10",
+      "usagisubtier": "11",
       "tags": ["BUFFAIR", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Amazon",
@@ -5188,7 +5303,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "2",
-      "usagisubtier": "11",
+      "usagisubtier": "12",
       "tags": ["AA", "BUFFDEF", "BUFFEXP"]
     }],
     "t3": [{
@@ -5217,7 +5332,7 @@
         "code": "IJN Hanazuki",
         "cn": "榵",
         "jp": "花月",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -5264,6 +5379,24 @@
       "usagisubtier": "4",
       "tags": ["MG+1", "AA"]
     }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Eskimo",
+      "id": "460",
+      "names": {
+        "en": "Eskimo",
+        "code": "HMS Eskimo",
+        "cn": "爱斯基摩人",
+        "jp": "エスキモー",
+        "kr": ""
+      },
+      "nationality": "Royal Navy",
+      "hullType": "Destroyer",
+      "thumbnail": "Assets/ShipPortraits/460/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "Destroyer",
+      "usagitier": "3",
+      "usagisubtier": "5",
+      "tags": ["MG+1"]
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Hamakaze",
       "id": "318",
       "names": {
@@ -5279,7 +5412,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "5",
+      "usagisubtier": "6",
       "tags": ["TRP", "DEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Carabiniere",
@@ -5297,7 +5430,7 @@
       "rarity": "Elite",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "6",
+      "usagisubtier": "7",
       "tags": ["BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Hatsuharu",
@@ -5315,7 +5448,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "7",
+      "usagisubtier": "8",
       "tags": ["TRP", "BUFFTRP"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Yuugure",
@@ -5333,7 +5466,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "8",
+      "usagisubtier": "9",
       "tags": ["TRP", "BUFFAIR"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Kagerou",
@@ -5351,7 +5484,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "9",
+      "usagisubtier": "10",
       "tags": ["TRP", "BUFFTRP", "BUFFDMG"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Hatsushimo",
@@ -5369,7 +5502,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "10",
+      "usagisubtier": "11",
       "tags": ["TRP", "BUFFDEF"]
     }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Kiyonami",
@@ -5387,7 +5520,7 @@
       "rarity": "Rare",
       "hullTypeId": "Destroyer",
       "usagitier": "3",
-      "usagisubtier": "11",
+      "usagisubtier": "12",
       "tags": ["TRP"]
     }],
     "t4": [{
@@ -5398,7 +5531,7 @@
         "code": "IJN Hibiki",
         "cn": "栀",
         "jp": "響",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Akatsuki subclass",
@@ -5416,7 +5549,7 @@
         "code": "USS Cooper",
         "cn": "库珀",
         "jp": "クーパー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Destroyer",
@@ -5434,7 +5567,7 @@
         "code": "KMS Z26",
         "cn": "Z26",
         "jp": "Z26",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iron Blood",
       "hullType": "Destroyer",
@@ -5452,7 +5585,7 @@
         "code": "HMS Icarus",
         "cn": "伊卡洛斯",
         "jp": "イカルス",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Destroyer",
@@ -5723,7 +5856,7 @@
         "code": "FFNF L'Opiniâtre",
         "cn": "倔强",
         "jp": "ルピニャート",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iris Libre",
       "hullType": "Destroyer",
@@ -5741,7 +5874,7 @@
         "code": "IJN Kasumi",
         "cn": "蕸",
         "jp": "霞",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -5829,9 +5962,9 @@
       "names": {
         "en": "Vauquelin",
         "code": "MNF Vauquelin",
-        "cn": null,
-        "jp": null,
-        "kr": null
+        "cn": "",
+        "jp": "",
+        "kr": ""
       },
       "nationality": "Vichya Dominion",
       "hullType": "Destroyer",
@@ -5849,7 +5982,7 @@
         "code": "MNF Tartu",
         "cn": "塔尔图",
         "jp": "タルテュ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Vichya Dominion",
       "hullType": "Destroyer",
@@ -5975,7 +6108,7 @@
         "code": "SN Grozny",
         "cn": "威严",
         "jp": "グロズヌイ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Destroyer",
@@ -5993,7 +6126,7 @@
         "code": "SN Minsk",
         "cn": "明斯克",
         "jp": "ミンスク",
-        "kr": null
+        "kr": ""
       },
       "nationality": "North Union",
       "hullType": "Destroyer",
@@ -6084,7 +6217,7 @@
         "code": "Natsuiro Matsuri",
         "cn": "夏色祭",
         "jp": "夏色まつり",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Hololive",
       "hullType": "Destroyer",
@@ -6192,7 +6325,7 @@
         "code": "IJN Uranami",
         "cn": "朴",
         "jp": "浦波",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -6336,7 +6469,7 @@
         "code": "USS Halsey Powell",
         "cn": "哈尔西·鲍威尔",
         "jp": "ハルゼー・パウエル",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Destroyer",
@@ -6804,7 +6937,7 @@
         "code": "USS Smalley",
         "cn": "斯莫利",
         "jp": "スモーリー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Destroyer",
@@ -6816,14 +6949,32 @@
       "tags": ["BUFFDEF"]
     }],
     "t7": [{
+      "wikiUrl": "https://azurlane.koumakan.jp/22",
+      "id": "Collab021",
+      "names": {
+        "en": "22",
+        "code": "22",
+        "cn": "22",
+        "jp": "",
+        "kr": ""
+      },
+      "nationality": "Bilibili",
+      "hullType": "Destroyer",
+      "thumbnail": "Assets/ShipPortraits/Collab021/thumbnail.png",
+      "rarity": "Elite",
+      "hullTypeId": "Destroyer",
+      "usagitier": "7",
+      "usagisubtier": "1",
+      "tags": null
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/33",
       "id": "Collab022",
       "names": {
         "en": "33",
         "code": "33",
         "cn": "33",
-        "jp": null,
-        "kr": null
+        "jp": "",
+        "kr": ""
       },
       "nationality": "Bilibili",
       "hullType": "Destroyer",
@@ -7021,7 +7172,7 @@
         "code": "HMS Jersey",
         "cn": "泽西",
         "jp": "ジャージー",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Royal Navy",
       "hullType": "Destroyer",
@@ -7284,6 +7435,25 @@
       "usagisubtier": "28",
       "tags": null
     }, {
+      "wikiUrl": "https://azurlane.koumakan.jp/Specialized_Bulin_Custom_MKIII",
+      "id": "003",
+      "names": {
+        "en": "Specialized Bulin Custom MKIII",
+        "code": "UNIV Specialized Bulin Custom MKIII",
+        "cn": "特装型布里MKIII",
+        "jp": "",
+        "kr": ""
+      },
+      "nationality": "Universal",
+      "hullType": "Destroyer",
+      "thumbnail": "Assets/ShipPortraits/003/thumbnail.png",
+      "rarity": "Ultra Rare",
+      "hullTypeId": "Destroyer",
+      "usagitier": "7",
+      "usagisubtier": "28",
+      "tags": null,
+      "banneralt": "NEW"
+    }, {
       "wikiUrl": "https://azurlane.koumakan.jp/Prototype_Bulin_MKII",
       "id": "002",
       "names": {
@@ -7330,7 +7500,7 @@
         "code": "KMS U-96",
         "cn": "U-96",
         "jp": "U-96",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Iron Blood",
       "hullType": "Submarine",
@@ -7385,7 +7555,7 @@
         "code": "Minato Aqua",
         "cn": "湊阿库娅",
         "jp": "湊あくあ",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Hololive",
       "hullType": "Submarine",
@@ -7457,7 +7627,7 @@
         "code": "IJN I-13",
         "cn": "伊13",
         "jp": "伊13",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Sakura Empire",
       "hullType": "Submarine Carrier",
@@ -7530,7 +7700,7 @@
         "code": "KMS U-110",
         "cn": "U-110",
         "jp": "U-110",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Ironblood",
       "hullType": "Submarine",
@@ -7640,7 +7810,7 @@
         "code": "USS Bluegill",
         "cn": "蓝鳃鱼",
         "jp": "ブルーギル",
-        "kr": null
+        "kr": ""
       },
       "nationality": "Eagle Union",
       "hullType": "Submarine",

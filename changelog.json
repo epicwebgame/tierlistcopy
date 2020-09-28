@@ -1993,5 +1993,146 @@
                 }
             ]
         }
+    },
+    "57": {
+        "updatedate": 1601251200,
+        "fullname": "PvE Ship Tier List #57",
+        "number": 57,
+        "changes": {
+            "new": [{
+                    "shipname": "Shinano",
+                    "changedrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Suzutsuki",
+                    "changedrank": "t0",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Kii",
+                    "changedrank": "t1",
+                    "shiptype": "battleship"
+                },
+                {
+                    "shipname": "Kumano",
+                    "changedrank": "t5",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Kashino",
+                    "changedrank": "t5",
+                    "shiptype": "lightcruiser"
+                },
+                {
+                    "shipname": "Chitose",
+                    "changedrank": "t7",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Chiyoda",
+                    "changedrank": "t7",
+                    "shiptype": "carrier"
+                }
+            ],
+            "promotions": [{
+                    "shipname": "Green Heart",
+                    "changedrank": "t4",
+                    "oldrank": "t5",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Vert",
+                    "changedrank": "t5",
+                    "oldrank": "t6",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Uruuru",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Saraana",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Hiyou",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Junyou",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Norfolk",
+                    "changedrank": "t6",
+                    "oldrank": "t7",
+                    "shiptype": "heavycruiser"
+                }
+            ],
+            "demotions": [{
+                    "shipname": "Enterprise",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Houshou",
+                    "changedrank": "t7",
+                    "oldrank": "t6",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Langley",
+                    "changedrank": "t7",
+                    "oldrank": "t6",
+                    "shiptype": "carrier"
+                },
+                {
+                    "shipname": "Houston",
+                    "changedrank": "t6",
+                    "oldrank": "t5",
+                    "shiptype": "heavycruiser"
+                },
+                {
+                    "shipname": "Laffey",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Z23",
+                    "changedrank": "t1",
+                    "oldrank": "t0",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "An Shan",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Chang Chun",
+                    "changedrank": "t2",
+                    "oldrank": "t1",
+                    "shiptype": "destroyer"
+                },
+                {
+                    "shipname": "Eskimo",
+                    "changedrank": "t3",
+                    "oldrank": "t2",
+                    "shiptype": "destroyer"
+                }
+            ]
+        }
     }
 }
