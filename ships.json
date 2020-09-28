@@ -98,7 +98,7 @@
         "code": "KMS Odin",
         "cn": "奥丁",
         "jp": "オーディン",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Ironblood",
       "hullType": "Battlecruiser",
@@ -116,7 +116,7 @@
         "code": "FFNF Richelieu",
         "cn": "黎塞留",
         "jp": "リシュリュー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iris Libre",
       "hullType": "Battleship",
@@ -134,7 +134,7 @@
         "code": "HMS Howe",
         "cn": "豪",
         "jp": "ハウ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Battleship",
@@ -171,7 +171,7 @@
         "code": "FFNF Champagne",
         "cn": "香槟",
         "jp": "シャンパーニュ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iris Libre",
       "hullType": "Battleship",
@@ -207,7 +207,7 @@
         "code": "SN Sovetskaya Rossiya",
         "cn": "苏维埃罗西亚",
         "jp": "ソビエツカヤ・ロシア",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Battleship",
@@ -261,7 +261,7 @@
         "code": "IJN Tosa",
         "cn": "䲠",
         "jp": "土佐",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Battleship",
@@ -388,7 +388,7 @@
         "code": "IJN Suruga",
         "cn": "鲪",
         "jp": "駿河",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Battleship",
@@ -424,7 +424,7 @@
         "code": "MNF Gascogne",
         "cn": "加斯科涅(μ兵装)",
         "jp": "ガスコーニュ（μ兵装）",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Vichya Dominion",
       "hullType": "Battleship",
@@ -496,7 +496,7 @@
         "code": "SN Gangut",
         "cn": "甘古特",
         "jp": "ガングート",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Battleship",
@@ -514,7 +514,7 @@
         "code": "HMS Renown",
         "cn": "小声望",
         "jp": "リトル・レナウン",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Battlecruiser",
@@ -532,7 +532,7 @@
         "code": "HMS Valiant",
         "cn": "英勇",
         "jp": "ヴァリアント",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Battleship",
@@ -1314,7 +1314,7 @@
         "code": "IJN Ryuuhou",
         "cn": "鸗",
         "jp": "龍鳳",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Light Aircraft Carrier",
@@ -1332,7 +1332,7 @@
         "code": "HMS Perseus",
         "cn": "英仙座",
         "jp": "パーシュース",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Light Aircraft Carrier",
@@ -1405,7 +1405,7 @@
         "code": "USS Intrepid",
         "cn": "无畏",
         "jp": "イントレピッド",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Aircraft Carrier",
@@ -1423,7 +1423,7 @@
         "code": "Tokino Sora",
         "cn": "时乃空",
         "jp": "ときのそら",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Aircraft Carrier",
@@ -1495,7 +1495,7 @@
         "code": "USS Casablanca",
         "cn": "卡萨布兰卡",
         "jp": "カサブランカ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Light Aircraft Carrier",
@@ -1712,7 +1712,7 @@
         "code": "IJN Akagi",
         "cn": "凰(μ兵装)",
         "jp": "赤城（μ兵装）",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Aircraft Carrier",
@@ -1785,7 +1785,7 @@
         "code": "FFNF Béarn",
         "cn": "贝亚恩",
         "jp": "ベアルン",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iris Libre",
       "hullType": "Aircraft Carrier",
@@ -1803,7 +1803,7 @@
         "code": "HMS Eagle",
         "cn": "鹰",
         "jp": "イーグル",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Aircraft Carrier",
@@ -1894,7 +1894,7 @@
         "code": "Ookami Mio",
         "cn": "大神澪",
         "jp": "大神ミオ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Aircraft Carrier",
@@ -2002,7 +2002,7 @@
         "code": "HMS Illustrious",
         "cn": "小光辉",
         "jp": "リトル・イラストリアス",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Aircraft Carrier",
@@ -2094,7 +2094,7 @@
         "code": "Murasaki Shion",
         "cn": "紫咲诗音",
         "jp": "紫咲シオン",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Light Aircraft Carrier",
@@ -2296,7 +2296,7 @@
         "code": "HMS Drake",
         "cn": "德雷克",
         "jp": "ドレイク",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Heavy Cruiser",
@@ -2332,7 +2332,7 @@
         "code": "HMS Cheshire",
         "cn": "柴郡",
         "jp": "チェシャー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Heavy Cruiser",
@@ -2386,7 +2386,7 @@
         "code": "USS Bremerton",
         "cn": "布莱默顿",
         "jp": "ブレマートン",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Heavy Cruiser",
@@ -2512,9 +2512,9 @@
       "names": {
         "en": "Algérie",
         "code": "MNF Algérie",
-        "cn": "null",
-        "jp": "null",
-        "kr": "null"
+        "cn": null,
+        "jp": null,
+        "kr": null
       },
       "nationality": "Vichya Dominion",
       "hullType": "Heavy Cruiser",
@@ -2823,7 +2823,7 @@
         "code": "Nakiri Ayame",
         "cn": "百鬼绫目",
         "jp": "百鬼あやめ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Heavy Cruiser",
@@ -2895,7 +2895,7 @@
         "code": "KMS Admiral Hipper",
         "cn": "希佩尔海军上将(μ兵装)",
         "jp": "アドミラル·ヒッパー（μ兵装）",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Ironblood",
       "hullType": "Heavy Cruiser",
@@ -2913,7 +2913,7 @@
         "code": "IJN Suzuya",
         "cn": "狺",
         "jp": "鈴谷",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Heavy Cruiser",
@@ -3314,7 +3314,7 @@
         "code": "KMS Mainz",
         "cn": "美因茨",
         "jp": "マインツ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Ironblood",
       "hullType": "Light Cruiser",
@@ -3350,7 +3350,7 @@
         "code": "IJN Noshiro",
         "cn": "貅",
         "jp": "能代",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Light Cruiser",
@@ -3368,7 +3368,7 @@
         "code": "SN Chapayev",
         "cn": "恰巴耶夫",
         "jp": "チャパエフ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Light Cruiser",
@@ -3459,7 +3459,7 @@
         "code": "HMS Swiftsure",
         "cn": "确捷",
         "jp": "スウィフトシュア",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3477,7 +3477,7 @@
         "code": "HMS Dido",
         "cn": "黛朵",
         "jp": "ダイドー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3513,7 +3513,7 @@
         "code": "HMS Hermione",
         "cn": "赫敏",
         "jp": "ハーマイオニー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3585,7 +3585,7 @@
         "code": "USS Cleveland",
         "cn": "克利夫兰(μ兵装)",
         "jp": "クリーブランド（μ兵装）",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -3658,7 +3658,7 @@
         "code": "IJN Kinu",
         "cn": "猤",
         "jp": "鬼怒",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Light Cruiser",
@@ -3676,7 +3676,7 @@
         "code": "FFNF Jeanne d'Arc",
         "cn": "圣女贞德",
         "jp": "ジャンヌ・ダルク",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iris Libre",
       "hullType": "Light Cruiser",
@@ -3694,7 +3694,7 @@
         "code": "HMS Sirius",
         "cn": "天狼星",
         "jp": "シリアス",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -3820,7 +3820,7 @@
         "code": "USS Biloxi",
         "cn": "比洛克西",
         "jp": "ビロクシ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -3856,7 +3856,7 @@
         "code": "HMS Sheffield",
         "cn": "谢菲尔德(μ兵装)",
         "jp": "シェフィールド（μ兵装）",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Southampton subclass",
@@ -3929,7 +3929,7 @@
         "code": "USS Reno",
         "cn": "里诺",
         "jp": "リノ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -4182,7 +4182,7 @@
         "code": "SN Pamiat Merkuria",
         "cn": "水星纪念",
         "jp": "パーミャチ・メルクーリヤ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Light Cruiser",
@@ -4236,7 +4236,7 @@
         "code": "HMS Gloucester",
         "cn": "格罗斯特",
         "jp": "グロスター",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Light Cruiser",
@@ -4252,9 +4252,9 @@
       "names": {
         "en": "La Galissonnière",
         "code": "MNF La Galissonnière",
-        "cn": "null",
-        "jp": "null",
-        "kr": "null"
+        "cn": null,
+        "jp": null,
+        "kr": null
       },
       "nationality": "Vichya Dominion",
       "hullType": "Light Cruiser",
@@ -4308,7 +4308,7 @@
         "code": "HMS Glasgow",
         "cn": "格拉斯哥",
         "jp": "グラスゴー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Southampton subclass",
@@ -4581,7 +4581,7 @@
         "code": "USS Marblehead",
         "cn": "马布尔黑德",
         "jp": "マーブルヘッド",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Light Cruiser",
@@ -4764,7 +4764,7 @@
         "code": "SN Tashkent",
         "cn": "塔什干",
         "jp": "タシュケント",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Destroyer",
@@ -4837,7 +4837,7 @@
         "code": "Shirakami Fubuki",
         "cn": "白上吹雪",
         "jp": "白上フブキ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Destroyer",
@@ -4909,7 +4909,7 @@
         "code": "MNF Le Malin",
         "cn": "恶毒",
         "jp": "ル・マラン",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Vichya Dominion",
       "hullType": "Destroyer",
@@ -5108,7 +5108,7 @@
         "code": "HMS Eskimo",
         "cn": "爱斯基摩人",
         "jp": "エスキモー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Destroyer",
@@ -5126,7 +5126,7 @@
         "code": "IJN Naganami",
         "cn": "苌",
         "jp": "長波",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -5217,7 +5217,7 @@
         "code": "IJN Hanazuki",
         "cn": "榵",
         "jp": "花月",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -5398,7 +5398,7 @@
         "code": "IJN Hibiki",
         "cn": "栀",
         "jp": "響",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Akatsuki subclass",
@@ -5416,7 +5416,7 @@
         "code": "USS Cooper",
         "cn": "库珀",
         "jp": "クーパー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Destroyer",
@@ -5434,7 +5434,7 @@
         "code": "KMS Z26",
         "cn": "Z26",
         "jp": "Z26",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iron Blood",
       "hullType": "Destroyer",
@@ -5452,7 +5452,7 @@
         "code": "HMS Icarus",
         "cn": "伊卡洛斯",
         "jp": "イカルス",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Destroyer",
@@ -5723,7 +5723,7 @@
         "code": "FFNF L'Opiniâtre",
         "cn": "倔强",
         "jp": "ルピニャート",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iris Libre",
       "hullType": "Destroyer",
@@ -5741,7 +5741,7 @@
         "code": "IJN Kasumi",
         "cn": "蕸",
         "jp": "霞",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -5829,9 +5829,9 @@
       "names": {
         "en": "Vauquelin",
         "code": "MNF Vauquelin",
-        "cn": "null",
-        "jp": "null",
-        "kr": "null"
+        "cn": null,
+        "jp": null,
+        "kr": null
       },
       "nationality": "Vichya Dominion",
       "hullType": "Destroyer",
@@ -5849,7 +5849,7 @@
         "code": "MNF Tartu",
         "cn": "塔尔图",
         "jp": "タルテュ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Vichya Dominion",
       "hullType": "Destroyer",
@@ -5975,7 +5975,7 @@
         "code": "SN Grozny",
         "cn": "威严",
         "jp": "グロズヌイ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Destroyer",
@@ -5993,7 +5993,7 @@
         "code": "SN Minsk",
         "cn": "明斯克",
         "jp": "ミンスク",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "North Union",
       "hullType": "Destroyer",
@@ -6084,7 +6084,7 @@
         "code": "Natsuiro Matsuri",
         "cn": "夏色祭",
         "jp": "夏色まつり",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Destroyer",
@@ -6192,7 +6192,7 @@
         "code": "IJN Uranami",
         "cn": "朴",
         "jp": "浦波",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Destroyer",
@@ -6336,7 +6336,7 @@
         "code": "USS Halsey Powell",
         "cn": "哈尔西·鲍威尔",
         "jp": "ハルゼー・パウエル",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Destroyer",
@@ -6804,7 +6804,7 @@
         "code": "USS Smalley",
         "cn": "斯莫利",
         "jp": "スモーリー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Destroyer",
@@ -6822,8 +6822,8 @@
         "en": "33",
         "code": "33",
         "cn": "33",
-        "jp": "null",
-        "kr": "null"
+        "jp": null,
+        "kr": null
       },
       "nationality": "Bilibili",
       "hullType": "Destroyer",
@@ -7021,7 +7021,7 @@
         "code": "HMS Jersey",
         "cn": "泽西",
         "jp": "ジャージー",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Royal Navy",
       "hullType": "Destroyer",
@@ -7330,7 +7330,7 @@
         "code": "KMS U-96",
         "cn": "U-96",
         "jp": "U-96",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Iron Blood",
       "hullType": "Submarine",
@@ -7385,7 +7385,7 @@
         "code": "Minato Aqua",
         "cn": "湊阿库娅",
         "jp": "湊あくあ",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Hololive",
       "hullType": "Submarine",
@@ -7457,7 +7457,7 @@
         "code": "IJN I-13",
         "cn": "伊13",
         "jp": "伊13",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Sakura Empire",
       "hullType": "Submarine Carrier",
@@ -7530,7 +7530,7 @@
         "code": "KMS U-110",
         "cn": "U-110",
         "jp": "U-110",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Ironblood",
       "hullType": "Submarine",
@@ -7640,7 +7640,7 @@
         "code": "USS Bluegill",
         "cn": "蓝鳃鱼",
         "jp": "ブルーギル",
-        "kr": "null"
+        "kr": null
       },
       "nationality": "Eagle Union",
       "hullType": "Submarine",
