@@ -115,7 +115,7 @@ function scrollwidth() {
 window.onload = async function () {
   let languagecheck = await langcookieread()
   if (languagecheck == undefined) {
-    languageselector()
+    await languageselector()
   } else {
     languageid = languagecheck
     loaddata()
@@ -1468,6 +1468,9 @@ function buildmultihtml(a1, a2) {
       if (a1[z] == "SuperRare") {
         a1[z] = "Super Rare";
       }
+      if (a1[z] == "UltraRare") {
+        a1[z] = "Ultra Rare";
+      }
       for (let i = 0; i < shipobj.length; i++) {
         rarityfilterindex[shipobj[i][0]] = {}
         for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
@@ -2032,7 +2035,7 @@ function filltier(a1, a2, a3) {
       htmldombuilder("div", "text_kr", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
     // Textblock cn
-    if (languageid == "kr") {
+    if (languageid == "cn") {
       htmldombuilder("div", "text_cn show", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
       htmldombuilder("div", "text_cn", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
@@ -2050,7 +2053,6 @@ function filltier(a1, a2, a3) {
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       // Bannerleft
-      console.log(ships[`${a1}`][`${a2}`][i].banneralt)
       if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
         if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {

@@ -507,7 +507,8 @@ div.t7>div.tierbanner {
 #n3.nationalityfilter,
 #n12.nationalityfilter,
 #n15.nationalityfilter,
-#SuperRare.rarityfilter {
+#SuperRare.rarityfilter,
+#UltraRare.rarityfilter {
   line-height: 17px;
 }
 
