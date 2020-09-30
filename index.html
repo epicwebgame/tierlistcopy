@@ -19,120 +19,7 @@
     <h1 class="topbannertext">AZUR LANE PvE SHIP LIST</h1>
   </div>
   <div class="bannertwo">
-    <div class="tierfiltercontainer">
-      <div class="tierfilter" id="t0">T0</div>
-      <div class="tierfilter" id="t1">T1</div>
-      <div class="tierfilter" id="t2">T2</div>
-      <div class="tierfilter" id="t3">T3</div>
-      <div class="tierfilter" id="t4">T4</div>
-      <div class="tierfilter" id="t5">T5</div>
-      <div class="tierfilter" id="t6">T6</div>
-      <div class="tierfilter" id="t7">T7</div>
-    </div>
-    <div class="dropdowns">
-      <div class="hulltype-dropdown">
-        <button onclick="activehandler(this.classList)" class="hulltype-dropbtn">
-          Hull Type
-        </button>
-        <div id="hulltype-dropdown" class="hulltype-dropdown-content">
-          <span class="hulltypefilter" id="battleship">BB/BC</span>
-          <span class="hulltypefilter" id="carrier">CV/CVL</span>
-          <span class="hulltypefilter" id="heavycruiser">CA/CB</span>
-          <span class="hulltypefilter" id="lightcruiser">CL</span>
-          <span class="hulltypefilter" id="destroyer">DD</span>
-          <span class="hulltypefilter" id="submarine">SS</span>
-          <span class="hulltypefilter" id="AviationBattleship">BBV</span>
-          <span class="hulltypefilter" id="Monitor">BM</span>
-          <span class="hulltypefilter" id="Repairship">AR</span>
-          <span class="hulltypefilter" id="SubmarineCarrier">SSV</span>
-        </div>
-      </div>
-      <div class="rarity-dropdown">
-        <button onclick="activehandler(this.classList)" class="rarity-dropbtn">
-          Rarity
-        </button>
-        <div id="rarity-dropdown" class="rarity-dropdown-content">
-          <span class="rarityfilter" id="Normal">Normal</span>
-          <span class="rarityfilter" id="Rare">Rare</span>
-          <span class="rarityfilter" id="Elite">Elite</span>
-          <span class="rarityfilter" id="SuperRare">Super Rare</span>
-          <span class="rarityfilter" id="Priority">Priority</span>
-          <span class="rarityfilter" id="UltraRare">Ultra Rare</span>
-          <span class="rarityfilter" id="Decisive">Decisive</span>
-        </div>
-      </div>
-      <div class="nationality-dropdown">
-        <button onclick="activehandler(this.classList)" class="nationality-dropbtn">
-          Nationality
-        </button>
-        <div id="nationality-dropdown" class="nationality-dropdown-content">
-          <span class="nationalityfilter Bilibili nationality" id="n1">Bilibili</span>
-          <span class="nationalityfilter Eagle_Union nationality" id="n2">Eagle Union</span>
-          <span class="nationalityfilter Eastern_Radiance nationality" id="n3">Eastern Radiance</span>
-          <span class="nationalityfilter Hololive nationality" id="n4">Hololive</span>
-          <span class="nationalityfilter Iris_Libre nationality" id="n5">Iris Libre</span>
-          <span class="nationalityfilter Ironblood nationality" id="n6">Ironblood</span>
-          <span class="nationalityfilter KizunaAI nationality" id="n7">Kizuna AI</span>
-          <span class="nationalityfilter Neptunia nationality" id="n8">Neptunia</span>
-          <span class="nationalityfilter North_Union nationality" id="n9">North Union</span>
-          <span class="nationalityfilter Royal_Navy nationality" id="n10">Royal Navy</span>
-          <span class="nationalityfilter Sakura_Empire nationality" id="n11">Sakura Empire</span>
-          <span class="nationalityfilter Sardegna_Empire nationality" id="n12">Sardegna Empire</span>
-          <span class="nationalityfilter Universal nationality" id="n13">Universal</span>
-          <span class="nationalityfilter Utawarerumono nationality" id="n14">Utawarerumono</span>
-          <span class="nationalityfilter Vichya_Dominion nationality" id="n15">Vichya Dominion</span>
-        </div>
-      </div>
-      <div class="tags-dropdown">
-        <button onclick="activehandler(this.classList)" class="tags-dropbtn">
-          Tag
-        </button>
-        <div id="tags-dropdown" class="tags-dropdown-content">
-          <img class="tagfilter_en show" id="AA en" src="Assets/TagIcons/EN/AA.png" />
-          <img class="tagfilter_en show" id="AS en" src="Assets/TagIcons/EN/AS.png" />
-          <img class="tagfilter_en show" id="BA en" src="Assets/TagIcons/EN/BA.png" />
-          <img class="tagfilter_en show" id="BUFFAA en" src="Assets/TagIcons/EN/BUFFAA.png" />
-          <img class="tagfilter_en show" id="BUFFAIR en" src="Assets/TagIcons/EN/BUFFAIR.png" />
-          <img class="tagfilter_en show" id="BUFFDEF en" src="Assets/TagIcons/EN/BUFFDEF.png" />
-          <img class="tagfilter_en show" id="BUFFDMG en" src="Assets/TagIcons/EN/BUFFDMG.png" />
-          <img class="tagfilter_en show" id="BUFFEXP en" src="Assets/TagIcons/EN/BUFFEXP.png" />
-          <img class="tagfilter_en show" id="BUFFSHL en" src="Assets/TagIcons/EN/BUFFSHL.png" />
-          <img class="tagfilter_en show" id="BUFFTRP en" src="Assets/TagIcons/EN/BUFFTRP.png" />
-          <img class="tagfilter_en show" id="DEF en" src="Assets/TagIcons/EN/DEF.png" />
-          <img class="tagfilter_en show" id="HEAL en" src="Assets/TagIcons/EN/HEAL.png" />
-          <img class="tagfilter_en show" id="MG+1 en" src="Assets/TagIcons/EN/MG+1.png" />
-          <img class="tagfilter_en show" id="TRP en" src="Assets/TagIcons/EN/TRP.png" />
-          <img class="tagfilter_ico" id="AA ico" src="Assets/TagIcons/ICO/AA.png" />
-          <img class="tagfilter_ico" id="AS ico" src="Assets/TagIcons/ICO/AS.png" />
-          <img class="tagfilter_ico" id="BA ico" src="Assets/TagIcons/ICO/BA.png" />
-          <img class="tagfilter_ico" id="BUFFAA ico" src="Assets/TagIcons/ICO/BUFFAA.png" />
-          <img class="tagfilter_ico" id="BUFFAIR ico" src="Assets/TagIcons/ICO/BUFFAIR.png" />
-          <img class="tagfilter_ico" id="BUFFDEF ico" src="Assets/TagIcons/ICO/BUFFDEF.png" />
-          <img class="tagfilter_ico" id="BUFFDMG ico" src="Assets/TagIcons/ICO/BUFFDMG.png" />
-          <img class="tagfilter_ico" id="BUFFEXP ico" src="Assets/TagIcons/ICO/BUFFEXP.png" />
-          <img class="tagfilter_ico" id="BUFFSHL ico" src="Assets/TagIcons/ICO/BUFFSHL.png" />
-          <img class="tagfilter_ico" id="BUFFTRP ico" src="Assets/TagIcons/ICO/BUFFTRP.png" />
-          <img class="tagfilter_ico" id="DEF ico" src="Assets/TagIcons/ICO/DEF.png" />
-          <img class="tagfilter_ico" id="HEAL ico" src="Assets/TagIcons/ICO/HEAL.png" />
-          <img class="tagfilter_ico" id="MG+1 ico" src="Assets/TagIcons/ICO/MG+1.png" />
-          <img class="tagfilter_ico" id="TRP ico" src="Assets/TagIcons/ICO/TRP.png" />
-          <img class="tagfilter_cn" id="AA cn" src="Assets/TagIcons/CN/AA.png" />
-          <img class="tagfilter_cn" id="AS cn" src="Assets/TagIcons/CN/AS.png" />
-          <img class="tagfilter_cn" id="BA cn" src="Assets/TagIcons/CN/BA.png" />
-          <img class="tagfilter_cn" id="BUFFAA cn" src="Assets/TagIcons/CN/BUFFAA.png" />
-          <img class="tagfilter_cn" id="BUFFAIR cn" src="Assets/TagIcons/CN/BUFFAIR.png" />
-          <img class="tagfilter_cn" id="BUFFDEF cn" src="Assets/TagIcons/CN/BUFFDEF.png" />
-          <img class="tagfilter_cn" id="BUFFDMG cn" src="Assets/TagIcons/CN/BUFFDMG.png" />
-          <img class="tagfilter_cn" id="BUFFEXP cn" src="Assets/TagIcons/CN/BUFFEXP.png" />
-          <img class="tagfilter_cn" id="BUFFSHL cn" src="Assets/TagIcons/CN/BUFFSHL.png" />
-          <img class="tagfilter_cn" id="BUFFTRP cn" src="Assets/TagIcons/CN/BUFFTRP.png" />
-          <img class="tagfilter_cn" id="DEF cn" src="Assets/TagIcons/CN/DEF.png" />
-          <img class="tagfilter_cn" id="HEAL cn" src="Assets/TagIcons/CN/HEAL.png" />
-          <img class="tagfilter_cn" id="MG+1 cn" src="Assets/TagIcons/CN/MG+1.png" />
-          <img class="tagfilter_cn" id="TRP cn" src="Assets/TagIcons/CN/TRP.png" />
-        </div>
-      </div>
-    </div>
+    <button class="filtermainbtn" data-filter-target="#filter">Filter</button>
     <div class="language">
       <img class="lang en active" id="lang0" src="Assets/LanguageFlags/English.svg" alt="" />
       <img class="lang jp" id="lang1" src="Assets/LanguageFlags/Japanese.svg" alt="" />
@@ -163,6 +50,107 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="filter" id="filter">
+    <div class="filterheader">
+      <div class="filtertitle">Filters</div>
+      <button data-close-button2 class="close-button">&times;</button>
+    </div>
+    <div class="filterbody">
+      <table class="filtertable">
+        <tr>
+          <td>Tier</td>
+          <td>
+            <span class="filterbtn active" filtername="usagitier" value="all">All</span>
+            <span class="filterbtn" filtername="usagitier" value="t0">T0</span>
+            <span class="filterbtn" filtername="usagitier" value="t1">T1</span>
+            <span class="filterbtn" filtername="usagitier" value="t2">T2</span>
+            <span class="filterbtn" filtername="usagitier" value="t3">T3</span>
+            <span class="filterbtn" filtername="usagitier" value="t4">T4</span>
+            <span class="filterbtn" filtername="usagitier" value="t5">T5</span>
+            <span class="filterbtn" filtername="usagitier" value="t6">T6</span>
+            <span class="filterbtn" filtername="usagitier" value="t7">T7</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Index</td>
+          <td>
+            <span class="filterbtn active" filtername="hullType" value="all">All</span>
+            <span class="filterbtn" filtername="hullType" value="Vanguard">Vanguard</span>
+            <span class="filterbtn" filtername="hullType" value="Main">Main</span>
+            <span class="filterbtn" filtername="hullType" value="Destroyer">DD</span>
+            <span class="filterbtn" filtername="hullType" value="Light Cruiser">CL</span>
+            <span class="filterbtn" filtername="hullType" value="Heavy Cruiser">CA</span>
+            <span class="filterbtn" filtername="hullType" value="Battle">BB</span>
+            <span class="filterbtn" filtername="hullType" value="Aircraft Carrier">CV</span>
+            <span class="filterbtn" filtername="hullType" value="Repair">Repair</span>
+            <span class="filterbtn" filtername="hullType" value="Submarine">SS</span>
+            <span class="filterbtn" filtername="hullType" value="Others">Others</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Faction</td>
+          <td>
+            <span class="filterbtn active" filtername="nationality" value="all">All</span>
+            <span class="filterbtn" filtername="nationality" value="Eagle Union">Eagle Union</span>
+            <span class="filterbtn" filtername="nationality" value="Royal Navy">Royal Navy</span>
+            <span class="filterbtn" filtername="nationality" value="Sakura Empire">Sakura Empire</span>
+            <span class="filterbtn" filtername="nationality" value="Iron Blood">Iron Blood</span>
+            <span class="filterbtn" filtername="nationality" value="Dragon Empery">Dragon Empery</span>
+            <span class="filterbtn" filtername="nationality" value="Sardegna Empire">Sardegna Empire</span>
+            <span class="filterbtn" filtername="nationality" value="Northern Parliament">Northern Parliament</span>
+            <span class="filterbtn" filtername="nationality" value="Iris Libre">Iris Libre</span>
+            <span class="filterbtn" filtername="nationality" value="Vichya Dominion">Vichya Dominion</span>
+            <span class="filterbtn" filtername="nationality" value="Other">Other</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Rarity</td>
+          <td>
+            <span class="filterbtn active" filtername="rarity" value="all">All</span>
+            <span class="filterbtn" filtername="rarity" value="Normal">Normal</span>
+            <span class="filterbtn" filtername="rarity" value="Rare">Rare</span>
+            <span class="filterbtn" filtername="rarity" value="Elite">Elite</span>
+            <span class="filterbtn" filtername="rarity" value="Super Rare">Super Rare</span>
+            <span class="filterbtn" filtername="rarity" value="Priority">Priority</span>
+            <span class="filterbtn" filtername="rarity" value="Ultra Rare">Ultra Rare</span>
+            <span class="filterbtn" filtername="rarity" value="Decisive">Decisive</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td>
+            <span class="filterbtn active" filtername="tags" value="all">All</span>
+            <span class="filterbtn" filtername="tags" value="AS">AS</span>
+            <span class="filterbtn" filtername="tags" value="BA">BA</span>
+            <span class="filterbtn" filtername="tags" value="BUFFAA">BUFFAA</span>
+            <span class="filterbtn" filtername="tags" value="BUFFAIR">BUFFAIR</span>
+            <span class="filterbtn" filtername="tags" value="BUFFDEF">BUFFDEF</span>
+            <span class="filterbtn" filtername="tags" value="BUFFDMG">BUFFDMG</span>
+            <span class="filterbtn" filtername="tags" value="BUFFEXP">BUFFEXP</span>
+            <span class="filterbtn" filtername="tags" value="BUFFSHL">BUFFSHL</span>
+            <span class="filterbtn" filtername="tags" value="BUFFTRP">BUFFTRP</span>
+            <span class="filterbtn" filtername="tags" value="DEF">DEF</span>
+            <span class="filterbtn" filtername="tags" value="HEAL">HEAL</span>
+            <span class="filterbtn" filtername="tags" value="MG+1">MG+1</span>
+            <span class="filterbtn" filtername="tags" value="TRP">TRP</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>
+            <input type="text" placeholder="Search by name" filtername="name" class="filterbtn active">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button onclick="createfilters()">Confirm</button>
+            <button onclick="resetfilters()">Reset</button>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
   <div id="overlay"></div>

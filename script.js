@@ -5,12 +5,6 @@ let identid;
 let identmain;
 let language;
 let languageid;
-let f1 = undefined;
-let f2 = undefined;
-let f3 = undefined;
-let f4 = undefined;
-let f5 = undefined;
-let arraysobj = {};
 let changeloglastupdatedate;
 
 async function langcookieread() {
@@ -24,77 +18,10 @@ function changelognotify() {
   }
 }
 
-async function languageselector() {
-  document.getElementsByClassName("main")[0].style.display = "block"
-  document.getElementsByClassName("main")[0].style.position = "unset"
-  document.getElementsByClassName("bannertwo")[0].style.display = "none"
-  document.getElementsByClassName("topbanner")[0].style.position = "inherit"
-  htmldombuilder("div", "mainlanguageselector", {
-    style: {
-      top: "350px",
-      left: "50%",
-      margin: "-200px 0px 0px -285.79px",
-      position: "absolute"
-    }
-  }, document.getElementsByClassName("main")[0])
-  htmldombuilder("div", "languageselector", {
-    style: {
-      color: "white",
-      textAlign: "center",
-      fontSize: "50px",
-      marginBottom: "35px"
-    },
-    addon: {
-      innerText: "Please select a language"
-    }
-  }, document.getElementsByClassName("mainlanguageselector")[0])
-  htmldombuilder("div", "languagemain", {
-    style: {
-      marginLeft: "30.79px"
-    }
-  }, document.getElementsByClassName("mainlanguageselector")[0])
-  htmldombuilder("img", "langen", {
-    addon: {
-      src: "Assets/LanguageFlags/English.svg"
-    }
-  }, document.getElementsByClassName("languagemain")[0])
-  htmldombuilder("img", "langjp", {
-    addon: {
-      src: "Assets/LanguageFlags/Japanese.svg"
-    }
-  }, document.getElementsByClassName("languagemain")[0])
-  htmldombuilder("img", "langkr", {
-    addon: {
-      src: "Assets/LanguageFlags/Korean.svg"
-    }
-  }, document.getElementsByClassName("languagemain")[0])
-  htmldombuilder("img", "langcn", {
-    addon: {
-      src: "Assets/LanguageFlags/Chinese.svg"
-    }
-  }, document.getElementsByClassName("languagemain")[0])
-  let langchange = document.querySelectorAll(".langen, .langjp, .langkr, .langcn");
-  langchange.forEach(function (langadd) {
-    langadd.addEventListener(
-      "click",
-      function () {
-        setcookie(this.classList[0]);
-      },
-      false
-    );
-  });
-}
-
 async function setcookie(a1) {
-  let str = a1.replace("lang", "")
-  Cookies.set('language', str, {
+  Cookies.set('language', a1, {
     expires: 365
   })
-  languageid = str
-  document.getElementsByClassName("main")[0].removeAttribute("style")
-  document.getElementsByClassName("bannertwo")[0].removeAttribute("style")
-  document.getElementsByClassName("topbanner")[0].removeAttribute("style")
-  loaddata()
 }
 
 async function setcookieghost(a1) {
@@ -112,10 +39,244 @@ function scrollwidth() {
   }
 }
 
+function getfilterbuttons() {
+  document.querySelectorAll('.filterbtn:not([type=text]').forEach(btn1 => {
+    btn1.addEventListener('click', () => {
+      if (btn1.className.includes("active")) {
+        btn1.className = "filterbtn";
+      } else {
+        btn1.className = "filterbtn active";
+      }
+
+      if (btn1.getAttribute("value") === "all") {
+        btn1.parentNode.querySelectorAll('.filterbtn').forEach(btn2 => {
+          btn2.className = "filterbtn";
+        });
+        btn1.className = "filterbtn active";
+      } else {
+        btn1.parentNode.querySelectorAll('.filterbtn[value=all]').forEach(btn2 => {
+          btn2.className = "filterbtn";
+        });
+      }
+
+      if (btn1.parentNode.querySelectorAll('.filterbtn.active:not([value=all])').length == 0) {
+        btn1.parentNode.querySelectorAll('.filterbtn[value=all]').forEach(btn2 => {
+          btn2.className = "filterbtn active";
+        });
+      }
+    });
+  });
+}
+
+async function createfilters() {
+  let filterobj = {};
+  let activefilters = document.querySelectorAll('.filterbtn.active');
+
+  activefilters.forEach(e => {
+    let filtername = e.getAttribute("filtername");
+    let filtervalue = e.getAttribute("value");
+
+    if (filtervalue === null) {
+      filtervalue = e.value;
+    }
+
+    if (filtervalue === "") {
+      filtervalue = "all";
+    }
+
+    if (filtervalue !== "all") {
+      if (filtername === "name" && filtervalue.length !== 0) {
+        filterobj[filtername] = filtervalue;
+      } else {
+        if (!(filtername in filterobj) && filtername !== "name") {
+          filterobj[filtername] = []
+        }
+        filterobj[filtername].push(filtervalue);
+      }
+    }
+  });
+
+  let returnedfilter = await filterships(filterobj);
+  await buildhtmlmain(returnedfilter);
+}
+
+async function resetfilters() {
+  let filteractives = document.querySelectorAll('.filterbtn.active');
+
+  filteractives.forEach(i => {
+    if (i.getAttribute("filtername") !== "name") {
+      i.className = "filterbtn";
+    }
+
+    i.parentNode.querySelectorAll('.filterbtn[value=all]').forEach(i2 => {
+      i2.className = "filterbtn active";
+    });
+  });
+
+  filteractives[filteractives.length-1].parentNode.querySelectorAll('.filterbtn.active[filtername]')[0].value = "";
+
+  const filters = document.querySelectorAll('.filter.active')
+  filters.forEach(filter => {
+    closeFilter(filter)
+  })
+}
+
+async function filterships(filterobj) {
+  let filterreturn = {};
+
+  for (let hull in ships) {
+    let tier = ships[hull];
+
+    for (let hulltier in tier) {
+      let fullstr = tier[hulltier];
+
+      fullstr.forEach((ship) => {
+
+        if (checkmatches(ship, filterobj) === Object.keys(filterobj).length) {
+          if (!(hull in filterreturn)) {
+            filterreturn[hull] = {};
+          }
+
+          if (!(hulltier in filterreturn[hull])) {
+            filterreturn[hull][hulltier] = [];
+          }
+          filterreturn[hull][hulltier].push(ship);
+        }
+      });
+    }
+  }
+  return filterreturn;
+}
+
+function checkmatches(ship, filterobj) {
+  let retval = 0;
+
+  if ("name" in filterobj) {
+    let test_filterobj = filterobj["name"].toLowerCase();
+    let test_ship_info = ship['names'][languageid].toLowerCase();
+
+    if (test_ship_info.includes(test_filterobj)) {
+      retval += 1;
+    }
+  }
+
+  if ("hullType" in filterobj) {
+    let test_filterobj = filterobj["hullType"];
+    let test_ship_info = ship['hullType'];
+
+    if (test_ship_info === "Large Cruiser") {
+      test_ship_info = "Heavy Cruiser";
+    }
+
+    test_filterobj.forEach(i => {
+      if (test_ship_info.includes(i)) {
+        retval += 1;
+      }
+
+      if (i === "Others") {
+        switch (test_ship_info) {
+          case "AviationBattleship":
+            retval += 1;
+            break;
+
+          case "Monitor":
+            retval += 1;
+            break;
+        }
+      }
+
+      let vanguard_alias = ["Destroyer", "Light Cruiser", "Heavy Cruiser"];
+      let main_alias = ["Battle", "Aircraft", "Repair"];
+
+      if (i === "Vanguard") {
+        vanguard_alias.forEach(i2 => {
+          if (test_ship_info.includes(i2)) {
+            retval += 1;
+          }
+        });
+      } else if (i === "Main") {
+        main_alias.forEach(i2 => {
+          if (test_ship_info.includes(i2)) {
+            retval += 1;
+          }
+        });
+      }
+    });
+  }
+
+  if ("nationality" in filterobj) {
+    let test_filterobj = filterobj["nationality"];
+    let test_ship_info = ship['nationality'];
+
+    test_filterobj.forEach(i => {
+      if (test_ship_info.toLowerCase().replace(" ", "") === "easternradiance") {
+        test_ship_info = "dragonempery";
+      }
+
+      if (test_ship_info.toLowerCase().replace(" ", "") === "northunion") {
+        test_ship_info = "northernparliament";
+      }
+
+      if (test_ship_info.toLowerCase().replace(" ", "") === i.toLowerCase().replace(" ", "")) {
+        retval += 1;
+      }
+
+      if (i === "Other") {
+        let unlabelled_nationality = ["eagleunion", "royalnavy", "sakuraempire", "ironblood", "dragonempery", "sardegnaempire", "northernparliament", "irislibre", "vichyadominion"];
+
+        if (!(unlabelled_nationality.includes(test_ship_info.toLowerCase().replace(" ", "")))) {
+          retval += 1;
+        }
+      }
+    });
+  }
+
+  if ("rarity" in filterobj) {
+    let test_filterobj = filterobj["rarity"];
+    let test_ship_info = ship['rarity'];
+
+    test_filterobj.forEach(i => {
+      if (test_ship_info === i) {
+        retval += 1;
+      }
+    });
+  }
+
+  if ("tags" in filterobj) {
+    let test_filterobj = filterobj["tags"];
+    let test_ship_info = ship['tags'];
+
+    if (test_ship_info !== null) {
+      test_filterobj.forEach(i => {
+        test_ship_info.forEach(i2 => {
+          if (i === i2) {
+            retval += 1;
+          }
+        });
+      });
+    }
+  }
+
+  if ("usagitier" in filterobj) {
+    let test_filterobj = filterobj["usagitier"];
+    let test_ship_info = "t" + ship['usagitier'];
+
+    test_filterobj.forEach(i => {
+      if (test_ship_info === i) {
+        retval += 1;
+      }
+    });
+  }
+  return retval;
+}
+
 window.onload = async function () {
+  getfilterbuttons()
   let languagecheck = await langcookieread()
   if (languagecheck == undefined) {
-    await languageselector()
+    languageid = "en"
+    await setcookie(languageid)
+    loaddata()
   } else {
     languageid = languagecheck
     loaddata()
@@ -127,7 +288,6 @@ window.onload = async function () {
     },
     false
   );
-
 };
 
 async function loaddata() {
@@ -137,7 +297,10 @@ async function loaddata() {
   changelognotify()
   let openChangelogButtons = document.querySelectorAll('[data-changelog-target]')
   let closeChangelogButtons = document.querySelectorAll('[data-close-button]')
+  let openFilterButtons = document.querySelectorAll('[data-filter-target]')
+  let closeFilterButtons = document.querySelectorAll('[data-close-button2]')
   let overlay = document.getElementById('overlay')
+
   openChangelogButtons.forEach(button => {
     button.addEventListener('click', () => {
       const changelog = document.querySelector(button.dataset.changelogTarget)
@@ -145,10 +308,21 @@ async function loaddata() {
     })
   })
 
+  openFilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = document.querySelector(button.dataset.filterTarget)
+      openFilter(filter)
+    })
+  })
+
   overlay.addEventListener('click', () => {
     const changelogs = document.querySelectorAll('.changelog.active')
     changelogs.forEach(changelog => {
       closeChangelog(changelog)
+    })
+    const filters = document.querySelectorAll('.filter.active')
+    filters.forEach(filter => {
+      closeFilter(filter)
     })
   })
 
@@ -158,6 +332,24 @@ async function loaddata() {
       closeChangelog(changelog)
     })
   })
+
+  closeFilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.closest('.filter')
+      closeFilter(filter)
+    })
+  })
+
+  let langchange = document.querySelectorAll(".lang");
+  langchange.forEach(function (langadd) {
+    langadd.addEventListener(
+      "click",
+      function () {
+        shipnamecheck(this.classList[1], this.id);
+      },
+      false
+    );
+  });
 
   fillchangelog(changelog, "changelog-body-left")
   let changelogleftitems = document.querySelectorAll(".changelog-body-left .item")
@@ -173,75 +365,7 @@ async function loaddata() {
   });
 
   maincont = document.getElementsByClassName("main")[0];
-
-  let gethulltype = document.querySelectorAll(".hulltypefilter");
-  nodrag("hulltypefilter");
-  gethulltype.forEach(function (hulltypeadd) {
-    hulltypeadd.addEventListener(
-      "click",
-      function () {
-        mutifiltercheck(this.id, "hulltypefilter");
-      },
-      false
-    );
-  });
-  let rarityfilter = document.querySelectorAll(".rarityfilter");
-  nodrag("rarityfilter");
-  rarityfilter.forEach(function (rarityadd) {
-    rarityadd.addEventListener(
-      "click",
-      function () {
-        mutifiltercheck(this.id, "rarityfilter");
-      },
-      false
-    );
-  });
-  let tagfilter = document.querySelectorAll(".tagfilter_en, .tagfilter_cn");
-  nodrag("tagfilter_en");
-  nodrag("tagfilter_cn");
-  tagfilter.forEach(function (tagadd) {
-    tagadd.addEventListener(
-      "click",
-      function () {
-        mutifiltercheck(this.id, "tagfilter");
-      },
-      false
-    );
-  });
-  let tierfilter = document.querySelectorAll(".tierfilter");
-  nodrag("tierfilter");
-  tierfilter.forEach(function (tieradd) {
-    tieradd.addEventListener(
-      "click",
-      function () {
-        mutifiltercheck(this.id, "tierfilter");
-      },
-      false
-    );
-  });
-  let nationalityfilter = document.querySelectorAll(".nationality");
-  nodrag("nationality");
-  nationalityfilter.forEach(function (nationalityadd) {
-    nationalityadd.addEventListener(
-      "click",
-      function () {
-        mutifiltercheck(this.id, "nationality", this.classList[1]);
-      },
-      false
-    );
-  });
-  // Namechange selector
-  let langchange = document.querySelectorAll(".lang");
-  langchange.forEach(function (langadd) {
-    langadd.addEventListener(
-      "click",
-      function () {
-        shipnamecheck(this.classList[1], this.id);
-      },
-      false
-    );
-  });
-  buildhtmlall();
+  createfilters();
 
   function nodrag(a1) {
     var images = document.getElementsByClassName(a1);
@@ -798,183 +922,26 @@ function closeChangelog(changelog) {
   document.getElementsByClassName("language")[0].style.marginRight = "5px";
 }
 
-function mutifiltercheck(a1, a2, a3) {
-  let checker = [];
-  let filters = [];
-  if (a2 == "hulltypefilter") {
-    if (document.getElementsByClassName("hulltypefilter active").length == 0) {
-      document.getElementsByClassName("hulltypefilter")[a1].classList.add("active")
-    } else {
-      if (document.getElementsByClassName("hulltypefilter active")[0].id == a1) {
-        document.getElementsByClassName("hulltypefilter active")[0].classList.remove("active")
-        a1 = undefined
-      } else {
-        document.getElementsByClassName("hulltypefilter active")[0].classList.remove("active")
-        document.getElementsByClassName("hulltypefilter")[a1].classList.add("active")
-      }
-    }
-    f1 = a1
-  }
-  if (a2 == "rarityfilter") {
-    if (document.getElementsByClassName("rarityfilter active").length == 0) {
-      document.getElementsByClassName("rarityfilter")[a1].classList.add("active")
-    } else {
-      if (document.getElementsByClassName("rarityfilter active")[0].id == a1) {
-        document.getElementsByClassName("rarityfilter active")[0].classList.remove("active")
-        a1 = undefined
-      } else {
-        document.getElementsByClassName("rarityfilter active")[0].classList.remove("active")
-        document.getElementsByClassName("rarityfilter")[a1].classList.add("active")
-      }
-    }
-    f2 = a1
-  }
-  if (a2 == "tagfilter") {
-    if (document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active").length == 0) {
-      document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show")[a1].classList.add("active")
-    } else {
-      if (document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active")[0].id == a1) {
-        document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active")[0].classList.remove("active")
-        a1 = undefined
-      } else {
-        document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show active")[0].classList.remove("active")
-        document.getElementsByClassName("tags-dropdown-content")[0].getElementsByClassName("show")[a1].classList.add("active")
-      }
-    }
-    f3 = a1
-  }
-  if (a2 == "tierfilter") {
-    if (document.getElementsByClassName("tierfilter active").length == 0) {
-      document.getElementsByClassName("tierfilter")[a1].classList.add("active")
-    } else {
-      if (document.getElementsByClassName("tierfilter active")[0].id == a1) {
-        document.getElementsByClassName("tierfilter active")[0].classList.remove("active")
-        a1 = undefined
-      } else {
-        document.getElementsByClassName("tierfilter active")[0].classList.remove("active")
-        document.getElementsByClassName("tierfilter")[a1].classList.add("active")
-      }
-    }
-    f4 = a1
-  }
-  if (a2 == "nationality") {
-    if (document.getElementsByClassName("nationality active").length == 0) {
-      document.getElementsByClassName("nationality")[a1].classList.add("active")
-    } else {
-      if (document.getElementsByClassName("nationality active")[0].id == a1) {
-        document.getElementsByClassName("nationality active")[0].classList.remove("active")
-        a3 = undefined
-      } else {
-        document.getElementsByClassName("nationality active")[0].classList.remove("active")
-        document.getElementsByClassName("nationality")[a1].classList.add("active")
-      }
-    }
-    f5 = a3
-  }
+function openFilter(filter) {
+  if (filter == null) return
+  filter.classList.add('active')
+  overlay.classList.add('active')
+  var htmlbody = document.body
+  var oldWidth = htmlbody.clientWidth
+  htmlbody.style.overflow = "hidden";
+  htmlbody.style.width = oldWidth;
+  document.getElementsByClassName("language")[0].style.marginRight = "13px";
+}
 
-  for (let i = 1; i < 6; i++) {
-    switch (i) {
-      case 1:
-        if (f1 != undefined) {
-          filters.push(f1)
-          checker.push("f1")
-        }
-        break;
-      case 2:
-        if (f2 != undefined) {
-          filters.push(f2)
-          checker.push("f2")
-        }
-        break;
-      case 3:
-        if (f3 != undefined) {
-          filters.push(f3)
-          checker.push("f3")
-        }
-        break;
-      case 4:
-        if (f4 != undefined) {
-          filters.push(f4)
-          checker.push("f4")
-        }
-        break;
-      case 5:
-        if (f5 != undefined) {
-          filters.push(f5)
-          checker.push("f5")
-        }
-        break;
-    }
-  }
-  if (filters.length != 0) {
-    if (Object.entries(arraysobj).length == 0) {
-      arraysobj = {
-        battleship: {
-          t0: [],
-          t1: [],
-          t2: [],
-          t3: [],
-          t4: [],
-          t5: [],
-          t6: [],
-          t7: []
-        },
-        carrier: {
-          t0: [],
-          t1: [],
-          t2: [],
-          t3: [],
-          t4: [],
-          t5: [],
-          t6: [],
-          t7: []
-        },
-        heavycruiser: {
-          t0: [],
-          t1: [],
-          t2: [],
-          t3: [],
-          t4: [],
-          t5: [],
-          t6: [],
-          t7: []
-        },
-        lightcruiser: {
-          t0: [],
-          t1: [],
-          t2: [],
-          t3: [],
-          t4: [],
-          t5: [],
-          t6: [],
-          t7: []
-        },
-        destroyer: {
-          t0: [],
-          t1: [],
-          t2: [],
-          t3: [],
-          t4: [],
-          t5: [],
-          t6: [],
-          t7: []
-        },
-        submarine: {
-          t0: [],
-          t1: [],
-          t2: [],
-          t3: [],
-          t4: [],
-          t5: [],
-          t6: [],
-          t7: []
-        }
-      }
-      buildmultihtml(filters, checker)
-    }
-  } else {
-    buildhtmlall();
-  }
+function closeFilter(filter) {
+  if (filter == null) return
+  filter.classList.remove('active')
+  overlay.classList.remove('active')
+  var htmlbody = document.body
+  htmlbody.style.overflow = "auto"
+  htmlbody.style.width = "auto"
+  document.getElementsByClassName("language")[0].style.marginRight = "5px";
+  createfilters();
 }
 
 window.onclick = function (event) {
@@ -1081,25 +1048,6 @@ function shipnamecheck(a1, a2) {
   }
 }
 
-function activehandler(a1) {
-  if (a1 != identmain && identmain != undefined) {
-    document.getElementById(identid).classList.remove("show");
-    identmain = undefined;
-    identid = undefined;
-  }
-  // identmain == *-dropbtn
-  identmain = a1[0];
-  // identid == *-dropdown
-  identid = document.getElementsByClassName(identmain)[0].parentElement
-    .classList[0];
-  // adds show to *-dropdown
-  document.getElementById(identid).classList.toggle("show");
-}
-
-function legenddropdown() {
-  document.getElementById("legend-dropdown").classList.toggle("show");
-}
-
 async function getjson(a1) {
   try {
     let data = await fetch([a1] + ".json");
@@ -1108,31 +1056,6 @@ async function getjson(a1) {
   } catch (e) {
     console.error(e);
   }
-}
-
-function getAllIndexes(arr, val, search, useloop, index) {
-  var indexes = [],
-    i;
-  if (useloop == false) {
-    if (index != undefined) {
-      for (i = 0; i < index.length; i++) {
-        if (arr[index[i]][search] == val) {
-          indexes.push(i);
-        }
-      }
-    } else {
-      for (i = 0; i < arr.length; i++)
-        if (arr[i][search] == val) indexes.push(i);
-    }
-  } else {
-    for (i = 0; i < arr.length; i++)
-      if (arr[i][search] != null) {
-        for (let ii = 0; ii < arr[i][search].length; ii++) {
-          if (arr[i][search][ii] == val) indexes.push(i);
-        }
-      }
-  }
-  return indexes;
 }
 
 function countspaces(a1) {
@@ -1171,11 +1094,11 @@ function texthandler(a1, a2, a3) {
   let lineHeight;
   let countcheck
   if (a2 != "" || a2 != null) {
-  countcheck = countspaces(a2);
-} else {
-  a2 = null
-  countcheck = countspaces(a2);
-}
+    countcheck = countspaces(a2);
+  } else {
+    a2 = null
+    countcheck = countspaces(a2);
+  }
 
   if (a3 == "en") {
     if (a1 >= 13) {
@@ -1328,680 +1251,58 @@ function tiertext(a1) {
   return result;
 }
 
-function buildmultihtml(a1, a2) {
-  let hullfilterindex = {};
-  let rarityfilterindex = {};
-  let tagsfilterindex = {};
-  let tierfilterindex = {};
-  let nationalityfilterindex = {};
-  let result = {};
-  let index;
-  let shipobj = Object.entries(ships);
-  for (let z = 0; z < a1.length; z++) {
-    if (a2[z] == "f1") {
-      let tier;
-      let hulltypeidf
-      let idf
-      switch (a1[z]) {
-        case "battleship":
-          hulltypeidf = "Battleship"
-          filtername = "battleship"
-          idf = 0
-          break;
-        case "carrier":
-          hulltypeidf = "AircraftCarrier"
-          filtername = "carrier"
-          idf = 1
-          break;
-        case "heavycruiser":
-          hulltypeidf = "HeavyCruiser"
-          filtername = "heavycruiser"
-          idf = 2
-          break;
-        case "lightcruiser":
-          hulltypeidf = "LightCruiser"
-          filtername = "lightcruiser"
-          idf = 3
-          break;
-        case "destroyer":
-          hulltypeidf = "Destroyer"
-          filtername = "destroyer"
-          idf = 4
-          break;
-        case "submarine":
-          hulltypeidf = "Submarine"
-          filtername = "submarine"
-          idf = 5
-          break;
-        case "AviationBattleship":
-          hulltypeidf = "AviationBattleship"
-          filtername = "battleship"
-          idf = 0
-          break;
-        case "Monitor":
-          hulltypeidf = "Monitor"
-          filtername = "battleship"
-          idf = 0
-          break;
-        case "Repairship":
-          hulltypeidf = "Repairship"
-          filtername = "carrier"
-          idf = 1
-          break;
-        case "SubmarineCarrier":
-          hulltypeidf = "SubmarineCarrier"
-          filtername = "submarine"
-          idf = 5
-          break;
-          case "Munition Ship":
-          hulltypeidf = "MunitionShip"
-          filtername = "lightcruiser"
-          idf = 3
-          break;
-      }
-      hullfilterindex = {
-        [filtername]: {}
-      }
-      for (let a = 0; a < 8; a++) {
-        switch (a) {
-          case 0:
-            tier = "t0";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 1:
-            tier = "t1";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 2:
-            tier = "t2";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 3:
-            tier = "t3";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 4:
-            tier = "t4";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 5:
-            tier = "t5";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 6:
-            tier = "t6";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-          case 7:
-            tier = "t7";
-            index = getAllIndexes(shipobj[idf][1][tier], hulltypeidf, "hullTypeId", false);
-            if (index.length != 0) {
-              hullfilterindex[filtername][tier] = index
-            }
-            break;
-        }
-      }
-      result["hullfilterindex"] = hullfilterindex
-    }
-    if (a2[z] == "f2") {
-      if (a1[z] == "SuperRare") {
-        a1[z] = "Super Rare";
-      }
-      if (a1[z] == "UltraRare") {
-        a1[z] = "Ultra Rare";
-      }
-      for (let i = 0; i < shipobj.length; i++) {
-        rarityfilterindex[shipobj[i][0]] = {}
-        for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-          index = getAllIndexes(
-            shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-            a1[z],
-            "rarity",
-            false
-          );
-          if (index.length != 0) {
-            rarityfilterindex[shipobj[i][0]][
-              [Object.keys(shipobj[i][1])[ii]]
-            ] = index
-          }
-        }
-      }
-      let newrarityfilterindex = removeemptyarr(rarityfilterindex)
-      result["rarityfilterindex"] = newrarityfilterindex
-    }
-    if (a2[z] == "f3") {
-      a1[z] = a1[z].replace(" en", "");
-      a1[z] = a1[z].replace(" jp", "");
-      a1[z] = a1[z].replace(" cn", "");
-      for (let i = 0; i < shipobj.length; i++) {
-        tagsfilterindex[shipobj[i][0]] = {}
-        for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-          index = getAllIndexes(
-            shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-            a1[z],
-            "tags",
-            true
-          );
-          if (index.length != 0) {
-            tagsfilterindex[shipobj[i][0]][
-              [Object.keys(shipobj[i][1])[ii]]
-            ] = index
-          }
-        }
-      }
-      let newtagsfilterindex = removeemptyarr(tagsfilterindex)
-      result["tagsfilterindex"] = newtagsfilterindex
-    }
-    if (a2[z] == "f4") {
-      let ii = a1[z].match(/\d+/)[0];
-
-      for (let i = 0; i < shipobj.length; i++) {
-        tierfilterindex[shipobj[i][0]] = {}
-        let index = getAllIndexes(
-          shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-          ii,
-          "usagitier",
-          false
-        );
-        if (index.length != 0) {
-          tierfilterindex[shipobj[i][0]][
-            [Object.keys(shipobj[i][1])[ii]]
-          ] = index
-        }
-      }
-      result["tierfilterindex"] = tierfilterindex
-    }
-    if (a2[z] == "f5") {
-      a1[z] = a1[z].replace("_", " ");
-
-      for (let i = 0; i < shipobj.length; i++) {
-        nationalityfilterindex[shipobj[i][0]] = {}
-        for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-          let index = getAllIndexes(
-            shipobj[i][1][Object.keys(shipobj[i][1])[ii]],
-            a1[z],
-            "nationality",
-            false
-          );
-          if (index.length != 0) {
-            nationalityfilterindex[shipobj[i][0]][
-              [Object.keys(shipobj[i][1])[ii]]
-            ] = index
-          }
-        }
-      }
-      let newnationalityfilterindex = removeemptyarr(nationalityfilterindex)
-      result["nationalityfilterindex"] = newnationalityfilterindex
-    }
-  }
-
-  pushintoarray(result, a1.length)
-}
-
-function removeemptyarr(arr) {
-  let newobj = {};
-  let a1 = Object.entries(arr)
-  var i = a1.length;
-  while (i--) {
-    if (Object.entries(a1[i][1]).length == 0) {
-      a1.splice(i, 1);
-    }
-  }
-  for (let a = 0; a < a1.length; a++) {
-    newobj[a1[a][0]] = {};
-    for (let aa = 0; aa < Object.entries(a1[a][1]).length; aa++) {
-      newobj[a1[a][0]][Object.keys(a1[a][1])[aa]] = a1[a][1][Object.keys(a1[a][1])[aa]]
-    }
-  }
-  return newobj
-}
-
-function arraysobjpusher(a1, i) {
-  for (let a = 0; a < Object.entries(a1).length; a++) {
-    for (let aa = 0; aa < Object.keys(a1[Object.entries(a1)[a][0]]).length; aa++) {
-      arraysobj[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]].push(a1[Object.entries(a1)[a][0]][Object.keys(a1[Object.entries(a1)[a][0]])[aa]])
-    }
-  }
-}
-
-function pushintoarray(result, b1) {
-  let a1
-  for (let i = 0; i < Object.entries(result).length; i++) {
-    switch (Object.entries(result)[i][0]) {
-      case "hullfilterindex":
-        a1 = result[Object.entries(result)[i][0]]
-        arraysobjpusher(a1, i)
-        break;
-      case "tierfilterindex":
-        a1 = result[Object.entries(result)[i][0]]
-        arraysobjpusher(a1, i)
-        break;
-      case "rarityfilterindex":
-        a1 = result[Object.entries(result)[i][0]]
-        arraysobjpusher(a1, i)
-        break;
-      case "tagsfilterindex":
-        a1 = result[Object.entries(result)[i][0]]
-        arraysobjpusher(a1, i)
-        break;
-      case "nationalityfilterindex":
-        a1 = result[Object.entries(result)[i][0]]
-        arraysobjpusher(a1, i)
-        break;
-    }
-  }
-  getmatchesfilter(result, b1)
-}
-
-function getmatchesfilter(a4, b1) {
-  let a1 = arraysobj
-  let a2
-  let a3
-  let hullobj;
-  let returnfilterindex;
-  let newshipobj = {
-    battleship: {},
-    carrier: {},
-    heavycruiser: {},
-    lightcruiser: {},
-    destroyer: {},
-    submarine: {}
-  }
-  for (let i = 0; i < Object.entries(a4).length; i++) {
-    switch (Object.entries(a4)[i][0]) {
-      case "hullfilterindex":
-        let r1 = a4[Object.entries(a4)[i][0]]
-        a2 = Object.keys(r1)[0]
-        break;
-      case "tierfilterindex":
-        let r2 = a4[Object.entries(a4)[i][0]]
-        a3 = Object.keys(r2[Object.entries(r2)[0][0]])[0]
-        break;
-    }
-  }
-  if (a2 != undefined) {
-    hullobj = a1[a2];
-    if (a3 != undefined) {
-      if (hullobj[a3].length == Object.entries(a4).length) {
-        returnfilterindex = filter(hullobj[a3])
-        let shipobj = ships;
-        let newhullobj = shipobj[a2][a3]
-        if (returnfilterindex.length != 0) {
-          buildfiltermainhtml(newhullobj, a2, a3, returnfilterindex)
-        } else {
-          document.getElementsByClassName("main")[0].innerHTML = "";
-          htmldombuilder("h1", "nomatchestext", {
-            addon: {
-              innerText: "No matches found. Try again."
-            }
-          }, undefined)
-          deleteProperties(arraysobj)
-        }
-      } else {
-        document.getElementsByClassName("main")[0].innerHTML = "";
-        htmldombuilder("h1", "nomatchestext", {
-          addon: {
-            innerText: "No matches found. Try again."
-          }
-        }, undefined)
-        deleteProperties(arraysobj)
-      }
-    } else {
-      for (let i = 0; i < Object.keys(hullobj).length; i++) {
-        if (hullobj[Object.keys(hullobj)[i]].length == Object.entries(a4).length) {
-          returnfilterindex = filter(hullobj[Object.keys(hullobj)[i]])
-          if (returnfilterindex.length != 0) {
-            newshipobj[a2][Object.keys(hullobj)[i]] = returnfilterindex
-          }
-        }
-      }
-      let filternewshipobj = removeemptyarr(newshipobj)
-      if (Object.keys(filternewshipobj).length != 0) {
-        let shipobj = ships;
-        let newhullobj = shipobj[a2]
-        buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
-      } else {
-        document.getElementsByClassName("main")[0].innerHTML = "";
-        htmldombuilder("h1", "nomatchestext", {
-          addon: {
-            innerText: "No matches found. Try again."
-          }
-        }, undefined)
-        deleteProperties(arraysobj)
-      }
-    }
-  } else {
-    if (a3 != undefined) {
-      for (let i = 0; i < Object.keys(a1).length; i++) {
-        hullobj = a1[Object.keys(a1)[i]]
-        if (hullobj[a3].length == Object.entries(a4).length) {
-          returnfilterindex = filter(hullobj[a3])
-          if (returnfilterindex.length != 0) {
-            newshipobj[Object.keys(a1)[i]][a3] = returnfilterindex
-          }
-        }
-      }
-      let filternewshipobj = removeemptyarr(newshipobj)
-      if (Object.keys(filternewshipobj).length != 0) {
-        let shipobj = ships;
-        let newhullobj = shipobj
-        buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
-      } else {
-        document.getElementsByClassName("main")[0].innerHTML = "";
-        htmldombuilder("h1", "nomatchestext", {
-          addon: {
-            innerText: "No matches found. Try again."
-          }
-        }, undefined)
-        deleteProperties(arraysobj)
-      }
-    } else {
-      for (let i = 0; i < Object.keys(a1).length; i++) {
-        hullobj = a1[Object.keys(a1)[i]]
-        for (let ii = 0; ii < Object.entries(hullobj).length; ii++) {
-          if (hullobj[Object.entries(hullobj)[ii][0]].length == Object.entries(a4).length) {
-            returnfilterindex = filter(hullobj[Object.entries(hullobj)[ii][0]])
-            if (returnfilterindex.length != 0) {
-              newshipobj[Object.keys(a1)[i]][Object.entries(hullobj)[ii][0]] = returnfilterindex
-            }
-          }
-        }
-      }
-      let filternewshipobj = removeemptyarr(newshipobj)
-      if (Object.keys(filternewshipobj).length != 0) {
-        let shipobj = ships;
-        let newhullobj = shipobj
-        buildfiltermainhtml(newhullobj, a2, a3, filternewshipobj)
-      } else {
-        document.getElementsByClassName("main")[0].innerHTML = "";
-        htmldombuilder("h1", "nomatchestext", {
-          addon: {
-            innerText: "No matches found. Try again."
-          }
-        }, undefined)
-        deleteProperties(arraysobj)
-      }
-    }
-  }
-}
-
-function filter(b1) {
-  var result = b1.shift().filter(function (v) {
-    return b1.every(function (a) {
-      return a.indexOf(v) !== -1;
-    });
-  });
-  return result
-}
-
-function buildfiltermainhtml(a1, a2, a3, a4) {
-  document.getElementsByClassName("main")[0].innerHTML = "";
-  if (a2 != undefined) {
-    if (a3 == undefined) {
-      // Hulltype class
-      htmldombuilder("div", a2 + " all", undefined, undefined)
-      // Hulltype class banner
-      let bsrc
-      if (a2 == "heavycruiser") {
-        bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-      } else if (a2 == "lightcruiser") {
-        bsrc = "Assets/TierClassBanner/LightCruiser.png";
-      } else {
-        bsrc =
-          "Assets/TierClassBanner/" +
-          a2.charAt(0).toUpperCase() +
-          a2.slice(1) +
-          ".png";
-      }
-      htmldombuilder("img", a2 + "banner", {
-        style: {
-          marginRight: "30px"
-        },
-        addon: {
-          src: bsrc
-        }
-      }, document.getElementsByClassName(a2)[0])
-
-      for (let i = 0; i < Object.keys(a4[a2]).length; i++) {
-        // s == t0 t1 t2 usw
-        let sizecheck = tiersize(a4[a2][Object.keys(a4[a2])[i]].length);
-        htmldombuilder("div", Object.keys(a4[a2])[i], {
-          style: {
-            width: sizecheck.result,
-            marginRight: "20px"
-          }
-        }, document.getElementsByClassName(a2)[0])
-        htmldombuilder("div", "tierbanner", {
-          style: {
-            width: sizecheck.rawresult - 10 + "px"
-          },
-          addon: {
-            text: Object.keys(a4[a2])[i]
-          }
-        }, document.getElementsByClassName(a2)[0].getElementsByClassName(Object.keys(a4[a2])[i])[0])
-        filltier(a2, Object.keys(a4[a2])[i], a4[a2][Object.keys(a4[a2])[i]]);
-      }
-    } else {
-      // Hulltype class
-      htmldombuilder("div", a2 + " all", undefined, undefined)
-      // Hulltype class banner
-      let bsrc
-      if (a2 == "heavycruiser") {
-        bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-      } else if (a2 == "lightcruiser") {
-        bsrc = "Assets/TierClassBanner/LightCruiser.png";
-      } else {
-        bsrc =
-          "Assets/TierClassBanner/" +
-          a2.charAt(0).toUpperCase() +
-          a2.slice(1) +
-          ".png";
-      }
-      htmldombuilder("img", a2 + "banner", {
-        style: {
-          marginRight: "30px"
-        },
-        addon: {
-          src: bsrc
-        }
-      }, document.getElementsByClassName(a2)[0])
-
-      // s == t0 t1 t2 usw
-      let sizecheck = tiersize(a4.length);
-      htmldombuilder("div", a3, {
-        style: {
-          width: sizecheck.result,
-          marginRight: "20px"
-        }
-      }, document.getElementsByClassName(a2)[0])
-      htmldombuilder("div", "tierbanner", {
-        style: {
-          width: sizecheck.rawresult - 10 + "px"
-        },
-        addon: {
-          text: a3
-        }
-      }, document.getElementsByClassName(a2)[0].getElementsByClassName(a3)[0])
-      filltier(a2, a3, a4);
-    }
-  } else {
-    if (a3 != undefined) {
-      for (let i = 0; i < Object.keys(a4).length; i++) {
-        // Hulltype class
-        htmldombuilder("div", Object.keys(a4)[i] + " all", undefined, undefined)
-        // Hulltype class banner
-        let bsrc
-        if (Object.keys(a4)[i] == "heavycruiser") {
-          bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-        } else if (Object.keys(a4)[i] == "lightcruiser") {
-          bsrc = "Assets/TierClassBanner/LightCruiser.png";
-        } else {
-          bsrc =
-            "Assets/TierClassBanner/" +
-            Object.keys(a4)[i].charAt(0).toUpperCase() +
-            Object.keys(a4)[i].slice(1) +
-            ".png";
-        }
-        htmldombuilder("img", Object.keys(a4)[i] + "banner", {
-          style: {
-            marginRight: "30px"
-          },
-          addon: {
-            src: bsrc
-          }
-        }, document.getElementsByClassName(Object.keys(a4)[i])[0])
-
-        // s == t0 t1 t2 usw
-        let sizecheck = tiersize(Object.entries(a4)[i][1][a3].length);
-        htmldombuilder("div", a3, {
-          style: {
-            width: sizecheck.result,
-            marginRight: "20px"
-          }
-        }, document.getElementsByClassName(Object.keys(a4)[i])[0])
-        htmldombuilder("div", "tierbanner", {
-          style: {
-            width: sizecheck.rawresult - 10 + "px"
-          },
-          addon: {
-            text: a3
-          }
-        }, document.getElementsByClassName(Object.keys(a4)[i])[0].getElementsByClassName(a3)[0])
-        filltier(Object.keys(a4)[i], a3, Object.entries(a4)[i][1][a3]);
-      }
-    } else {
-      for (let i = 0; i < Object.keys(a4).length; i++) {
-        // Hulltype class
-        htmldombuilder("div", Object.keys(a4)[i] + " all", undefined, undefined)
-        // Hulltype class banner
-        let bsrc
-        if (Object.keys(a4)[i] == "heavycruiser") {
-          bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-        } else if (Object.keys(a4)[i] == "lightcruiser") {
-          bsrc = "Assets/TierClassBanner/LightCruiser.png";
-        } else {
-          bsrc =
-            "Assets/TierClassBanner/" +
-            Object.keys(a4)[i].charAt(0).toUpperCase() +
-            Object.keys(a4)[i].slice(1) +
-            ".png";
-        }
-        htmldombuilder("img", Object.keys(a4)[i] + "banner", {
-          style: {
-            marginRight: "30px"
-          },
-          addon: {
-            src: bsrc
-          }
-        }, document.getElementsByClassName(Object.keys(a4)[i])[0])
-
-        for (let ii = 0; ii < Object.keys(Object.entries(a4)[i][1]).length; ii++) {
-          // s == t0 t1 t2 usw
-          let sizecheck = tiersize(Object.entries(a4)[i][1][Object.keys(Object.entries(a4)[i][1])[ii]].length);
-          htmldombuilder("div", Object.keys(Object.entries(a4)[i][1])[ii], {
-            style: {
-              width: sizecheck.result,
-              marginRight: "20px"
-            }
-          }, document.getElementsByClassName(Object.keys(a4)[i])[0])
-          htmldombuilder("div", "tierbanner", {
-            style: {
-              width: sizecheck.rawresult - 10 + "px"
-            },
-            addon: {
-              text: Object.keys(Object.entries(a4)[i][1])[ii]
-            }
-          }, document.getElementsByClassName(Object.keys(a4)[i])[0].getElementsByClassName(Object.keys(Object.entries(a4)[i][1])[ii])[0])
-          filltier(Object.keys(a4)[i], Object.keys(Object.entries(a4)[i][1])[ii], Object.entries(a4)[i][1][Object.keys(Object.entries(a4)[i][1])[ii]]);
-        }
-      }
-    }
-
-  }
-}
-
-async function buildhtmlall() {
-  let shipobj = Object.entries(ships);
+async function buildhtmlmain(newshipobj) {
   document.getElementsByClassName("main")[0].innerHTML = "";
 
-  for (let i = 0; i < shipobj.length; i++) {
+  for (let i = 0; i < Object.keys(newshipobj).length; i++) {
     // Hulltype class
-    htmldombuilder("div", shipobj[i][0] + " all", undefined, undefined)
+    htmldombuilder("div", Object.keys(newshipobj)[i] + " all", undefined, undefined)
     // Hulltype class banner
     let bsrc
-    if (shipobj[i][0] == "heavycruiser") {
+    if (Object.keys(newshipobj)[i] == "heavycruiser") {
       bsrc = "Assets/TierClassBanner/HeavyCruiser.png";
-    } else if (shipobj[i][0] == "lightcruiser") {
+    } else if (Object.keys(newshipobj)[i] == "lightcruiser") {
       bsrc = "Assets/TierClassBanner/LightCruiser.png";
     } else {
       bsrc =
         "Assets/TierClassBanner/" +
-        shipobj[i][0].charAt(0).toUpperCase() +
-        shipobj[i][0].slice(1) +
+        Object.keys(newshipobj)[i].charAt(0).toUpperCase() +
+        Object.keys(newshipobj)[i].slice(1) +
         ".png";
     }
-    htmldombuilder("img", shipobj[i][0] + "banner", {
+    htmldombuilder("img", Object.keys(newshipobj)[i] + "banner", {
       style: {
         marginRight: "30px"
       },
       addon: {
         src: bsrc
       }
-    }, document.getElementsByClassName(shipobj[i][0])[0])
+    }, document.getElementsByClassName(Object.keys(newshipobj)[i])[0])
 
-    for (let ii = 0; ii < Object.keys(shipobj[i][1]).length; ii++) {
-      if (shipobj[i][1][Object.keys(shipobj[i][1])[ii]] != 0) {
-        // s == t0 t1 t2 usw
-        let sizecheck = tiersize(shipobj[i][1][Object.keys(shipobj[i][1])[ii]].length);
-        htmldombuilder("div", Object.keys(shipobj[i][1])[ii], {
-          style: {
-            width: sizecheck.result,
-            marginRight: "20px"
-          }
-        }, document.getElementsByClassName(shipobj[i][0])[0])
-        htmldombuilder("div", "tierbanner", {
-          style: {
-            width: sizecheck.rawresult - 10 + "px"
-          },
-          addon: {
-            text: Object.keys(shipobj[i][1])[ii]
-          }
-        }, document.getElementsByClassName(shipobj[i][0])[0].getElementsByClassName(Object.keys(shipobj[i][1])[ii])[0])
-        filltier(shipobj[i][0], Object.keys(shipobj[i][1])[ii]);
-      }
+    for (let ii = 0; ii < Object.keys(Object.entries(newshipobj)[i][1]).length; ii++) {
+      // s == t0 t1 t2 usw
+      let sizecheck = tiersize(Object.entries(newshipobj)[i][1][Object.keys(Object.entries(newshipobj)[i][1])[ii]].length);
+      htmldombuilder("div", Object.keys(Object.entries(newshipobj)[i][1])[ii], {
+        style: {
+          width: sizecheck.result,
+          marginRight: "20px"
+        }
+      }, document.getElementsByClassName(Object.keys(newshipobj)[i])[0])
+      htmldombuilder("div", "tierbanner", {
+        style: {
+          width: sizecheck.rawresult - 10 + "px"
+        },
+        addon: {
+          text: Object.keys(Object.entries(newshipobj)[i][1])[ii]
+        }
+      }, document.getElementsByClassName(Object.keys(newshipobj)[i])[0].getElementsByClassName(Object.keys(Object.entries(newshipobj)[i][1])[ii])[0])
+      filltier(Object.keys(newshipobj)[i], Object.keys(Object.entries(newshipobj)[i][1])[ii], newshipobj);
     }
   }
 }
 
 function filltier(a1, a2, a3) {
-  let loopidf
-  if (a3 == undefined) {
-    loopidf = ships[`${a1}`][`${a2}`].length
-  } else {
-    loopidf = a3.length
-  }
-  for (let i = 0; i < loopidf; i++) {
+  for (let i = 0; i < a3[a1][a2].length; i++) {
     // Main div
     htmldombuilder("div", "parent", undefined, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0])
     // Tags en
@@ -2043,18 +1344,18 @@ function filltier(a1, a2, a3) {
     if (a3 == undefined) {
       htmldombuilder("a", "link", {
         addon: {
-          href: ships[`${a1}`][`${a2}`][i].wikiUrl
+          href: a3[a1][a2][i].wikiUrl
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       // thumbnail
       htmldombuilder("img", "thumbnail", {
         addon: {
-          src: ships[`${a1}`][`${a2}`][i].thumbnail
+          src: a3[a1][a2][i].thumbnail
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       // Bannerleft
-      if (ships[`${a1}`][`${a2}`][i].banneralt != null) {
-        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
+      if (a3[a1][a2][i].banneralt != null) {
+        if (a3[a1][a2][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {
             addon: {
               src: "Assets/BannerAlt/NEW.png"
@@ -2063,36 +1364,36 @@ function filltier(a1, a2, a3) {
         }
       }
       // tags filler
-      if (ships[`${a1}`][`${a2}`][i].tags != null) {
-        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][i].tags.length; ii++) {
+      if (a3[a1][a2][i].tags != null) {
+        for (let ii = 0; ii < a3[a1][a2][i].tags.length; ii++) {
           htmldombuilder("img", "tag" + (ii + 1), {
             addon: {
-              src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              src: "Assets/TagIcons/EN/" + a3[a1][a2][i].tags[ii] + ".png"
             }
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
           htmldombuilder("img", "tag" + (ii + 1), {
             addon: {
-              src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][i].tags[ii] + ".png"
+              src: "Assets/TagIcons/CN/" + a3[a1][a2][i].tags[ii] + ".png"
             }
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
         }
       }
       // Span text
-      spantextbuild(ships[`${a1}`][`${a2}`][i].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      spantextbuild(a3[a1][a2][i].names, a3[a1][a2][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     } else {
       htmldombuilder("a", "link", {
         addon: {
-          href: ships[`${a1}`][`${a2}`][a3[i]].wikiUrl
+          href: a3[a1][a2][i].wikiUrl
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       htmldombuilder("img", "thumbnail", {
         addon: {
-          src: ships[`${a1}`][`${a2}`][a3[i]].thumbnail
+          src: a3[a1][a2][i].thumbnail
         }
       }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
       // Bannerleft
-      if (ships[`${a1}`][`${a2}`][a3[i]].banneralt != null) {
-        if (ships[`${a1}`][`${a2}`][i].banneralt == "NEW") {
+      if (a3[a1][a2][i].banneralt != null) {
+        if (a3[a1][a2][i].banneralt == "NEW") {
           htmldombuilder("img", "bannerleft", {
             addon: {
               src: "Assets/BannerAlt/NEW.png"
@@ -2100,27 +1401,25 @@ function filltier(a1, a2, a3) {
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
         }
       }
-      if (ships[`${a1}`][`${a2}`][a3[i]].tags != null) {
-        for (let ii = 0; ii < ships[`${a1}`][`${a2}`][a3[i]].tags.length; ii++) {
+      if (a3[a1][a2][i].tags != null) {
+        for (let ii = 0; ii < a3[a1][a2][i].tags.length; ii++) {
           htmldombuilder("img", "tag" + (ii + 1), {
             addon: {
-              src: "Assets/TagIcons/EN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+              src: "Assets/TagIcons/EN/" + a3[a1][a2][i].tags[ii] + ".png"
             }
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_en")[i])
           htmldombuilder("img", "tag" + (ii + 1), {
             addon: {
-              src: "Assets/TagIcons/CN/" + ships[`${a1}`][`${a2}`][a3[i]].tags[ii] + ".png"
+              src: "Assets/TagIcons/CN/" + a3[a1][a2][i].tags[ii] + ".png"
             }
           }, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("tags_cn")[i])
         }
       }
-      spantextbuild(ships[`${a1}`][`${a2}`][a3[i]].names, ships[`${a1}`][`${a2}`][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
+      spantextbuild(a3[a1][a2][i].names, a3[a1][a2][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
   }
-  deleteProperties(arraysobj)
-}
-
-function deleteProperties(cleanme) {
-  for (var x in cleanme)
-    if (cleanme.hasOwnProperty(x)) delete cleanme[x];
+  const filters = document.querySelectorAll('.filter.active')
+  filters.forEach(filter => {
+    closeFilter(filter)
+  })
 }

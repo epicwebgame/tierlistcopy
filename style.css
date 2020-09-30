@@ -31,7 +31,6 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #ffffff;
-
 }
 
 ::-webkit-scrollbar-corner {
@@ -119,11 +118,6 @@ body {
   position: absolute;
   overflow-y: auto;
   overflow-x: auto;
-}
-
-.dropdowns {
-  display: inline-flex;
-  margin-top: 5px;
 }
 
 .destroyer,
@@ -298,321 +292,12 @@ div.t7>div.tierbanner {
   background-image: linear-gradient(#009eff, #0056fe);
 }
 
-.hulltype-dropbtn,
-.rarity-dropbtn,
-.nationality-dropbtn,
-.tags-dropbtn {
-  background-image: linear-gradient(#3c9dfe, #1e8dff);
-  color: white;
-  font-size: 22px;
-  cursor: pointer;
-  height: 37px;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  text-shadow: 2px 1px #00000070;
-  margin-right: 10px;
-  white-space: nowrap;
-}
-
-.tierfiltercontainer {
-  width: 280px;
-  height: 35px;
-  border: 1px solid white;
-  border-radius: 5px;
-  display: inline-flex;
-  margin-left: 85px;
-  margin-top: 5px;
-  margin-right: 10px;
-}
-
-
-.hulltype-dropbtn:hover,
-.hulltype-dropbtn:focus,
-.rarity-dropbtn:hover,
-.rarity-dropbtn:focus,
-.nationality-dropbtn:hover,
-.nationality-dropbtn:focus,
-.tags-dropbtn:hover,
-.tags-dropbtn:focus,
+.filterbtn:hover,
+.filterbtn:focus,
 .changelogbtn:hover,
 .changelogbtn:focus {
   background: #1d61a6;
   border: 1px solid white;
-}
-
-.hulltype-dropdown-content,
-.rarity-dropdown-content,
-.nationality-dropdown-content,
-.tags-dropdown-content {
-  background-image: linear-gradient(#1e8dff, #3c9dfe);
-  margin-top: 15px;
-  display: none;
-  position: absolute;
-  background-color: #3c9dfe;
-  min-width: 80px;
-  width: 105.7px;
-  max-width: 160px;
-  min-height: 65px;
-  z-index: 99;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-}
-
-.nationality-dropdown-content {
-  width: 116.72px;
-}
-
-.tags-dropdown-content {
-  width: 49.48px;
-  min-width: 0px;
-}
-
-.rarity-dropdown-content {
-  width: 71.45px;
-  min-width: 0px;
-}
-
-.hulltype-dropdown-content.show,
-.rarity-dropdown-content.show,
-.nationality-dropdown-content.show,
-.tags-dropdown-content.show {
-  display: block;
-}
-
-.hulltype-dropdown-content::before,
-.rarity-dropdown-content::before,
-.nationality-dropdown-content::before,
-.tags-dropdown-content::before {
-  content: " ";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -11px;
-  border-width: 11px;
-  border-style: solid;
-  border-color: transparent transparent white transparent;
-}
-
-.hulltype-dropdown-content::after,
-.rarity-dropdown-content::after,
-.nationality-dropdown-content::after,
-.tags-dropdown-content::after {
-  content: " ";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent #1e8dff transparent;
-}
-
-
-.legend-dropdown-content::before {
-  bottom: 0%;
-  top: 100%;
-  left: 50%;
-  border-color: white transparent transparent transparent;
-}
-
-.legend-dropdown-content::after {
-  bottom: 0%;
-  top: 100%;
-  left: 50%;
-  border-color: #1e8dff transparent transparent transparent;
-}
-
-.natparent,
-.tagfilter_en.show,
-.tagfilter_cn.show {
-  display: inline-flex;
-  width: 25px;
-  text-align: center;
-  line-height: 25px;
-  margin-top: 5px;
-}
-
-.tags-dropdown-content .show {
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 50%;
-}
-
-.tags-dropdown-content .show:hover {
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 50%;
-}
-
-.hulltypefilter,
-.rarityfilter,
-.nationalityfilter,
-.tagsfilter {
-  display: block;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-}
-
-.hulltypefilter:hover,
-.rarityfilter:hover,
-.nationalityfilter:hover,
-.tagsfilter:hover {
-  background: #1d61a6;
-}
-
-#battleship.hulltypefilter:hover,
-#Normal.rarityfilter:hover,
-#n1.nationalityfilter:hover {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-#SubmarineCarrier.hulltypefilter:hover,
-#Decisive.rarityfilter:hover,
-#n15.nationalityfilter:hover {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.hulltypefilter.active,
-.rarityfilter.active,
-.nationalityfilter.active,
-.tagsfilter.active {
-  background: #0d2c4c;
-}
-
-#battleship.hulltypefilter.active,
-#Normal.rarityfilter.active,
-#n1.nationalityfilter.active {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-#SubmarineCarrier.hulltypefilter.active,
-#Decisive.rarityfilter.active,
-#n15.nationalityfilter.active {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-#n3.nationalityfilter,
-#n12.nationalityfilter,
-#n15.nationalityfilter,
-#SuperRare.rarityfilter,
-#UltraRare.rarityfilter {
-  line-height: 17px;
-}
-
-.natparent.active,
-.tagfilter_en.show.active,
-.tagfilter_cn.show.active {
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-}
-
-.tagfilter_en.show.active,
-.tagfilter_cn.show.active {
-  border-radius: 50%;
-}
-
-.tagfilter_en,
-.tagfilter_cn,
-.tagfilter_ico {
-  display: none;
-}
-
-#t0.tierfilter,
-#t1.tierfilter,
-#t2.tierfilter,
-#t3.tierfilter,
-#t4.tierfilter,
-#t5.tierfilter,
-#t6.tierfilter,
-#t7.tierfilter {
-  background-image: linear-gradient(#3c9dfe, #1e8dff);
-  display: inline-block;
-  text-align: center;
-  text-shadow: 2px 1px #00000070;
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
-  color: white;
-  font-size: 22px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-right: 1px solid white;
-  cursor: pointer;
-}
-
-#t0.tierfilter:hover,
-#t0.tierfilter.active {
-  background-image: linear-gradient(#ff6d00, #ff9900);
-}
-
-#t1.tierfilter {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-#t1.tierfilter:hover,
-#t1.tierfilter.active {
-  background-image: linear-gradient(#fe016e, #fe012f);
-}
-
-#t2.tierfilter {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-#t2.tierfilter:hover,
-#t2.tierfilter.active {
-  background-image: linear-gradient(#ff0a96, #ff5cd1);
-}
-
-#t3.tierfilter {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-#t3.tierfilter:hover,
-#t3.tierfilter.active {
-  background-image: linear-gradient(#b002ff, #9320ff);
-}
-
-#t4.tierfilter,
-#t5.tierfilter,
-#t6.tierfilter {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-#t4.tierfilter:hover,
-#t4.tierfilter.active,
-#t5.tierfilter:hover,
-#t5.tierfilter.active,
-#t6.tierfilter:hover,
-#t6.tierfilter.active,
-#t7.tierfilter:hover,
-#t7.tierfilter.active {
-  background-image: linear-gradient(#0064a1, #0056fe);
-}
-
-#t7.tierfilter {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-right: 0px solid white;
 }
 
 .legend-dot-dropbtn {
@@ -767,7 +452,7 @@ button:focus {
   z-index: 10000;
 }
 
-.changelogbtn {
+.changelogbtn, .filtermainbtn {
   background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   font-size: 22px;
@@ -781,7 +466,7 @@ button:focus {
   white-space: nowrap;
 }
 
-.changelog {
+.changelog, .filter {
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   color: white;
   position: fixed;
@@ -843,7 +528,7 @@ button:focus {
   font-size: 30px;
 }
 
-.changelog.active {
+.changelog.active, .filter.active {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -1079,4 +764,53 @@ button:focus {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.filtertable>tbody>tr>td>span
+{
+  padding-top: 1.5px;
+  display: flex;
+  background-image: linear-gradient(#1e8dff, #3c9dfe);
+  color: white;
+  border-radius: 3px;
+  width: 80px;
+  height: 30px;
+  float: left;
+  line-height: 12px;
+  margin: 3px;
+  border: 1px solid;
+  border-color: #1e8dff;
+  box-sizing: border-box;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.filtertable>tbody>tr>td>input[type='text']
+{
+  background-image: linear-gradient(#1e8dff, #3c9dfe);
+  color: white;
+  height: 30px;
+  margin: 3px;
+  min-width: 300px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 10px;
+}
+
+.filtertable>tbody>tr>td>button
+{
+  background-image: linear-gradient(#1e8dff, #3c9dfe);
+  color: white;
+  border-radius: 3px;
+  width: 80px;
+  height: 30px;
+  margin: 3px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 10px;
+}
+
+.filterbtn.active
+{
+  border: 1px solid white !important;
+  box-sizing: border-box;
 }
