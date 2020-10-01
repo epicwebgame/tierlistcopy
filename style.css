@@ -481,7 +481,6 @@ button:focus {
   z-index: 99999;
   height: 550px;
   width: 1000px;
-  max-width: 80%;
 }
 
 .changelogmainblock {
