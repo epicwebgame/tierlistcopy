@@ -84,7 +84,7 @@ function getnamesarr() {
   }
 }
 
-async function createfilters() {
+async function createfilters(a1) {
   let filterobj = {};
   let activefilters = document.querySelectorAll('.filterbtn.active');
 
@@ -114,6 +114,12 @@ async function createfilters() {
 
   let returnedfilter = await filterships(filterobj);
   await buildhtmlmain(returnedfilter);
+  if (a1 != true) {
+    const filters = document.querySelectorAll('.filter.active')
+    filters.forEach(filter => {
+      closeFilter(filter)
+    })
+  }
 }
 
 async function resetfilters() {
@@ -130,11 +136,7 @@ async function resetfilters() {
   });
 
   filteractives[filteractives.length-1].parentNode.querySelectorAll('.filterbtn.active[filtername]')[0].value = "";
-
-  const filters = document.querySelectorAll('.filter.active')
-  filters.forEach(filter => {
-    closeFilter(filter)
-  })
+  createfilters(true);
 }
 
 async function filterships(filterobj) {
@@ -1437,10 +1439,6 @@ function filltier(a1, a2, a3) {
       spantextbuild(a3[a1][a2][i].names, a3[a1][a2][i].names, document.getElementsByClassName(a1)[0].getElementsByClassName(a2)[0].getElementsByClassName("parent")[i])
     }
   }
-  const filters = document.querySelectorAll('.filter.active')
-  filters.forEach(filter => {
-    closeFilter(filter)
-  })
 }
 
 function autocomplete(inp, arr) {
