@@ -452,7 +452,8 @@ button:focus {
   z-index: 10000;
 }
 
-.changelogbtn, .filtermainbtn {
+.changelogbtn,
+.filtermainbtn {
   background-image: linear-gradient(#3c9dfe, #1e8dff);
   color: white;
   font-size: 22px;
@@ -466,7 +467,8 @@ button:focus {
   white-space: nowrap;
 }
 
-.changelog, .filter {
+.changelog,
+.filter {
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   color: white;
   position: fixed;
@@ -528,7 +530,8 @@ button:focus {
   font-size: 30px;
 }
 
-.changelog.active, .filter.active {
+.changelog.active,
+.filter.active {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -601,9 +604,9 @@ button:focus {
   outline: none;
   background: none;
   height: 40px;
+  width: 40px;
   background-color: rgba(255, 0, 0, 0.788);
-  width: 55px;
-  font-size: 57px;
+  font-size: 55px;
   display: flex;
   justify-content: center;
   place-items: center;
@@ -766,28 +769,28 @@ button:focus {
   pointer-events: all;
 }
 
-.filtertable>tbody>tr>td>span
-{
+.filtertable>tbody>tr>td>span {
   padding-top: 1.5px;
   display: flex;
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   color: white;
-  border-radius: 3px;
-  width: 80px;
-  height: 30px;
+  border-radius: 5px;
+  width: 90px;
+  height: 35px;
   float: left;
   line-height: 12px;
   margin: 3px;
   border: 1px solid;
-  border-color: #1e8dff;
+  border-color: white;
   box-sizing: border-box;
   place-items: center;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
+  text-shadow: 2px 1px #00000070;
 }
 
-.filtertable>tbody>tr>td>input[type='text']
-{
+.filtertable>tbody>tr>td>input[type='text'] {
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   color: white;
   height: 30px;
@@ -795,22 +798,68 @@ button:focus {
   min-width: 300px;
   font-family: 'Lato', sans-serif;
   padding-left: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 1px #00000070;
 }
 
-.filtertable>tbody>tr>td>button
-{
+.filtertable>tbody>tr>td>input[type='text']::placeholder {
+  color: white;
+}
+
+.filtertable>tbody>tr>td>input[type='text']:focus {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(#1e8dff, #3c9dfe);
+}
+
+.filtertable>tbody>tr>td>button {
   background-image: linear-gradient(#1e8dff, #3c9dfe);
   color: white;
-  border-radius: 3px;
-  width: 80px;
-  height: 30px;
+  border-radius: 5px;
+  width: 90px;
+  height: 35px;
   margin: 3px;
   font-family: 'Lato', sans-serif;
-  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid;
+  border-color: white;
+  box-sizing: border-box;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 2px 1px #00000070;
 }
 
-.filterbtn.active
-{
+.filtertable>tbody>tr>td>button:hover {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(#1e8dff, #3c9dfe);
+}
+
+.filterbtn.active {
   border: 1px solid white !important;
   box-sizing: border-box;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(#1e8dff, #3c9dfe);
+}
+
+.filtertitle {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 15px;
+  text-shadow: 2px 1px #00000070;
+}
+
+.filterheader>button {
+  margin-left: 95%;
+  margin-top: -37px;
+  margin-bottom: 15px;
+}
+
+.filtertable {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: 10px
 }
