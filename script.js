@@ -1078,6 +1078,10 @@ async function getjson(a1) {
   }
 }
 
+function legenddropdown() {
+  document.getElementById("legend-dropdown").classList.toggle("show");
+}
+
 function countspaces(a1) {
   let count = a1.split(" ").length - 1;
   let countafter = a1.match(/^\s*(\S+)\s*(.*?)\s*$/).slice(1);
