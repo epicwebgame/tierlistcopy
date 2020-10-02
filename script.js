@@ -961,7 +961,6 @@ function closeFilter(filter) {
   htmlbody.style.overflow = "auto"
   htmlbody.style.width = "auto"
   document.getElementsByClassName("language")[0].style.marginRight = "5px";
-  createfilters();
 }
 
 window.onclick = function (event) {

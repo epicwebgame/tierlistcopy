@@ -294,6 +294,8 @@ div.t7>div.tierbanner {
 
 .filterbtn:hover,
 .filterbtn:focus,
+.filtermainbtn:hover,
+.filtermainbtn:focus,
 .changelogbtn:hover,
 .changelogbtn:focus {
   background: #1d61a6;
@@ -371,13 +373,14 @@ button:focus {
   margin-right: 5px;
   display: inline-flex;
   margin-top: 5px;
+  margin-left: auto;
 }
 
 .lang {
   width: 53px;
   height: 35px;
-  border: 1px solid white;
-  margin-right: 1px;
+  border-radius: 10px;
+  margin-right: 2px;
   cursor: pointer;
 }
 
@@ -438,7 +441,6 @@ button:focus {
 
 .changelogtop {
   height: 37px;
-  margin-left: auto;
   order: 2;
   margin-top: 5px;
   position: relative;
@@ -463,8 +465,15 @@ button:focus {
   border-radius: 5px;
   text-align: center;
   text-shadow: 2px 1px #00000070;
-  margin-right: auto;
   white-space: nowrap;
+}
+
+.filtermainbtn {
+  order: 1;
+  margin-top: 5px;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .changelog,
@@ -794,6 +803,7 @@ button:focus {
   color: white;
   height: 35px;
   margin: 3px;
+  margin-bottom: 0px;
   min-width: 300px;
   font-family: 'Lato', sans-serif;
   padding-left: 10px;
@@ -880,20 +890,23 @@ button:focus {
 }
 .autocomplete-items {
   position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
   z-index: 99;
   top: 100%;
   left: 0;
   right: 0;
+  margin-left: 3px;
+  border-radius: 5px;
+  width: 298px;
+  height: 240px;
+  overflow: overlay;
 }
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  linear-gradient(#1e8dff, #3c9dfe);
-  border-bottom: 1px solid #d4d4d4;
+  background-image: linear-gradient(#1e8dff, #3c9dfe);
+  border: 1px solid #ffffff;
+  border-top: none;
+  border-radius: 5px;
 }
 .autocomplete-items div:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
