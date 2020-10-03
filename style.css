@@ -652,6 +652,7 @@ button:focus {
   justify-content: flex-end;
   display: flex;
   color: white;
+  position: relative;
 }
 
 .changelogbuttons {
@@ -918,7 +919,7 @@ button:focus {
 }
 
 .notificationinside {
-  position: relative;
   z-index: 10000;
-  top: -18px;
+  top: 0px;
+  position: absolute;
 }
