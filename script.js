@@ -264,14 +264,21 @@ function checkmatches(ship, filterobj) {
     let test_filterobj = filterobj["tags"];
     let test_ship_info = ship['tags'];
 
-    if (test_ship_info !== null) {
-      test_filterobj.forEach(i => {
-        test_ship_info.forEach(i2 => {
-          if (i === i2) {
+    if (test_filterobj == "NONE") {
+      test_filterobj = null
+          if (test_filterobj === test_ship_info) {
             retval += 1;
           }
+    } else {
+      if (test_ship_info !== null) {
+        test_filterobj.forEach(i => {
+          test_ship_info.forEach(i2 => {
+            if (i === i2) {
+              retval += 1;
+            }
+          });
         });
-      });
+      }
     }
   }
 
@@ -404,6 +411,14 @@ function fillchangelog(a1, a2) {
   while (i--) {
     var date = new Date(a1[Object.entries(a1)[i][0]].updatedate * 1000);
     let formateddate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear()
+    if ((Object.entries(a1).length - 1) === i) {
+      htmldombuilder("img", "notificationinside active", {
+        addon: {
+          src: `Assets/Misc/Notification.png`,
+          id: "notificationinside"
+        }
+      }, document.getElementsByClassName(a2)[0])
+    }
     htmldombuilder("div", "item", {
       addon: {
         innerHTML: `<span>#${a1[Object.entries(a1)[i][0]].number} <br> ${formateddate}</span>`,

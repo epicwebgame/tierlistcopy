@@ -916,3 +916,10 @@ button:focus {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
   linear-gradient(#1e8dff, #3c9dfe);
 }
+
+.notificationinside {
+  position: absolute;
+  top: 55px;
+  left: 6px;
+  z-index: 10000;
+}
