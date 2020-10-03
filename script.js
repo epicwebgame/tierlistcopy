@@ -411,14 +411,6 @@ function fillchangelog(a1, a2) {
   while (i--) {
     var date = new Date(a1[Object.entries(a1)[i][0]].updatedate * 1000);
     let formateddate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear()
-    if ((Object.entries(a1).length - 1) === i) {
-      htmldombuilder("img", "notificationinside active", {
-        addon: {
-          src: `Assets/Misc/Notification.png`,
-          id: "notificationinside"
-        }
-      }, document.getElementsByClassName(a2)[0])
-    }
     htmldombuilder("div", "item", {
       addon: {
         innerHTML: `<span>#${a1[Object.entries(a1)[i][0]].number} <br> ${formateddate}</span>`,
@@ -428,6 +420,14 @@ function fillchangelog(a1, a2) {
         backgroundImage: `url("Assets/Misc/UsagiThumbnails/${a1[Object.entries(a1)[i][0]].number}.png"), linear-gradient(#1e8dff, #3c9dfe)`
       }
     }, document.getElementsByClassName(a2)[0])
+    if ((Object.entries(a1).length - 1) === i) {
+      htmldombuilder("img", "notificationinside active", {
+        addon: {
+          src: `Assets/Misc/Notification.png`,
+          id: "notificationinside"
+        }
+      }, document.getElementsByClassName(a2)[0].getElementsByClassName("item")[0])
+    }
   }
 }
 

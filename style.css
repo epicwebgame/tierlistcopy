@@ -918,8 +918,7 @@ button:focus {
 }
 
 .notificationinside {
-  position: absolute;
-  top: 55px;
-  left: 6px;
+  position: relative;
   z-index: 10000;
+  top: -18px;
 }
