@@ -411,6 +411,7 @@ function fillchangelog(a1, a2) {
   while (i--) {
     var date = new Date(a1[Object.entries(a1)[i][0]].updatedate * 1000);
     let formateddate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear()
+    if (i != Object.entries(a1).length -1) {
     htmldombuilder("div", "item", {
       addon: {
         innerHTML: `<span>#${a1[Object.entries(a1)[i][0]].number} <br> ${formateddate}</span>`,
@@ -420,6 +421,18 @@ function fillchangelog(a1, a2) {
         backgroundImage: `url("Assets/Misc/UsagiThumbnails/${a1[Object.entries(a1)[i][0]].number}.png"), linear-gradient(#1e8dff, #3c9dfe)`
       }
     }, document.getElementsByClassName(a2)[0])
+  } else {
+    htmldombuilder("div", "item active", {
+      addon: {
+        innerHTML: `<span>#${a1[Object.entries(a1)[i][0]].number} <br> ${formateddate}</span>`,
+        id: "item_" + a1[Object.entries(a1)[i][0]].number
+      },
+      style: {
+        backgroundImage: `url("Assets/Misc/UsagiThumbnails/${a1[Object.entries(a1)[i][0]].number}.png"), linear-gradient(#1e8dff, #3c9dfe)`
+      }
+    }, document.getElementsByClassName(a2)[0])
+    getchangelog("item_" + a1[Object.entries(a1)[i][0]].number)
+  }
     if ((Object.entries(a1).length - 1) === i) {
       htmldombuilder("img", "notificationinside active", {
         addon: {
@@ -549,6 +562,7 @@ function getchangelog(a1) {
       }
     }
   })
+
   if (isNaN(a1) == false) {
     a1 = a1
   } else {
@@ -661,7 +675,7 @@ function getchangelog(a1) {
   }
 
 
-  htmldombuilder("div", "changelogmainblock", undefined, document.getElementsByClassName("changelogmainbody")[0])
+  htmldombuilder("div", "changelogmainblock active", undefined, document.getElementsByClassName("changelogmainbody")[0])
 
   htmldombuilder("div", "changelogmainsupport", undefined, document.getElementsByClassName("changelogmainbody")[0])
 
