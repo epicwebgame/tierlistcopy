@@ -1,7 +1,7 @@
 {
   "battleship": {
     "STIER": [{
-      "wikiUrl": "https://azurlane.koumakan.jp/Friedrich_der_Große",
+      "wikiUrl": "Assets/Misc/jugrampor.png",
       "id": "Plan011",
       "names": {
         "en": "Friedrich der Große",
@@ -12,14 +12,14 @@
       },
       "nationality": "Ironblood",
       "hullType": "Battleship",
-      "thumbnail": "jugrampor.png",
+      "thumbnail": "Assets/Misc/jugrampor.png",
       "rarity": "Decisive",
       "hullTypeId": "Battleship",
       "usagitier": "0",
       "usagisubtier": "1",
       "tags": ["BA", "DEF"]
     }, {
-      "wikiUrl": "https://azurlane.koumakan.jp/Monarch",
+      "wikiUrl": "Assets/Misc/jugrampor.png",
       "id": "Plan002",
       "names": {
         "en": "Monarch",
@@ -30,7 +30,7 @@
       },
       "nationality": "Royal Navy",
       "hullType": "Battleship",
-      "thumbnail": "Assets/ShipPortraits/Plan002/thumbnail.png",
+      "thumbnail": "Assets/Misc/jugrampor.png",
       "rarity": "Priority",
       "hullTypeId": "Battleship",
       "usagitier": "0",
