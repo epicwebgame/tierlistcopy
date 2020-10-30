@@ -418,7 +418,8 @@ function fillchangelog(a1, a2) {
         id: "item_" + a1[Object.entries(a1)[i][0]].number
       },
       style: {
-        backgroundImage: `url("Assets/Misc/bbsbackground222.jpg"), linear-gradient(#1e8dff, #3c9dfe)`
+        backgroundImage: <img class="legendicon_en show" src="Assets/Misc/bbsbackground222.jpg" /><span class="legendspan_en show">Anti
+          Submarine</span>
       }
     }, document.getElementsByClassName(a2)[0])
   } else {
@@ -428,7 +429,8 @@ function fillchangelog(a1, a2) {
         id: "item_" + a1[Object.entries(a1)[i][0]].number
       },
       style: {
-        backgroundImage: `url("Assets/Misc/bbsbackground222.jpg)`
+        backgroundImage: <img class="legendicon_en show" src="Assets/Misc/bbsbackground222.jpg" /><span class="legendspan_en show">Anti
+          Submarine</span>
       }
     }, document.getElementsByClassName(a2)[0])
     getchangelog("item_" + a1[Object.entries(a1)[i][0]].number)
