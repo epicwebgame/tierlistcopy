@@ -1,6 +1,6 @@
 {
   "battleship": {
-    "t0": [{
+    "STIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Friedrich_der_Große",
       "id": "Plan011",
       "names": {
@@ -2473,7 +2473,7 @@
       "usagisubtier": "7",
       "tags": ["MG+1", "BA", "DEF", "AA"]
     }],
-    "t1": [{
+    "ATIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Saint_Louis",
       "id": "Plan006",
       "names": {
@@ -2582,7 +2582,7 @@
       "usagisubtier": "6",
       "tags": ["MG+1", "DEF", "AA", "BUFFDEF"]
     }],
-    "t2": [{
+    "BTIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Elegant_Kizuna_AI",
       "id": "Collab042",
       "names": {
@@ -2673,7 +2673,7 @@
       "usagisubtier": "5",
       "tags": ["MG+1", "BUFFSHL"]
     }],
-    "t3": [{
+    "CTIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Takao",
       "id": "200",
       "names": {
@@ -2782,7 +2782,7 @@
       "usagisubtier": "6",
       "tags": ["BA"]
     }],
-    "t4": [{
+    "DTIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Black_Heart",
       "id": "Collab006",
       "names": {
@@ -2891,7 +2891,7 @@
       "usagisubtier": "6",
       "tags": null
     }],
-    "t5": [{
+    "ETIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Kuon",
       "id": "Collab031",
       "names": {
@@ -3109,7 +3109,7 @@
       "usagisubtier": "12",
       "tags": ["MG+1", "BUFFSHL"]
     }],
-    "t6": [{
+    "FTIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Noire",
       "id": "Collab002",
       "names": {
@@ -3254,7 +3254,7 @@
       "usagisubtier": "8",
       "tags": ["MG+1"]
     }],
-    "t7": [{
+    "SKIPTIER": [{
       "wikiUrl": "https://azurlane.koumakan.jp/Trento",
       "id": "414",
       "names": {
